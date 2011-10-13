@@ -183,7 +183,7 @@ a:hover {
     float: left;
     width: 500px;
     padding: 30px 100px 35px;
-    
+
 }
 
 #content h1, #content h2, #content h3, #content h4 {
@@ -246,7 +246,7 @@ a:hover {
 }
 
 #sidebar h2 {
-    padding: 5px 20px;	
+    padding: 5px 20px;
     border-bottom: 1px dotted #FFFFFF;
     font-size: 100%;
     color: #D4C792;
@@ -320,14 +320,14 @@ a:hover {
     text-decoration: none;
 }
 TABLE.aatable
-{ 
+{
     font-family:arial;
     font-size:10pt;
     background-color:#808080;
     width:400px;
     border-style:solid;
     border-color:#D4C792;
-    border-width:2px;     
+    border-width:2px;
 }
 
 TH
@@ -339,11 +339,11 @@ TH
 
 
 TR
-{ 
+{
 }
 
 TD
-{  
+{
     font-size:9pt;
     background-color:#D7BC94;
     color:white;
@@ -353,17 +353,17 @@ TD
 }
 
 #note
-{  
+{
     font-size:9pt;
-    color:black;     
+    color:black;
 }
 #UILabel
-{  
+{
     font-size:9pt;
-    color:#AA2808;     
+    color:#AA2808;
 }
 #welcome
-{  
-    font-size:10pt;    
-    color:black;     
+{
+    font-size:10pt;
+    color:black;
 }
