@@ -4,11 +4,7 @@
 // This file also establishes a connection to MySQL 
 // and selects the database.
 
-// Set the database access information as constants:
-DEFINE ('DB_USER', 'root');
-DEFINE ('DB_PASSWORD', 'admin');
-DEFINE ('DB_HOST', 'localhost');
-DEFINE ('DB_NAME', 'SENCCONF');
+
 
 // Make the connection:
 //$dbc = @mysql_connect (DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
