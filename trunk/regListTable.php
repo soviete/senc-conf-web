@@ -5,7 +5,7 @@
 
     $idConference=$_POST["conference"];
 
-    echo "======$idConference========";
+    //echo "======$idConference========";
 
     //for ($i=0;$i<count($session);$i++)    
     //{     
@@ -47,7 +47,7 @@
                             $num_rows = mysql_num_rows($result);
                             $row = mysql_fetch_array($result);
                             $sessionName = $row['sessionName'];
-                            echo "que es $num_rows\n";//del
+                            //echo "que es $num_rows\n";//del
                             
                             if ($num_rows==0)
                                 {
@@ -61,7 +61,7 @@
                                     
                                     //$ = $row['surname'];
                                     
-                                    echo '<h3>LListat de persones confirmades per' , $idConference , ' </h3>';
+                                    echo '<h3>LListat de persones confirmades per a la Conferència ' , $sessionName , ' </h3>';
                                     
                                     //echo '<br><div id="note">';
                                                                          
@@ -88,8 +88,15 @@
                             else
                                 {   
                                     echo '<h3>Persones que han confirmat assistència</h3>
-                                          <div id="welcome">
-                                          Hi ha <b>' , $num_rows, '</b> persones registrades a ', $sessionName,'.</div>';
+                                          <div id="welcome">';
+                                    if ($num_rows == 1) 
+                                        {
+                                            echo 'Hi ha <b>' , $num_rows, '</b> persona registrada a ', $sessionName,'.</div>';
+                                        }
+                                    else
+                                        {
+                                            echo 'Hi ha <b>' , $num_rows, '</b> persones registrades a ', $sessionName,'.</div>';
+                                        }
                                     //echo '<input class="form_tfield" type="text" name="first_name" value="" />';
                                     echo '<br><div id="note">';
                                     echo '<table class="aatable">';
