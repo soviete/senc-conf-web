@@ -1,8 +1,8 @@
 <?php
-session_start();
-include 'include/common.php';
 ini_set('display_errors', 'On');
 error_reporting(-1);
+session_start();
+include 'include/common.php';
  ?>
 
 
