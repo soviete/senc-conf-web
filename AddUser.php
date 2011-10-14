@@ -37,13 +37,14 @@ session_start(); ?>
                                 $query=mysql_query("INSERT INTO USERS (userName, surname, dni, email, type)
                                         VALUES ('$name', '$surname', '$dni', '$email', '$type')");
                                 $user=mysql_fetch_array(mysql_query("SELECT idUser FROM USERS WHERE dni='$dni'"));
+                                $conferences="";
                                 foreach ( $_POST['confs'] as $k=> $c) {
                                     if ($c == 'on') {
                                         mysql_query("INSERT INTO REGISTERED (regIDUser, idRegSession)
                                                 VALUES ('$user[0]','$k')");
-                                        $confs=mysql_fetch_array(mysql_query("SELECT sessionName FROM SESSIONS WHERE
-                                        idSESSIONS='$k'"));
-                                        $conferences[]=$confs[0];
+                                        $queryconfs=mysql_fetch_assoc(mysql_query("SELECT sessionName FROM SESSIONS WHERE
+                                        idSESSIONS='$k'"),MYSQL_NUM);
+                                        $conferences.="$queryconfs[0]<br>";
                                     }
                                 }
                                 if (!$query or !$user) {
