@@ -1,8 +1,8 @@
 <div id="lang">
     <ul>
-        <li><a href="index.php">eng</a></li>
-        <li><a href="index.php">cat</a></li>
-        <li><a href="index.php">esp</a></li>
+        <li><a href="index.php?lang=en"">eng</a></li>
+        <li><a href="index.php?lang=ca">cat</a></li>
+        <li><a href="index.php?lang=es">esp</a></li>
     </ul>
 </div>
 
@@ -13,9 +13,12 @@
     </div>
     <div id="menu">
         <ul>
-            <li><a href="index.php">Inscripció</a></li>
+            <li><a href="index.php"><?php echo $lang['registration']; ?></a></li>
 	    <li><a href="gestio.php">Admin</a></li>
         </ul>
     </div>
 </div>
-<?php include 'include/variables.php'; ?>
+
+<?php 
+    include 'include/variables.php'; 
+?>
