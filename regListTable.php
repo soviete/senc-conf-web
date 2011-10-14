@@ -121,7 +121,7 @@
                                         {                                               
                                             
                                             //opening the form
-                                            echo '<form name="payment" action="payUpdate.php" method="post">';
+                                            echo '<form name="payment" action="generateExcel.php" method="post">';
                                             $dni = $row['dni'];
                                             $userName = $row['surname'];
                                             $surname = $row['userName'];
@@ -157,9 +157,11 @@
                                      echo '</div>';
                                      echo '<br>';
                                      echo'<div align="center">
+                                                    
                                                  <input class="form_submitb" type="submit" name="submit" value="Baixar excel" />
-                                                 <input type="hidden" name="submitted" value="TRUE" />
-                                                 </div><br>';
+                                                 <input type="hidden" name="table" value=';
+                                     echo "$idConference";
+                                     echo ' /></div><br>';
                                      echo '</form>';
                                 }
                                 
@@ -171,6 +173,10 @@
                 
                 <div style=" clear: both; height: 1px"></div>
             </div>
+            <?php
+                $_SESSION["sessionName"]=$sessionName;
+            ?>
+            
             <?php include 'include/footer.php'; ?>
         </div>
     </body>

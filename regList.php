@@ -33,7 +33,7 @@
                             
                             if ($num_rows==0)
                                 {
-                                    echo '<h3>Les sessions no es troben a la base de dades si us plau comunicar-ho al teu webmaster.</h3>
+                                    echo '<h3>Les sessions no es troben a la base de dades si us plau comunica-ho al teu webmaster.</h3>
                                           <div id="welcome">
                                           No hi ha cap persona sessió registrada <b>', $num_rows, '</b>.</div>';
                                 }
