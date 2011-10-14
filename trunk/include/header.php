@@ -18,3 +18,4 @@
         </ul>
     </div>
 </div>
+<?php include 'include/variables.php'; ?>
