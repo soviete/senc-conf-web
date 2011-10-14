@@ -41,36 +41,35 @@ session_start(); ?>
                                     if ($c == 'on') {
                                         mysql_query("INSERT INTO REGISTERED (regIDUser, idRegSession)
                                                 VALUES ('$user[0]','$k')");
+                                        $confs=mysql_fetch_array(mysql_query("SELECT sessionName FROM SESSIONS WHERE
+                                        idSESSIONS='$k'"));
+                                        $conferences[]=$confs[0];
                                     }
                                 }
                                 if (!$query or !$user) {
                                     trigger_error ('Wrong QUERY: ' . mysql_error() );
                                 }
                                 else {
+//                                    $conferences=print_r(mysql_fetch_array(mysql_query("SELECT sessionName FROM
+//                                            SESSIONS WHERE idSESSIONS IN (SELECT idRegSession FROM REGISTERED
+//                                            WHERE regIdUser = '$user[0]'")));
+
                                     echo'<p>Enhorabona <b>',$name,'</b>!! T\'has registrat correctament </p>
                                         <p>En breu rebràs un email amb la confirmació.</p>';
                                     $subject = 'Inscripció a ciclo de conferències';
-                                    $message =
-                                    "<html>
+                                    $message ='
+                                    <html>
                                     <head>
-                                      <title> <b>',$name,'</b>, t\'has registrat correctament al cicle de
+                                      <title> <b>'.$name.'</b>, t\'has registrat correctament al cicle de
                                     conferències <i>El cervell envaeix la ciutat<\i>.</title>
                                     </head>
                                     <body>
-                                      <p>Aquestes són les conferències a les quals t'has inscrit:</p>
-                                      <table>
-                                        <tr>
-                                          <th>CULO</th><th>Day</th><th>Month</th><th>TETA</th>
-                                        </tr>
-                                        <tr>
-                                          <td>PEDO</td><td>3rd</td><td>CACA</td><td>2011</td>
-                                        </tr>
-                                        <tr>
-                                          <td>MIS</td><td>17th</td><td>PELOTAS</td><td>2012</td>
-                                        </tr>
-                                      </table>
+                                      <p>Aquestes són les conferències a les quals t\'has inscrit:</p>
+                                      '.$conferences.'
+                                      <p>Si us plau, confirmi la seva assistència almenys 5 dies abans de la data</p>
                                     </body>
-                                    </html>"
+                                    </html>
+                                    '
                                     ;
 
 // To send HTML mail, the Content-type header must be set
