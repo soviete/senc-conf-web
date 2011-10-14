@@ -169,6 +169,49 @@ a:hover {
     color: #AA2808;
 }
 
+/* Lang */
+
+.lang {
+    float: right;
+/*    padding-right: 10px;*/
+/*    width: 710px;*/
+/*    height: 96px;*/
+/*    margin: 0 auto;*/
+/*    background: url(images/img05.gif) no-repeat left bottom;*/
+
+}
+
+#lang ul {
+    margin: 0;
+    padding: 50px 0 0 0;
+    list-style: none;
+    line-height: normal;
+}
+
+#lang li {
+    display: inline;
+}
+
+#lang a {   
+    display: block;
+    float: left;
+    width: 40px;
+    height: 20px;
+    margin: 0;
+    padding: 10px 0 0 0;
+/*    background: url(images/img02.gif);*/
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+#lang a:hover, #menu .active a {
+    background-image: url(images/img03.gif);
+    color: #AA2808;
+}
+
 /* Page */
 
 #page {
