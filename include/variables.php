@@ -1,5 +1,5 @@
 <?php
-//Variables for date and time
+//Variables for date
 $day['en'][0] = "Monday";
 $day['en'][1] = "Tuesday";
 $day['en'][2] = "Wednesday";
