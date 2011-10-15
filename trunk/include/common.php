@@ -24,7 +24,7 @@
         
     else
         {
-            $lang = 'en';
+            $lang = 'ca';
         }
 
     switch ($lang) 
