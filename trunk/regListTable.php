@@ -1,10 +1,12 @@
-<?php session_start(); ?>
-    
-<?php session_start(); 
-
+<?php 
+    session_start(); 
+    ini_set('display_errors', 'On');
+    error_reporting(-1);
+    include 'include/common.php';
 
     $idConference=$_POST["conference"];
-
+        
+    
     //echo "======$idConference========";
 
     //for ($i=0;$i<count($session);$i++)    

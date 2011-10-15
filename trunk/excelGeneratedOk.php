@@ -1,10 +1,15 @@
-<?php session_start(); ?>
+<?php 
+ini_set('display_errors', 'On');
+error_reporting(-1);
+session_start();
+include 'include/common.php';
+?>
 
 <?php 
     $sessionName=$_SESSION["sessionName"];
     $fileName=$_SESSION["nameFile"];
     //echo "+++++$sessionName\n";
-    echo "======$fileName";
+    //echo "======$fileName";
 ?>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
