@@ -26,4 +26,6 @@
     
     //Registration Conferences
     $langVoc['remindChoose'] ='2 - Recorda, tria almenys una conferència aquesta vegada!!!';
+    $langVoc['regDetails'] = "DETALLS D'INSCRIPCIÓ";
+    $langVoc['noConfSelect'] = 'No has seleccionat cap conferència';
 ?>

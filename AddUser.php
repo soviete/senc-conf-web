@@ -1,22 +1,33 @@
 <?php
 ini_set('display_errors', 'On');
 error_reporting(-1);
-session_start(); ?>
+session_start();
+include 'include/common.php';
+?>
+
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
-    <head>
+        <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Confirmacio de registre</title>
         <link rel="stylesheet" type="text/css" href="estilo.css" />
     </head>
-
+    
+    <div id="lang">
+    <ul>
+        <li><a href="AddUser.php?lang=ca">cat</a></li>
+        <li><a href="AddUser.php?lang=es">esp</a></li>
+        <li><a href="AddUser.php?lang=en"">eng</a></li>
+    </ul>
+    </div>
+    
     <body>
         <div  id="wrapper">
             <?php include 'include/header.php'; ?>
             <div id="page">
                 <div id="content">
                     <div id="welcome">
-                        <h1>DETALLS D'INSCRIPCION</h1>
+                        <h1><?php echo $langVoc['regDetails']; ?></h1>
                         <?php
                         include 'mysql_connect.php';
                         $name = $_SESSION['name'];
@@ -26,6 +37,7 @@ session_start(); ?>
                         $type = $_SESSION['type'];
                         if ($_POST['confs']) {
                             $result = mysql_num_rows(mysql_query("SELECT * FROM USERS WHERE dni='$dni'"));
+                            
                             if($result == 1) {
                                 //echo '<h3>ERROR!</h3>The username you have chosen already exists!<br>
                                 //Please <a href=index.php>Go back</a> and try another Username';
@@ -89,7 +101,9 @@ session_start(); ?>
                         else {
                             //echo '<h3>ERROR!</h3>A field in the form is missing!<br>
                             //Please <a href=index.php>Go back</a> and try again.';
-                            echo '<h3>ERROR!</h3>No has seleccionat cap conferèncie<br> Si us plau, torni a intentar-ho.
+                            echo '<h3>ERROR!</h3>';
+                            echo $langVoc['noConfSelect'];
+                            echo '<br> Si us plau, torni a intentar-ho.
                                 <a href=ChooseConf.php>ENRERE</a>';
                         }
 

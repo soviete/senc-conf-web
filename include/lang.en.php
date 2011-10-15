@@ -28,6 +28,13 @@
     //Registration Conferences
     $langVoc['remindChoose'] ='2 - Choose at least one conference this time!!!';
     $langVoc['register'] = 'Register!';
+    $langVoc['regDetails'] = "REGISTRATION DETAILS";
+    $langVoc['noConfSelect'] = 'You have not choose any conference';
+    
+    
+    
+    
+    
     
     // Menu
  
