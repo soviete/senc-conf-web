@@ -22,4 +22,8 @@
     $langVoc['formNextButton'] = 'Següent';
     
     $langVoc['mandatoryField'] = 'Camps obligatoris';
+    $langVoc['register'] = "Inscriura't!";
+    
+    //Registration Conferences
+    $langVoc['remindChoose'] ='2 - Recorda, tria almenys una conferència aquesta vegada!!!';
 ?>

@@ -2,7 +2,10 @@
 ini_set('display_errors', 'On');
 error_reporting(-1);
 session_start();
+include 'include/common.php';
+//echo $lang;echo "=======";//del
 ?>
+
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
     <head>
@@ -10,18 +13,27 @@ session_start();
         <title>Formulari d'inscripció a conferències</title>
         <link rel="stylesheet" type="text/css" href="estilo.css" />
     </head>
+    
+    <div id="lang">
+    <ul>
+        <li><a href="ChooseConf.php?lang=en"">eng</a></li>
+        <li><a href="ChooseConf.php?lang=es">esp</a></li>
+        <li><a href="ChooseConf.php?lang=ca">cat</a></li>
+    </ul>
+    </div>
+    
     <body>
         <div  id="wrapper">
             <?php include 'include/header.php'; ?>
             <div id="page">
                 <div id="content">
                     <div id="welcome">
-                        <h1>Formulari d'inscripció a conferències</h1><br>
+                        <h1><?php echo $langVoc['formTitle']; ?></h1><br>
 
                         <form action="AddUser.php" method="post">
                             <?php
                             if (!$_POST) {
-                                echo "<h4>2 - Recorda, tria almenys una conferència aquesta vegada!!!</h4><br>";
+                                echo '<h4>'; echo $langVoc['remindChoose']; echo '</h4><br>';
                             }
                             else {
                                 echo "<h3>2 - Triï les conferències a les quals assistirà:</h3><br>";
@@ -49,7 +61,7 @@ session_start();
                             ?>
                             <br><br><br><br><br><br>
                             <div align="right">
-                                <input class="form_submitb" type="submit" name="submit" value="Inscriura't!" />
+                                <input class="form_submitb" type="submit" name="submit" value=<?php echo $langVoc['register']; ?> />
                                 <input type="hidden" name="submitted" value="TRUE" />
                             </div>
                         </form>
