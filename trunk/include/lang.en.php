@@ -2,37 +2,37 @@
 
 /*
   ------------------
-  .Language: English
+  .language: English
   ------------------
 .*/
  
-    $lang = array();
+    $langVoc = array();
     
     //header
-    $lang['registration']='Registration';
+    $langVoc['registration']='Registration';
     
     //Form
-    $lang['formTitle'] = 'Talk Registration Form';
-    $lang['formSubTitle'] = '1 - Please fill the following fields:';
-    $lang['formName'] = 'Name';
-    $lang['formSurname'] = 'Surname';
-    $lang['formId'] = 'DNI/Passport';
-    $lang['formEmail'] = 'Email';
-    $lang['formRegOption'] = 'Registration option';
-    $lang['formNextButton'] = 'Next';
-    $lang['mandatoryField'] = 'Next';
+    $langVoc['formTitle'] = 'Talk Registration Form';
+    $langVoc['formSubTitle'] = '1 - Please fill the following fields:';
+    $langVoc['formName'] = 'Name';
+    $langVoc['formSurname'] = 'Surname';
+    $langVoc['formId'] = 'DNI/Passport';
+    $langVoc['formEmail'] = 'Email';
+    $langVoc['formRegOption'] = 'Registration option';
+    $langVoc['formNextButton'] = 'Next';
+    $langVoc['mandatoryField'] = 'Next';
     
     
-    $lang['mandatoryField'] = 'Mandatory fields';
+    $langVoc['mandatoryField'] = 'Mandatory fields';
     
     // Menu
  
-    $lang['MENU_HOME'] = 'Home';
-    $lang['MENU_ABOUT_US'] = 'About Us';
-    $lang['MENU_OUR_PRODUCTS'] = 'Our products';
-    $lang['MENU_CONTACT_US'] = 'Contact Us';
-    $lang['MENU_ADVERTISE'] = 'Advertise';
-    $lang['MENU_SITE_MAP'] = 'Site Map';
+    $langVoc['MENU_HOME'] = 'Home';
+    $langVoc['MENU_ABOUT_US'] = 'About Us';
+    $langVoc['MENU_OUR_PRODUCTS'] = 'Our products';
+    $langVoc['MENU_CONTACT_US'] = 'Contact Us';
+    $langVoc['MENU_ADVERTISE'] = 'Advertise';
+    $langVoc['MENU_SITE_MAP'] = 'Site Map';
 ?>
 
 
