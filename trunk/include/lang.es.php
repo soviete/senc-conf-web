@@ -25,10 +25,13 @@
     $langVoc['register'] = 'Inscríbete!';
     
     //Registration Conferences
+    $langVoc['formChoose'] ='2 - Escoja las conferencias a las que desea asistir:';
     $langVoc['remindChoose'] ='2 - Elige al menos una conferencia esta vez!!!';
     $langVoc['regDetails'] = "DETALLES DE INSCRIPCIÓN";
     $langVoc['noConfSelect'] = 'No has seleccionado ninguna conferencia';
-
+    
+    
+    
     //DAY & MONTH
 
 $day[0] = "Lunes";

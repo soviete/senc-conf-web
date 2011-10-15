@@ -24,10 +24,11 @@
     
     
     $langVoc['mandatoryField'] = 'Mandatory fields';
-    
-    //Registration Conferences
-    $langVoc['remindChoose'] ='2 - Choose at least one conference this time!!!';
     $langVoc['register'] = 'Register!';
+     
+    //Registration Conferences
+    $langVoc['formChoose'] ='2 - Choose the conferences you would like to attend:';
+    $langVoc['remindChoose'] ='2 - Choose at least one conference this time!!!';
     $langVoc['regDetails'] = "REGISTRATION DETAILS";
     $langVoc['noConfSelect'] = 'You have not choose any conference';
     
