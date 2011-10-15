@@ -13,16 +13,19 @@ include 'include/common.php';
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Formulari d'inscripció a conferències</title>
         <link rel="stylesheet" type="text/css" href="estilo.css" /> 
+        <script type="text/javascript" src="Javascript/formvalidation.js">
+                var x=document.forms["indexform"]["name"].value;
+        </script>
     </head>
-    
+
     <div id="lang">
-    <ul>
-        <li><a href="index.php?lang=ca">cat</a></li>
-        <li><a href="index.php?lang=es">esp</a></li>
-        <li><a href="index.php?lang=en"">eng</a></li>
-    </ul>
+        <ul>
+            <li><a href="index.php?lang=ca">cat</a></li>
+            <li><a href="index.php?lang=es">esp</a></li>
+            <li><a href="index.php?lang=en">eng</a></li>
+        </ul>
     </div>
-    
+
     <body>
         <div  id="wrapper">
             <?php include 'include/header.php'; ?>
@@ -31,18 +34,18 @@ include 'include/common.php';
                     <div id="welcome">
                         <h1><?php echo $langVoc['formTitle']; ?></h1><br>
                         <h3><?php echo $langVoc['formSubTitle']; ?></h3>
-                        <form action="ChooseConf.php" method="post">
+                        <form action="ChooseConf.php" name="indexform" onsubmit="return validateForm()" method="post">
                             <div id="UILabel"><?php echo $langVoc['formName']; ?>*</div>
                             <input class="form_tfield" type="text" name="name" value="" /><br><br>
                             <div id="UILabel"><?php echo $langVoc['formSurname']; ?>*</div>
                             <input class="form_tfield" type="text" name="surname" value="" /><br><br>
-                                <div id="UILabel"><?php echo $langVoc['formId']; ?>*</div>
+                            <div id="UILabel"><?php echo $langVoc['formId']; ?>*</div>
                             <input class="form_tfield" type="text" name="dni" value="" /><br><br>
                             <div id="UILabel"><?php echo $langVoc['formEmail']; ?>*</div>
                             <input class="form_tfield" type="text" name="email" value="" /><br><br>
                             <div id="UILabel"><?php echo $langVoc['formRegOption']; ?>*</div>
                             <input class="form_tfield" type="text" name="type" value="" /><br><br><br>
-                           <div align="right">
+                            <div align="right">
                                 <input class="form_submitb" type="submit" name="submit" value=<?php echo $langVoc['formNextButton']; ?> />
                                 <input type="hidden" name="submitted" value="TRUE" />
                             </div>
