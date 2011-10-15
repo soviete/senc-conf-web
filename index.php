@@ -3,7 +3,7 @@ ini_set('display_errors', 'On');
 error_reporting(-1);
 session_start();
 include 'include/common.php';
- ?>
+?>
 
 
 
@@ -12,7 +12,7 @@ include 'include/common.php';
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Formulari d'inscripció a conferències</title>
-        <link rel="stylesheet" type="text/css" href="estilo.css" />
+        <link rel="stylesheet" type="text/css" href="estilo.css" /> 
     </head>
     
     <div id="lang">
