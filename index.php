@@ -4,9 +4,6 @@ error_reporting(-1);
 session_start();
 include 'include/common.php';
 ?>
-
-
-
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
     <head>
@@ -14,7 +11,7 @@ include 'include/common.php';
         <title>Formulari d'inscripció a conferències</title>
         <link rel="stylesheet" type="text/css" href="estilo.css" /> 
         <script type="text/javascript" src="Javascript/formvalidation.js">
-                var x=document.forms["indexform"]["name"].value;
+                
         </script>
     </head>
 
