@@ -7,20 +7,20 @@ include 'include/common.php';
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
-        <head>
+    <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Confirmacio de registre</title>
         <link rel="stylesheet" type="text/css" href="estilo.css" />
     </head>
-    
+
     <div id="lang">
-    <ul>
-        <li><a href="AddUser.php?lang=ca">cat</a></li>
-        <li><a href="AddUser.php?lang=es">esp</a></li>
-        <li><a href="AddUser.php?lang=en"">eng</a></li>
-    </ul>
+        <ul>
+            <li><a href="AddUser.php?lang=ca">cat</a></li>
+            <li><a href="AddUser.php?lang=es">esp</a></li>
+            <li><a href="AddUser.php?lang=en"">eng</a></li>
+        </ul>
     </div>
-    
+
     <body>
         <div  id="wrapper">
             <?php include 'include/header.php'; ?>
@@ -37,7 +37,7 @@ include 'include/common.php';
                         $type = $_SESSION['type'];
                         if ($_POST['confs']) {
                             $result = mysql_num_rows(mysql_query("SELECT * FROM USERS WHERE dni='$dni'"));
-                            
+
                             if($result == 1) {
                                 //echo '<h3>ERROR!</h3>The username you have chosen already exists!<br>
                                 //Please <a href=index.php>Go back</a> and try another Username';
@@ -54,9 +54,25 @@ include 'include/common.php';
                                     if ($c == 'on') {
                                         mysql_query("INSERT INTO REGISTERED (regIDUser, idRegSession)
                                                 VALUES ('$user[0]','$k')");
-                                        $queryconfs=mysql_fetch_assoc(mysql_query("SELECT sessionName FROM SESSIONS WHERE
+                                        $query=mysql_fetch_assoc(mysql_query("SELECT sessionName,UNIX_TIMESTAMP(sessionDate) FROM SESSIONS WHERE
                                         idSESSIONS='$k'"),MYSQL_NUM);
-                                        $conferences.="$queryconfs[0]<br>";
+                                        $weekdaymysql=date("l",$query[1]);
+                                        $monthmysql=date("F",$query[1]);
+                                        $Day=date("d",$query[1]);
+                                        $year=date("Y",$query[1]);
+                                        $time=date("G",$query[1]);
+                                        foreach ($day as $key => $value) {
+                                            if ($value==$weekdaymysql) {
+                                                $W=$value;
+                                            }
+                                        }
+                                        foreach ($month as $key => $value) {
+                                            if ($value==$monthmysql) {
+                                                $M=$value;
+                                            }
+                                        }
+                                        $fecha="$W, $Day of $M $year";
+                                        $conferences.="$fecha<br>\"<b>$query[0]</b>\"<br><br>";
                                     }
                                 }
                                 if (!$query or !$user) {
