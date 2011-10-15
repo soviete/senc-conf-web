@@ -16,7 +16,7 @@
     $langVoc['formSubTitle'] = '1 - Si us plau, ompliu el següents camps:';
     $langVoc['formName'] = 'Nom';
     $langVoc['formSurname'] = 'Cognom';
-    $langVoc['formId'] = 'DNI/Passaport';
+    $langVoc['formId'] = 'DNI/Passaport* <br><small>(nomes caràcters numerics)</small>';
     $langVoc['formEmail'] = 'Email';
     $langVoc['formRegOption'] = 'Opció d\'inscripció';
     $langVoc['formNextButton'] = 'Següent';
