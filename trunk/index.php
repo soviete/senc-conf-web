@@ -29,9 +29,9 @@ include 'include/common.php';
                             <input class="form_tfield" type="text" name="surname" value="" /><br><br>
                                 <div id="UILabel"><?php echo $lang['formId']; ?>*</div>
                             <input class="form_tfield" type="text" name="dni" value="" /><br><br>
-                            <div id="UILabel">Email*</div>
-                            <input class="form_tfield" type="text" name="email" value="" /><br><br>
                             <div id="UILabel"><?php echo $lang['formEmail']; ?>*</div>
+                            <input class="form_tfield" type="text" name="email" value="" /><br><br>
+                            <div id="UILabel"><?php echo $lang['formRegOption']; ?>*</div>
                             <input class="form_tfield" type="text" name="type" value="" /><br><br><br>
                            <div align="right">
                                 <input class="form_submitb" type="submit" name="submit" value=<?php echo $lang['formNextButton']; ?> />
