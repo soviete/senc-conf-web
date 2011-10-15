@@ -42,7 +42,7 @@
             break;
 
             default:
-            $lang_file = 'lang.en.php';
+            $lang_file = 'lang.ca.php';
 
         }
 
