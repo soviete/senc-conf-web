@@ -2,8 +2,8 @@
 ini_set('display_errors', 'On');
 error_reporting(-1);
 session_start();
-include 'include/common.php';
-?>
+include 'include/common.php'
+        ?>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
@@ -86,24 +86,17 @@ include 'include/common.php';
                                     echo'<p>Enhorabona <b>',$name,'</b>!! T\'has registrat correctament </p>
                                         <p>En breu rebràs un email amb la confirmació.</p>';
                                     $subject = 'Inscripció a ciclo de conferències';
-                                    $message ='
-                                    <html>
-                                    <head>
-                                      <title> <b>'.$name.'</b>, t\'has registrat correctament al cicle de
-                                    conferències <i>El cervell envaeix la ciutat<\i>.</title>
-                                    </head>
-                                    <body>
+                                    $message ='<b>'.$name.'</b>, t\'has registrat correctament al cicle de
+                                    conferències <i>El cervell envaeix la ciutat</i>.
                                       <p>Aquestes són les conferències a les quals t\'has inscrit:</p>
                                       '.$conferences.'
                                       <p>Si us plau, confirmi la seva assistència almenys 5 dies abans de la data</p>
-                                    </body>
-                                    </html>
                                     '
                                     ;
 
 // To send HTML mail, the Content-type header must be set
                                     $headers  = 'MIME-Version: 1.0' . "\r\n";
-                                    $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+                                    $headers .= 'Content-type: text/html; charset=iso-UTF-8' . "\r\n";
 
 // Additional headers
                                     $headers .= 'From: Recordatori <DONOTREPLY@elcervell.com>' . "\r\n";
