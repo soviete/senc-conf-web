@@ -47,5 +47,4 @@
         }
 
     include_once 'include/'.$lang_file;
-    include 'include/variables.php'; 
 ?>
