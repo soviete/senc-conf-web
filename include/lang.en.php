@@ -12,7 +12,7 @@
     $langVoc['registration']='Registration';
     
     //Form
-    $langVoc['formTitle'] = 'Talks Registration Form';
+    $langVoc['formTitle'] = 'Conferences registration form';
     $langVoc['formSubTitle'] = '1 - Please fill the following fields:';
     $langVoc['formName'] = 'Name';
     $langVoc['formSurname'] = 'Surname';
