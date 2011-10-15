@@ -13,7 +13,7 @@
     </div>
     <div id="menu">
         <ul>
-            <li><a href="index.php"><?php echo $lang['registration']; ?></a></li>
+            <li><a href="index.php"><?php echo $langVoc['registration']; ?></a></li>
 	    <li><a href="gestio.php">Admin</a></li>
         </ul>
     </div>
