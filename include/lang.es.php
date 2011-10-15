@@ -16,7 +16,7 @@
     $langVoc['formSubTitle'] = '1 - Por favor rellene los campos siguientes:';
     $langVoc['formName'] = 'Nombre';
     $langVoc['formSurname'] = 'Apellido';
-    $langVoc['formId'] = 'DNI/Pasaporte';
+    $langVoc['formId'] = 'DNI/Pasaporte* <br><small>(sólo caracteres numéricos)</small>';
     $langVoc['formEmail'] = 'Email';
     $langVoc['formRegOption'] = 'Opción de inscripción';
     $langVoc['formNextButton'] = 'Siguiente';
