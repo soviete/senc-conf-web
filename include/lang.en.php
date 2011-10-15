@@ -12,7 +12,7 @@
     $langVoc['registration']='Registration';
     
     //Form
-    $langVoc['formTitle'] = 'Talk Registration Form';
+    $langVoc['formTitle'] = 'Talks Registration Form';
     $langVoc['formSubTitle'] = '1 - Please fill the following fields:';
     $langVoc['formName'] = 'Name';
     $langVoc['formSurname'] = 'Surname';
@@ -24,6 +24,10 @@
     
     
     $langVoc['mandatoryField'] = 'Mandatory fields';
+    
+    //Registration Conferences
+    $langVoc['remindChoose'] ='2 - Choose at least one conference this time!!!';
+    $langVoc['register'] = 'Register!';
     
     // Menu
  

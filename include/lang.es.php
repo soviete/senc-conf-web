@@ -12,7 +12,7 @@
     $langVoc['registration']='Inscripción';
     
     //Form 
-    $langVoc['formTitle'] = 'Formulario de registro en conferencias';
+    $langVoc['formTitle'] = 'Formulario de inscripción a conferencias';
     $langVoc['formSubTitle'] = '1 - Por favor rellene los campos siguientes:';
     $langVoc['formName'] = 'Nombre';
     $langVoc['formSurname'] = 'Apellido';
@@ -22,4 +22,8 @@
     $langVoc['formNextButton'] = 'Siguiente';
     
     $langVoc['mandatoryField'] = 'Campos obligatorios';
+    $langVoc['register'] = 'Inscríbete!';
+    
+    //Registration Conferences
+    $langVoc['remindChoose'] ='2 - Elige al menos una conferencia esta vez!!!';
 ?>
