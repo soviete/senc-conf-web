@@ -6,20 +6,20 @@
   ------------------
 .*/
  
-    $lang = array();
+    $langVoc = array();
     
     //header
-    $lang['registration']='Inscripció';
+    $langVoc['registration']='Inscripció';
     
     //Form
-    $lang['formTitle'] = 'Formulari d\'inscripció a conferències';
-    $lang['formSubTitle'] = '1 - Si us plau, ompliu el següents camps:';
-    $lang['formName'] = 'Nom';
-    $lang['formSurname'] = 'Cognom';
-    $lang['formId'] = 'DNI/Passaport';
-    $lang['formEmail'] = 'Email';
-    $lang['formRegOption'] = 'Opció d\'inscripció';
-    $lang['formNextButton'] = 'Següent';
+    $langVoc['formTitle'] = 'Formulari d\'inscripció a conferències';
+    $langVoc['formSubTitle'] = '1 - Si us plau, ompliu el següents camps:';
+    $langVoc['formName'] = 'Nom';
+    $langVoc['formSurname'] = 'Cognom';
+    $langVoc['formId'] = 'DNI/Passaport';
+    $langVoc['formEmail'] = 'Email';
+    $langVoc['formRegOption'] = 'Opció d\'inscripció';
+    $langVoc['formNextButton'] = 'Següent';
     
-    $lang['mandatoryField'] = 'Camps obligatoris';
+    $langVoc['mandatoryField'] = 'Camps obligatoris';
 ?>

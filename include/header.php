@@ -1,10 +1,10 @@
-<div id="lang">
+<!--<div id="lang">
     <ul>
         <li><a href="index.php?lang=en"">eng</a></li>
         <li><a href="index.php?lang=ca">cat</a></li>
         <li><a href="index.php?lang=es">esp</a></li>
     </ul>
-</div>
+</div>-->
 
 <div id="header">    
     <div id="logo">
