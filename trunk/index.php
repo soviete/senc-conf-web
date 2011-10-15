@@ -10,8 +10,8 @@ include 'include/common.php';
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Formulari d'inscripció a conferències</title>
         <link rel="stylesheet" type="text/css" href="estilo.css" /> 
-        <script type="text/javascript" src="Javascript/formvalidation.js">
-                
+        <script type="text/javascript" src="Javascript/formvalidation.js"></script>
+        <script type="text/javascript">
         </script>
     </head>
 
@@ -38,7 +38,7 @@ include 'include/common.php';
                             <input class="form_tfield" type="text" name="surname" value="" /><br><br>
                             <div id="UILabel"><?php echo $langVoc['formId']; ?>*</div>
                             <input class="form_tfield" type="text" name="dni" value="" /><br><br>
-                            <div id="UILabel"><?php echo $langVoc['formEmail']; ?>*</div>
+                            <div id="UILabel"><?php echo $langVoc['formEmail']; ?></div>
                             <input class="form_tfield" type="text" name="email" value="" /><br><br>
                             <div id="UILabel"><?php echo $langVoc['formRegOption']; ?>*</div>
                             <input class="form_tfield" type="text" name="type" value="" /><br><br><br>
