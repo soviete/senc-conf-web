@@ -64,6 +64,13 @@ $month[8] = "September";
 $month[9] = "October";
 $month[10] = "November";
 $month[11] = "December";
+
+    //ERROR SESSIONS
+    
+    $langVoc['numSessionsMsg1'] = 'The number of conferences you choose '; 
+    $langVoc['numSessionsMsg2'] = ' does not match your registration option, you should chose ';
+    $langVoc['back'] = 'back';
+    $langVoc['backMsg'] = 'to the conferences registration form';
 ?>
 
 
