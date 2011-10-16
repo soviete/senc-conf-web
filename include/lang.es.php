@@ -68,5 +68,9 @@ $month[11] = "Diciembre";
     //AddUser USER CORRECTLY REGISTERED
     $langVoc['congra'] = 'Enhorabuena ';
     $langVoc['congra1'] = '!! Te has registrado correctamente';
-    $langVoc['congra2'] ='Pronto recibirás un email con la confirmación.';    
+    $langVoc['congra2'] ='Pronto recibirás un email con la confirmación.';
+    $langVoc['noSessionAva'] = 'No hay suficientes plazas disponibles';
+    $langVoc['waitList'] = 'Si quieres pasar a nuestra lista de espera apreta ';
+    $langVoc['Here'] = 'aquí';
+    $langVoc['asap'] = 'Nos pondremos en contacto contigo tan pronto como haya plazas disponibles.';
 ?>
