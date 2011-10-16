@@ -19,7 +19,7 @@ include 'include/common.php'
         <ul>
             <li><a href="AddUser.php?lang=ca">cat</a></li>
             <li><a href="AddUser.php?lang=es">esp</a></li>
-            <li><a href="AddUser.php?lang=en"">eng</a></li>
+            <li><a href="AddUser.php?lang=en">eng</a></li>
         </ul>
     </div>
     
@@ -39,7 +39,7 @@ include 'include/common.php'
                         $type = $_SESSION['type'];
                         
                         
-                        print_r($_SESSION['confs']);echo "========";
+                        //print_r($_SESSION['confs']);echo "========";//del
                         
                         //if ($_POST['confs']) { //Inside session because now is passing between different scripts
                         if ($_SESSION['confs']) {
@@ -48,8 +48,13 @@ include 'include/common.php'
                             if($result == 1) {
                                 //echo '<h3>ERROR!</h3>The username you have chosen already exists!<br>
                                 //Please <a href=index.php>Go back</a> and try another Username';
-                                echo '<h3>ERROR!</h3>Aquest usuari ja està registrat!<br>
-                                    Si us plau, torni a intentar-ho.   <a href=index.php>INSCRIPCIÓ</a>';
+                                echo '<h3>ERROR!</h3>';
+                                echo $langVoc['userRegistered'];
+                                echo '<br>';
+                                echo $langVoc['pleaseRetry'];       
+                                echo '<a href=index.php>';
+                                echo $langVoc['registration'];
+                                echo '</a>';
 
                             }
                             else {
@@ -92,9 +97,19 @@ include 'include/common.php'
 //                                    $conferences=print_r(mysql_fetch_array(mysql_query("SELECT sessionName FROM
 //                                            SESSIONS WHERE idSESSIONS IN (SELECT idRegSession FROM REGISTERED
 //                                            WHERE regIdUser = '$user[0]'")));
-
-                                    echo'<p>Enhorabona <b>',$name,'</b>!! T\'has registrat correctament </p>
-                                        <p>En breu rebràs un email amb la confirmació.</p>';
+                                    
+                                    //Msg in screen with congratulations for being registered
+                                    echo'<p>';
+                                    echo $langVoc['congra'];
+                                    echo '<b>';
+                                    echo $name;
+                                    echo '</b>';
+                                    echo $langVoc['congra1']; 
+                                    echo '</p><p>';
+                                    echo $langVoc['congra2'];
+                                    echo '</p>';
+                                    
+                                    //Mail
                                     $subject = 'Inscripció a ciclo de conferències';
                                     $message ='<b>'.$name.'</b>, t\'has registrat correctament al cicle de
                                     conferències <i>El cervell envaeix la ciutat</i>.
