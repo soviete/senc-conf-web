@@ -60,4 +60,14 @@
     $langVoc['numSessionsMsg2'] = ' no correspon a l\'opció d\'incripció triada, has d\'escollir ';
     $langVoc['back'] = 'enrere';
     $langVoc['backMsg'] = 'al formulari d\'inscripció a conferències';
+    
+    //ERROR USER ALREADY REGISTERED
+    $langVoc['userRegistered'] = 'Aquest usuari ja està registrat!';
+    $langVoc['pleaseRetry'] = 'Si us plau, torni a intentar-ho. ';
+    
+    //AddUser USER CORRECTLY REGISTERED
+    $langVoc['congra'] = 'Enhorabona ';
+    $langVoc['congra1'] = '!! T\'has registrat correctament';
+    $langVoc['congra2'] ='En breu rebràs un email amb la confirmació.';    
+    
 ?>

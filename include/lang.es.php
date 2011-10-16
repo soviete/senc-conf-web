@@ -60,4 +60,13 @@ $month[11] = "Diciembre";
     $langVoc['numSessionsMsg2'] = ' no corresponde con la opción de inscripción que has solicitado, tienes que coger ';
     $langVoc['back'] = 'volver';
     $langVoc['backMsg'] = 'al formulario de inscripción a conferencias'; 
+    
+    //ERROR USER ALREADY REGISTERED
+    $langVoc['userRegistered'] = 'Este usuario ya está registrado!';
+    $langVoc['pleaseRetry'] = 'Por favor inténtelo de nuevo. ';
+    
+    //AddUser USER CORRECTLY REGISTERED
+    $langVoc['congra'] = 'Enhorabuena ';
+    $langVoc['congra1'] = '!! Te has registrado correctamente';
+    $langVoc['congra2'] ='Pronto recibirás un email con la confirmación.';    
 ?>
