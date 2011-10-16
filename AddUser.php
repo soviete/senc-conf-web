@@ -1,10 +1,17 @@
 <?php
-ini_set('display_errors', 'On');
-error_reporting(-1);
+//ini_set('display_errors', 'On');
+//error_reporting(-1);
 session_start();
 include 'include/common.php'
         ?>
 
+<?php
+    if (count($_POST['confs']))
+                            {
+                                header ('Location:payModifiedOk.php');
+                            
+                            }
+    ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
     <head>
@@ -20,7 +27,7 @@ include 'include/common.php'
             <li><a href="AddUser.php?lang=en"">eng</a></li>
         </ul>
     </div>
-
+    
     <body>
         <div  id="wrapper">
             <?php include 'include/header.php'; ?>
@@ -35,6 +42,10 @@ include 'include/common.php'
                         $dni = $_SESSION['dni'];
                         $email = $_SESSION['email'];
                         $type = $_SESSION['type'];
+                        
+                        
+                        //echo count($_POST['confs']);echo "========";
+                        
                         if ($_POST['confs']) {
                             $result = mysql_num_rows(mysql_query("SELECT * FROM USERS WHERE dni='$dni'"));
 
@@ -52,8 +63,9 @@ include 'include/common.php'
                                 $conferences="";
                                 foreach ( $_POST['confs'] as $k=> $c) {
                                     if ($c == 'on') {
+                                        $y=$k+1;
                                         mysql_query("INSERT INTO REGISTERED (regIDUser, idRegSession)
-                                                VALUES ('$user[0]','$k')");
+                                                VALUES ('$user[0]','$y')");
                                         $query=mysql_fetch_assoc(mysql_query("SELECT sessionName,UNIX_TIMESTAMP(sessionDate) FROM SESSIONS WHERE
                                         idSESSIONS='$k'"),MYSQL_NUM);
                                         $weekdaymysql=date("l",$query[1]);

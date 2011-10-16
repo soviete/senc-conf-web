@@ -1,6 +1,6 @@
 <?php
-ini_set('display_errors', 'On');
-error_reporting(-1);
+//ini_set('display_errors', 'On');
+//error_reporting(-1);
 session_start();
 include 'include/common.php';
 //echo $lang;echo "=======";//del
@@ -12,13 +12,15 @@ include 'include/common.php';
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Formulari d'inscripció a conferències</title>
         <link rel="stylesheet" type="text/css" href="estilo.css" />
+        <script type="text/javascript" src="Javascript/numberSessionsVal.js">
+        </script>
     </head>
     
     <div id="lang">
     <ul>
-        <li><a href="ChooseConf.php?lang=en"">eng</a></li>
-        <li><a href="ChooseConf.php?lang=es">esp</a></li>
-        <li><a href="ChooseConf.php?lang=ca">cat</a></li>
+        <li><a href="ChooseConfTwelve.php?lang=en"">eng</a></li>
+        <li><a href="ChooseConfTwelve.php?lang=es">esp</a></li>
+        <li><a href="ChooseConfTwelve.php?lang=ca">cat</a></li>
     </ul>
     </div>
     
@@ -30,7 +32,7 @@ include 'include/common.php';
                     <div id="welcome">
                         <h1><?php echo $langVoc['formTitle']; ?></h1><br>
 
-                        <form action="AddUser.php" method="post">
+                        <form id="confList" action="AddUser.php" onsubmit="return validate()"  method="post">
                             <?php
                             if (!$_POST) {
                                 echo '<h4>'; echo $langVoc['remindChoose']; echo '</h4><br>';
@@ -56,13 +58,13 @@ include 'include/common.php';
                             include 'mysql_connect.php';
                             $events=mysql_query("SELECT idSESSIONS,sessionName,sessionDate FROM SESSIONS");
                             while($row = mysql_fetch_assoc($events,MYSQL_NUM)) {
-                                print "<input class='form_tfield' type='checkbox' name='confs[$row[0]]]' /> &nbsp;$row[1]($row[2])<br><br>";
+                                print "<input class='form_tfield' type='checkbox' name='confs[]' /> &nbsp;$row[1]($row[2])<br><br>";
                             }
                             ?>
                             <br><br><br><br><br><br>
                             <div align="right">
                                 <input class="form_submitb" type="submit" name="submit" value=<?php echo $langVoc['register']; ?> />
-                                <input type="hidden" name="submitted" value="TRUE" />
+                                <input type="hidden" name="submitted" value="TRUE";/>
                             </div>
                         </form>
                         <br>
