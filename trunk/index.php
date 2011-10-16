@@ -31,7 +31,7 @@ include 'include/common.php';
                     <div id="welcome">
                         <h1><?php echo $langVoc['formTitle']; ?></h1><br>
                         <h3><?php echo $langVoc['formSubTitle']; ?></h3>
-                        <form action="ChooseConf.php" name="indexform" onsubmit="return validateForm()" method="post">
+                        <form action="ChooseConfTwelve.php" name="indexform" onsubmit="return validateForm()" method="post">
                             <div id="UILabel"><?php echo $langVoc['formName']; ?>*</div>
                             <input class="form_tfield" type="text" name="name" value="" /><br><br>
                             <div id="UILabel"><?php echo $langVoc['formSurname']; ?>*</div>
