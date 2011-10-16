@@ -4,6 +4,7 @@
 session_start();
 include 'include/common.php';
 //echo $lang;echo "=======";//del
+//echo $_SESSION['name'];echo "=======";//del
 ?>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -32,7 +33,7 @@ include 'include/common.php';
                     <div id="welcome">
                         <h1><?php echo $langVoc['formTitle']; ?></h1><br>
 
-                        <form id="confList" action="AddUser.php" onsubmit="return validate()"  method="post">
+                        <form id="confList" action="gestioOptions.php" onsubmit="return validate()"  method="post">
                             <?php
                             if (!$_POST) {
                                 echo '<h4>'; echo $langVoc['remindChoose']; echo '</h4><br>';

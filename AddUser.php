@@ -3,15 +3,10 @@
 //error_reporting(-1);
 session_start();
 include 'include/common.php'
-        ?>
+?>
 
-<?php
-    if (count($_POST['confs']))
-                            {
-                                header ('Location:payModifiedOk.php');
-                            
-                            }
-    ?>
+
+
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
     <head>
@@ -44,9 +39,10 @@ include 'include/common.php'
                         $type = $_SESSION['type'];
                         
                         
-                        //echo count($_POST['confs']);echo "========";
+                        print_r($_SESSION['confs']);echo "========";
                         
-                        if ($_POST['confs']) {
+                        //if ($_POST['confs']) { //Inside session because now is passing between different scripts
+                        if ($_SESSION['confs']) {
                             $result = mysql_num_rows(mysql_query("SELECT * FROM USERS WHERE dni='$dni'"));
 
                             if($result == 1) {
@@ -61,7 +57,9 @@ include 'include/common.php'
                                         VALUES ('$name', '$surname', '$dni', '$email', '$type')");
                                 $user=mysql_fetch_array(mysql_query("SELECT idUser FROM USERS WHERE dni='$dni'"));
                                 $conferences="";
-                                foreach ( $_POST['confs'] as $k=> $c) {
+                                
+                                //foreach ( $_POST['confs'] as $k=> $c) { //Inside session because now is passing between different scripts
+                                foreach ( $_SESSION['confs'] as $k=> $c) {
                                     if ($c == 'on') {
                                         $y=$k+1;
                                         mysql_query("INSERT INTO REGISTERED (regIDUser, idRegSession)
