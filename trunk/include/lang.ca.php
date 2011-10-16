@@ -68,6 +68,9 @@
     //AddUser USER CORRECTLY REGISTERED
     $langVoc['congra'] = 'Enhorabona ';
     $langVoc['congra1'] = '!! T\'has registrat correctament';
-    $langVoc['congra2'] ='En breu rebràs un email amb la confirmació.';    
-    
+    $langVoc['congra2'] = 'En breu rebràs un email amb la confirmació.';    
+    $langVoc['noSessionAva'] = 'No hi ha prou places disponibles';
+    $langVoc['waitList'] = 'Si vols passar a la nostra llista d\'espera prem ';
+    $langVoc['Here'] = 'aquí';
+    $langVoc['asap'] = 'Ens posarem en contacte amb tu tan aviat com hi hagi places lliures.';
 ?>
