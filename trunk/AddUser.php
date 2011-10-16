@@ -58,8 +58,8 @@ include 'include/common.php'
 
                             }
                             else {
-                                $query=mysql_query("INSERT INTO USERS (userName, surname, dni, email, type)
-                                        VALUES ('$name', '$surname', '$dni', '$email', '$type')");
+                                $query=mysql_query("INSERT INTO USERS (userName, surname, dni, email, type, paid, confirmed)
+                                        VALUES ('$name', '$surname', '$dni', '$email', '$type', 'no', 'no')");
                                 $user=mysql_fetch_array(mysql_query("SELECT idUser FROM USERS WHERE dni='$dni'"));
                                 $conferences="";
                                 
