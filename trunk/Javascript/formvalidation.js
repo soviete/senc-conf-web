@@ -3,7 +3,7 @@ function validateForm() {
     cha=/^[a-zA-Z ]+$/ //REGEX for just text characters and spaces
     anum=/^[0-9a-zA-Z ]+$/ //REGEX to accept alphanumeric and spaces
     num=/^[0-9]+$/ //REGEX for only numbers
-    mail=/\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/ //REGEX for emails
+    mailreg=/\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/ //REGEX for emails
     //Field Name
     x=document.forms["indexform"]["name"].value
     if (x==null || x=="") {
@@ -40,7 +40,7 @@ function validateForm() {
         alert("email must be filled out")
         return false
     }
-    if (x.search(mail)==-1) {
+    if (x.search(mailreg)==-1) {
         alert("Not a valid e-mail address")
         return false
     }
