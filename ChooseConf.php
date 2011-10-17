@@ -1,11 +1,49 @@
 <?php
-ini_set('display_errors', 'On');
-error_reporting(-1);
+//ini_set('display_errors', 'On');
+//error_reporting(-1);
 session_start();
 include 'include/common.php';
-if (!$_POST) {
-    redirect("index.php");
-}
+
+
+if ($_POST['name'] and $_POST['surname'] and $_POST['dni'] and $_POST['email'] and $_POST['type']) 
+    {    
+        $_SESSION['name'] = $_POST['name'];
+        $_SESSION['surname'] = $_POST['surname'];
+        $_SESSION['dni'] = $_POST['dni'];
+        $_SESSION['email'] = $_POST['email'];
+        $_SESSION['type'] = $_POST['type'];
+        $_SESSION['name'] = $_POST['name'];
+        
+        $name=$_SESSION['name'];
+        $surname=$_SESSION['surname'];
+        $dni=$_SESSION['dni'];
+        $email=$_SESSION['email'];
+        $type=$_SESSION['type'];
+        $empty="NO";
+    }   
+
+else 
+    {
+        if ($_SESSION['name'] and $_SESSION['surname'] and $_SESSION['dni'] and $_SESSION['email'] and $_SESSION['type'])
+            {
+                $name=$_SESSION['name'];
+                $surname=$_SESSION['surname'];
+                $dni=$_SESSION['dni'];
+                $email=$_SESSION['email'];
+                $type=$_SESSION['type'];
+                $empty="NO";
+            }
+        else 
+            {
+                $empty="YES";
+            }
+    }
+    
+//if (!$_POST) {
+//    //echo "He passat per aqui\n";
+//    redirect("index.php");
+//}
+
 include 'include/formvalidation.php';
 ?>
 
@@ -29,24 +67,24 @@ include 'include/formvalidation.php';
                             <?php
                             echo '<h3>';
                             echo $langVoc['formChoose'];
-                            echo '</h3><br>';
-                            if ($_POST['name'] and $_POST['surname'] and $_POST['dni']
-                                    and $_POST['email'] and $_POST['type']) {
-                                $_SESSION['name'] = $_POST['name'];
-                                $_SESSION['surname'] = $_POST['surname'];
-                                $_SESSION['dni'] = $_POST['dni'];
-                                $_SESSION['email'] = $_POST['email'];
-                                $_SESSION['type'] = $_POST['type'];
-                                $name=$_SESSION['name'];
-                                $surname=$_SESSION['surname'];
-                                $dni=$_SESSION['dni'];
-                                $email=$_SESSION['email'];
-                                $type=$_SESSION['type'];
-                                $empty="NO";
-                            }
-                            else {
-                                $empty="YES";
-                            }
+                            echo '</h3><br>';  //echo $_POST['name']; echo '======\n';
+//                            if ($_POST['name'] and $_POST['surname'] and $_POST['dni']
+//                                    and $_POST['email'] and $_POST['type']) {
+//                                $_SESSION['name'] = $_POST['name'];
+//                                $_SESSION['surname'] = $_POST['surname'];
+//                                $_SESSION['dni'] = $_POST['dni'];
+//                                $_SESSION['email'] = $_POST['email'];
+//                                $_SESSION['type'] = $_POST['type'];
+//                                $name=$_SESSION['name'];
+//                                $surname=$_SESSION['surname'];
+//                                $dni=$_SESSION['dni'];
+//                                $email=$_SESSION['email'];
+//                                $type=$_SESSION['type'];
+//                                $empty="NO";
+//                            }
+//                            else {
+//                                $empty="YES";
+//                            }
                             switch ($empty) {
                                 case "YES":
                                     echo $langVoc['emptyfield'];
