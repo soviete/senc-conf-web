@@ -10,7 +10,7 @@ print "
 ?>
 <div id="header">    
     <div id="logo">
-        <h1><a href="index.php">Registre a conferències</a></h1>
+        <h1><a href="index.php"><?php echo $langVoc['conferenceReg'];?></a></h1>
         <h2><a href="index.php">"El Cervell Envaeix la Ciutat"</a></h2>
     </div>
     <div id="menu">
