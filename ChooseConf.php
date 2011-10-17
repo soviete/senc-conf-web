@@ -3,7 +3,10 @@ ini_set('display_errors', 'On');
 error_reporting(-1);
 session_start();
 include 'include/common.php';
-//echo $lang;echo "=======";//del
+if (!$_POST) {
+    redirect("index.php");
+}
+include 'include/formvalidation.php';
 ?>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -13,15 +16,7 @@ include 'include/common.php';
         <title>Formulari d'inscripció a conferències</title>
         <link rel="stylesheet" type="text/css" href="estilo.css" />
     </head>
-    
-    <div id="lang">
-    <ul>
-        <li><a href="ChooseConf.php?lang=en"">eng</a></li>
-        <li><a href="ChooseConf.php?lang=es">esp</a></li>
-        <li><a href="ChooseConf.php?lang=ca">cat</a></li>
-    </ul>
-    </div>
-    
+
     <body>
         <div  id="wrapper">
             <?php include 'include/header.php'; ?>
@@ -32,38 +27,68 @@ include 'include/common.php';
 
                         <form action="AddUser.php" method="post">
                             <?php
-                            if (!$_POST) {
-                                echo '<h4>'; echo $langVoc['remindChoose']; echo '</h4><br>';
+                            echo '<h3>';
+                            echo $langVoc['formChoose'];
+                            echo '</h3><br>';
+                            if ($_POST['name'] and $_POST['surname'] and $_POST['dni']
+                                    and $_POST['email'] and $_POST['type']) {
+                                $_SESSION['name'] = $_POST['name'];
+                                $_SESSION['surname'] = $_POST['surname'];
+                                $_SESSION['dni'] = $_POST['dni'];
+                                $_SESSION['email'] = $_POST['email'];
+                                $_SESSION['type'] = $_POST['type'];
+                                $name=$_SESSION['name'];
+                                $surname=$_SESSION['surname'];
+                                $dni=$_SESSION['dni'];
+                                $email=$_SESSION['email'];
+                                $type=$_SESSION['type'];
+                                $empty="NO";
                             }
                             else {
-                                echo '<h3>'; echo $langVoc['formChoose']; echo '</h3><br>';
-                                if ($_POST['name'] and $_POST['surname'] and $_POST['dni']
-                                        and $_POST['email'] and $_POST['type']) {
-                                    $_SESSION['name'] = $_POST['name'];
-                                    $_SESSION['surname'] = $_POST['surname'];
-                                    $_SESSION['dni'] = $_POST['dni'];
-                                    $_SESSION['email'] = $_POST['email'];
-                                    $_SESSION['type'] = $_POST['type'];
-                                }
-                                else {
-                                    //echo '<h3>ERROR!</h3>A field in the form is missing!<br>
-                                    //Please <a href=index.php>Go back</a> and try again.';
-                                    echo '<h3>ERROR!</h3>Revisi el formulari, potser hi ha
-                                camps buits<br> Si us plau, torni a intentar-ho.
-                                <a href=index.php>INSCRIPCIÓ</a>';
-                                }
+                                $empty="YES";
                             }
-                            include 'mysql_connect.php';
-                            $events=mysql_query("SELECT idSESSIONS,sessionName,sessionDate FROM SESSIONS");
-                            while($row = mysql_fetch_assoc($events,MYSQL_NUM)) {
-                                print "<input class='form_tfield' type='checkbox' name='confs[$row[0]]]' /> &nbsp;$row[1]($row[2])<br><br>";
+                            switch ($empty) {
+                                case "YES":
+                                    echo $langVoc['emptyfield'];
+                                    break;
+                                case "NO";
+                                    if (!validChar($name)) {
+                                        echo $langVoc['nameError'];
+                                    }
+                                    else if (!validChar($surname)) {
+                                        echo $langVoc['surnameError'];
+                                    }
+                                    else if (!validNum($dni)) {
+                                        echo $langVoc['dniError'];
+                                    }
+                                    else if (!validEmail($email)) {
+                                        echo $langVoc['emailError'];
+                                    }
+                                    else {
+                                        include 'mysql_connect.php';
+                                        $events=mysql_query("SELECT idSESSIONS,sessionName,
+                                            UNIX_TIMESTAMP(sessionDate),room FROM SESSIONS");
+                                        while($row = mysql_fetch_assoc($events,MYSQL_NUM)) {
+                                            $D=date("d",$row[2]);
+                                            $M=date("n",$row[2]);
+                                            $Y=date("Y",$row[2]);
+                                            $fecha="$D $M $Y";
+                                            print "<input class='form_tfield' type='checkbox'
+                                            name='confs[$row[0]]]' /> &nbsp;<b>$row[1]</b>
+                                            <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i>$fecha</i>
+                                            <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i>$row[3]</i><br>
+                                            <br>";
+                                        }
+                                        print "<br><br><br><br><br><br>";
+                                        print "<div align='right'>
+                                            <input class='form_submitb' type='submit' name='submit'
+                                       value=".$langVoc['register']." />
+                                        <input type='hidden' name='submitted' value='TRUE' />
+                                        </div>";
+                                    }
+                                    break;
                             }
                             ?>
-                            <br><br><br><br><br><br>
-                            <div align="right">
-                                <input class="form_submitb" type="submit" name="submit" value=<?php echo $langVoc['register']; ?> />
-                                <input type="hidden" name="submitted" value="TRUE" />
-                            </div>
                         </form>
                         <br>
                     </div>
