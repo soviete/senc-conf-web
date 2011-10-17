@@ -8,6 +8,9 @@
 
 $langVoc = array();
 
+//TITLE
+$langVoc['conferenceReg'] = 'Registro a conferencias';
+
 //header
 $langVoc['registration']='Inscripción';
 
