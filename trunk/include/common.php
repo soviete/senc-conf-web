@@ -43,10 +43,7 @@ switch ($lang) {
 }
 
 include_once 'include/'.$lang_file;
-?>
 
-<?php
-/* Function to get the current page name*/
 function currentPage() {
     return substr($_SERVER["SCRIPT_NAME"],strrpos($_SERVER["SCRIPT_NAME"],"/")+1);
 }
@@ -57,6 +54,7 @@ function redirect ($page) {
     $uri   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
     $extra = $page;
     header("Location: http://$host$uri/$extra");
+    //header("Location: http://localhost/SENCONFRamon/index.php");
     exit;
 }
 ?>
