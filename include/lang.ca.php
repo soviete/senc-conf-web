@@ -77,7 +77,6 @@ $month['August'] = "Agost";
 $month['September'] = "Setembre";
 $month['October'] = "Octubre";
 $month['November'] = "Novembre";
-$month['November'] = "November";
 $month['December'] = "Desembre";
 
 //ERROR SESSIONS
