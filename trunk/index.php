@@ -19,37 +19,21 @@ include 'include/common.php';
         <div id="page">
             <div id="content">
                 <div id="welcome">
-                    <h1><?php echo $langVoc['formTitle']; ?></h1><br>
-                    <h3><?php echo $langVoc['formSubTitle']; ?></h3>
-                    <form action="ChooseConf.php" name="indexform" onsubmit="return validateForm()"
-                          method="post">
-                        <div id="UILabel"><?php echo $langVoc['formName']; ?>*</div>
-                        <input class="form_tfield" type="text" name="name" value="" /><br><br>
-                        <div id="UILabel"><?php echo $langVoc['formSurname']; ?>*</div>
-                        <input class="form_tfield" type="text" name="surname" value="" /><br><br>
-                        <div id="UILabel"><?php echo $langVoc['formId']; ?>*</div>
-                        <input class="form_tfield" type="text" name="dni" value="" /><br><br>
-                        <div id="UILabel"><?php echo $langVoc['formEmail']; ?></div>
-                        <input class="form_tfield" type="text" name="email" value="" /><br><br>
-                        <div id="UILabel"><?php echo $langVoc['formRegOption']; ?>*</div>
-                        <!input class="form_tfield" type="text" name="type" value="" />
-                        <select class="form_tfield" name="type">
-                            <option value="c12"><?php echo $langVoc['formRegOption1']; ?></option>
-                            <option value="c8" disabled="disabled"><?php echo $langVoc['formRegOption2']; ?></option>
-                            <option value="c1" disabled="disabled"><?php echo $langVoc['formRegOption3']; ?></option>
-                        </select><br><br><br>
-                        <div align="right">
-                            <input class="form_submitb" type="submit" name="submit"
-                                   value=<?php echo $langVoc['formNextButton']; ?> />
-                            <input type="hidden" name="submitted" value="TRUE" />
-                        </div>
-                        <br>
-                        <div id="note">
-                            <small>
-                                *<?php echo $langVoc['mandatoryField']; ?>
-                            </small>
-                        </div>
+                    <h1><?php echo $langVoc['regInfoTitle']; ?></h1><br>
+                    <h3 align="justify" ><?php echo $langVoc['regInfo']; ?></h3>
+                    <h3><?php echo $langVoc['procedureReg']; ?></h3>
+                    <ul>
+                        <li type="disc"><?php echo $langVoc['procedureReg1']; ?></li>
+                        <li type="disc"><?php echo $langVoc['procedureReg2']; ?></li>    
+                        <li type="disc"><?php echo $langVoc['procedureReg3']; ?></li>    
+                        <li type="disc"><?php echo $langVoc['procedureReg4']; ?></li>                        
+                    </ul>
+                    <br><br>
+                    <div align="right">
+                    <form method="link" action="dataForm.php">
+                    <input INPUT TYPE="submit" class="form_submitb" value=<?php echo $langVoc['startReg']; ?>>
                     </form>
+                    </div>                                      
                 </div>
             </div>
             <div style=" clear: both; height: 1px"></div>

@@ -8,6 +8,23 @@
 
 $langVoc = array();
 
+//INFO CONFERENCES
+$langVoc['regInfoTitle'] = 'Informació pre-inscripció';
+$langVoc['regInfo'] = 'Bienvenido a la pre-inscripción a las sesiones de “El Cerebro Invade la Ciudad”. Esta pre-inscripción 
+                       tiene como objetivo efectuar una reserva de plaza en los diferentes eventos que conforman el programa. 
+                       Esta reserva es necesaria porque las plazas son limitadas y su número depende de cada una de las sedes: 
+                       si estás interesado en asistir, te recomendamos que efectúes esta reserva para asegurarte un sitio.';
+$langVoc['procedureReg'] = 'El procedimiento de pre-inscripción será el siguiente:';
+$langVoc['procedureReg1'] = 'Una vez que nos hayas dado tus datos, selecciona en el menú aquellas sesiones a las que querrás asistir';
+$langVoc['procedureReg2'] = 'La base de datos recogerá tu solicitud y te enviará un mensaje confirmando si tienes una plaza o si 
+                             bien debido al aforo completo has entrado en la lista de espera';
+$langVoc['procedureReg3'] = 'Si has obtenido plaza, una semana antes del acto te pediremos que confirmes tu asistencia. Importante: 
+                             aquellas plazas no confirmadas en un plazo de 96 horas serán liberadas para la lista de espera';
+$langVoc['procedureReg4'] = 'Si quedaste en la lista de espera, tres días antes del acto os ofreceremos las plazas liberadas 
+                             al global de las personas incluídas en la misma; estas plazas serán adjudicadas por orden de confirmación.';
+$langVoc['startReg'] = 'Entrar';
+
+
 //TITLE
 $langVoc['conferenceReg'] = 'Registre a Conferències';
 
@@ -21,6 +38,7 @@ $langVoc['formName'] = 'Nom';
 $langVoc['formSurname'] = 'Cognom';
 $langVoc['formId'] = 'DNI/Passaport* <br><small>(nomes caràcters numerics)</small>';
 $langVoc['formEmail'] = 'Email';
+$langVoc['formEmailConfirm'] = 'Confirmació Email';
 $langVoc['formRegOption'] = 'Opció d\'inscripció';
 $langVoc['formRegOption1'] = 'M\'inscriuré a 12 conferències';
 $langVoc['formRegOption2'] = 'M\'inscriuré a 8 conferències';
