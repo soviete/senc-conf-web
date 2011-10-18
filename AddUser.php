@@ -54,16 +54,18 @@ include 'include/common.php'
                                         $Day=date("d",$query[1]);
                                         $year=date("Y",$query[1]);
                                         $time=date("G",$query[1]);
-                                        foreach ($day as $key => $value) {
-                                            if ($value==$weekdaymysql) {
-                                                $W=$value;
-                                            }
-                                        }
-                                        foreach ($month as $key => $value) {
-                                            if ($value==$monthmysql) {
-                                                $M=$value;
-                                            }
-                                        }
+                                        $W=$day[$weekdaymysql];
+                                        $M=$month[$monthmysql];
+//                                        foreach ($day as $key => $value) {
+//                                            if ($value==$weekdaymysql) {
+//                                                $W=$value;
+//                                            }
+//                                        }
+//                                        foreach ($month as $key => $value) {
+//                                            if ($value==$monthmysql) {
+//                                                $M=$value;
+//                                            }
+//                                        }
                                         $fecha="$W, $Day of $M $year";
                                         $conferences.="$fecha<br><i>$query[2]</i><br>\"<b>$query[0]</b>\"<br><br>";
                                     }
