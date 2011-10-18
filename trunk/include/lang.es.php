@@ -57,26 +57,26 @@ $langVoc['noConfSelect'] = 'No has seleccionado ninguna conferencia';
 
 //DAY & MONTH
 
-$day[0] = "Lunes";
-$day[1] = "Martes";
-$day[2] = "Miércoles";
-$day[3] = "Jueves";
-$day[4] = "Viernes";
-$day[5] = "Sábado";
-$day[6] = "Domingo";
+$day['Monday'] = "Lunes";
+$day['Tuesday'] = "Martes";
+$day['Wednesday'] = "Miércoles";
+$day['Thursday'] = "Jueves";
+$day['Friday'] = "Viernes";
+$day['Saturday'] = "Sábado";
+$day['Sunday'] = "Domingo";
 
-$month[0] = "Enero";
-$month[1] = "Febrero";
-$month[2] = "Marzo";
-$month[3] = "Abril";
-$month[4] = "Mayo";
-$month[5] = "Junio";
-$month[6] = "Julio";
-$month[7] = "Agosto";
-$month[8] = "Septiembre";
-$month[9] = "Octubre";
-$month[10] = "Noviembre";
-$month[11] = "Diciembre";
+$month['January'] = "Enero";
+$month['Febraury'] = "Febrero";
+$month['March'] = "Marzo";
+$month['April'] = "Abril";
+$month['May'] = "Mayo";
+$month['June'] = "Junio";
+$month['July'] = "Julio";
+$month['August'] = "Agosto";
+$month['September'] = "Septiembre";
+$month['October'] = "Octubre";
+$month['November'] = "Noviembre";
+$month['December'] = "Diciembre";
 
 //ERROR REGISTRATION FORM
 
