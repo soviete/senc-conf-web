@@ -58,26 +58,27 @@ $langVoc['noConfSelect'] = 'No has seleccionat cap conferència';
 
 //DAY & MONTH
 
-$day[0] = "Dilluns";
-$day[1] = "Dimarts";
-$day[2] = "Dimecres";
-$day[3] = "Dijous";
-$day[4] = "Divendres";
-$day[5] = "Dissabte";
-$day[6] = "Diumenge";
+$day['Monday'] = "Dilluns";
+$day['Tuesday'] = "Dimarts";
+$day['Wednesday'] = "Dimecres";
+$day['Tursday'] = "Dijous";
+$day['Friday'] = "Divendres";
+$day['Saturday'] = "Dissabte";
+$day['Sunday'] = "Diumenge";
 
-$month[0] = "Gener";
-$month[1] = "Febrer";
-$month[2] = "Març";
-$month[3] = "Abril";
-$month[4] = "Maig";
-$month[5] = "Juny";
-$month[6] = "Juliol";
-$month[7] = "Agost";
-$month[8] = "Setembre";
-$month[9] = "Octubre";
-$month[10] = "Novembre";
-$month[11] = "Desembre";
+$month['January'] = "Gener";
+$month['February'] = "Febrer";
+$month['March'] = "Març";
+$month['April'] = "Abril";
+$month['May'] = "Maig";
+$month['June'] = "Juny";
+$month['July'] = "Juliol";
+$month['August'] = "Agost";
+$month['September'] = "Setembre";
+$month['October'] = "Octubre";
+$month['November'] = "Novembre";
+$month['November'] = "November";
+$month['December'] = "Desembre";
 
 //ERROR SESSIONS
 $langVoc['numSessionsMsg1'] = 'El número de conferències que has triat '; 

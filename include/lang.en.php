@@ -66,26 +66,26 @@ $langVoc['MENU_SITE_MAP'] = 'Site Map';
 
 //DAY & MONTH
 
-$day[0] = "Monday";
-$day[1] = "Tuesday";
-$day[2] = "Wednesday";
-$day[3] = "Thursday";
-$day[4] = "Friday";
-$day[5] = "Sunday";
-$day[6] = "Saturday";
+$day['Monday'] = "Monday";
+$day['Tuesday'] = "Tuesday";
+$day['Wednesday'] = "Wednesday";
+$day['Thursday'] = "Thursday";
+$day['Friday'] = "Friday";
+$day['Sunday'] = "Sunday";
+$day['Saturday'] = "Saturday";
 
-$month[0] = "January";
-$month[1] = "February";
-$month[2] = "March";
-$month[3] = "April";
-$month[4] = "May";
-$month[5] = "June";
-$month[6] = "July";
-$month[7] = "August";
-$month[8] = "September";
-$month[9] = "October";
-$month[10] = "November";
-$month[11] = "December";
+$month['January'] = "January";
+$month['February'] = "February";
+$month['March'] = "March";
+$month['April'] = "April";
+$month['May'] = "May";
+$month['June'] = "June";
+$month['July'] = "July";
+$month['August'] = "August";
+$month['September'] = "September";
+$month['October'] = "October";
+$month['November'] = "November";
+$month['December'] = "December";
 
 //ERROR SESSIONS
 
