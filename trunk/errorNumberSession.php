@@ -13,14 +13,6 @@ include 'include/common.php';
         <link rel="stylesheet" type="text/css" href="estilo.css" />
     </head>
     
-    <div id="lang">
-    <ul>
-        <li><a href="errorNumberSession.php?lang=en"">eng</a></li>
-        <li><a href="errorNumberSession.php?lang=es">esp</a></li>
-        <li><a href="errorNumberSession.php?lang=ca">cat</a></li>
-    </ul>
-    </div>
-    
     <body>
         <div  id="wrapper">
             <?php include 'include/header.php'; ?>
@@ -31,7 +23,7 @@ include 'include/common.php';
                         <h1><?php echo $langVoc['formTitle']; ?></h1>
                         <h3><?php echo $langVoc['numSessionsMsg1']; echo $_SESSION['chosenConf']; echo $langVoc['numSessionsMsg2']; echo $_SESSION['neededConf']?>
 			</h3>
-			<p> <a href=ChooseConfTwelve.php><?php echo $langVoc['back'];?></a> <?php echo $langVoc['backMsg']; ?></p>
+			<p> <a href=ChooseConf.php><?php echo $langVoc['back'];?></a> <?php echo $langVoc['backMsg']; ?></p>
                     </div>
                 </div>
 <!--                <div id="sidebar">
