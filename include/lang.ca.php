@@ -82,7 +82,7 @@ $month['December'] = "Desembre";
 //ERROR SESSIONS
 $langVoc['numSessionsMsg1'] = 'El número de conferències que has triat '; 
 $langVoc['numSessionsMsg2'] = ' no correspon a l\'opció d\'incripció triada, has d\'escollir ';
-$langVoc['back'] = 'enrere';
+$langVoc['back1'] = 'ENRERE';
 $langVoc['backMsg'] = 'al formulari d\'inscripció a conferències';
 
 //ERROR REGISTRATION FORM
