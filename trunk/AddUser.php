@@ -27,7 +27,7 @@ include 'include/common.php'
                         $dni = $_SESSION['dni'];
                         $email = $_SESSION['email'];
                         $type = $_SESSION['type'];
-                        echo "$lang =======\n";
+                        //echo "$lang =======\n";
                         if ($_SESSION['confs']) {
                             $result = mysql_num_rows(mysql_query("SELECT * FROM USERS WHERE dni='$dni'"));
 
@@ -123,14 +123,27 @@ include 'include/common.php'
                                     if (!$query or !$user) {
                                     trigger_error ('Wrong QUERY: ' . mysql_error() );
                                     }
+                                    
                                     else {
-                                        echo'<p>Enhorabona <b>',$name,'</b>!! T\'has registrat correctament </p>
-                                             <p>En breu rebràs un email amb la confirmació.</p>';
-                                             $subject = 'Inscripció a ciclo de conferències';
-                                             $message ='<b>'.$name.'</b>, t\'has registrat correctament al cicle de
-                                             conferències <i>El cervell envaeix la ciutat</i>.
-                                             <p>Aquestes són les conferències a les quals t\'has inscrit:</p>
-                                             '.$conferences.'
+//                                        echo'<p>Enhorabona <b>',$name,'</b>!! T\'has registrat correctament </p>
+//                                             <p>En breu rebràs un email amb la confirmació.</p>';
+                                             
+                                            //Msg in screen with congratulations for being registered
+                                            echo'<p>';
+                                            echo $langVoc['congra'];
+                                            echo '<b>';
+                                            echo $name;
+                                            echo '</b>';
+                                            echo $langVoc['congra1']; 
+                                            echo '</p><p>';
+                                            echo $langVoc['congra2'];
+                                            echo '</p>';   
+                                             
+                                            $subject = 'Inscripció a ciclo de conferències';
+                                            $message ='<b>'.$name.'</b>, t\'has registrat correctament al cicle de
+                                            conferències <i>El cervell envaeix la ciutat</i>.
+                                            <p>Aquestes són les conferències a les quals t\'has inscrit:</p>
+                                            '.$conferences.'
                                              <p>Si us plau, confirmi la seva assistència almenys 5 dies abans de la data</p>
                                             '
                                             ;

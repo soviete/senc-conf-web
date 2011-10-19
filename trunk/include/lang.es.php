@@ -93,7 +93,7 @@ $langVoc['emailError'] = '<h4>ERROR!</h4><br><h4>La dirección de email es invá
 //ERROR SESSIONS
 $langVoc['numSessionsMsg1'] = 'El número de conferencias que has escogido '; 
 $langVoc['numSessionsMsg2'] = ' no corresponde con la opción de inscripción que has solicitado, tienes que coger ';
-$langVoc['back'] = 'VOLVER';
+$langVoc['back1'] = 'VOLVER';
 $langVoc['backMsg'] = 'al formulario de inscripción a conferencias'; 
 
 //ERROR USER ALREADY REGISTERED
