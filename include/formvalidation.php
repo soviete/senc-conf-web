@@ -23,4 +23,15 @@ function validEmail($email) {
         return FALSE;
     }
 }
+
+function equalEmail($email1,$email2) {
+    if ($email1 == $email2) {
+        return TRUE;
+    }
+    else {
+        return FALSE;
+    }
+}
+
+
 ?>

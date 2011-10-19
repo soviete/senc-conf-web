@@ -80,7 +80,7 @@ $month['December'] = "Diciembre";
 
 //ERROR REGISTRATION FORM
 
-$langVoc['back'] = '<b>Por favor, vuelva a intentarlo.<br><a href=index.php>ATRÁS</a></b>';
+$langVoc['back'] = '<b>Por favor, vuelva a intentarlo.<br><a href=dataForm.php>ATRÁS</a></b>';
 $langVoc['emptyfield'] = '<h4>ERROR!</h4>Revise el formulario. Puede que haya campos vacíos<br>'.$langVoc['back'];
 $langVoc['nameError'] = '<h4>ERROR!</h4><br><h4>El campo <i>Nombre</i> sólo puede contener texto</h4>
     <br>'.$langVoc['back'];
@@ -88,7 +88,10 @@ $langVoc['surnameError'] = '<h4>ERROR!</h4><br><h4>El campo <i>Apellido</i> sól
     <br>'.$langVoc['back'];
 $langVoc['dniError'] = '<h4>ERROR!</h4><br><h4>El campo <i>DNI/Pasaporte només</i> pot contenir caràcters numèrics</h4>
     <br>'.$langVoc['back'];
-$langVoc['emailError'] = '<h4>ERROR!</h4><br><h4>La dirección de email es inválida</h4><br>'.$langVoc['back'];
+$langVoc['emailError'] = '<h4>ERROR!</h4><br><h4>La dirección de email no es válida</h4><br>'.$langVoc['back'];
+$langVoc['emailErrorConf'] = '<h4>ERROR!</h4><br><h4>La dirección de email confirmado no es válida</h4><br>'.$langVoc['back'];
+$langVoc['emailNotMatch'] = '<h4>ERROR!</h4><br><h4>Tus campos de email no son iguales</h4>
+    <br>'.$langVoc['back'];
 
 //ERROR SESSIONS
 $langVoc['numSessionsMsg1'] = 'El número de conferencias que has escogido '; 

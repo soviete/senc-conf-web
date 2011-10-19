@@ -86,7 +86,7 @@ $langVoc['back1'] = 'ENRERE';
 $langVoc['backMsg'] = 'al formulari d\'inscripció a conferències';
 
 //ERROR REGISTRATION FORM
-$langVoc['back'] = '<b>Si us plau, torni a intentar-ho.<br><a href=index.php>ENRERE</a></b>';
+$langVoc['back'] = '<b>Si us plau, torni a intentar-ho.<br><a href=dataForm.php>ENRERE</a></b>';
 $langVoc['emptyfield'] = '<h4>ERROR!</h4>Revisi el formulari, potser hi ha camps buits<br>'.$langVoc['back'];
 $langVoc['nameError'] = '<h4>ERROR!</h4><br><h4>El camp <i>Nom</i> només pot contenir text</h4>
     <br>'.$langVoc['back'];
@@ -94,7 +94,11 @@ $langVoc['surnameError'] = '<h4>ERROR!</h4><br><h4>El camp <i>Cognom</i> només 
     <br>'.$langVoc['back'];
 $langVoc['dniError'] = '<h4>ERROR!</h4><br><h4>El camp <i>DNI/Passport només</i> pot contenir caràcters numèrics</h4>
     <br>'.$langVoc['back'];
-$langVoc['emailError'] = '<h4>ERROR!</h4><br><h4>L\'adreça d\'email és invàlida</h4>
+$langVoc['emailError'] = '<h4>ERROR!</h4><br><h4>L\'adreça d\'email és no vàlida</h4>
+    <br>'.$langVoc['back'];
+$langVoc['emailErrorConf'] = '<h4>ERROR!</h4><br><h4>L\'adreça d\'email confirmada és no vàlida</h4>
+    <br>'.$langVoc['back'];
+$langVoc['emailNotMatch'] = '<h4>ERROR!</h4><br><h4>Els teus camps d\'email no són iguals</h4>
     <br>'.$langVoc['back'];
 
 
