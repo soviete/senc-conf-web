@@ -96,7 +96,7 @@ $langVoc['backMsg'] = 'to the conferences registration form';
 
 //ERROR REGISTRATION FORM
 
-$langVoc['back'] = '<b>Please go back and try again.<br><a href=index.php>BACK</a></b>';
+$langVoc['back'] = '<b>Please go back and try again.<br><a href=dataForm.php>BACK</a></b>';
 $langVoc['emptyfield'] ='<h4>ERROR!</h4>A field in the form is missing!<br>'.$langVoc['back'];
 $langVoc['nameError'] = '<h4>ERROR!</h4><br><h4>Only characters in the field <i>Name</i></h4>
     <br>'.$langVoc['back'];
@@ -106,7 +106,10 @@ $langVoc['dniError'] = '<h4>ERROR!</h4><br><h4>The field <i>DNI/Passport</i> mus
     <br>'.$langVoc['back'];
 $langVoc['emailError'] = '<h4>ERROR!</h4><br><h4>You have inserted an invalid e-mail address</h4>
     <br>'.$langVoc['back'];
-
+$langVoc['emailErrorConf'] = '<h4>ERROR!</h4><br><h4>You have inserted an invalid e-mail confirmation address</h4>
+    <br>'.$langVoc['back'];
+$langVoc['emailNotMatch'] = '<h4>ERROR!</h4><br><h4>Your e-mail fields do not match</h4>
+    <br>'.$langVoc['back'];
 
 //ERROR USER ALREADY REGISTERED
 $langVoc['userRegistered'] = 'This user is already registered!';

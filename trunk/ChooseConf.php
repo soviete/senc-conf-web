@@ -11,6 +11,7 @@ if ($_POST['name'] and $_POST['surname'] and $_POST['dni'] and $_POST['email'] a
         $_SESSION['surname'] = $_POST['surname'];
         $_SESSION['dni'] = $_POST['dni'];
         $_SESSION['email'] = $_POST['email'];
+        $_SESSION['emailConfirm'] = $_POST['emailConfirm'];
         $_SESSION['type'] = $_POST['type'];
         $_SESSION['name'] = $_POST['name'];
         
@@ -18,6 +19,7 @@ if ($_POST['name'] and $_POST['surname'] and $_POST['dni'] and $_POST['email'] a
         $surname=$_SESSION['surname'];
         $dni=$_SESSION['dni'];
         $email=$_SESSION['email'];
+        $emailConfirm=$_SESSION['emailConfirm'];
         $type=$_SESSION['type'];
         $empty="NO";
     }   
@@ -30,6 +32,7 @@ else
                 $surname=$_SESSION['surname'];
                 $dni=$_SESSION['dni'];
                 $email=$_SESSION['email'];
+                $emailConfirm=$_SESSION['emailConfirm'];
                 $type=$_SESSION['type'];
                 $empty="NO";
             }
@@ -102,6 +105,12 @@ include 'include/formvalidation.php';
                                     }
                                     else if (!validEmail($email)) {
                                         echo $langVoc['emailError'];
+                                    }
+                                    else if (!validEmail($emailConfirm)) {
+                                        echo $langVoc['emailErrorConf'];
+                                    }
+                                    else if (!equalEmail($email, $emailConfirm)) {
+                                        echo $langVoc['emailNotMatch'];
                                     }
                                     else {
                                         include 'mysql_connect.php';
