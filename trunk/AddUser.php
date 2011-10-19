@@ -88,11 +88,14 @@ include 'include/common.php'
                                 else
                                     {    
                                         foreach ( $_SESSION['confs'] as $k=> $c) {
-                                        
+                                            
+                                            //sessionName field now has 3 languages
+                                            $sessionName = "sessionName".$lang;
+                                            
                                             if ($c == 'on') {
                                             mysql_query("INSERT INTO REGISTERED (regIDUser, idRegSession)
                                                          VALUES ('$user[0]','$k')");
-                                            $query=mysql_fetch_assoc(mysql_query("SELECT sessionName,
+                                            $query=mysql_fetch_assoc(mysql_query("SELECT $sessionName,
                                                                                   UNIX_TIMESTAMP(sessionDate),room FROM SESSIONS
                                                                                   WHERE idSESSIONS='$k'"),MYSQL_NUM);
                                             $weekdaymysql=date("l",$query[1]);
