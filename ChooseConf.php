@@ -63,7 +63,8 @@ include 'include/formvalidation.php';
                     <div id="welcome">
                         <h1><?php echo $langVoc['formTitle']; ?></h1><br>
 
-                        <form action="AddUser.php" method="post">
+<!--                        <form action="AddUser.php" method="post">-->
+                            <form action="gestioOptions.php" method="post">
                             <?php
                             echo '<h3>';
                             echo $langVoc['formChoose'];
@@ -104,7 +105,11 @@ include 'include/formvalidation.php';
                                     }
                                     else {
                                         include 'mysql_connect.php';
-                                        $events=mysql_query("SELECT idSESSIONS,sessionName,
+                                        
+                                        //Name of the session in different languages
+                                        $sessionName = "sessionName".$lang;
+                                        
+                                        $events=mysql_query("SELECT idSESSIONS, $sessionName,
                                             UNIX_TIMESTAMP(sessionDate),room FROM SESSIONS");
                                         while($row = mysql_fetch_assoc($events,MYSQL_NUM)) {
                                             $D=date("d",$row[2]);
