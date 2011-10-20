@@ -32,7 +32,7 @@ include 'include/common.php';
                             
                             //Extracting registered persons without payment confirmation from both types of "con acreditacion registration"                                   
                             //$query = "SELECT * from SENCCONF.USERS WHERE regState = 'pendent'";
-                            $query = "SELECT dni, userName, surname, type, paid FROM SENCCONF.USERS WHERE paid = 'no' ORDER BY surname ASC";
+                            $query = "SELECT dni, userName, surname, type, paid FROM formulario.USERS WHERE paid = 'no' ORDER BY surname ASC";
                             $result = mysql_query($query);
                             $num_rows = mysql_num_rows($result);
                             

@@ -30,7 +30,7 @@ include 'include/common.php';
                             include 'mysql_connect.php';
                             
                             //Extracting sessions from table session to show them in a select
-                            $query = "SELECT sessionName, idSESSIONS FROM SENCCONF.SESSIONS ORDER BY idSESSIONS ASC";
+                            $query = "SELECT SESSIONS.sessionNameca, idSESSIONS FROM formulario.SESSIONS ORDER BY idSESSIONS ASC";
                             $result = mysql_query($query);
                             $num_rows = mysql_num_rows($result);
                             
@@ -58,7 +58,7 @@ include 'include/common.php';
                                     while($row = mysql_fetch_array($result)) 
                                         {                                               
                                                                                      
-                                            $sessionName = $row['sessionName'];
+                                            $sessionName = $row['sessionNameca'];
                                             $idSession = $row['idSESSIONS'];
                                             
                                             print "<option value='$idSession'>$sessionName</option>";
