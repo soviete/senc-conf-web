@@ -44,11 +44,11 @@
                             
                             //Extracting sessions from table session to show them in a select
                             
-                            $query = "SELECT SENCCONF.SESSIONS.sessionName from SENCCONF.SESSIONS where SENCCONF.SESSIONS.idSESSIONS = '$idConference'";
+                            $query = "SELECT formulario.SESSIONS.sessionNameca from formulario.SESSIONS where formulario.SESSIONS.idSESSIONS = '$idConference'";
                             $result = mysql_query($query);                                  
                             $num_rows = mysql_num_rows($result);
                             $row = mysql_fetch_array($result);
-                            $sessionName = $row['sessionName'];
+                            $sessionName = $row['sessionNameca'];
                             //echo "que es $num_rows\n";//del
                             
                             if ($num_rows==0)
@@ -72,7 +72,7 @@
                             
                             
                             
-                            $query="SELECT dni, userName, surname, email from SENCCONF.USERS WHERE SENCCONF.USERS.idUser IN (SELECT SENCCONF.REGISTERED.regIdUser FROM SENCCONF.REGISTERED WHERE SENCCONF.REGISTERED.idRegSession = '$idConference')";
+                            $query="SELECT dni, userName, surname, email from formulario.USERS WHERE formulario.USERS.idUser IN (SELECT formulario.REGISTERED.regIdUser FROM formulario.REGISTERED WHERE formulario.REGISTERED.idRegSession = '$idConference')";
                             
                             //$query = "SELECT idSESSIONS FROM SENCCONF.SESSIONS WHERE idSESSION = '$idSession' ORDER BY idSESSIONS ASC";
                             $result = mysql_query($query);

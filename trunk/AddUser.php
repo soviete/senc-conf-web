@@ -51,11 +51,11 @@ include 'include/common.php'
                                 $conferences="";
                                 
                                 //If three of this sessions are full then bad luck my friend!
-                                $countFullSessions;
+                                $countFullSessions=0;
                                 
                                 for ($i = 2; $i <= 5; $i++) 
                                     {
-                                        $queryCount = mysql_query("select count(*) from SENCCONF.REGISTERED WHERE SENCCONF.REGISTERED.idRegSession = '$i'");
+                                        $queryCount = mysql_query("select count(*) from formulario.REGISTERED WHERE formulario.REGISTERED.idRegSession = '$i'");
                                         $count = mysql_fetch_array($queryCount);
                                         
                                         //$query="SELECT dni, userName, surname, email from SENCCONF.USERS WHERE SENCCONF.USERS.idUser IN (SELECT SENCCONF.REGISTERED.regIdUser FROM SENCCONF.REGISTERED WHERE SENCCONF.REGISTERED.idRegSession = '$idConference')";
@@ -67,7 +67,8 @@ include 'include/common.php'
                                             }
                                     }
                                     
-                                echo "Number of session full $countFullSessions\n";
+                                //echo "Number of session full $countFullSessions\n";
+                                
                                 
                                 if ($countFullSessions >= 1)
                                     {
@@ -95,9 +96,9 @@ include 'include/common.php'
                                             if ($c == 'on') {
                                             mysql_query("INSERT INTO REGISTERED (regIDUser, idRegSession)
                                                          VALUES ('$user[0]','$k')");
-                                            $query=mysql_fetch_assoc(mysql_query("SELECT $sessionName,
+                                            $query=mysql_fetch_array(mysql_query("SELECT $sessionName,
                                                                                   UNIX_TIMESTAMP(sessionDate),room FROM SESSIONS
-                                                                                  WHERE idSESSIONS='$k'"),MYSQL_NUM);
+                                                                                  WHERE idSESSIONS='$k'"));
                                             $weekdaymysql=date("l",$query[1]);
                                             $monthmysql=date("F",$query[1]);
                                             $Day=date("d",$query[1]);
