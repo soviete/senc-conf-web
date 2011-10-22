@@ -21,6 +21,20 @@ $langVoc['procedureReg3'] = 'Si has obtenido plaza, una semana antes del acto te
                              aquellas plazas no confirmadas en un plazo de 96 horas serán liberadas para la lista de espera';
 $langVoc['procedureReg4'] = 'Si quedaste en la lista de espera, tres días antes del acto os ofreceremos las plazas liberadas 
                              al global de las personas incluídas en la misma; estas plazas serán adjudicadas por orden de confirmación.';
+$langVoc['Terms'] = 'TERMS & CONDITIONS';
+$langVoc['Terms1'] = 'POLÍTICA DE PRIVACIDAD';
+$langVoc['Terms2'] = 'En cumplimiento de lo dispuesto en la LO 15/99 de Protección de Datos de Carácter Personal,
+la SOCIEDAD ESPAÑOLA DE NEUROCIENCIA le comunica que los datos de carácter personal que nos facilite
+serán incluidos en un fichero automatizado propiedad de la Sociedad para darles el tratamiento legal
+debido y con uso exclusivo del destino para el que los facilitó. Asimismo le informamos de la posibilidad
+de ejercitar su derecho de acceso, rectificación, cancelación y oposición, mediante comunicación escrita
+dirigida a la SOCIEDAD ESPAÑOLA DE NEUROCIENCIA por correo electrónico dirigido a <a href="mailto:secretaria.tecnica@senc.es?subject=Feedback" >secretaria.tecnica@senc.es</a>
+<br>
+La SOCIEDAD ESPAÑOLA DE NEUROCIENCIA ha adoptado los niveles de seguridad de protección de datos de carácter
+personal legalmente requeridos, y ha instalado todos los medios y medidas técnicas a su alcance para evitar
+la pérdida, mal uso, alteración, acceso no autorizado y robo de los datos facilitados.<br>
+La SOCIEDAD ESPAÑOLA DE NEUROCIENCIA no comunicará los datos que le facilitan los usuarios a ninguna otra
+sociedad o entidad.';
 $langVoc['startReg'] = 'Go';
 
 //TITLE
@@ -108,7 +122,7 @@ $langVoc['emailError'] = '<h4>ERROR!</h4><br><h4>You have inserted an invalid e-
     <br>'.$langVoc['back'];
 $langVoc['emailErrorConf'] = '<h4>ERROR!</h4><br><h4>You have inserted an invalid e-mail confirmation address</h4>
     <br>'.$langVoc['back'];
-$langVoc['emailNotMatch'] = '<h4>ERROR!</h4><br><h4>Your e-mail fields do not match</h4>
+$langVoc['emailNotMatch'] = '<h4>ERROR!</h4><br><h4>E-mail confirmation failed</h4>
     <br>'.$langVoc['back'];
 
 //ERROR USER ALREADY REGISTERED

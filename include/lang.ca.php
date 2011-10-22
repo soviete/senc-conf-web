@@ -22,6 +22,20 @@ $langVoc['procedureReg3'] = 'Si has obtenido plaza, una semana antes del acto te
                              aquellas plazas no confirmadas en un plazo de 96 horas serán liberadas para la lista de espera';
 $langVoc['procedureReg4'] = 'Si quedaste en la lista de espera, tres días antes del acto os ofreceremos las plazas liberadas 
                              al global de las personas incluídas en la misma; estas plazas serán adjudicadas por orden de confirmación.';
+$langVoc['Terms'] = 'TERMS & CONDITIONS';
+$langVoc['Terms1'] = 'POLÍTICA DE PRIVACIDAD';
+$langVoc['Terms2'] = 'En cumplimiento de lo dispuesto en la LO 15/99 de Protección de Datos de Carácter Personal,
+la SOCIEDAD ESPAÑOLA DE NEUROCIENCIA le comunica que los datos de carácter personal que nos facilite
+serán incluidos en un fichero automatizado propiedad de la Sociedad para darles el tratamiento legal
+debido y con uso exclusivo del destino para el que los facilitó. Asimismo le informamos de la posibilidad
+de ejercitar su derecho de acceso, rectificación, cancelación y oposición, mediante comunicación escrita
+dirigida a la SOCIEDAD ESPAÑOLA DE NEUROCIENCIA por correo electrónico dirigido a <a href="mailto:secretaria.tecnica@senc.es?subject=Feedback" >secretaria.tecnica@senc.es</a>
+<br>
+La SOCIEDAD ESPAÑOLA DE NEUROCIENCIA ha adoptado los niveles de seguridad de protección de datos de carácter
+personal legalmente requeridos, y ha instalado todos los medios y medidas técnicas a su alcance para evitar
+la pérdida, mal uso, alteración, acceso no autorizado y robo de los datos facilitados.<br>
+La SOCIEDAD ESPAÑOLA DE NEUROCIENCIA no comunicará los datos que le facilitan los usuarios a ninguna otra
+sociedad o entidad.';
 $langVoc['startReg'] = 'Entrar';
 
 
@@ -61,7 +75,7 @@ $langVoc['noConfSelect'] = 'No has seleccionat cap conferència';
 $day['Monday'] = "Dilluns";
 $day['Tuesday'] = "Dimarts";
 $day['Wednesday'] = "Dimecres";
-$day['Tursday'] = "Dijous";
+$day['Thursday'] = "Dijous";
 $day['Friday'] = "Divendres";
 $day['Saturday'] = "Dissabte";
 $day['Sunday'] = "Diumenge";
@@ -82,7 +96,7 @@ $month['December'] = "Desembre";
 //ERROR SESSIONS
 $langVoc['numSessionsMsg1'] = 'El número de conferències que has triat '; 
 $langVoc['numSessionsMsg2'] = ' no correspon a l\'opció d\'incripció triada, has d\'escollir ';
-$langVoc['back1'] = 'ENRERE';
+$langVoc['back1'] = 'TORNAR';
 $langVoc['backMsg'] = 'al formulari d\'inscripció a conferències';
 
 //ERROR REGISTRATION FORM
@@ -98,7 +112,7 @@ $langVoc['emailError'] = '<h4>ERROR!</h4><br><h4>L\'adreça d\'email és no vàl
     <br>'.$langVoc['back'];
 $langVoc['emailErrorConf'] = '<h4>ERROR!</h4><br><h4>L\'adreça d\'email confirmada és no vàlida</h4>
     <br>'.$langVoc['back'];
-$langVoc['emailNotMatch'] = '<h4>ERROR!</h4><br><h4>Els teus camps d\'email no són iguals</h4>
+$langVoc['emailNotMatch'] = '<h4>ERROR!</h4><br><h4>Confirmació de emails errònia</h4>
     <br>'.$langVoc['back'];
 
 
