@@ -101,6 +101,7 @@ $langVoc['numSessionsMsg1'] = 'El número de conferències que has triat ';
 $langVoc['numSessionsMsg2'] = ' no correspon a l\'opció d\'incripció triada, has d\'escollir ';
 $langVoc['back1'] = 'TORNAR';
 $langVoc['backMsg'] = 'al formulari d\'inscripció a conferències';
+$langVoc['sessionExpired'] = 'La sessió ha caducat. Si us plau, torni a començar';
 
 //ERROR REGISTRATION FORM
 $langVoc['back'] = '<b>Si us plau, torni a intentar-ho.<br><a href=dataForm.php>ENRERE</a></b>';
