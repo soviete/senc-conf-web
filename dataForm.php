@@ -21,7 +21,7 @@ include 'include/common.php';
                 <div id="welcome">                    
                     <h1><?php echo $langVoc['formTitle']; ?></h1><br>
                     <h3><?php echo $langVoc['formSubTitle']; ?></h3>
-                    <form action="ChooseConf.php" name="indexform" onsubmit="return validateForm()"
+                    <form action="Terms.php" name="indexform" onsubmit="return validateForm()"
                           method="post">
                         <div id="UILabel"><?php echo $langVoc['formName']; ?>*</div>
                         <input class="form_tfield" type="text" name="name" value="" /><br><br>
@@ -37,8 +37,10 @@ include 'include/common.php';
                         <!input class="form_tfield" type="text" name="type" value="" />
                         <select class="form_tfield" name="type">
                             <option value="c12"><?php echo $langVoc['formRegOption1']; ?></option>
-                            <option value="c8" disabled="disabled"><?php echo $langVoc['formRegOption2']; ?></option>
-                            <option value="c1" disabled="disabled"><?php echo $langVoc['formRegOption3']; ?></option>
+                            <option value="c8" disabled="disabled"><?php echo $langVoc['formRegOption2']; ?>
+                            </option>
+                            <option value="c1" disabled="disabled"><?php echo $langVoc['formRegOption3']; ?>
+                            </option>
                         </select><br><br><br>
                         <div align="right">
                             <input class="form_submitb" type="submit" name="submit"
