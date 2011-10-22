@@ -45,28 +45,39 @@ include 'include/common.php'
                             }
                             
                             else {
-                                $query=mysql_query("INSERT INTO USERS (userName, surname, dni, email, type)
-                                        VALUES ('$name', '$surname', '$dni', '$email', '$type')");
-                                $user=mysql_fetch_array(mysql_query("SELECT idUser FROM USERS WHERE dni='$dni'"));
-                                $conferences="";
-                                
-                                //If three of this sessions are full then bad luck my friend!
-                                $countFullSessions=0;
-                                
-                                for ($i = 2; $i <= 5; $i++) 
+                                //Para cada uno de los que haya activado miramos si hay plazas
+                                foreach ( $_SESSION['confs'] as $k=> $c) 
                                     {
-                                        $queryCount = mysql_query("select count(*) from formulario.REGISTERED WHERE formulario.REGISTERED.idRegSession = '$i'");
-                                        $count = mysql_fetch_array($queryCount);
-                                        
-                                        //$query="SELECT dni, userName, surname, email from SENCCONF.USERS WHERE SENCCONF.USERS.idUser IN (SELECT SENCCONF.REGISTERED.regIdUser FROM SENCCONF.REGISTERED WHERE SENCCONF.REGISTERED.idRegSession = '$idConference')";
-                                        echo $i;echo "=========="; echo "$count[0]"; echo "\n";
-                                        
-                                        if ($count[0] >= 10) 
+                                        if ($c == 'on') 
                                             {
-                                                $countFullSessions++;
+                                                $switch = freePlaces ($k, "CA12_14");
+                                                echo "$switch===========\n";
+                                                //sessionName field now has 3 languages
+                                                $sessionName = "sessionName".$lang;                                                                                        
                                             }
                                     }
-                                    
+//                                $query=mysql_query("INSERT INTO USERS (userName, surname, dni, email, type)
+//                                        VALUES ('$name', '$surname', '$dni', '$email', '$type')");
+//                                $user=mysql_fetch_array(mysql_query("SELECT idUser FROM USERS WHERE dni='$dni'"));
+//                                $conferences="";
+//                                
+//                                //If three of this sessions are full then bad luck my friend!
+//                                $countFullSessions=0;
+//                                
+//                                for ($i = 2; $i <= 5; $i++) 
+//                                    {
+//                                        $queryCount = mysql_query("select count(*) from formulario.REGISTERED WHERE formulario.REGISTERED.idRegSession = '$i'");
+//                                        $count = mysql_fetch_array($queryCount);
+//                                        
+//                                        //$query="SELECT dni, userName, surname, email from SENCCONF.USERS WHERE SENCCONF.USERS.idUser IN (SELECT SENCCONF.REGISTERED.regIdUser FROM SENCCONF.REGISTERED WHERE SENCCONF.REGISTERED.idRegSession = '$idConference')";
+//                                        echo $i;echo "=========="; echo "$count[0]"; echo "\n";
+//                                        
+//                                        if ($count[0] >= 10) 
+//                                            {
+//                                                $countFullSessions++;
+//                                            }
+//                                    }
+//                                    
                                 //echo "Number of session full $countFullSessions\n";
                                 
                                 
