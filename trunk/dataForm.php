@@ -1,7 +1,6 @@
 <?php
 ini_set('display_errors', 'On');
 error_reporting(-1);
-//session_start();
 include 'include/common.php';
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -10,7 +9,7 @@ include 'include/common.php';
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Formulari d'inscripció a conferències</title>
         <link rel="stylesheet" type="text/css" href="estilo.css" />
-        <!script type="text/javascript" src="Javascript/formvalidation.js"><!/script>
+        <script type="text/javascript" src="Javascript/formvalidation.js"></script>
 </head>
 
 <body>
@@ -21,7 +20,7 @@ include 'include/common.php';
                 <div id="welcome">                    
                     <h1><?php echo $langVoc['formTitle']; ?></h1><br>
                     <h3><?php echo $langVoc['formSubTitle']; ?></h3>
-                    <form action="Terms.php" name="indexform" onsubmit="return validateForm()"
+                    <form action="Terms.php" name="indexform" onSubmit="return validateForm()"
                           method="post">
                         <div id="UILabel"><?php echo $langVoc['formName']; ?>*</div>
                         <input class="form_tfield" type="text" name="name" value="" /><br><br>

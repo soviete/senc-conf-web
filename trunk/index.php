@@ -1,7 +1,6 @@
 <?php
 ini_set('display_errors', 'On');
 error_reporting(-1);
-//session_start();
 include 'include/common.php';
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">

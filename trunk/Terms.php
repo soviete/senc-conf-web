@@ -6,12 +6,7 @@ include 'include/common.php';
 
 // Getting variable from post form if any.
 
-if (!$_POST && !$_SESSION)  {
-    header("Location: index.php");
-}
-
-elseif (!$_POST)  {
-    $empty='YES';
+if (!$_POST)  {
     if ($_SESSION['name'] and $_SESSION['surname'] and $_SESSION['dni'] and $_SESSION['email']
             and $_SESSION['emailConfirm'] and $_SESSION['type']) {
         $name=$_SESSION['name'];
@@ -22,11 +17,10 @@ elseif (!$_POST)  {
         $type=$_SESSION['type'];
         $empty="NO";
     }
+    else {
+        $empty='YES';
+    }
 
-}
-
-elseif (empty($_POST)) {
-    $empty="YES";
 }
 
 elseif (!empty($_POST)) {
@@ -77,7 +71,7 @@ include 'include/formvalidation.php';
                 <div id="content">
                     <div id="welcome">
                         <h1><?php echo $langVoc['formTitle']; ?></h1><br>
-                        <form action="gestioOptions.php" method="post">
+                        <form action="ChooseConf.php" method="post">
                             <?php
                             echo '<h3>';
                             echo $langVoc['Terms0'];

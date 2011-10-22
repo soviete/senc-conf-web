@@ -44,6 +44,21 @@ function validateForm() {
         alert("Not a valid e-mail address")
         return false
     }
+    //Field emailConfirm
+    x1=document.forms["indexform"]["emailConfirm"].value
+    if (x1==null || x1=="") {
+        alert("confirmation email must be filled out")
+        return false
+    }
+    if (x1.search(mailreg)==-1) {
+        alert("Not a valid confirmation email address")
+        return false
+    }
+    if (x != x1) {
+        alert("Email and confirmation email must be the same")
+        return false
+    }
+
     //Field Registration option
     x=document.forms["indexform"]["type"].value
     if (x==null || x=="") {

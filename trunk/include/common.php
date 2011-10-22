@@ -1,4 +1,5 @@
-<?php 
+<?php
+
 /* ASSIGNING LANGUAGE VARIABLES */
 
 header('Cache-control: private'); // IE 6 FIX
@@ -56,5 +57,11 @@ function redirect ($page) {
     header("Location: http://$host$uri/$extra");
     //header("Location: http://localhost/SENCONFRamon/index.php");
     exit;
+}
+
+/* Checking if user types first (no session and no post variables) any other webpage
+ * different than index.php */
+if (!currentPage()=="index.php" && empty($_POST) && empty($_SESSION))  {
+    header("Location: index.php");
 }
 ?>
