@@ -1,11 +1,12 @@
 <?php
-//ini_set('display_errors', 'On');
-//error_reporting(-1);
+ini_set('display_errors', 'On');
+error_reporting(-1);
 session_start();
 include 'include/common.php';
 
-
-if ($_POST['name'] and $_POST['surname'] and $_POST['dni'] and $_POST['email'] and $_POST['type']) 
+// Getting variable from post form if any.
+if ($_POST['name'] and $_POST['surname'] and $_POST['dni'] and $_POST['email'] and
+        $_POST['emailConfirm'] and $_POST['type'])
     {    
         $_SESSION['name'] = $_POST['name'];
         $_SESSION['surname'] = $_POST['surname'];
@@ -26,7 +27,8 @@ if ($_POST['name'] and $_POST['surname'] and $_POST['dni'] and $_POST['email'] a
 
 else 
     {
-        if ($_SESSION['name'] and $_SESSION['surname'] and $_SESSION['dni'] and $_SESSION['email'] and $_SESSION['type'])
+        if ($_SESSION['name'] and $_SESSION['surname'] and $_SESSION['dni'] and 
+                $_SESSION['email'] and $_POST['emailConfirm'] and $_SESSION['type'])
             {
                 $name=$_SESSION['name'];
                 $surname=$_SESSION['surname'];
@@ -42,11 +44,6 @@ else
             }
     }
     
-//if (!$_POST) {
-//    //echo "He passat per aqui\n";
-//    redirect("index.php");
-//}
-
 include 'include/formvalidation.php';
 ?>
 
@@ -71,24 +68,8 @@ include 'include/formvalidation.php';
                             <?php
                             echo '<h3>';
                             echo $langVoc['formChoose'];
-                            echo '</h3><br>';  //echo $_POST['name']; echo '======\n';
-//                            if ($_POST['name'] and $_POST['surname'] and $_POST['dni']
-//                                    and $_POST['email'] and $_POST['type']) {
-//                                $_SESSION['name'] = $_POST['name'];
-//                                $_SESSION['surname'] = $_POST['surname'];
-//                                $_SESSION['dni'] = $_POST['dni'];
-//                                $_SESSION['email'] = $_POST['email'];
-//                                $_SESSION['type'] = $_POST['type'];
-//                                $name=$_SESSION['name'];
-//                                $surname=$_SESSION['surname'];
-//                                $dni=$_SESSION['dni'];
-//                                $email=$_SESSION['email'];
-//                                $type=$_SESSION['type'];
-//                                $empty="NO";
-//                            }
-//                            else {
-//                                $empty="YES";
-//                            }
+                            echo '</h3><br>';
+                            // Handling errors and printing checkboxes
                             switch ($empty) {
                                 case "YES":
                                     echo $langVoc['emptyfield'];
@@ -120,7 +101,7 @@ include 'include/formvalidation.php';
                                         
                                         $events=mysql_query("SELECT idSESSIONS, $sessionName,
                                             UNIX_TIMESTAMP(sessionDate),room FROM SESSIONS");
-                                        while($row = mysql_fetch_assoc($events,MYSQL_NUM)) {
+                                        while($row = mysql_fetch_array($events)) {
                                             $D=date("d",$row[2]);
                                             $M=date("n",$row[2]);
                                             $Y=date("Y",$row[2]);
