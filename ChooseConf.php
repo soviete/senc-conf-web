@@ -5,17 +5,15 @@ session_start();
 include 'include/common.php';
 
 // Getting variable from post form if any.
-if ($_POST['name'] and $_POST['surname'] and $_POST['dni'] and $_POST['email'] and
-        $_POST['emailConfirm'] and $_POST['type'])
-    {    
-        $_SESSION['name'] = $_POST['name'];
-        $_SESSION['surname'] = $_POST['surname'];
-        $_SESSION['dni'] = $_POST['dni'];
-        $_SESSION['email'] = $_POST['email'];
-        $_SESSION['emailConfirm'] = $_POST['emailConfirm'];
-        $_SESSION['type'] = $_POST['type'];
-        $_SESSION['name'] = $_POST['name'];
-        
+
+if (!$_POST && !$_SESSION)  {
+    header("Location: index.php");
+}
+
+elseif (!$_POST)  {
+    $empty='YES';
+    if ($_SESSION['name'] and $_SESSION['surname'] and $_SESSION['dni'] and $_SESSION['email']
+            and $_SESSION['emailConfirm'] and $_SESSION['type']) {
         $name=$_SESSION['name'];
         $surname=$_SESSION['surname'];
         $dni=$_SESSION['dni'];
@@ -23,27 +21,44 @@ if ($_POST['name'] and $_POST['surname'] and $_POST['dni'] and $_POST['email'] a
         $emailConfirm=$_SESSION['emailConfirm'];
         $type=$_SESSION['type'];
         $empty="NO";
-    }   
-
-else 
-    {
-        if ($_SESSION['name'] and $_SESSION['surname'] and $_SESSION['dni'] and 
-                $_SESSION['email'] and $_POST['emailConfirm'] and $_SESSION['type'])
-            {
-                $name=$_SESSION['name'];
-                $surname=$_SESSION['surname'];
-                $dni=$_SESSION['dni'];
-                $email=$_SESSION['email'];
-                $emailConfirm=$_SESSION['emailConfirm'];
-                $type=$_SESSION['type'];
-                $empty="NO";
-            }
-        else 
-            {
-                $empty="YES";
-            }
     }
     
+}
+
+elseif (empty($_POST)) {
+    $empty="YES";
+}
+
+elseif (!empty($_POST)) {
+
+    if ($_POST['name'] and $_POST['surname'] and $_POST['dni'] and $_POST['email']
+            and $_POST['emailConfirm'] and $_POST['type']) {
+
+        $_SESSION['name'] = $_POST['name'];
+        $_SESSION['surname'] = $_POST['surname'];
+        $_SESSION['dni'] = $_POST['dni'];
+        $_SESSION['email'] = $_POST['email'];
+        $_SESSION['emailConfirm'] = $_POST['emailConfirm'];
+        $_SESSION['type'] = $_POST['type'];
+        $_SESSION['name'] = $_POST['name'];
+
+        $name=$_SESSION['name'];
+        $surname=$_SESSION['surname'];
+        $dni=$_SESSION['dni'];
+        $email=$_SESSION['email'];
+        $emailConfirm=$_SESSION['emailConfirm'];
+        $type=$_SESSION['type'];
+        $empty="NO";        
+    }
+    else {
+        $empty="YES";
+    }
+}
+
+else {
+    header("Location: index.php");
+}
+
 include 'include/formvalidation.php';
 ?>
 
@@ -63,8 +78,8 @@ include 'include/formvalidation.php';
                     <div id="welcome">
                         <h1><?php echo $langVoc['formTitle']; ?></h1><br>
 
-<!--                        <form action="AddUser.php" method="post">-->
-                            <form action="gestioOptions.php" method="post">
+                        <!--                        <form action="AddUser.php" method="post">-->
+                        <form action="gestioOptions.php" method="post">
                             <?php
                             echo '<h3>';
                             echo $langVoc['formChoose'];
@@ -95,10 +110,10 @@ include 'include/formvalidation.php';
                                     }
                                     else {
                                         include 'mysql_connect.php';
-                                        
+
                                         //Name of the session in different languages
                                         $sessionName = "sessionName".$lang;
-                                        
+
                                         $events=mysql_query("SELECT idSESSIONS, $sessionName,
                                             UNIX_TIMESTAMP(sessionDate),room FROM SESSIONS");
                                         while($row = mysql_fetch_array($events)) {
