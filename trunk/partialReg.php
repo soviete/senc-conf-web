@@ -1,7 +1,7 @@
 <?php
 
-    ini_set('display_errors', 'On');
-    error_reporting(-1);
+    //ini_set('display_errors', 'On');
+    //error_reporting(-1);
     session_start();
     include 'mysql_connect.php';
     include 'include/common.php';
