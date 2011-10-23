@@ -10,6 +10,7 @@ $_SESSION['tracker'] = 1;
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Formulari d'inscripció a conferències</title>
+        <link rel="shortcut icon" href="images/logo.jpg">
         <link rel="stylesheet" type="text/css" href="estilo.css" />
         <!script type="text/javascript" src="Javascript/formvalidation.js"><!/script>
 </head>
