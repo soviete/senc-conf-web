@@ -40,6 +40,23 @@ sociedad o entidad.';
 
 $langVoc['TermsButton'] = 'Acepto';
 
+
+$langVoc['regtype0'] = 'Modalidades de inscripción y acreditaciones académicas';
+$langVoc['regtype1'] = '<b>Opción 1</b>: para aquellos que SI deseen recibir una Certificación de
+    Aprovechamiento Académico, de cara a convalidar Créditos de Libre Elección.';
+$langVoc['regtype2'] = 'La Universidad Autònoma de Barcelona y la Universitat Pompeu Fabra ofrecen 2 Créditos
+    de Libre Elección por este programa. Para acceder a ellos, será necesario certificar la asistencia a al
+    menos 12 de las sesiones y, para los alumnos de la UAB, además elaborar un trabajo (un ensayo de 3 páginas
+    sobre una de las sesiones) que será evaluado por expertos de la SENC. El proceso final de obtención de los
+    créditos depende de cada universidad, la información puede encontrarse aquí:';
+$langVoc['regtype3'] = '<b>Opción 2</b>: para aquellos que SI deseen recibir una Certificación de
+    Aprovechamiento Académico, a título personal (la certificación de la SENC tiene valor oficial en sí
+    misma), será necesario certificar la asistencia a 8 de las sesiones.';
+$langVoc['regtype4'] = '<b>Opción 3</b>: para aquellos que NO deseen recibir una Certificación de
+    Aprovechamiento Académico, os podéis inscribir a tantas sesiones como queráis y el control de
+    asistencia sobre estas plazas tendrá como único objetivo monitorizar el acceso a la sala.';
+
+
 $langVoc['startReg'] = 'Entrar';
 
 //TITLE
@@ -57,9 +74,9 @@ $langVoc['formId'] = 'DNI/Pasaporte* <br><small>(sólo caracteres numéricos)</s
 $langVoc['formEmail'] = 'Email';
 $langVoc['formEmailConfirm'] = 'Confirmación Email';
 $langVoc['formRegOption'] = 'Opción de inscripción';
-$langVoc['formRegOption1'] = 'Me inscribiré a 12 conferencias';
-$langVoc['formRegOption2'] = 'Me inscribiré a 8 conferencias';
-$langVoc['formRegOption3'] = 'Sólo me inscribiré a 1 conferencia';
+$langVoc['formRegOption1'] = 'Opció 1 (Con CAA, 12 conferencias)';
+$langVoc['formRegOption2'] = 'Opció 2 (Con CAA, 8 conferencias)';
+$langVoc['formRegOption3'] = 'Opció 3 (Sin CAA, inscripcion libre)';
 $langVoc['formNextButton'] = 'Siguiente';
 
 $langVoc['mandatoryField'] = 'Campos obligatorios';
