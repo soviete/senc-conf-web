@@ -55,7 +55,6 @@ function redirect ($page) {
     $uri   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
     $extra = $page;
     header("Location: http://$host$uri/$extra");
-    //header("Location: http://localhost/SENCONFRamon/index.php");
     exit;
 }
 
