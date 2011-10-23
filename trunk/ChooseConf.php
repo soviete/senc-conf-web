@@ -4,26 +4,22 @@ error_reporting(-1);
 session_start();
 include 'include/common.php';
 
-// Getting variable from post form if any.
+if (empty ($_POST['type']))  {
 
-/* Checking if user types first (no session and no post variables) any other webpage
- * different than index.php */
-
-if ($_SESSION)  {
-    if ($_SESSION['name'] and $_SESSION['surname'] and $_SESSION['dni'] and $_SESSION['email']
-            and $_SESSION['emailConfirm'] and $_SESSION['type']) {
-        $name=$_SESSION['name'];
-        $surname=$_SESSION['surname'];
-        $dni=$_SESSION['dni'];
-        $email=$_SESSION['email'];
-        $emailConfirm=$_SESSION['emailConfirm'];
+    if ($_SESSION['type']) {
         $type=$_SESSION['type'];
     }
 
 }
 
-else {
-    header("Location: index.php");
+else{
+
+    if ($_POST['type']) {
+
+        $_SESSION['type'] = $_POST['type'];
+        $type=$_SESSION['type'];
+    }
+
 }
 
 

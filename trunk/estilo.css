@@ -259,6 +259,11 @@ lang {
     padding-right: 2%;
 }
 
+#selectcentered {
+    float: left;
+    padding: 0 0 0 150px;
+}
+
 
 /* Sidebar */
 
