@@ -7,7 +7,7 @@ function freePlaces ($idSession, $typeReg)
         $count = $row[0];
         echo "session $idSession has $count++++++++\n";
         
-        if ($typeReg == "CA12_14")
+        if ($typeReg == "C12")
             {
                 if ($idSession == 2 | $idSession == 3 | $idSession == 4 )
                     {

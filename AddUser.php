@@ -2,7 +2,9 @@
 ini_set('display_errors', 'On');
 error_reporting(-1);
 session_start();
-include 'include/common.php'
+include 'include/common.php';
+$optionReg = "C12";
+
 ?>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -59,7 +61,7 @@ include 'include/common.php'
                                         if ($c == 'on') 
                                             {   
                                                 //WE CHECK IF IN THE PICKED SESSION THERE IS FREE SLOTS
-                                                $switch = freePlaces ($k, "CA12_14");
+                                                $switch = freePlaces ($k, $optionReg);
                                                 
                                                 if ($switch)
                                                     {
@@ -134,12 +136,27 @@ include 'include/common.php'
                                                 echo '</p>';   
 
                                                 $subject = 'Inscripció a ciclo de conferències';
-                                                $message ='<b>'.$name.'</b>, t\'has registrat correctament al cicle de
-                                                conferències <i>El cervell envaeix la ciutat</i>.
-                                                <p>Aquestes són les conferències a les quals t\'has inscrit:</p>
-                                                '.$conferences.'
-                                                 <p>Si us plau, confirmi la seva assistència almenys 5 dies abans de la data</p>
-                                                '
+                                                
+                                                switch ($optionReg) 
+                                                    {                                                
+                                                        case 'C12':
+                                                            $subject = $langVoc['mailSubject'];
+                                                            $message = $langVoc['mailCertBody'].$langVoc['mailCertBody1'].$langVoc['mailCertBody2'].$conferences.$langVoc['mailCertBody3'];
+                                                            //$message = 'Enhorabuena, te has inscrito con éxito para las siguientes sesiones:';
+                                                            break;
+                                                        
+                                                        case 'C8':
+                                                            $subject = $langVoc['mailSubject'];
+                                                            $message = $langVoc['mailCertBody'].$langVoc['mailCertBody1'].$langVoc['mailCertBody2'].$conferences.$langVoc['mailCertBody3'];
+                                                            //$message = 'Enhorabuena, te has inscrito con éxito para las siguientes sesiones:';
+                                                            break;
+                                                        
+                                                        case 'C1':
+                                                            $subject = $langVoc['mailSubject'];
+                                                            $message = $langVoc['mailNoCertBody'].$name.$langVoc['mailNoCertBody1'].$conferences.$langVoc['mailNoCertBody2'];
+                                                            break;
+                                                    }
+                                                                                                  
                                                 ;
 
                                                 // To send HTML mail, the Content-type header must be set

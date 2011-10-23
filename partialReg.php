@@ -110,18 +110,21 @@
         
         //echo "$confReserv----------";
         //echo "$confReg-----------";
-        $subject = 'Inscripció al ciclo de conferències';
-        $message ='<b>'.$name.'</b>, t\'has registrat correctament al cicle de
-        conferències <i>El cervell envaeix la ciutat</i>.
-        <p>Aquestes són les conferències a les quals t\'has inscrit:</p>
-        '.$confReg.'
-         <p>
-         <p>Aquestes són les conferències a les quals t\'has inscrit:</p>
-        '.$confReserv.'
-         <p>
-         Si us plau, confirmi la seva assistència almenys 5 dies abans de la data</p>
-        '
-        ;
+        $subject = $langVoc['mailSubject'];
+        $message = $langVoc['mailNoCertBody'].$name.$langVoc['mailNoCertBody1'].$confReg.$langVoc['mailNoCertBody2'].$langVoc['mailNoCertBody3'].$confReserv.$langVoc['mailNoCertBody4'];
+        
+        //$subject = 'Inscripció al ciclo de conferències';
+//        $message ='<b>'.$name.'</b>, t\'has registrat correctament al cicle de
+//        conferències <i>El cervell envaeix la ciutat</i>.
+//        <p>Aquestes són les conferències a les quals t\'has inscrit:</p>
+//        '.$confReg.'
+//         <p>
+//         <p>Aquestes són les conferències a les quals t\'has inscrit:</p>
+//        '.$confReserv.'
+//         <p>
+//         Si us plau, confirmi la seva assistència almenys 5 dies abans de la data</p>
+//        '
+//        ;
 
         // To send HTML mail, the Content-type header must be set
         $headers  = 'MIME-Version: 1.0' . "\r\n";

@@ -141,4 +141,35 @@ $langVoc['noSessionAva'] = 'No hi ha prou places disponibles';
 $langVoc['waitList'] = 'Si vols passar a la nostra llista d\'espera prem ';
 $langVoc['Here'] = 'aquí';
 $langVoc['asap'] = 'Ens posarem en contacte amb tu tan aviat com hi hagi places lliures.';
+
+//MAILS
+$langVoc['mailSubject'] = 'Incripció a les Neuroxerrades'; 
+
+//MAIL TO PEOPLE WITHOUT CERTIFICATE
+$langVoc['mailNoCertBody'] = '<p>Enhorabuena ';
+$langVoc['mailNoCertBody1'] = ', te has inscrito con éxito para las siguientes sesiones:</p>';
+$langVoc['mailNoCertBody2'] = 'Una semana antes de la sesión, recibirás un email en esta misma dirección para pedirte que confirmes 
+                               tu asistencia a estas sesiones. Recuerda que aquellas plazas no confirmadas en las 96 horas siguientes 
+                               a la emisión del mensaje serán liberadas para la lista de espera.';
+$langVoc['mailNoCertBody3'] = '<p align="justify">Y has quedado en la lista de espera de las siguientes sesiones:</p>';
+$langVoc['mailNoCertBody4'] = '<p align="justify">Recuerda que tres días antes del acto os ofreceremos, mediante un mensaje a esta dirección,  
+                               las plazas liberadas al global de las personas incluídas en la misma; estas plazas serán adjudicadas por orden de confirmación.</p>';
+
+
+//MAIL TO PEOPLE WITH CERTIFICATE
+$langVoc['mailCertBody'] = '<p align="justify">Recuerda que para poder solicitar la emisión de la Certificación de Aprovechamiento Académico emitida por 
+                            la SENC es necesario efectuar un pago de 30 €. Para ello, haz una transferencia por la citada cantidad a la 
+                            siguiente cuenta:</p>La Caixa<br>2100 2923 01 0200027281<br>';
+$langVoc['mailCertBody1'] = '<p>En el asunto has de hacer constar: “CNS– Nombre Apellido Apellido”</p>';
+$langVoc['mailCertBody2'] = '<p align="justify">Después, habrás enviar, dentro de las próximas 4 semanas, el comprobante de la transferencia a la siguiente 
+                             dirección: xxxxxx@xxxxx.xx (dirección de los voluntarios del control de asistencia). Importante: Aquellas 
+                             inscripciones con solicitud de Certificación de Aprovechamiento Académico que no remitan el comprobante de 
+                             pago en el plazo establecido serán revocadas y las plazas pre-inscritas serán liberadas.</p>
+                             <p>Te has inscrito con éxito para las siguientes sesiones:</p>';
+$langVoc['mailCertBody3'] = '<p align="justify">Una semana antes de la sesión, recibirás un email en esta misma dirección para pedirte que confirmes tu asistencia a estas 
+                             sesiones. Recuerda que aquellas plazas no confirmadas en las 96 horas siguientes a la emisión del mensaje serán liberadas para 
+                             la lista de espera</p>';
+
+
+
 ?>
