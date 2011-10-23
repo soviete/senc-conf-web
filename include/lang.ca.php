@@ -54,6 +54,7 @@ $langVoc['regtype3'] = '<b>Opción 2</b>: para aquellos que SI deseen recibir un
 $langVoc['regtype4'] = '<b>Opción 3</b>: para aquellos que NO deseen recibir una Certificación de
     Aprovechamiento Académico (CAA), os podéis inscribir a tantas sesiones como queráis y el control de
     asistencia sobre estas plazas tendrá como único objetivo monitorizar el acceso a la sala.';
+$langVoc['regtype5'] = 'Triï la seva modalitat d\'inscripció';
 
 $langVoc['startReg'] = 'Entrar';
 
