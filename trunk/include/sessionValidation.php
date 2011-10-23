@@ -5,7 +5,6 @@ function freePlaces ($idSession, $typeReg)
         $queryCount = mysql_query("select count(*) from formulario.REGISTERED WHERE formulario.REGISTERED.idRegSession = '$idSession'");
         $row = mysql_fetch_array($queryCount);
         $count = $row[0];
-        echo "session $idSession has $count++++++++\n";
         
         if ($typeReg == "C12")
             {
