@@ -7,7 +7,7 @@
     
     include 'mysql_connect.php';
     
-    $query="SELECT dni, userName, surname, email from SENCCONF.USERS WHERE SENCCONF.USERS.idUser IN (SELECT SENCCONF.REGISTERED.regIdUser FROM SENCCONF.REGISTERED WHERE SENCCONF.REGISTERED.idRegSession = '$idConference')";
+    $query="SELECT dni, userName, surname, email, type, paid from formulario.USERS WHERE formulario.USERS.idUser IN (SELECT formulario.REGISTERED.regIdUser FROM formulario.REGISTERED WHERE formulario.REGISTERED.idRegSession = '$idConference')";
     $result = mysql_query($query);
     $num_rows = mysql_num_rows($result);
                             
@@ -34,11 +34,15 @@
             $userName = $row['surname'];
             $surname = $row['userName'];
             $email = $row['email'];
+            $type = $row['type'];
+            $paid = $row['paid'];
             
             fputs($file, $dni."\t");
             fputs($file, $userName."\t");
             fputs($file, $surname."\t");
-            fputs($file, $email."\n");
+            fputs($file, $email."\t");
+            fputs($file, $type."\t");
+            fputs($file, $paid."\n");
         }
     
     //$_SESSION["idConference"]=$idConference;
