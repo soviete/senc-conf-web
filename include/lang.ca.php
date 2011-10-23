@@ -168,7 +168,7 @@ $langVoc['mailNoCertBody1'] = ', te has inscrito con éxito para las siguientes 
 $langVoc['mailNoCertBody2'] = 'Una semana antes de la sesión, recibirás un email en esta misma dirección para pedirte que confirmes 
                                tu asistencia a estas sesiones. Recuerda que aquellas plazas no confirmadas en las 96 horas siguientes 
                                a la emisión del mensaje serán liberadas para la lista de espera.';
-$langVoc['mailNoCertBody3'] = '<p align="justify">Y has quedado en la lista de espera de las siguientes sesiones:</p>';
+$langVoc['mailNoCertBody3'] = '<p align="justify">Has quedado en la lista de espera de las siguientes sesiones:</p>';
 $langVoc['mailNoCertBody4'] = '<p align="justify">Recuerda que tres días antes del acto os ofreceremos, mediante un mensaje a esta dirección,  
                                las plazas liberadas al global de las personas incluídas en la misma; estas plazas serán adjudicadas por orden de confirmación.</p>';
 
