@@ -220,6 +220,7 @@ lang {
     background: #D4C792 url(images/img04.gif) repeat-y;
 }
 
+
 /* Content */
 
 #content {
@@ -262,6 +263,17 @@ lang {
 #selectcentered {
     float: left;
     padding: 0 0 0 150px;
+}
+
+#listpadding{
+    padding: 0 0 0 20px;
+    text-align: justify;
+
+
+}
+
+listpadding ol {
+    list-style-type: decimal;
 }
 
 
@@ -414,4 +426,9 @@ TD
 {
     font-size:10pt;
     color:black;
+}
+
+#welcome ol {
+
+    list-style-type: decimal;
 }
