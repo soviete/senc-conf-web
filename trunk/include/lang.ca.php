@@ -37,7 +37,7 @@ la pérdida, mal uso, alteración, acceso no autorizado y robo de los datos faci
 La SOCIEDAD ESPAÑOLA DE NEUROCIENCIA no comunicará los datos que le facilitan los usuarios a ninguna otra
 sociedad o entidad.';
 
-$langVoc['TermsButton'] = 'Accepto';
+$langVoc['TermsButton'] = 'ACCEPTO';
 
 
 $langVoc['regtype0'] = 'Modalidades de inscripción y acreditaciones académicas';
