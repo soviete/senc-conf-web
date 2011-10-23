@@ -111,6 +111,9 @@ $langVoc['back1'] = 'BACK';
 $langVoc['backMsg'] = 'to the conferences registration form';
 $langVoc['sessionExpired'] = 'Session expired. Please start over';
 
+//ERROR NO SESSIONS CHOSEN
+$langVoc['NoSessions'] = 'You have to chose at least one conference!'; 
+
 //ERROR REGISTRATION FORM
 
 $langVoc['back'] = '<b>Please go back and try again.<br><a href=dataForm.php>BACK</a></b>';
@@ -127,6 +130,12 @@ $langVoc['emailErrorConf'] = '<h4>ERROR!</h4><br><h4>You have inserted an invali
     <br>'.$langVoc['back'];
 $langVoc['emailNotMatch'] = '<h4>ERROR!</h4><br><h4>E-mail confirmation failed</h4>
     <br>'.$langVoc['back'];
+
+//PARTIAL SESSION AVAILABILITY
+$langVoc['partialSessionAva'] = 'Sorry. Some of the conferences you chose are already full.';
+$langVoc['session2RegMsg'] = 'The conferences you can register to are as follows:';
+$langVoc['session2ReservMsg'] = 'You will go to the waiting list for the conferece list below. We will send you a mail as soon as there are empty slots:';
+$langVoc['acceptPartialReg'] = 'If you are agree please click ';
 
 //ERROR USER ALREADY REGISTERED
 $langVoc['userRegistered'] = 'This user is already registered!';
