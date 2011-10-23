@@ -1,6 +1,6 @@
 function validateForm() {
     //REGEXs
-    cha=/^[a-zA-Z ]+$/ //REGEX for just text characters and spaces
+    cha=/^[a-zA-ZáàäéèëíïòóöùúüÀÁÄÈÉËÍÒÓÖÙÚÜÑñ]+$/ //REGEX for just text characters and spaces
     anum=/^[0-9a-zA-Z ]+$/ //REGEX to accept alphanumeric and spaces
     num=/^[0-9]+$/ //REGEX for only numbers
     mailreg=/\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/ //REGEX for emails
