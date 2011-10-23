@@ -61,7 +61,7 @@ function redirect ($page) {
 
 /* Checking if user types first (no session and no post variables) any other webpage
  * different than index.php */
-if (!currentPage()=="index.php" && empty($_POST) && empty($_SESSION))  {
+if (currentPage() != "index.php" && empty($_POST) && empty($_SESSION))  {
     header("Location: index.php");
 }
 ?>
