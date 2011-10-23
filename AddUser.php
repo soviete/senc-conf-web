@@ -173,19 +173,30 @@ include 'include/common.php'
                                             echo $langVoc['session2RegMsg'];
                                             echo '</p>';
                                             $sessionName = "sessionName".$lang;
-                                            
+//                                            name='confs[$row[0]]]' /> &nbsp;<b>$row[1]</b>
+//                                            <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i>$fecha</i>
+//                                            <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i>$row[3]</i><br>
+//                                            <br>"
                                             echo '<ul>';
                                             foreach ( $sessionFree as $k=> $c) 
                                                 {   
                                                     //echo "$k";
                                                     if ($c == 1)
                                                         {
-                                                            $query=mysql_fetch_array(mysql_query("SELECT $sessionName
-                                                                                              FROM SESSIONS
-                                                                                              WHERE idSESSIONS='$k'"));
-                                                            echo '<li>';
-                                                            echo $query[$sessionName]; echo '<br>';
-                                                            //echo '<li>';
+                                                            $query=mysql_fetch_array(mysql_query("SELECT $sessionName, UNIX_TIMESTAMP(sessionDate),room
+                                                                                                  FROM SESSIONS
+                                                                                                  WHERE idSESSIONS='$k'"));                                                            
+//                                                            echo '<li>';
+//                                                            echo $query[$sessionName]; echo '<br>';
+                                                                
+                                                            $D=date("d",$query[1]);
+                                                            $M=date("n",$query[1]);
+                                                            $Y=date("Y",$query[1]);
+                                                            $fecha="$D $M $Y";
+                                                            print "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<b>$query[$sessionName]</b>
+                                                                   <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i>$fecha</i>
+                                                                   <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i>$query[2]</i><br>
+                                                                   <br>";                                                                                                                            
                                                         }   
                                                 }                                            
                                             echo '<ul>';
@@ -200,11 +211,19 @@ include 'include/common.php'
                                                     //echo "$k";
                                                     if ($c == 0)
                                                         {
-                                                            $query=mysql_fetch_array(mysql_query("SELECT $sessionName
-                                                                                              FROM SESSIONS
-                                                                                              WHERE idSESSIONS='$k'"));
-                                                            echo '<li>';
-                                                            echo $query[$sessionName]; echo '<br>';                                                            
+                                                            $query=mysql_fetch_array(mysql_query("SELECT $sessionName, UNIX_TIMESTAMP(sessionDate),room
+                                                                                                  FROM SESSIONS
+                                                                                                  WHERE idSESSIONS='$k'"));
+//                                                            echo '<li>';
+//                                                            echo $query[$sessionName]; echo '<br>';
+                                                            $D=date("d",$query[1]);
+                                                            $M=date("n",$query[1]);
+                                                            $Y=date("Y",$query[1]);
+                                                            $fecha="$D $M $Y";
+                                                            print "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<b>$query[$sessionName]</b>
+                                                                   <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i>$fecha</i>
+                                                                   <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i>$query[2]</i><br>
+                                                                   <br>";    
                                                         }   
                                                 }                                            
                                             echo '<ul>';                                                                                            
