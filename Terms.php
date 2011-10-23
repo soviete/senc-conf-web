@@ -8,13 +8,12 @@ include 'include/common.php';
 
 if (!$_POST)  {
     if ($_SESSION['name'] and $_SESSION['surname'] and $_SESSION['dni'] and $_SESSION['email']
-            and $_SESSION['emailConfirm'] and $_SESSION['type']) {
+            and $_SESSION['emailConfirm']) {
         $name=$_SESSION['name'];
         $surname=$_SESSION['surname'];
         $dni=$_SESSION['dni'];
         $email=$_SESSION['email'];
         $emailConfirm=$_SESSION['emailConfirm'];
-        $type=$_SESSION['type'];
         $empty="NO";
     }
     else {
@@ -26,14 +25,13 @@ if (!$_POST)  {
 elseif (!empty($_POST)) {
 
     if ($_POST['name'] and $_POST['surname'] and $_POST['dni'] and $_POST['email']
-            and $_POST['emailConfirm'] and $_POST['type']) {
+            and $_POST['emailConfirm']) {
 
         $_SESSION['name'] = $_POST['name'];
         $_SESSION['surname'] = $_POST['surname'];
         $_SESSION['dni'] = $_POST['dni'];
         $_SESSION['email'] = $_POST['email'];
         $_SESSION['emailConfirm'] = $_POST['emailConfirm'];
-        $_SESSION['type'] = $_POST['type'];
         $_SESSION['name'] = $_POST['name'];
 
         $name=$_SESSION['name'];
@@ -41,7 +39,6 @@ elseif (!empty($_POST)) {
         $dni=$_SESSION['dni'];
         $email=$_SESSION['email'];
         $emailConfirm=$_SESSION['emailConfirm'];
-        $type=$_SESSION['type'];
         $empty="NO";
     }
     else {
@@ -71,12 +68,12 @@ include 'include/formvalidation.php';
                 <div id="content">
                     <div id="welcome">
                         <h1><?php echo $langVoc['formTitle']; ?></h1><br>
-                        <form action="ChooseConf.php" method="post">
+                        <form action="regtype.php" method="post">
                             <?php
                             echo '<h3>';
                             echo $langVoc['Terms0'];
                             echo '</h3><br>';
-                            // Handling errors and printing checkboxes
+                            // Handling errors and printing text
                             switch ($empty) {
                                 case "YES":
                                     echo $langVoc['emptyfield'];

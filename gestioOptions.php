@@ -4,7 +4,7 @@ error_reporting(-1);
 session_start();
 //include 'include/common.php';
 
-$optionReg = "C12";//Esto tenemos que recogerlo del form del principio cuando este hecho
+$optionReg = $_SESSION['type'];
 
 if (empty ($_POST['confs']))
     {           
