@@ -4,7 +4,7 @@ error_reporting(-1);
 session_start();
 //include 'include/common.php';
 
-$option = "12";//Esto tenemos que recogerlo del form del principio cuando este hecho
+$optionReg = "C12";//Esto tenemos que recogerlo del form del principio cuando este hecho
 
 if (empty ($_POST['confs']))
     {           
@@ -15,10 +15,10 @@ else
     {
         $_SESSION['confs'] = $_POST['confs'];
    
-        switch ($option) 
+        switch ($optionReg) 
                 {
                     //CASE 12 sessions
-                    case '12':
+                    case 'C12':
 
                     if (count($_POST['confs'])<2)
                         {
@@ -36,7 +36,7 @@ else
                     break;
 
                     //CASE 8 sessions
-                    case '8':
+                    case 'C8':
 
                     if (count($_POST['confs'])<8)
                         {   
@@ -46,6 +46,17 @@ else
                             header ('Location:errorNumberSession.php');
 
                         }
+                   
+                    case 'C1':
+
+                    if (count($_POST['confs'])<1)
+                        {   
+                            $_SESSION['neededConf']= 1;
+                            $_SESSION['chosenConf']= count($_POST['confs']);
+
+                            header ('Location:errorNumberSession.php');
+
+                        }    
 
                     break;    
                 }
