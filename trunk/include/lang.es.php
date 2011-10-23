@@ -9,11 +9,11 @@
 $langVoc = array();
 
 //INFO CONFERENCES
-$langVoc['regInfoTitle'] = 'Información pre-inscripción';
-$langVoc['regInfo'] = 'Bienvenido a la pre-inscripción a las sesiones de “El Cerebro Invade la Ciudad”. Esta pre-inscripción 
-                       tiene como objetivo efectuar una reserva de plaza en los diferentes eventos que conforman el programa. 
-                       Esta reserva es necesaria porque las plazas son limitadas y su número depende de cada una de las sedes: 
-                       si estás interesado en asistir, te recomendamos que efectúes esta reserva para asegurarte un sitio.';
+$langVoc['regInfoTitle'] = 'Bienvenido a la pre-inscripción a las sesiones de “El Cerebro Invade la Ciudad”.';
+$langVoc['regInfo'] = 'Esta pre-inscripción tiene como objetivo efectuar una reserva de plaza en los diferentes
+    eventos que conforman el programa. Esta reserva es necesaria porque las plazas son limitadas y su número
+    depende de cada una de las sedes: si estás interesado en asistir, te recomendamos que efectúes esta reserva
+    para asegurarte un sitio.';
 $langVoc['procedureReg'] = 'El procedimiento de pre-inscripción será el siguiente:';
 $langVoc['procedureReg1'] = 'Una vez que nos hayas dado tus datos, selecciona en el menú aquellas sesiones a las que querrás asistir';
 $langVoc['procedureReg2'] = 'La base de datos recogerá tu solicitud y te enviará un mensaje confirmando si tienes una plaza o si 
