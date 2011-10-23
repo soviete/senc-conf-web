@@ -20,15 +20,17 @@ $_SESSION['tracker'] = 1;
         <div id="page">
             <div id="content">
                 <div id="welcome">
-                    <h1><?php echo $langVoc['regInfoTitle']; ?></h1><br>
-                    <h3 align="justify" ><?php echo $langVoc['regInfo']; ?></h3>
+                    <h1 align="justify"><?php echo $langVoc['regInfoTitle']; ?></h1><br>
+                    <p align="justify"><b><?php echo $langVoc['regInfo']; ?></b><p>
                     <h3><?php echo $langVoc['procedureReg']; ?></h3>
-                    <ul>
-                        <li type="disc"><?php echo $langVoc['procedureReg1']; ?></li>
-                        <li type="disc"><?php echo $langVoc['procedureReg2']; ?></li>    
-                        <li type="disc"><?php echo $langVoc['procedureReg3']; ?></li>    
-                        <li type="disc"><?php echo $langVoc['procedureReg4']; ?></li>                        
-                    </ul>
+                    <div id="listpadding">
+                    <ol>
+                        <li><?php echo $langVoc['procedureReg1']; ?></li>
+                        <li><?php echo $langVoc['procedureReg2']; ?></li>    
+                        <li><?php echo $langVoc['procedureReg3']; ?></li>    
+                        <li><?php echo $langVoc['procedureReg4']; ?></li>                        
+                    </ol>
+                    </div>
                     <br><br>
                     <div align="right">
                     <form method="link" action="dataForm.php">
