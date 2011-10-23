@@ -20,12 +20,8 @@
             $dni = $_SESSION['dni'];
             $email = $_SESSION['email'];
             $type = $_SESSION['type'];
-            //print_r ($sessionFree);
         }
     
-    
-    
-    //echo "$lang kkkkkkkkkk"; die;
     //CHECKS WHETHER THE USER IS ALREADY IN THE DB USING THE DNI AS KEY FIELD
     $result = mysql_num_rows(mysql_query("SELECT * FROM USERS WHERE dni='$dni'"));  
 
@@ -107,24 +103,10 @@
                     $confReserv.="$fecha<br><i>$query[2]</i><br>\"<b>$query[0]</b>\"<br><br>";
                 }
         }
-        
-        //echo "$confReserv----------";
-        //echo "$confReg-----------";
+
         $subject = $langVoc['mailSubject'];
         $message = $langVoc['mailNoCertBody'].$name.$langVoc['mailNoCertBody1'].$confReg.$langVoc['mailNoCertBody2'].$langVoc['mailNoCertBody3'].$confReserv.$langVoc['mailNoCertBody4'];
-        
-        //$subject = 'Inscripció al ciclo de conferències';
-//        $message ='<b>'.$name.'</b>, t\'has registrat correctament al cicle de
-//        conferències <i>El cervell envaeix la ciutat</i>.
-//        <p>Aquestes són les conferències a les quals t\'has inscrit:</p>
-//        '.$confReg.'
-//         <p>
-//         <p>Aquestes són les conferències a les quals t\'has inscrit:</p>
-//        '.$confReserv.'
-//         <p>
-//         Si us plau, confirmi la seva assistència almenys 5 dies abans de la data</p>
-//        '
-//        ;
+
 
         // To send HTML mail, the Content-type header must be set
         $headers  = 'MIME-Version: 1.0' . "\r\n";
@@ -139,9 +121,7 @@
         $headers .= "X-Mailer: PHP". phpversion() ."\r\n" ;
 
         // Mail it
-        //echo "HE enviat el mail";
         mail($email, $subject, $message, $headers);
-        //header ('Location:confirmPartReg.php');
         echo'<p>';
                             echo $langVoc['congra'];
                             echo '<b>';
