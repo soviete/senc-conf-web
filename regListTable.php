@@ -72,7 +72,7 @@
                             
                             
                             
-                            $query="SELECT dni, userName, surname, email from formulario.USERS WHERE formulario.USERS.idUser IN (SELECT formulario.REGISTERED.regIdUser FROM formulario.REGISTERED WHERE formulario.REGISTERED.idRegSession = '$idConference')";
+                            $query="SELECT dni, userName, surname, email, paid, type from formulario.USERS WHERE formulario.USERS.idUser IN (SELECT formulario.REGISTERED.regIdUser FROM formulario.REGISTERED WHERE formulario.REGISTERED.idRegSession = '$idConference')";
                             
                             //$query = "SELECT idSESSIONS FROM SENCCONF.SESSIONS WHERE idSESSION = '$idSession' ORDER BY idSESSIONS ASC";
                             $result = mysql_query($query);
@@ -107,6 +107,8 @@
                                     echo '<th>Cognoms</th>';
                                     echo '<th>Nom</th>';                                    
                                     echo '<th>email</th>';
+                                    echo '<th>Type</th>';
+                                    echo '<th>Pagament</th>';
                                     echo '</tr>';
                                                                                                             
 //                                    $query = "SELECT DISTINCT Ensembl_Protein_ID,Uniprot_SwissProt_Accession,PDB_ID FROM Proteins WHERE
@@ -128,8 +130,8 @@
                                             $userName = $row['surname'];
                                             $surname = $row['userName'];
                                             $email = $row['email'];
-                                            //$type = $row['type'];
-                                            //$regState = $row['regState'];
+                                            $paid = $row['paid'];
+                                            $type = $row['type'];
                                             echo '<tr>';
                                             print "<td>$dni</td>";
                                             //echo "$dni";
@@ -143,7 +145,14 @@
                                             echo '<td>';
                                             echo "$email";
                                             echo '</td>';
-                                            
+                                            echo '<td>';
+                                            echo "$type";
+                                            echo '</td>';
+  
+                                            echo '<td>';
+                                            echo "$paid";
+                                            echo '</td>';
+  
                                                 
                                             //I have only contemplate this field inside the form
                                             //print "<div align='center'><input type='checkbox' name='pay[$i]' value='YES' '/><br></div>";
