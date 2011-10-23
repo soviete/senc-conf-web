@@ -28,7 +28,6 @@ include 'include/common.php';
                         $dni = $_SESSION['dni'];
                         $email = $_SESSION['email'];
                         $optionReg = $_SESSION['type'];
-                        //echo "$lang =======\n";
                         $sessionFree;//Ary for keep which sessions have free places and which do not have
                         
                         //CHECKS WHETHER WE HAVE INFO FROM THE SESSIONS CHOSEN BY THE USER
@@ -63,7 +62,6 @@ include 'include/common.php';
                                                 
                                                 if ($switch)
                                                     {
-                                                        //echo "$switch===========\n";
                                                         $sessionFree[$k] = $switch;
                                                     }
                                                 else
@@ -140,13 +138,11 @@ include 'include/common.php';
                                                         case 'C12':
                                                             $subject = $langVoc['mailSubject'];
                                                             $message = $langVoc['mailCertBody'].$langVoc['mailCertBody1'].$langVoc['mailCertBody2'].$conferences.$langVoc['mailCertBody3'];
-                                                            //$message = 'Enhorabuena, te has inscrito con éxito para las siguientes sesiones:';
                                                             break;
                                                         
                                                         case 'C8':
                                                             $subject = $langVoc['mailSubject'];
                                                             $message = $langVoc['mailCertBody'].$langVoc['mailCertBody1'].$langVoc['mailCertBody2'].$conferences.$langVoc['mailCertBody3'];
-                                                            //$message = 'Enhorabuena, te has inscrito con éxito para las siguientes sesiones:';
                                                             break;
                                                         
                                                         case 'C1':
@@ -188,10 +184,6 @@ include 'include/common.php';
                                             echo $langVoc['session2RegMsg'];
                                             echo '</p>';
                                             $sessionName = "sessionName".$lang;
-//                                            name='confs[$row[0]]]' /> &nbsp;<b>$row[1]</b>
-//                                            <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i>$fecha</i>
-//                                            <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i>$row[3]</i><br>
-//                                            <br>"
                                             echo '<ul>';
                                             foreach ( $sessionFree as $k=> $c) 
                                                 {   
@@ -201,8 +193,6 @@ include 'include/common.php';
                                                             $query=mysql_fetch_array(mysql_query("SELECT $sessionName, UNIX_TIMESTAMP(sessionDate),room
                                                                                                   FROM SESSIONS
                                                                                                   WHERE idSESSIONS='$k'"));                                                            
-//                                                            echo '<li>';
-//                                                            echo $query[$sessionName]; echo '<br>';
                                                                 
                                                             $D=date("d",$query[1]);
                                                             $M=date("n",$query[1]);
@@ -223,14 +213,11 @@ include 'include/common.php';
                                             echo '<ul>';
                                             foreach ( $sessionFree as $k=> $c) 
                                                 {   
-                                                    //echo "$k";
                                                     if ($c == 0)
                                                         {
                                                             $query=mysql_fetch_array(mysql_query("SELECT $sessionName, UNIX_TIMESTAMP(sessionDate),room
                                                                                                   FROM SESSIONS
                                                                                                   WHERE idSESSIONS='$k'"));
-//                                                            echo '<li>';
-//                                                            echo $query[$sessionName]; echo '<br>';
                                                             $D=date("d",$query[1]);
                                                             $M=date("n",$query[1]);
                                                             $Y=date("Y",$query[1]);
@@ -252,9 +239,6 @@ include 'include/common.php';
                                             echo '<a href=partialReg.php>';                                            
                                             echo $langVoc['Here'];
                                             echo '</a>';
-                                            
-                                            //echo '<br>';
-                                            //echo $langVoc['asap'];
                                         }
                                     
                                 
@@ -264,8 +248,6 @@ include 'include/common.php';
                                 
                                 else 
                                     {
-                                        //echo '<h3>ERROR!</h3>A field in the form is missing!<br>
-                                        //Please <a href=index.php>Go back</a> and try again.';
                                         echo '<h3>ERROR!</h3>';
                                         echo $langVoc['noConfSelect'];
                                         echo '<br> Si us plau, torni a intentar-ho.

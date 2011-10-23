@@ -23,7 +23,6 @@ function freePlaces ($idSession, $typeReg)
                 else
                     {
                         $queryCapacity = mysql_query("select  roomCapacity from formulario.SESSIONS WHERE formulario.SESSIONS.idSESSIONS = '$idSession'");
-                        //select  roomCapacity from formulario.SESSIONS WHERE formulario.SESSIONS.idSESSIONS = '1';
                         $row = mysql_fetch_array($queryCapacity);
                         $capacity = $row[0];
                         
