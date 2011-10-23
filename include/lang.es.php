@@ -111,12 +111,22 @@ $langVoc['emailErrorConf'] = '<h4>ERROR!</h4><br><h4>La dirección de email conf
 $langVoc['emailNotMatch'] = '<h4>ERROR!</h4><br><h4>Confirmación de email errónea</h4>
     <br>'.$langVoc['back'];
 
+//PARTIAL SESSION AVAILABILITY
+$langVoc['partialSessionAva'] = 'Lo sentimos. Algunas de las conferencias escogidas no tienen plazas disponibles.';
+$langVoc['session2RegMsg'] = 'Estas son las conferencias a las que te puedes registrar directamente:';
+$langVoc['session2ReservMsg'] = 'Estas son las conferencias en las que puedes inscribirte en la lista de espera. En caso de disponibilidad de plazas
+                                 te enviaremos un mail para que puedas hacer la inscripción.';
+$langVoc['acceptPartialReg'] = 'Si estas de acuerdo haz click ';
+
 //ERROR SESSIONS
 $langVoc['numSessionsMsg1'] = 'El número de conferencias que has escogido '; 
 $langVoc['numSessionsMsg2'] = ' no corresponde con la opción de inscripción que has solicitado, tienes que coger ';
 $langVoc['back1'] = 'VOLVER';
 $langVoc['backMsg'] = 'al formulario de inscripción a conferencias';
 $langVoc['sessionExpired'] = 'La sesión expiró. Por favor empiece de nuevo';
+
+//ERROR NO SESSIONS CHOSEN
+$langVoc['NoSessions'] = 'Tienes que escoger una conferencia!'; 
 
 //ERROR USER ALREADY REGISTERED
 $langVoc['userRegistered'] = 'Este usuario ya está registrado!';

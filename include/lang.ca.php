@@ -103,6 +103,9 @@ $langVoc['back1'] = 'TORNAR';
 $langVoc['backMsg'] = 'al formulari d\'inscripció a conferències';
 $langVoc['sessionExpired'] = 'La sessió ha caducat. Si us plau, torni a començar';
 
+//ERROR NO SESSIONS CHOSEN
+$langVoc['NoSessions'] = 'Has de triar alguna conferència!'; 
+
 //ERROR REGISTRATION FORM
 $langVoc['back'] = '<b>Si us plau, torni a intentar-ho.<br><a href=dataForm.php>ENRERE</a></b>';
 $langVoc['emptyfield'] = '<h4>ERROR!</h4>Revisi el formulari, potser hi ha camps buits<br>'.$langVoc['back'];
@@ -119,7 +122,12 @@ $langVoc['emailErrorConf'] = '<h4>ERROR!</h4><br><h4>L\'adreça d\'email confirm
 $langVoc['emailNotMatch'] = '<h4>ERROR!</h4><br><h4>Confirmació de emails errònia</h4>
     <br>'.$langVoc['back'];
 
-
+//PARTIAL SESSION AVAILABILITY
+$langVoc['partialSessionAva'] = 'Ho sentim. Algunes de les conferències escollides no tenen places disponibles.';
+$langVoc['session2RegMsg'] = 'Aquestes són les conferències a les que et pots registrar directament:';
+$langVoc['session2ReservMsg'] = 'Aquestes són les conferències a les que pots passar a la llista d\'espera. En cas de disponibilitat de places
+                                t\'enviarem un mail perquè puguis fer la inscripció:';
+$langVoc['acceptPartialReg'] = 'Si estàs d\'acord fes click ';
 
 //ERROR USER ALREADY REGISTERED
 $langVoc['userRegistered'] = 'Aquest usuari ja està registrat!';

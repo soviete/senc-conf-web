@@ -20,8 +20,8 @@ include 'include/common.php';
             <div id="page">
                 <div id="content">
                     <div id="welcome">
-                        <h1><?php echo $_SESSION['name'];?></h1>
-                        <h3><?php echo $langVoc['numSessionsMsg1']; echo $_SESSION['chosenConf']; echo $langVoc['numSessionsMsg2']; echo $_SESSION['neededConf']?>
+                        <h1><?php echo $langVoc['formTitle']; ?></h1>
+                        <h3><?php echo $langVoc['NoSessions'];?>
 			</h3>
 			<p> <a href=ChooseConf.php><?php echo $langVoc['back1'];?></a> <?php echo $langVoc['backMsg']; ?></p>
                     </div>
