@@ -27,7 +27,7 @@
             //TENGO QUE TENER UN PHP LIMPIO SIN HTML SINO YA ME HA EMPEZADO A ENSENYAR LA PAGINA
                 include 'mysql_connect.php';
 
-                $query = "SELECT idUser, dni, userName, surname, type, paid FROM SENCCONF.USERS WHERE paid = 'no' ORDER BY surname ASC";
+                $query = "SELECT idUser, dni, userName, surname, type, paid FROM USERS WHERE paid = 'no' ORDER BY surname ASC";
                 $result = mysql_query($query);
                 $num_rows = mysql_num_rows($result);
 
