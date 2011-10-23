@@ -1,7 +1,7 @@
 <?php 
 session_start(); //it is an include session start has been already made
-ini_set('display_errors', 'On');
-error_reporting(-1);
+//ini_set('display_errors', 'On');
+//error_reporting(-1);
 include 'include/common.php';
 ?>
 
