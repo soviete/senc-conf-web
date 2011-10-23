@@ -53,7 +53,7 @@ $langVoc['regtype3'] = '<b>Opción 2</b>: para aquellos que SI deseen recibir un
 $langVoc['regtype4'] = '<b>Opción 3</b>: para aquellos que NO deseen recibir una Certificación de
     Aprovechamiento Académico (CAA), os podéis inscribir a tantas sesiones como queráis y el control de
     asistencia sobre estas plazas tendrá como único objetivo monitorizar el acceso a la sala.';
-
+$langVoc['regtype5'] = 'Please choose your registration option';
 
 $langVoc['startReg'] = 'Go';
 //TITLE
@@ -71,9 +71,9 @@ $langVoc['formId'] = 'DNI/Passport* <br><small>(no characters allowed)</small>';
 $langVoc['formEmail'] = 'Email';
 $langVoc['formEmailConfirm'] = 'Email confirmation';
 $langVoc['formRegOption'] = 'Registration option';
-$langVoc['formRegOption1'] = 'Opció 1 (CAA, 12 conferences)';
-$langVoc['formRegOption2'] = 'Opció 2 (CAA, 8 conferences)';
-$langVoc['formRegOption3'] = 'Opció 3 (No CAA, free registration)';
+$langVoc['formRegOption1'] = 'Option 1 (CAA, 12 conferences)';
+$langVoc['formRegOption2'] = 'Option 2 (CAA, 8 conferences)';
+$langVoc['formRegOption3'] = 'Option 3 (No CAA, free registration)';
 $langVoc['formNextButton'] = 'Next';
 $langVoc['mandatoryField'] = 'Next';
 

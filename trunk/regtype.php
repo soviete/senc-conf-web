@@ -52,6 +52,8 @@ else {
                             </li>
                         </ul>
                         <br>
+                        <h3><?php echo $langVoc['regtype5']; ?></h3>
+                        <br>
                         <form action="ChooseConf.php" name="regtype" method="post">
                             <div id="selectcentered">
                                 <div id="UILabel"><?php echo $langVoc['formRegOption']; ?>*<br></div>
@@ -62,7 +64,7 @@ else {
                                     <option value="C1" disabled="disabled"><?php echo $langVoc['formRegOption3']; ?>
                                     </option>
                                 </select></div>
-                            <br><br><br><br><br>
+                            <br><br><br><br><br><br>
                             <div align="right">
                                 <input class="form_submitb" type="submit" name="submit"
                                        value=<?php echo $langVoc['formNextButton']; ?> />
