@@ -432,3 +432,39 @@ TD
 
     list-style-type: decimal;
 }
+
+.adduserRegis {
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 15px;
+    COLOR: #000000;
+    BORDER-TOP-STYLE: groove;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Arial;
+    BORDER-RIGHT-STYLE: ridge;
+    BORDER-LEFT-STYLE: groove;
+    BACKGROUND-COLOR: #F0F0F0 ;
+    BORDER-BOTTOM-STYLE: ridge;
+}
+
+.adduserEsp {
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 15px;
+    COLOR: #000000 ;
+    BORDER-TOP-STYLE: groove;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Arial;
+    BORDER-RIGHT-STYLE: ridge;
+    BORDER-LEFT-STYLE: groove;
+    BACKGROUND-COLOR: #C1C1C1;
+    BORDER-BOTTOM-STYLE: ridge;
+}
+
+#box {
+    padding: 0 0 0 0;
+}
+#boxleft {
+    float:left;
+}
+#boxright {
+    float:right;
+}
