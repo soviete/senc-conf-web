@@ -1,6 +1,6 @@
 <?php
 function validChar($name) {
-    if (preg_match("/^[a-zA-Z ]+$/", $name)) {
+    if (preg_match("/^[a-zA-ZáàäéèëíïòóöùúüÀÁÄÈÉËÍÒÓÖÙÚÜÑñ ]+$/", $name)) {
         return TRUE;
     }
     else {
