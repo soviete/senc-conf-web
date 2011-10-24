@@ -160,7 +160,7 @@ $langVoc['Here'] = 'aquí';
 $langVoc['asap'] = 'Nos pondremos en contacto contigo tan pronto como haya plazas disponibles.';
 
 //MAILS
-$langVoc['mailSubject'] = 'Inscripción a las Neurocharlas';
+$langVoc['mailSubject'] = 'Inscripción neuroconferencias';
 
 //MAIL TO PEOPLE WITHOUT CERTIFICATE
 $langVoc['mailNoCertBody'] = '<p>Enhorabuena ';
