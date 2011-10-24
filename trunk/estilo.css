@@ -34,6 +34,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
     color: #333333;
+    clear: both;
+    text-align: center;
 }
 
 h1, h2, h3 {
@@ -88,15 +90,19 @@ a:hover {
 }
 
 
-
 /* Wrapper */
 
 #wrapper {
+/*    width: 710px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 0 0 500px;*/
 }
 
 /* Header */
 
 #header {
+    clear: both;
     width: 710px;
     height: 96px;
     margin: 0 auto;
@@ -107,7 +113,7 @@ a:hover {
 
 #logo {
     float: left;
-    padding: 20px 0 0 15px;
+    padding: 15px 0 0 15px;
 }
 
 #logo h1 {
@@ -192,7 +198,7 @@ lang {
     /*display: inline;*/
 }
 
-#lang a {   
+#lang a {
     /*display: block;*/
     text-decoration: none;
     float: left;
@@ -215,6 +221,7 @@ lang {
 /* Page */
 
 #page {
+    text-align: left;
     width: 710px;
     margin: 0 auto;
     background: #D4C792 url(images/img04.gif) repeat-y;
@@ -225,7 +232,7 @@ lang {
 
 #content {
     float: left;
-    width: 500px;
+    width: auto;
     padding: 30px 100px 35px;
 
 }
@@ -262,7 +269,7 @@ lang {
 
 #selectcentered {
     float: left;
-    padding: 0 0 0 150px;
+    padding: 0 0 0 100px;
 }
 
 #listpadding{
@@ -406,7 +413,7 @@ TD
 {
     font-size:10pt;
     font-weight: bold;
-    background-color:#C6B8A4;
+    background-color:#D0A86C;
     color:white;
     border-style:solid;
     border-width:1px;
