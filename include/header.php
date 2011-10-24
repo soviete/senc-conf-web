@@ -1,11 +1,9 @@
 <?php $currentPage=currentPage();
 print "
 <div id='lang'>
-   <ul>
-        <li><a href='$currentPage?lang=ca'>CAT</a></li>
-        <li><a href='$currentPage?lang=es'>ESP</a></li>
-        <li><a href='$currentPage?lang=en'>ENG</a></li>
-    </ul>
+<a href='$currentPage?lang=ca'>CAT</a></li>
+<a href='$currentPage?lang=es'>ESP</a></li>
+<a href='$currentPage?lang=en'>ENG</a></li>
 </div>"
 ?>
 <div id="header">    
