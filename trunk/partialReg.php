@@ -5,7 +5,9 @@
     session_start();
     include 'mysql_connect.php';
     include 'include/common.php';
-
+    
+    $optionReg = $_SESSION['type'];
+    
     if (empty ($_SESSION['sessionFree']) | empty ($_SESSION['sessionFree']) | empty ($_SESSION['name']) | empty ($_SESSION['surname'])
         | empty ($_SESSION['dni']) | empty ($_SESSION['email']) | empty ($_SESSION['type']))
         {           
@@ -105,17 +107,27 @@
         }
 
         $subject = $langVoc['mailSubject'];
-        $message = $langVoc['mailNoCertBody'].$name.$langVoc['mailNoCertBody1'].$confReg.$langVoc['mailNoCertBody2'].$langVoc['mailNoCertBody3'].$confReserv.$langVoc['mailNoCertBody4'];
-
-
+        
+        switch ($optionReg) 
+                {
+                    //CASE 12 sessions
+                    case 'C12':
+                        $message = $langVoc['mailNoCertBody'].$name.$langVoc['mailNoCertBody1'].$langVoc['mailOption1'].$langVoc['mailNoCertBody2'].$langVoc['mailNoCertBody3'].$confReg.$langVoc['mailNoCertBody4'].$langVoc['mailNoCertBody5'].$confReserv.$langVoc['mailNoCertBody6'].$langVoc['mailNoCertBody7'].$langVoc['mailNoCertBody8'];
+                    case 'C8':
+                        $message = $langVoc['mailNoCertBody'].$name.$langVoc['mailNoCertBody1'].$langVoc['mailOption2'].$langVoc['mailNoCertBody2'].$langVoc['mailNoCertBody3'].$confReg.$langVoc['mailNoCertBody4'].$langVoc['mailNoCertBody5'].$confReserv.$langVoc['mailNoCertBody6'].$langVoc['mailNoCertBody7'].$langVoc['mailNoCertBody8'];
+                    case 'C1':
+                        $message = $langVoc['mailNoCertBody'].$name.$langVoc['mailNoCertBody1'].$langVoc['mailOption3'].$langVoc['mailNoCertBody2'].$langVoc['mailNoCertBody3'].$confReg.$langVoc['mailNoCertBody4'].$langVoc['mailNoCertBody5'].$confReserv.$langVoc['mailNoCertBody6'].$langVoc['mailNoCertBody7'].$langVoc['mailNoCertBody8'];
+                        break;
+                };
+                                     
         // To send HTML mail, the Content-type header must be set
         $headers  = 'MIME-Version: 1.0' . "\r\n";
         $headers .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
 
         // Additional headers
-        $headers .= 'From: Conferences <DONOTREPLY@elcervell.com>' . "\r\n";
-        $headers .= "Reply-To: Conferences <INFO@elcervell.com>\r\n";
-        $headers .= 'Return-Path: Conferences <INFO@elcervell.com>' . "\r\n";
+        $headers .= 'From: El Cerebro Invade la Ciudad <DONOTREPLY@elcervell.com>' . "\r\n";
+        $headers .= "Reply-To: El Cerebro Invade la Ciudad <INFO@elcervell.com>\r\n";
+        $headers .= 'Return-Path: El Cerebro Invade la Ciudad <INFO@elcervell.com>' . "\r\n";
         $headers .= "Organization: Sender Organization\r\n";
         $headers .= "X-Priority: 3\r\n";
         $headers .= "X-Mailer: PHP". phpversion() ."\r\n" ;
