@@ -31,7 +31,7 @@ function validateForm() {
         return false
     }
     if (x.search(num)==-1) {
-        alert("DNI/Passport must contain a numeric value")
+        alert("DNI/Passport must ONLY contain numeric values")
         return false
     }
     //Field email
