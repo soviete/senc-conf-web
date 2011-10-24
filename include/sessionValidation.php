@@ -10,7 +10,7 @@ function freePlaces ($idSession, $typeReg)
             {
                 if ($idSession == 2 | $idSession == 3 | $idSession == 4 )
                     {
-                        if ($count <= 5)
+                        if ($count <= 20)
                             {
                                 return TRUE;
                             }
