@@ -8,7 +8,7 @@ function freePlaces ($idSession, $typeReg)
         
         if ($typeReg == "C12")
             {
-                if ($idSession == 2 | $idSession == 3 | $idSession == 4 )
+                if ($idSession == 2 | $idSession == 3 | $idSession == 4 | $idSession == 5 )
                     {
                         if ($count <= 20)
                             {
