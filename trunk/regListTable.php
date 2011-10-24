@@ -167,12 +167,12 @@
                                      echo '</table>';
                                      echo '</div>';
                                      echo '<br>';
-                                     echo'<div align="center">
-                                                    
-                                                 <input class="form_submitb" type="submit" name="submit" value="Baixar excel" />
-                                                 <input type="hidden" name="table" value=';
-                                     echo "$idConference";
-                                     echo ' /></div><br>';
+//                                     echo'<div align="center">
+//                                                    
+//                                                 <input class="form_submitb" type="submit" name="submit" value="Baixar excel" />
+//                                                 <input type="hidden" name="table" value=';
+//                                     echo "$idConference";
+//                                     echo ' /></div><br>';
                                      echo '</form>';
                                 }
                                 
