@@ -124,17 +124,17 @@ include 'include/common.php';
                                         switch ($optionReg) {
                                             case 'C12':
                                                 $subject = $langVoc['mailSubject'];
-                                                $message = $langVoc['mailCertBody'].$langVoc['mailCertBody1'].$langVoc['mailCertBody2'].$conferences.$langVoc['mailCertBody3'];
+                                                $message = $langVoc['mailCertBody'].$name.$langVoc['mailCertBody1'].$langVoc['mailOption1'].$langVoc['mailCertBody2'].$langVoc['mailCertBody3'].$langVoc['mailCertBody4'].$langVoc['mailCertBody5'].$langVoc['mailCertBody6'].$conferences.$langVoc['mailCertBody7'].$langVoc['mailCertBody8'].$langVoc['mailCertBody9'];
                                                 break;
 
                                             case 'C8':
                                                 $subject = $langVoc['mailSubject'];
-                                                $message = $langVoc['mailCertBody'].$langVoc['mailCertBody1'].$langVoc['mailCertBody2'].$conferences.$langVoc['mailCertBody3'];
+                                                $message = $langVoc['mailCertBody'].$name.$langVoc['mailCertBody1'].$langVoc['mailOption2'].$langVoc['mailCertBody2'].$langVoc['mailCertBody3'].$langVoc['mailCertBody4'].$langVoc['mailCertBody5'].$langVoc['mailCertBody6'].$conferences.$langVoc['mailCertBody7'].$langVoc['mailCertBody8'].$langVoc['mailCertBody9'];
                                                 break;
 
                                             case 'C1':
                                                 $subject = $langVoc['mailSubject'];
-                                                $message = $langVoc['mailNoCertBody'].$name.$langVoc['mailNoCertBody1'].$conferences.$langVoc['mailNoCertBody2'];
+                                                $message = $langVoc['mailNoCertBody'].$name.$langVoc['mailNoCertBody1'].$langVoc['mailNoCertBody2'].$conferences.$langVoc['mailNoCertBody6'].$langVoc['mailNoCertBody7'];
                                                 break;
                                         }
 
@@ -145,9 +145,9 @@ include 'include/common.php';
                                         $headers .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
 
                                         // Additional headers
-                                        $headers .= 'From: Conferences <DONOTREPLY@elcervell.com>' . "\r\n";
-                                        $headers .= "Reply-To: Conferences <INFO@elcervell.com>\r\n";
-                                        $headers .= 'Return-Path: Conferences <INFO@elcervell.com>' . "\r\n";
+                                        $headers .= 'From: El Cerebro Invade la Ciudad <DONOTREPLY@elcervell.com>' . "\r\n";
+                                        $headers .= "Reply-To: El Cerebro Invade la Ciudad <INFO@elcervell.com>\r\n";
+                                        $headers .= 'Return-Path: El Cerebro Invade la Ciudad <INFO@elcervell.com>' . "\r\n";
                                         $headers .= "Organization: Sender Organization\r\n";
                                         $headers .= "X-Priority: 3\r\n";
                                         $headers .= "X-Mailer: PHP". phpversion() ."\r\n" ;
