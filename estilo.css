@@ -404,8 +404,9 @@ TR
 
 TD
 {
-    font-size:9pt;
-    background-color:#D7BC94;
+    font-size:11pt;
+    font-weight: bold;
+    background-color:#D0A86C;
     color:white;
     border-style:solid;
     border-width:1px;
