@@ -175,7 +175,7 @@ $langVoc['mailNoCertBody'] = '<p>Hola ';
 $langVoc['mailNoCertBody1'] = ',<p align="justify">Este es un email generado automáticamente desde la Secretaría de 
                                “El Cerebro Invade la Ciudad”. Enhorabuena, tu proceso de inscripción (';
 $langVoc['mailOption3'] = 'Opción 3';
-$langVoc['mailNoCertBody2'] = ') se ha llevado a cabo correctamente</p>';
+$langVoc['mailNoCertBody2'] = ') se ha llevado a cabo correctamente.</p>';
 
 $langVoc['mailNoCertBody3'] = 'Te has inscrito con éxito para las siguientes sesiones:</p>';
 $langVoc['mailNoCertBody4'] = 'Una semana antes de la sesión, recibirás un email en esta misma dirección para pedirte que confirmes 
@@ -186,7 +186,7 @@ $langVoc['mailNoCertBody5'] = '<p align="justify">Y has quedado en la lista de e
 $langVoc['mailNoCertBody6'] = '<p align="justify">Recuerda que tres días antes del acto os ofreceremos, mediante un mensaje a esta dirección,  
                                las plazas liberadas al global de las personas incluídas en la misma; estas plazas serán adjudicadas por orden de confirmación.</p>';
 $langVoc['mailNoCertBody7'] = '<p align="justify">Para cualquier duda o consulta, nos puedes contactar en cerebro.ciudad@gmail.com</p>';
-$langVoc['mailNoCertBody8'] = '<p>Te esperamos, un saludo</p>';
+$langVoc['mailNoCertBody8'] = '<p>Te esperamos, un saludo.</p>';
 
 //MAIL TO PEOPLE WITH CERTIFICATE
 $langVoc['mailCertBody'] = '<p>Hola ';
@@ -206,6 +206,6 @@ $langVoc['mailCertBody5'] = '<p align="justify">Después, habrás enviar, dentro
 $langVoc['mailCertBody6'] = '<p>Te has inscrito con éxito para las siguientes sesiones:</p>';
 $langVoc['mailCertBody7'] = '<p align="justify">Una semana antes de la sesión, recibirás un email en esta misma dirección para pedirte que confirmes tu asistencia a estas 
                              sesiones. Recuerda que aquellas plazas no confirmadas en las 96 horas siguientes a la emisión del mensaje serán liberadas para 
-                             la lista de espera</p>';
+                             la lista de espera.</p>';
 $langVoc['mailCertBody8'] = '<p align="justify">Para cualquier duda o consulta, nos puedes contactar en cerebro.ciudad@gmail.com</p>';
-$langVoc['mailCertBody9'] = '<p>Te esperamos, un saludo</p>';
+$langVoc['mailCertBody9'] = '<p>Te esperamos, un saludo.</p>';
