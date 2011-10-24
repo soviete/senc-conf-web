@@ -1,4 +1,4 @@
 <div id="footer">
-    <p id="legal">Conferències SENC-LACAIXA 2011-2012.</p>
+    <p id="legal">EL CERVELL ENVAEIX LA CIUTAT 2011-2012.</p>
 </div>
 
