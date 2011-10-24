@@ -45,6 +45,10 @@ else
                             header ('Location:errorNumberSession.php');
 
                         }
+                    else     
+                        {
+                            header ('Location:AddUser.php');
+                        }
                    
                     case 'C1':
 
@@ -56,6 +60,10 @@ else
                             header ('Location:errorNumberSession.php');
 
                         }    
+                    else     
+                        {
+                            header ('Location:AddUser.php');
+                        }
 
                     break;    
                 }
