@@ -19,7 +19,7 @@ else
                     //CASE 12 sessions
                     case 'C12':
 
-                    if (count($_POST['confs'])<2)
+                    if (count($_POST['confs'])<12)
                         {
                             $_SESSION['neededConf']= 12;
                             $_SESSION['chosenConf']= count($_POST['confs']);
