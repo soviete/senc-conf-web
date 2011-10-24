@@ -20,4 +20,5 @@ print "
         </ul>
     </div>
 </div>
+<link rel="shortcut icon" href="images/favicon.ico">
 
