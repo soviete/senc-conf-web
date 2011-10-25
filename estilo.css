@@ -30,7 +30,8 @@
 }
 
 body {
-    background: #D4C792 url(images/img01.gif);
+/*    background: #D4C792 url(images/img01.gif);*/
+    background:#000000;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
     color: #333333;
@@ -106,7 +107,7 @@ a:hover {
     width: 710px;
     height: 96px;
     margin: 0 auto;
-    background: url(images/img05.gif) no-repeat left bottom;
+    background: url(images/img05A.gif) no-repeat left bottom;
 }
 
 /* Logo */
@@ -162,7 +163,7 @@ a:hover {
     height: 20px;
     margin: 0;
     padding: 10px 0 0 0;
-    background: url(images/img02.gif);
+    background: url(images/img02A.gif);
     text-align: center;
     text-transform: uppercase;
     font-size: 11px;
@@ -171,7 +172,7 @@ a:hover {
 }
 
 #menu a:hover, #menu .active a {
-    background-image: url(images/img03.gif);
+    background-image: url(images/img03A.gif);
     color: #AA2808;
 }
 
@@ -224,7 +225,7 @@ lang {
     text-align: left;
     width: 710px;
     margin: 0 auto;
-    background: #D4C792 url(images/img04.gif) repeat-y;
+    background: #D4C792 url(images/img04A.gif) repeat-y;
 }
 
 
@@ -368,7 +369,7 @@ listpadding ol {
     height: 50px;
     margin: 0 auto;
     padding: 40px 0 0 0;
-    background: url(images/img06.gif) no-repeat;
+    background: url(images/img06A.gif) no-repeat;
     color: #FFFFFF;
 }
 
