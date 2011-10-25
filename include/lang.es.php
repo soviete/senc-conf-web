@@ -61,7 +61,7 @@ $langVoc['regtype5'] = 'Elija su modalidad de inscripción';
 $langVoc['startReg'] = 'Entrar';
 
 //TITLE
-$langVoc['conferenceReg'] = 'Registro a conferencias';
+$langVoc['conferenceReg'] = 'Registro a Conferencias';
 
 //header
 $langVoc['registration']='Inscripción';
