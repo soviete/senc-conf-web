@@ -20,3 +20,15 @@ print "
 </div>
 <link rel="shortcut icon" href="images/favicon.ico">
 
+            <!--[if IE]>
+                <style type="text/css">
+                    #header {
+            clear: both;
+            width: 710px;
+            height: 90px;
+            margin: 0 auto;
+            background: url(images/img05.gif) no-repeat left bottom;
+            }
+                </style>
+            <![endif]-->
+
