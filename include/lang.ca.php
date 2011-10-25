@@ -65,6 +65,10 @@ $langVoc['conferenceReg'] = 'Registre a Conferències';
 //header
 $langVoc['registration']='Inscripció';
 
+//Footer
+
+$langVoc['contact'] = 'Informació i consultes: ';
+
 //Form
 $langVoc['formTitle'] = 'Formulari d\'inscripció a conferències';
 $langVoc['formSubTitle'] = 'Pas 1 - Si us plau, ompliu el següents camps:';
