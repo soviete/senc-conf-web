@@ -170,7 +170,7 @@ $langVoc['mailSubject'] = 'Inscripción neuroconferencias';
 $langVoc['mailNoCertBody'] = '<p>Hola ';
 $langVoc['mailNoCertBody1'] = ',<p align="justify">Este es un email generado automáticamente desde la Secretaría de 
                                “El Cerebro Invade la Ciudad”. Enhorabuena, tu proceso de inscripción (';
-$langVoc['mailOption3'] = 'Opción 3';
+$langVoc['mailOption3'] = 'Opción 3 (Sin CAA, inscripcion libre)';
 $langVoc['mailNoCertBody2'] = ') se ha llevado a cabo correctamente.</p>';
 
 $langVoc['mailNoCertBody3'] = 'Te has inscrito con éxito para las siguientes sesiones:</p>';
@@ -188,8 +188,8 @@ $langVoc['mailNoCertBody8'] = '<p>Te esperamos, un saludo.</p>';
 $langVoc['mailCertBody'] = '<p>Hola ';
 $langVoc['mailCertBody1'] = ',<p align="justify">Este es un email generado automáticamente desde la Secretaría de 
                                “El Cerebro Invade la Ciudad”. Enhorabuena, tu proceso de inscripción (';
-$langVoc['mailOption1'] = 'Opción 1';
-$langVoc['mailOption2'] = 'Opción 2';
+$langVoc['mailOption1'] = 'Opción 1 (Con CAA, 12 conferencias)';
+$langVoc['mailOption2'] = 'Opción 2 (Con CAA, 8 conferencias)';
 $langVoc['mailCertBody2'] = ') se ha llevado a cabo correctamente</p>';
 
 $langVoc['mailCertBody3'] = '<p align="justify">Recuerda que para poder solicitar la emisión de la Certificación de Aprovechamiento Académico emitida por 
