@@ -59,6 +59,7 @@ $langVoc['regtype5'] = 'Triï la seva modalitat d\'inscripció';
 $langVoc['startReg'] = 'Entrar';
 
 
+
 //TITLE
 $langVoc['conferenceReg'] = 'Registre a Conferències';
 
@@ -88,6 +89,7 @@ $langVoc['register'] = "Inscriura't!";
 
 //Registration Conferences
 $langVoc['formChoose'] ='Pas 2 - Triï les conferències a les quals assistirà:';
+$langVoc['program'] = 'PROGRAMA DE CONFERÈNCIES';
 //$langVoc['remindChoose'] ='2 - Recorda, tria almenys una conferència aquesta vegada!!!';
 $langVoc['regDetails'] = "DETALLS D'INSCRIPCIÓ";
 $langVoc['noConfSelect'] = 'No has seleccionat cap conferència';
