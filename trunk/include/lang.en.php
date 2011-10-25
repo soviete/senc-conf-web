@@ -88,6 +88,7 @@ $langVoc['register'] = 'Register!';
 
 //Registration Conferences
 $langVoc['formChoose'] ='Step 2 - Choose the conferences you would like to attend:';
+$langVoc['program'] = 'CONFERENCE SCHEDULE';
 //$langVoc['remindChoose'] ='2 - Choose at least one conference this time!!!';
 $langVoc['regDetails'] = "REGISTRATION DETAILS";
 $langVoc['noConfSelect'] = 'You have not choose any conference';

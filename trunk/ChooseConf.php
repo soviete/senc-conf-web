@@ -46,7 +46,9 @@ include 'include/formvalidation.php';
                             echo '<h3>';
                             echo $langVoc['formChoose'];
                             echo '</h3><br>';
-
+                            print "<a href='Programa.pdf' >";
+                            echo $langVoc['program'];
+                            print "</a><br><br><br>";
                             include 'mysql_connect.php';
 
                             //Name of the session in different languages
