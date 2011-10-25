@@ -49,7 +49,8 @@ else
                         {
                             header ('Location:AddUser.php');
                         }
-                   
+                    break;
+                    
                     case 'C1':
 
                     if (count($_POST['confs'])<1)
