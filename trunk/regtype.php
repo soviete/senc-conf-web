@@ -36,19 +36,27 @@ else {
                         <h1><?php echo $langVoc['formTitle']; ?></h1><br>
                         <h3><?php echo $langVoc['regtype0']; ?></h3>
                         <ul>
-                            <li>
-                                <?php echo $langVoc['regtype1']; ?><br>
-                                <?php echo $langVoc['regtype2']; ?><br>
+                            
+                                <?php echo $langVoc['regtypeExtra']; ?>
+                                <?php echo $langVoc['regtypeExtra0']; ?>
+                                <?php echo $langVoc['regtypeExtra1']; ?>
+                            <li>    
+                                <?php echo $langVoc['regtypeExtra2']; ?>
+                                
+<!--                                <?php //echo $langVoc['regtype1']; ?><br>-->
+<!--                                <?php //echo $langVoc['regtype2']; ?><br>-->
                                 <p align="center"><a href="http://www.uab.es/servlet/Satellite/informacio-academica-de-llicenciatures-diplomatures-i-enginyeries/lliure-eleccio/reconeixement-de-credits-1096476958289.html"
                                                      target="_blank">UAB</a><br>
                                     <a href="http://www.upf.edu/universitat/normativa/upf/normativa/grau/rd1457/socioac.html"
                                        target="_blank">UPF</a></p>
                             </li>
                             <li>
-                                <?php echo $langVoc['regtype3']; ?>
+                                <?php //echo $langVoc['regtype3']; ?>
+                                <?php echo $langVoc['regtypeExtra3']; ?>                            
                             </li>
                             <li>
-                                <?php echo $langVoc['regtype4']; ?>
+                                <?php //echo $langVoc['regtype4']; ?>
+                                <?php echo $langVoc['regtypeExtra4']; ?>                            
                             </li>
                         </ul>
                         <br>

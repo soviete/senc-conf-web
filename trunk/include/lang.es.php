@@ -46,19 +46,44 @@ $langVoc['TermsButton'] = 'ACEPTO';
 
 
 $langVoc['regtype0'] = 'Modalidades de inscripción y acreditaciones académicas';
-$langVoc['regtype1'] = '<b>Opción 1</b>: para aquellos que SI deseen recibir una Certificación de
-    Aprovechamiento Académico(CAA), de cara a convalidar Créditos de Libre Elección.';
-$langVoc['regtype2'] = 'La Universidad Autònoma de Barcelona y la Universitat Pompeu Fabra ofrecen 2 Créditos
-    de Libre Elección por este programa. Para acceder a ellos, será necesario certificar la asistencia a al
-    menos 12 de las sesiones y, para los alumnos de la UAB, además elaborar un trabajo (un ensayo de 3 páginas
-    sobre una de las sesiones) que será evaluado por expertos de la SENC. El proceso final de obtención de los
-    créditos depende de cada universidad, la información puede encontrarse aquí:';
-$langVoc['regtype3'] = '<b>Opción 2</b>: para aquellos que SI deseen recibir una Certificación de
-    Aprovechamiento Académico(CAA), a título personal (la certificación de la SENC tiene valor oficial en sí
-    misma), será necesario certificar la asistencia a 8 de las sesiones.';
-$langVoc['regtype4'] = '<b>Opción 3</b>: para aquellos que NO deseen recibir una Certificación de
-    Aprovechamiento Académico(CAA), os podéis inscribir a tantas sesiones como queráis y el control de
-    asistencia sobre estas plazas tendrá como único objetivo monitorizar el acceso a la sala.';
+
+//EXTRA LAST DOCUMENT
+$langVoc['regtypeExtra'] = '<p align="justify">Existen tres modalidades diferentes de inscripción, dependiendo de si querrás o 
+                            no tener una Certificación de Aprovechamiento Académico expedida por la SENC.</p>';
+$langVoc['regtypeExtra0'] = '<p align="justify">Por favor, no te inscribas en más sesiones que a las que realmente piensas asistir: 
+                             las plazas son limitadas y podrías estar negándole a alguien la posibilidad de disfrutar de una sesión.</p>';
+$langVoc['regtypeExtra1'] ='<p align="justify">Importante: la Certificación de Aprovechamiento Académico es un requisito necesario para 
+                             acceder a la concesión de Créditos de Libre Elección, aunque pueda ser solicitada por personas con un interés 
+                             personal en la misma. Debido a restricciones en la organización, sólo podrá ser solicitada por un total de 75 
+                             personas. Por último, la Certificación tiene un coste de 30 euros, que deberán ser ingresados en la cuenta de 
+                             “la Caixa” 2100 2923 01 0200027281, haciendo constar en el asunto “CNS - Nombre Apellido Apellido”.</p>';
+$langVoc['regtypeExtra2'] = '<p align="justify"><b>Opción 1</b>: Para aquellos que SÍ deseen recibir una Certificación de Aprovechamiento 
+                             Académico a fin de convalidar Créditos de Libre Elección: 
+                             La Universidad Autónoma de Barcelona y la Universidad Pompeu Fabra ofrecen dos Créditos de Libre Elección por este programa. 
+                             Para acceder a ellos será necesario certificar la asistencia a un mínimo de 12 de las sesiones y, para los alumnos de la UAB, 
+                             además elaborar un trabajo (un ensayo de tres páginas sobre una de las sesiones) que será evaluado por expertos de la SENC. 
+                             El proceso final de obtención de los créditos depende de cada universidad. La información puede encontrarse aquí:</p>';
+$langVoc['regtypeExtra3'] = '<p align="justify"><b>Opción 2</b>: -	Para aquellos que SÍ deseen recibir una Certificación de 
+                             Aprovechamiento Académico, a título personal (la certificación de la SENC tiene valor oficial en sí misma), 
+                             será necesario certificar la asistencia a ocho de las sesiones.</p>';
+$langVoc['regtypeExtra4'] = '<p align="justify"><b>Opción 3</b>: -	Aquellos que NO deseen recibir una Certificación de Aprovechamiento 
+                             Académico se pueden inscribir en tantas sesiones como quieran y el control de asistencia sobre esas plazas 
+                             tendrá como único objetivo monitorizar el acceso a la sala.</p>';
+ 
+//$langVoc['regtype1'] = '<b>Opción 1</b>: para aquellos que SI deseen recibir una Certificación de
+//    Aprovechamiento Académico(CAA), de cara a convalidar Créditos de Libre Elección.';
+//$langVoc['regtype2'] = 'La Universidad Autònoma de Barcelona y la Universitat Pompeu Fabra ofrecen 2 Créditos
+//    de Libre Elección por este programa. Para acceder a ellos, será necesario certificar la asistencia a al
+//    menos 12 de las sesiones y, para los alumnos de la UAB, además elaborar un trabajo (un ensayo de 3 páginas
+//    sobre una de las sesiones) que será evaluado por expertos de la SENC. El proceso final de obtención de los
+//    créditos depende de cada universidad, la información puede encontrarse aquí:';
+//$langVoc['regtype3'] = '<b>Opción 2</b>: para aquellos que SI deseen recibir una Certificación de
+//    Aprovechamiento Académico(CAA), a título personal (la certificación de la SENC tiene valor oficial en sí
+//    misma), será necesario certificar la asistencia a 8 de las sesiones.';
+//$langVoc['regtype4'] = '<b>Opción 3</b>: para aquellos que NO deseen recibir una Certificación de
+//    Aprovechamiento Académico(CAA), os podéis inscribir a tantas sesiones como queráis y el control de
+//    asistencia sobre estas plazas tendrá como único objetivo monitorizar el acceso a la sala.';
+
 $langVoc['regtype5'] = 'Elija su modalidad de inscripción';
 
 

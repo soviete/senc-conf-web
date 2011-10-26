@@ -28,37 +28,62 @@ $langVoc['procedureReg5'] =  'Si vas quedar en llista d\'espera, tres dies abans
                               persones que hi estan incloses; aquestes places seran adjudicades per ordre de confirmació. ' ;
 
 $langVoc['Terms0'] = 'TERMS & CONDITIONS';
-$langVoc['Terms1'] = 'Para continuar el registro por favor lea y accepte ';
-$langVoc['Terms2'] = 'En cumplimiento de lo dispuesto en la LO 15/99 de Protección de Datos de Carácter Personal,
-la SOCIEDAD ESPAÑOLA DE NEUROCIENCIA le comunica que los datos de carácter personal que nos facilite
-serán incluidos en un fichero automatizado propiedad de la Sociedad para darles el tratamiento legal
-debido y con uso exclusivo del destino para el que los facilitó. Asimismo le informamos de la posibilidad
-de ejercitar su derecho de acceso, rectificación, cancelación y oposición, mediante comunicación escrita
-dirigida a la SOCIEDAD ESPAÑOLA DE NEUROCIENCIA por correo electrónico dirigido a <a href="mailto:secretaria.tecnica@senc.es?subject=Feedback" >secretaria.tecnica@senc.es</a>
-<br><br>
-La SOCIEDAD ESPAÑOLA DE NEUROCIENCIA ha adoptado los niveles de seguridad de protección de datos de carácter
-personal legalmente requeridos, y ha instalado todos los medios y medidas técnicas a su alcance para evitar
-la pérdida, mal uso, alteración, acceso no autorizado y robo de los datos facilitados.<br><br>
-La SOCIEDAD ESPAÑOLA DE NEUROCIENCIA no comunicará los datos que le facilitan los usuarios a ninguna otra
-sociedad o entidad.';
+$langVoc['Terms1'] = 'Per continuar el registre si us plau llegiu i accepteu ';
+$langVoc['Terms2'] = 'En compliment d\'allò que disposa la LO 15/99 de protecció de dades de caràcter personal, la SOCIETAT ESPANYOLA DE 
+                      NEUROCIÈNCIA us comunica que les dades de caràcter personal que ens faciliteu seran incloses en un fitxer automatitzat 
+                      propietat de la Societat per donar-los el tractament legal degut i amb ús exclusiu de la destinació per a la qual les 
+                      vau facilitar. Així mateix us informem de la possibilitat d\'exercitar el dret d\'accés, rectificació, cancel·lació i 
+                      oposició mitjançant una comunicació escrita adreçada a la SOCIETAT ESPANYOLA DE NEUROCIÈNCIA per correu electrònic 
+                      dirigit a <a href="mailto:secretaria.tecnica@senc.es?subject=Feedback" >secretaria.tecnica@senc.es</a>
+                      <br><br>
+                      La SOCIETAT ESPANYOLA DE NEUROCIÈNCIA ha adoptat els nivells de seguretat de protecció de dades de caràcter personal 
+                      legalment requerits, i ha instal·lat tots els mitjans i les mesures tècniques al seu abast per evitar la pèrdua, mal ús, 
+                      alteració, accés no autoritzat i robatori de les dades facilitades.<br><br>
+                      La SOCIETAT ESPANYOLA DE NEUROCIÈNCIA no comunicarà les dades que li faciliten els usuaris a cap altra societat 
+                      o entitat.';
 
 $langVoc['TermsButton'] = 'ACCEPTO';
 
 
-$langVoc['regtype0'] = 'Modalidades de inscripción y acreditaciones académicas';
-$langVoc['regtype1'] = '<b>Opción 1</b>: para aquellos que SI deseen recibir una Certificación de
-    Aprovechamiento Académico (CAA), de cara a convalidar Créditos de Libre Elección.';
-$langVoc['regtype2'] = 'La Universidad Autònoma de Barcelona y la Universitat Pompeu Fabra ofrecen 2 Créditos
-    de Libre Elección por este programa. Para acceder a ellos, será necesario certificar la asistencia a al
-    menos 12 de las sesiones y, para los alumnos de la UAB, además elaborar un trabajo (un ensayo de 3 páginas
-    sobre una de las sesiones) que será evaluado por expertos de la SENC. El proceso final de obtención de los
-    créditos depende de cada universidad, la información puede encontrarse aquí:';
-$langVoc['regtype3'] = '<b>Opción 2</b>: para aquellos que SI deseen recibir una Certificación de
-    Aprovechamiento Académico (CAA), a título personal (la certificación de la SENC tiene valor oficial en sí
-    misma), será necesario certificar la asistencia a 8 de las sesiones.';
-$langVoc['regtype4'] = '<b>Opción 3</b>: para aquellos que NO deseen recibir una Certificación de
-    Aprovechamiento Académico (CAA), os podéis inscribir a tantas sesiones como queráis y el control de
-    asistencia sobre estas plazas tendrá como único objetivo monitorizar el acceso a la sala.';
+$langVoc['regtype0'] = 'Modalitats d\'inscripció i acreditacions acadèmiques';
+
+//EXTRA LAST DOCUMENT
+$langVoc['regtypeExtra'] = '<p align="justify">Hi ha tres modalitats diferents d\'inscripció, 
+                            depenent que vulguis o no tenir una Certificació d\'Aprofitament Acadèmic expedida per la SENC.</p>';
+$langVoc['regtypeExtra0'] = '<p align="justify">Si us plau, no t\'inscriguis en més sessions que aquelles a què realment penses assistir: 
+                             les places són limitades i podries estar negant a algú la possibilitat de gaudir d\'una sessió.</p>';
+$langVoc['regtypeExtra1'] ='<p align="justify">Important: la Certificació d\'Aprofitament Acadèmic és un requisit necessari per 
+                            accedir a la concessió de Crèdits de Lliure Elecció, encara que pugui ser sol·licitada per persones 
+                            amb interès personal en aquesta. A causa de restriccions en l\'organització, només podrà ser sol·licitada 
+                            per un total de 75 persones. Finalment, la Certificació té un cost de 30 euros, que hauran de ser ingressats 
+                            en el compte de “la Caixa” 2100 2923 01 0200027281, fent constar a l\'assumpte “CNS - Nom Cognom Cognom”.</p>';
+$langVoc['regtypeExtra2'] = '<p align="justify"><b>Opció 1</b>: Per a aquells que SÍ que desitgin rebre una Certificació d\'Aprofitament Acadèmic a fi de 
+                             convalidar Crèdits de Lliure Elecció: 
+                             La Universitat Autònoma de Barcelona i la Universitat Pompeu Fabra ofereixen dos Crèdits de Lliure Elecció 
+                             per aquest programa. Per accedir-hi caldrà certificar l\'assistència a un mínim de 12 de les sessions i, per 
+                             als alumnes de la UAB, a més a més elaborar un treball (un assaig de tres pàgines sobre una de les sessions) 
+                             que serà avaluat per experts de la SENC. El procés final d\'obtenció dels crèdits depèn de cada universitat. 
+                             La informació es pot trobar aquí:</p>';
+$langVoc['regtypeExtra3'] = '<p align="justify"><b>Opció 2</b>: Per a aquells que SÍ que desitgin rebre una Certificació d\'Aprofitament Acadèmic, a 
+                             títol personal (la certificació de la SENC té valor oficial en si mateixa), caldrà que certifiquin l\'assistència a vuit 
+                             de les sessions.</p>';
+$langVoc['regtypeExtra4'] = '<p align="justify"><b>Opció 3</b>: Aquells que NO desitgin rebre una Certificació d\'Aprofitament Acadèmic es poden inscriure 
+                             en tantes sessions com vulguin i el control d\'assistència sobre aquestes places tindrà com a únic objectiu 
+                             monitorar l\'accés a la sala.</p>'; 
+//$langVoc['regtype1'] = '<b>Opción 1</b>: para aquellos que SI deseen recibir una Certificación de
+//    Aprovechamiento Académico (CAA), de cara a convalidar Créditos de Libre Elección.';
+//$langVoc['regtype2'] = 'La Universidad Autònoma de Barcelona y la Universitat Pompeu Fabra ofrecen 2 Créditos
+//    de Libre Elección por este programa. Para acceder a ellos, será necesario certificar la asistencia a al
+//    menos 12 de las sesiones y, para los alumnos de la UAB, además elaborar un trabajo (un ensayo de 3 páginas
+//    sobre una de las sesiones) que será evaluado por expertos de la SENC. El proceso final de obtención de los
+//    créditos depende de cada universidad, la información puede encontrarse aquí:';
+//$langVoc['regtype3'] = '<b>Opción 2</b>: para aquellos que SI deseen recibir una Certificación de
+//    Aprovechamiento Académico (CAA), a título personal (la certificación de la SENC tiene valor oficial en sí
+//    misma), será necesario certificar la asistencia a 8 de las sesiones.';
+//$langVoc['regtype4'] = '<b>Opción 3</b>: para aquellos que NO deseen recibir una Certificación de
+//    Aprovechamiento Académico (CAA), os podéis inscribir a tantas sesiones como queráis y el control de
+//    asistencia sobre estas plazas tendrá como único objetivo monitorizar el acceso a la sala.';
+
 $langVoc['regtype5'] = 'Triï la seva modalitat d\'inscripció';
 
 $langVoc['startReg'] = 'Entrar';
