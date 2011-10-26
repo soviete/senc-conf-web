@@ -28,7 +28,8 @@ $_SESSION['tracker'] = 1;
                         <li><?php echo $langVoc['procedureReg1']; ?></li>
                         <li><?php echo $langVoc['procedureReg2']; ?></li>    
                         <li><?php echo $langVoc['procedureReg3']; ?></li>    
-                        <li><?php echo $langVoc['procedureReg4']; ?></li>                        
+                        <li><?php echo $langVoc['procedureReg4']; ?></li>
+                        <li><?php echo $langVoc['procedureReg5']; ?></li>
                     </ol>
                     </div>
                     <br><br>
