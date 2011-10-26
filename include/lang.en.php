@@ -44,20 +44,45 @@ sociedad o entidad.';
 $langVoc['TermsButton'] = 'ACCEPT';
 
 
-$langVoc['regtype0'] = 'Modalidades de inscripción y acreditaciones académicas';
-$langVoc['regtype1'] = '<b>Opción 1</b>: para aquellos que SI deseen recibir una Certificación de
-    Aprovechamiento Académico (CAA), de cara a convalidar Créditos de Libre Elección.';
-$langVoc['regtype2'] = 'La Universidad Autònoma de Barcelona y la Universitat Pompeu Fabra ofrecen 2 Créditos
-    de Libre Elección por este programa. Para acceder a ellos, será necesario certificar la asistencia a al
-    menos 12 de las sesiones y, para los alumnos de la UAB, además elaborar un trabajo (un ensayo de 3 páginas
-    sobre una de las sesiones) que será evaluado por expertos de la SENC. El proceso final de obtención de los
-    créditos depende de cada universidad, la información puede encontrarse aquí:';
-$langVoc['regtype3'] = '<b>Opción 2</b>: para aquellos que SI deseen recibir una Certificación de
-    Aprovechamiento Académico (CAA), a título personal (la certificación de la SENC tiene valor oficial en sí
-    misma), será necesario certificar la asistencia a 8 de las sesiones.';
-$langVoc['regtype4'] = '<b>Opción 3</b>: para aquellos que NO deseen recibir una Certificación de
-    Aprovechamiento Académico (CAA), os podéis inscribir a tantas sesiones como queráis y el control de
-    asistencia sobre estas plazas tendrá como único objetivo monitorizar el acceso a la sala.';
+$langVoc['regtype0'] = 'Ways of registering and academic accreditations';
+
+//EXTRA LAST DOCUMENT
+$langVoc['regtypeExtra'] = '<p align="justify">There are three different kinds of registration, depending on whether or 
+                             not you would like to have a Certificate of Academic Achievement issued by the SENC.</p>';
+$langVoc['regtypeExtra0'] = '<p align="justify">Please do not register for more sessions than you really intend to go to: 
+                              the places are limited and you might be denying someone else the possibility of enjoying a session.</p>';
+$langVoc['regtypeExtra1'] ='<p align="justify">Important: the Certificate of Academic Achievement is a necessary requirement to be 
+                             able to be awarded Free-Choice Credits, although it may also be applied for by people with a personal 
+                             interest in it. Due to restrictions in the organisation, it may only be applied for by 75 people. 
+                             Finally, the Certificate has a cost of €30.00, which should be paid into the following account 
+                             at “la Caixa”: 2100 2923 01 0200027281. Please make sure you identify your payment with the 
+                             words “CNS - Name Surname (Surname)”.</p>';
+$langVoc['regtypeExtra2'] = '<p align="justify"><b>Option 1</b>: For people who DO wish to receive a 
+                             Certificate of Academic Achievement in order to validate Free-Choice Credits: 
+                             The Autonomous University of Barcelona and the Pompeu Fabra University offer 2 Free-Choice Credits 
+                             for this programme. To be awarded them, you will need to certify having attended at least 12 of the 
+                             sessions and, for UAB students, you will also have to prepare a piece of work (a three-page essay on 
+                             one of the sessions) which will be assessed by experts from the SENC. The final process for being awarded 
+                             the credits depends on each university. The information may be found here:</p>';
+$langVoc['regtypeExtra3'] = '<p align="justify"><b>Option 2</b>: For people who DO wish to receive a Certificate of Academic Achievement 
+                             for their personal use (the SENC certificate has an official value), attendance at eight of the sessions 
+                             will need to be certified.</p>';
+$langVoc['regtypeExtra4'] = '<p align="justify"><b>Option 3</b>: For people who do NOT wish to receive a Certificate of Academic 
+                             Achievement, you may register for as many sessions as you wish and the attendance list will be passed 
+                             only to monitor access to the hall.</p>';
+//$langVoc['regtype1'] = '<b>Opción 1</b>: para aquellos que SI deseen recibir una Certificación de
+//    Aprovechamiento Académico (CAA), de cara a convalidar Créditos de Libre Elección.';
+//$langVoc['regtype2'] = 'La Universidad Autònoma de Barcelona y la Universitat Pompeu Fabra ofrecen 2 Créditos
+//    de Libre Elección por este programa. Para acceder a ellos, será necesario certificar la asistencia a al
+//    menos 12 de las sesiones y, para los alumnos de la UAB, además elaborar un trabajo (un ensayo de 3 páginas
+//    sobre una de las sesiones) que será evaluado por expertos de la SENC. El proceso final de obtención de los
+//    créditos depende de cada universidad, la información puede encontrarse aquí:';
+//$langVoc['regtype3'] = '<b>Opción 2</b>: para aquellos que SI deseen recibir una Certificación de
+//    Aprovechamiento Académico (CAA), a título personal (la certificación de la SENC tiene valor oficial en sí
+//    misma), será necesario certificar la asistencia a 8 de las sesiones.';
+//$langVoc['regtype4'] = '<b>Opción 3</b>: para aquellos que NO deseen recibir una Certificación de
+//    Aprovechamiento Académico (CAA), os podéis inscribir a tantas sesiones como queráis y el control de
+//    asistencia sobre estas plazas tendrá como único objetivo monitorizar el acceso a la sala.';
 $langVoc['regtype5'] = 'Please choose your registration option';
 
 $langVoc['startReg'] = 'Go';
