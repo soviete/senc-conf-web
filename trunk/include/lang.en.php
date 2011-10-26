@@ -15,11 +15,11 @@ $langVoc['regInfo'] = 'Esta pre-inscripción tiene como objetivo efectuar una re
     para asegurarte un sitio.';
 $langVoc['procedureReg'] = 'El procedimiento de pre-inscripción será el siguiente:';
 $langVoc['procedureReg1'] = 'Una vez que nos hayas dado tus datos, selecciona en el menú aquellas sesiones a las que querrás asistir';
-$langVoc['procedureReg2'] = 'La base de datos recogerá tu solicitud y te enviará un mensaje confirmando si tienes una plaza o si 
+$langVoc['procedureReg2'] = 'La base de datos recogerá tu solicitud y te enviará un mensaje confirmando si tienes una plaza o si
                              bien debido al aforo completo has entrado en la lista de espera';
-$langVoc['procedureReg3'] = 'Si has obtenido plaza, una semana antes del acto te pediremos que confirmes tu asistencia. Importante: 
+$langVoc['procedureReg3'] = 'Si has obtenido plaza, una semana antes del acto te pediremos que confirmes tu asistencia. Importante:
                              aquellas plazas no confirmadas en un plazo de 96 horas serán liberadas para la lista de espera';
-$langVoc['procedureReg4'] = 'Si quedaste en la lista de espera, tres días antes del acto os ofreceremos las plazas liberadas 
+$langVoc['procedureReg4'] = 'Si quedaste en la lista de espera, tres días antes del acto os ofreceremos las plazas liberadas
                              al global de las personas incluídas en la misma; estas plazas serán adjudicadas por orden de confirmación.';
 $langVoc['Terms0'] = 'TERMS & CONDITIONS';
 $langVoc['Terms1'] = 'Para continuar el registro por favor lea y accepte ';
@@ -66,6 +66,7 @@ $langVoc['registration']='Registration';
 //Footer
 
 $langVoc['contact'] = 'Information and queries: ';
+$langVoc['contact1'] = 'Web design: ';
 
 //Form
 $langVoc['formTitle'] = 'Conferences registration form';
@@ -128,14 +129,14 @@ $month['December'] = "December";
 
 //ERROR SESSIONS
 
-$langVoc['numSessionsMsg1'] = 'The number of conferences you choose '; 
+$langVoc['numSessionsMsg1'] = 'The number of conferences you choose ';
 $langVoc['numSessionsMsg2'] = ' does not match your registration option, you should chose ';
 $langVoc['back1'] = 'BACK';
 $langVoc['backMsg'] = 'to the conferences registration form';
 $langVoc['sessionExpired'] = 'Session expired. Please start over';
 
 //ERROR NO SESSIONS CHOSEN
-$langVoc['NoSessions'] = 'You have to chose at least one conference!'; 
+$langVoc['NoSessions'] = 'You have to chose at least one conference!';
 
 //ERROR REGISTRATION FORM
 
@@ -162,7 +163,7 @@ $langVoc['acceptPartialReg'] = 'If you are agree please click ';
 
 //ERROR USER ALREADY REGISTERED
 $langVoc['userRegistered'] = 'This user is already registered!';
-$langVoc['pleaseRetry'] = 'Please try again. '; 
+$langVoc['pleaseRetry'] = 'Please try again. ';
 
 //AddUser USER CORRECTLY REGISTERED
 $langVoc['congra'] = 'Congratulations ';
@@ -214,4 +215,4 @@ $langVoc['mailCertBody7'] = '<p align="justify">Una semana antes de la sesión, 
                              sesiones. Recuerda que aquellas plazas no confirmadas en las 96 horas siguientes a la emisión del mensaje serán liberadas para
                              la lista de espera.</p>';
 $langVoc['mailCertBody8'] = '<p align="justify">Para cualquier duda o consulta, nos puedes contactar en cerebro.ciudad@gmail.com</p>';
-$langVoc['mailCertBody9'] = '<p>Te esperamos, un saludo.</p>';;
+$langVoc['mailCertBody9'] = '<p>Te esperamos, un saludo.</p>';
