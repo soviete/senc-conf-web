@@ -16,11 +16,11 @@ $langVoc['regInfo'] = 'Esta pre-inscripción tiene como objetivo efectuar una re
     para asegurarte un sitio.';
 $langVoc['procedureReg'] = 'El procedimiento de pre-inscripción será el siguiente:';
 $langVoc['procedureReg1'] = 'Una vez que nos hayas dado tus datos, selecciona en el menú aquellas sesiones a las que querrás asistir';
-$langVoc['procedureReg2'] = 'La base de datos recogerá tu solicitud y te enviará un mensaje confirmando si tienes una plaza o si 
+$langVoc['procedureReg2'] = 'La base de datos recogerá tu solicitud y te enviará un mensaje confirmando si tienes una plaza o si
                              bien debido al aforo completo has entrado en la lista de espera';
-$langVoc['procedureReg3'] = 'Si has obtenido plaza, una semana antes del acto te pediremos que confirmes tu asistencia. Importante: 
+$langVoc['procedureReg3'] = 'Si has obtenido plaza, una semana antes del acto te pediremos que confirmes tu asistencia. Importante:
                              aquellas plazas no confirmadas en un plazo de 96 horas serán liberadas para la lista de espera';
-$langVoc['procedureReg4'] = 'Si quedaste en la lista de espera, tres días antes del acto os ofreceremos las plazas liberadas 
+$langVoc['procedureReg4'] = 'Si quedaste en la lista de espera, tres días antes del acto os ofreceremos las plazas liberadas
                              al global de las personas incluídas en la misma; estas plazas serán adjudicadas por orden de confirmación.';
 $langVoc['Terms0'] = 'TERMS & CONDITIONS';
 $langVoc['Terms1'] = 'Para continuar el registro por favor lea y accepte ';
@@ -69,6 +69,7 @@ $langVoc['registration']='Inscripció';
 //Footer
 
 $langVoc['contact'] = 'Informació i consultes: ';
+$langVoc['contact1'] = 'Disseny web: ';
 
 //Form
 $langVoc['formTitle'] = 'Formulari d\'inscripció a conferències';
@@ -120,14 +121,14 @@ $month['November'] = "Novembre";
 $month['December'] = "Desembre";
 
 //ERROR SESSIONS
-$langVoc['numSessionsMsg1'] = 'El número de conferències que has triat '; 
+$langVoc['numSessionsMsg1'] = 'El número de conferències que has triat ';
 $langVoc['numSessionsMsg2'] = ' no correspon a l\'opció d\'incripció triada, has d\'escollir ';
 $langVoc['back1'] = 'TORNAR';
 $langVoc['backMsg'] = 'al formulari d\'inscripció a conferències';
 $langVoc['sessionExpired'] = 'La sessió ha caducat. Si us plau, torni a començar';
 
 //ERROR NO SESSIONS CHOSEN
-$langVoc['NoSessions'] = 'Has de triar alguna conferència!'; 
+$langVoc['NoSessions'] = 'Has de triar alguna conferència!';
 
 //ERROR REGISTRATION FORM
 $langVoc['back'] = '<b>Si us plau, torni a intentar-ho.<br><a href=dataForm.php>ENRERE</a></b>';
@@ -159,7 +160,7 @@ $langVoc['pleaseRetry'] = 'Si us plau, torni a intentar-ho. ';
 //AddUser USER CORRECTLY REGISTERED
 $langVoc['congra'] = 'Enhorabona ';
 $langVoc['congra1'] = '!! T\'has registrat correctament';
-$langVoc['congra2'] = 'En breu rebràs un email amb la confirmació.';    
+$langVoc['congra2'] = 'En breu rebràs un email amb la confirmació.';
 $langVoc['noSessionAva'] = 'No hi ha prou places disponibles';
 $langVoc['waitList'] = 'Si vols passar a la nostra llista d\'espera prem ';
 $langVoc['Here'] = 'aquí';

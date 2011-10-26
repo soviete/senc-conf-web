@@ -120,14 +120,17 @@ a:hover {
 #logo h1 {
     margin: 0;
     padding: 0;
-    font: italic 36px "Trebuchet MS", Arial, Helvetica, sans-serif;
+/*    font: italic 36px "Trebuchet MS", Arial, Helvetica, sans-serif;*/
+    font: 36px "Futura", Arial, Helvetica, sans-serif;
+/*    font: 36px "Arial", Arial, Helvetica, sans-serif;*/
 }
 
 #logo h2 {
+    font : 10px "Futura";
     margin: 0 0 0 0;
     padding: 0;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-size: 10px;
     font-weight: bold;
     color: #D4C792;
@@ -205,8 +208,8 @@ lang {
     float: left;
     width: 40px;
     height: 20px;
-    margin: 0;
-    padding: 10px 0 10px 0;
+    margin: 0 auto;
+    padding: 10px 0 0 10px;
     /*background: url(images/img02.gif);*/
     /*text-align: center;*/
     text-transform: uppercase;
@@ -217,6 +220,24 @@ lang {
 
 #lang a:hover, #menu .active a {
     color: #AA2808;
+}
+
+#contact {
+    float: right;
+    margin: 0 auto;
+    padding: 10px 10px 0px 0;
+    color: #FFFFFF;
+}
+
+#contact p {
+    margin: 0;
+    text-align: right;
+    font-size: 77%;
+}
+
+#contact a {
+    text-decoration: underline;
+    color: #FFFFFF;
 }
 
 /* Page */
