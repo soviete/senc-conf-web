@@ -495,7 +495,9 @@ TD
 }
 #boxleft {
     float:left;
+    cursor: pointer
 }
 #boxright {
     float:right;
+    cursor: pointer
 }
