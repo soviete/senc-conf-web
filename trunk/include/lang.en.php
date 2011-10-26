@@ -27,19 +27,18 @@ $langVoc['procedureReg5'] =  'If you are on the waiting list, three days before 
                               the list. These places will be awarded on a first-come first-served basis.' ;
 
 $langVoc['Terms0'] = 'TERMS & CONDITIONS';
-$langVoc['Terms1'] = 'Para continuar el registro por favor lea y accepte ';
-$langVoc['Terms2'] = 'En cumplimiento de lo dispuesto en la LO 15/99 de Protección de Datos de Carácter Personal,
-la SOCIEDAD ESPAÑOLA DE NEUROCIENCIA le comunica que los datos de carácter personal que nos facilite
-serán incluidos en un fichero automatizado propiedad de la Sociedad para darles el tratamiento legal
-debido y con uso exclusivo del destino para el que los facilitó. Asimismo le informamos de la posibilidad
-de ejercitar su derecho de acceso, rectificación, cancelación y oposición, mediante comunicación escrita
-dirigida a la SOCIEDAD ESPAÑOLA DE NEUROCIENCIA por correo electrónico dirigido a <a href="mailto:secretaria.tecnica@senc.es?subject=Feedback" >secretaria.tecnica@senc.es</a>
-<br><br>
-La SOCIEDAD ESPAÑOLA DE NEUROCIENCIA ha adoptado los niveles de seguridad de protección de datos de carácter
-personal legalmente requeridos, y ha instalado todos los medios y medidas técnicas a su alcance para evitar
-la pérdida, mal uso, alteración, acceso no autorizado y robo de los datos facilitados.<br><br>
-La SOCIEDAD ESPAÑOLA DE NEUROCIENCIA no comunicará los datos que le facilitan los usuarios a ninguna otra
-sociedad o entidad.';
+$langVoc['Terms1'] = 'Please accept the terms and conditions to continue';
+$langVoc['Terms2'] = 'Pursuant to Organic Law 15/99 on Personal Data Protection, the SOCIEDAD ESPAÑOLA DE NEUROCIENCIA (Spanish Society of 
+                      Neuroscience) hereby informs you that the personal data with which you provide us will be included in a computerised 
+                      file belonging to the Society for legally permitted processing and for the exclusive purpose for which it has 
+                      been provided. We would also inform you of the possibility of exercising your right to access, rectify, cancel 
+                      and oppose this data, by sending an e-mail to the SOCIEDAD ESPAÑOLA DE NEUROCIENCIA at 
+                      <a href="mailto:secretaria.tecnica@senc.es?subject=Feedback" >secretaria.tecnica@senc.es</a>
+                      <br><br>
+                      The SOCIEDAD ESPAÑOLA DE NEUROCIENCIA has adopted the legally required data protection security levels and has 
+                      installed all the means and technical measures it has available to prevent the loss, incorrect use, alteration, 
+                      unauthorised access or theft of the data provided.<br><br>
+                      The SOCIEDAD ESPAÑOLA DE NEUROCIENCIA will not provide any other society or organisation with the data supplied by users.';
 
 $langVoc['TermsButton'] = 'ACCEPT';
 
