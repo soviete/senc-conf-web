@@ -201,41 +201,44 @@ $langVoc['mailSubject'] = 'Inscripción neuroconferencias';
 
 //MAIL TO PEOPLE WITHOUT CERTIFICATE
 $langVoc['mailNoCertBody'] = '<p>Hola ';
-$langVoc['mailNoCertBody1'] = ',<p align="justify">Este es un email generado automáticamente desde la Secretaría de
-                               “El Cerebro Invade la Ciudad”. Enhorabuena, tu proceso de inscripción (';
-$langVoc['mailOption3'] = 'Opción 3 (Sin CAA, inscripcion libre)';
-$langVoc['mailNoCertBody2'] = ') se ha llevado a cabo correctamente.</p>';
+$langVoc['mailNoCertBody1'] = ',<p align="justify">Aquest és un email generat automàticament 
+                               des de la secretaria d\'“El Cervell Envaeix la Ciutat”. Enhorabona, el teu procés 
+                               d\'inscripció (';
+$langVoc['mailOption3'] = 'Opció 3 (Sense CAA, inscripció lliure)';
+$langVoc['mailNoCertBody2'] = ') s\'ha dut a terme correctament.</p>';
 
-$langVoc['mailNoCertBody3'] = 'Te has inscrito con éxito para las siguientes sesiones:</p>';
-$langVoc['mailNoCertBody4'] = 'Una semana antes de la sesión, recibirás un email en esta misma dirección para pedirte que confirmes
-                               tu asistencia a estas sesiones. Recuerda que aquellas plazas no confirmadas en las 96 horas siguientes
-                               a la emisión del mensaje serán liberadas para la lista de espera.';
+$langVoc['mailNoCertBody3'] = 'T\'has inscrit amb èxit per a les sessions següents:</p>';
+$langVoc['mailNoCertBody4'] = 'Una setmana abans de la sessió, rebràs un email en aquesta mateixa adreça per demanar-te que confirmis 
+                               l\'assistència a aquestes sessions. Recorda que les places no confirmades en les 96 hores següents a 
+                               l\'emissió del missatge seran alliberades per a la llista d\'espera.';
 
-$langVoc['mailNoCertBody5'] = '<p align="justify">Y has quedado en la lista de espera de las siguientes sesiones:</p>';
-$langVoc['mailNoCertBody6'] = '<p align="justify">Recuerda que tres días antes del acto os ofreceremos, mediante un mensaje a esta dirección,
-                               las plazas liberadas al global de las personas incluídas en la misma; estas plazas serán adjudicadas por orden de confirmación.</p>';
-$langVoc['mailNoCertBody7'] = '<p align="justify">Para cualquier duda o consulta, nos puedes contactar en cerebro.ciudad@gmail.com</p>';
-$langVoc['mailNoCertBody8'] = '<p>Te esperamos, un saludo.</p>';
+$langVoc['mailNoCertBody5'] = '<p align="justify">I has quedat en la llista d\'espera de les sessions següents:</p>';
+$langVoc['mailNoCertBody6'] = '<p align="justify">Recorda que tres dies abans de l\'acte oferirem, mitjançant un missatge a 
+                               aquesta adreça, les places alliberades al conjunt de persones que hi estan incloses; aquestes 
+                               places seran adjudicades per ordre de confirmació.</p>';
+$langVoc['mailNoCertBody7'] = '<p align="justify">•	Per a qualsevol dubte o consulta, ens pots contactar a cerebro.ciudad@gmail.com</p>';
+$langVoc['mailNoCertBody8'] = '<p>T\'esperem, salutacions.</p>';
 
 //MAIL TO PEOPLE WITH CERTIFICATE
 $langVoc['mailCertBody'] = '<p>Hola ';
-$langVoc['mailCertBody1'] = ',<p align="justify">Este es un email generado automáticamente desde la Secretaría de
-                               “El Cerebro Invade la Ciudad”. Enhorabuena, tu proceso de inscripción (';
-$langVoc['mailOption1'] = 'Opción 1 (Con CAA, 12 conferencias)';
-$langVoc['mailOption2'] = 'Opción 2 (Con CAA, 8 conferencias)';
-$langVoc['mailCertBody2'] = ') se ha llevado a cabo correctamente</p>';
+$langVoc['mailCertBody1'] = ',<p align="justify">Aquest és un email generat automàticament des de la secretaria d\'“El Cervell Envaeix la Ciutat”. 
+                             Enhorabona, el teu procés d\'inscripció (';
+$langVoc['mailOption1'] = 'Opció 1 (Amb CAA, 12 conferències)';
+$langVoc['mailOption2'] = 'Opció 2 (Amb CAA, 8 conferències)';
+$langVoc['mailCertBody2'] = ') s\'ha dut a terme correctament.</p>';
 
-$langVoc['mailCertBody3'] = '<p align="justify">Recuerda que para poder solicitar la emisión de la Certificación de Aprovechamiento Académico emitida por
-                            la SENC es necesario efectuar un pago de 30 €. Para ello, haz una transferencia por la citada cantidad a la
-                            siguiente cuenta:</p>La Caixa<br>2100 2923 01 0200027281<br>';
-$langVoc['mailCertBody4'] = '<p>En el asunto has de hacer constar: “CNS– Nombre Apellido Apellido”</p>';
-$langVoc['mailCertBody5'] = '<p align="justify">Después, habrás enviar, dentro de las próximas 4 semanas, el comprobante de la transferencia a la siguiente
-                             dirección: cerebro.ciudad@gmail.com</p><p>Importante: Aquellas inscripciones con solicitud de Certificación de Aprovechamiento Académico
-                             que no remitan el comprobante de pago en el plazo establecido serán revocadas y las plazas pre-inscritas serán liberadas.</p>';
-$langVoc['mailCertBody6'] = '<p>Te has inscrito con éxito para las siguientes sesiones:</p>';
-$langVoc['mailCertBody7'] = '<p align="justify">Una semana antes de la sesión, recibirás un email en esta misma dirección para pedirte que confirmes tu asistencia a estas
-                             sesiones. Recuerda que aquellas plazas no confirmadas en las 96 horas siguientes a la emisión del mensaje serán liberadas para
-                             la lista de espera.</p>';
-$langVoc['mailCertBody8'] = '<p align="justify">Para cualquier duda o consulta, nos puedes contactar en cerebro.ciudad@gmail.com</p>';
-$langVoc['mailCertBody9'] = '<p>Te esperamos, un saludo.</p>';
+$langVoc['mailCertBody3'] = '<p align="justify">•	Recorda que per poder sol·licitar l\'emissió de la Certificació d\'Aprofitament 
+                             Acadèmic emesa per la SENC has de fer un pagament de 30 euros. Per a això, fes una transferència per la 
+                             quantitat esmentada al compte següent:</p>La Caixa<br>2100 2923 01 0200027281<br>';
+$langVoc['mailCertBody4'] = '<p>A l\'assumpte has de fer constar: “CNS – Nom Cognom Cognom”.</p>';
+$langVoc['mailCertBody5'] = '<p align="justify">Després, hauràs d\'enviar, durant les properes quatre setmanes, el comprovant de la 
+                             transferència a l\'adreça següent: cerebro.ciudad@gmail.com</p><p>Important: aquelles inscripcions amb sol·licitud 
+                             de Certificació d\'Aprofitament Acadèmic que no remetin el comprovant de pagament en el termini establert seran 
+                             revocades i les places preinscrites seran alliberades.</p>';
+$langVoc['mailCertBody6'] = '<p>T\'has inscrit amb èxit per a les sessions següents:</p>';
+$langVoc['mailCertBody7'] = '<p align="justify">Una setmana abans de la sessió, rebràs un email en aquesta mateixa adreça per demanar-te que 
+                             confirmis l\'assistència a aquestes sessions. Recorda que les places no confirmades en les 96 hores següents
+                             a l\'emissió del missatge seran alliberades per a la llista d\'espera.</p>';
+$langVoc['mailCertBody8'] = '<p align="justify">•	Per a qualsevol dubte o consulta, ens pots contactar a cerebro.ciudad@gmail.com</p>';
+$langVoc['mailCertBody9'] = '<p>T\'esperem, salutacions.</p>';
 ?>
