@@ -8,19 +8,24 @@
 
 $langVoc = array();
 
-$langVoc['regInfoTitle'] = 'Bienvenido a la pre-inscripción a las sesiones de “El Cerebro Invade la Ciudad”.';
-$langVoc['regInfo'] = 'Esta pre-inscripción tiene como objetivo efectuar una reserva de plaza en los diferentes
-    eventos que conforman el programa. Esta reserva es necesaria porque las plazas son limitadas y su número
-    depende de cada una de las sedes: si estás interesado en asistir, te recomendamos que efectúes esta reserva
-    para asegurarte un sitio.';
-$langVoc['procedureReg'] = 'El procedimiento de pre-inscripción será el siguiente:';
-$langVoc['procedureReg1'] = 'Una vez que nos hayas dado tus datos, selecciona en el menú aquellas sesiones a las que querrás asistir';
-$langVoc['procedureReg2'] = 'La base de datos recogerá tu solicitud y te enviará un mensaje confirmando si tienes una plaza o si
-                             bien debido al aforo completo has entrado en la lista de espera';
-$langVoc['procedureReg3'] = 'Si has obtenido plaza, una semana antes del acto te pediremos que confirmes tu asistencia. Importante:
-                             aquellas plazas no confirmadas en un plazo de 96 horas serán liberadas para la lista de espera';
-$langVoc['procedureReg4'] = 'Si quedaste en la lista de espera, tres días antes del acto os ofreceremos las plazas liberadas
-                             al global de las personas incluídas en la misma; estas plazas serán adjudicadas por orden de confirmación.';
+$langVoc['regInfoTitle'] = 'Welcome to the preliminary registration for "The Brain Invades the City" sessions.';
+$langVoc['regInfo'] = 'The purpose of this preliminary registration is to reserve a place at the various events that 
+                       make up the programme. It is necessary to reserve because the places are limited and the numbers 
+                       depend, in each case, on the venue. Therefore, if you are interested in attending, we recommend 
+                       you to make your reservation to ensure a place.';
+$langVoc['procedureReg'] = 'The preliminary registration process will be the following:';
+$langVoc['procedureReg1'] = 'We will ask you to provide us with the basic data we need to be able to manage the registrations.';
+$langVoc['procedureReg2'] = 'Once you have given us your data, please accept the privacy conditions and choose the sessions 
+                             you would like to attend from the menu.';
+$langVoc['procedureReg3'] = 'The database will process your request and we will send you a message confirming whether you will 
+                             have a reservation or whether, due to the event being fully booked already, you have been placed on the waiting list.';
+$langVoc['procedureReg4'] = 'If you have been granted a place, we would ask you to re-confirm your attendance a week before the event. 
+                             Remember: due to the large number of requests to attend these conferences, you will need to confirm your attendance to 
+                             guarantee your place. Important: places that have not been confirmed within 96 hours will be released for the people on 
+                             the waiting list. Therefore, if you do not confirm, you will lose your place.';
+$langVoc['procedureReg5'] =  'If you are on the waiting list, three days before the event we will offer the places released to all the people on 
+                              the list. These places will be awarded on a first-come first-served basis.' ;
+
 $langVoc['Terms0'] = 'TERMS & CONDITIONS';
 $langVoc['Terms1'] = 'Para continuar el registro por favor lea y accepte ';
 $langVoc['Terms2'] = 'En cumplimiento de lo dispuesto en la LO 15/99 de Protección de Datos de Carácter Personal,
