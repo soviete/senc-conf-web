@@ -107,16 +107,18 @@
         }
 
         $subject = $langVoc['mailSubject'];
-        
+                
         switch ($optionReg) 
                 {
                     //CASE 12 sessions
                     case 'C12':
-                        $message = $langVoc['mailNoCertBody'].$name.$langVoc['mailNoCertBody1'].$langVoc['mailOption1'].$langVoc['mailNoCertBody2'].$langVoc['mailNoCertBody3'].$confReg.$langVoc['mailNoCertBody4'].$langVoc['mailNoCertBody5'].$confReserv.$langVoc['mailNoCertBody6'].$langVoc['mailNoCertBody7'].$langVoc['mailNoCertBody8'];
+                        $message = $langVoc['mailNoCertBody'].$name.$langVoc['mailNoCertBody1'].$langVoc['mailOption1'].$langVoc['mailNoCertBody2'].$langVoc['mailNoCertBody3'].$confReg.$langVoc['mailNoCertBody4'].$langVoc['mailNoCertBody5'].$confReserv.$langVoc['mailNoCertBody6'].$langVoc['mailNoCertBody7'].$langVoc['mailNoCertBody8'];                        
+                        break;
                     case 'C8':
                         $message = $langVoc['mailNoCertBody'].$name.$langVoc['mailNoCertBody1'].$langVoc['mailOption2'].$langVoc['mailNoCertBody2'].$langVoc['mailNoCertBody3'].$confReg.$langVoc['mailNoCertBody4'].$langVoc['mailNoCertBody5'].$confReserv.$langVoc['mailNoCertBody6'].$langVoc['mailNoCertBody7'].$langVoc['mailNoCertBody8'];
+                        break;
                     case 'C1':
-                        $message = $langVoc['mailNoCertBody'].$name.$langVoc['mailNoCertBody1'].$langVoc['mailOption3'].$langVoc['mailNoCertBody2'].$langVoc['mailNoCertBody3'].$confReg.$langVoc['mailNoCertBody4'].$langVoc['mailNoCertBody5'].$confReserv.$langVoc['mailNoCertBody6'].$langVoc['mailNoCertBody7'].$langVoc['mailNoCertBody8'];
+                        $message = $langVoc['mailNoCertBody'].$name.$langVoc['mailNoCertBody1'].$langVoc['mailOption3'].$langVoc['mailNoCertBody2'].$langVoc['mailNoCertBody3'].$confReg.$langVoc['mailNoCertBody4'].$langVoc['mailNoCertBody5'].$confReserv.$langVoc['mailNoCertBody6'].$langVoc['mailNoCertBody7'].$langVoc['mailNoCertBody8'];                        
                         break;
                 };
                                      
