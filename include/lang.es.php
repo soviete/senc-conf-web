@@ -204,7 +204,7 @@ $langVoc['mailNoCertBody1'] = ',<p align="justify">Este es un email generado aut
 $langVoc['mailOption3'] = 'Opción 3 (Sin CAA, inscripcion libre)';
 $langVoc['mailNoCertBody2'] = ') se ha llevado a cabo correctamente.</p>';
 
-$langVoc['mailNoCertBody3'] = 'Te has inscrito con éxito para las siguientes sesiones:</p>';
+$langVoc['mailNoCertBody3'] = '<p>Te has inscrito con éxito para las siguientes sesiones:</p>';
 $langVoc['mailNoCertBody4'] = 'Una semana antes de la sesión, recibirás un email en esta misma dirección para pedirte que confirmes
                                tu asistencia a estas sesiones. Recuerda que aquellas plazas no confirmadas en las 96 horas siguientes
                                a la emisión del mensaje serán liberadas para la lista de espera.';

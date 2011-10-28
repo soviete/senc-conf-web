@@ -134,7 +134,7 @@ include 'include/common.php';
 
                                             case 'C1':
                                                 $subject = $langVoc['mailSubject'];
-                                                $message = $langVoc['mailNoCertBody'].$name.$langVoc['mailNoCertBody1'].$langVoc['mailOption3'].$langVoc['mailNoCertBody2'].$langVoc['mailNoCertBody3'].$conferences.$langVoc['mailNoCertBody4'].$langVoc['mailNoCertBody6'].$langVoc['mailNoCertBody7'];
+                                                $message = $langVoc['mailNoCertBody'].$name.$langVoc['mailNoCertBody1'].$langVoc['mailOption3'].$langVoc['mailNoCertBody2'].$langVoc['mailNoCertBody3'].$conferences.$langVoc['mailNoCertBody4'].$langVoc['mailNoCertBody6'].$langVoc['mailNoCertBody7'].$langVoc['mailNoCertBody8'];
                                                 break;
                                         }
 
