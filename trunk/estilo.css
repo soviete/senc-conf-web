@@ -91,6 +91,22 @@ a:hover {
     color: #FF0000;
 }
 
+/* False anchor button*/
+
+#anchorbutton {
+    FONT-WEIGHT: normal;
+    text-decoration: none;
+    FONT-SIZE: 11px;
+    COLOR: #FFFFFF;
+    BORDER-TOP-STYLE: groove;
+    FONT-STYLE: normal;
+    FONT-FAMILY: verdana;
+    BORDER-RIGHT-STYLE: ridge;
+    BORDER-LEFT-STYLE: groove;
+    BACKGROUND-COLOR: #AA2808;
+    BORDER-BOTTOM-STYLE: ridge;
+    cursor: pointer;
+}
 
 /* Wrapper */
 
@@ -424,7 +440,8 @@ TH
 {
     font-size:10pt;
     color:white;
-    text-align:left;
+    text-align:center;
+    background-color: #AA2808;
 }
 
 
