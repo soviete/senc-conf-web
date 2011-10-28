@@ -436,11 +436,11 @@ TD
 {
     font-size:10pt;
     font-weight: bold;
-    background-color:#D0A86C;
-    color:white;
+    background-color:#CBCBCB;
+    color:black;
     border-style:solid;
     border-width:1px;
-    text-align:left;
+    text-align:center;
 }
 
 #note
