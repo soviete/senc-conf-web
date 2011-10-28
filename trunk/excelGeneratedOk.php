@@ -6,10 +6,10 @@ include 'include/common.php';
 ?>
 
 <?php 
-    $sessionName=$_SESSION["sessionName"];
-    $fileName=$_SESSION["nameFile"];
-    //echo "+++++$sessionName\n";
-    //echo "======$fileName";
+$sessionName=$_SESSION["sessionName"];
+$fileName=$_SESSION["nameFile"];
+//echo "+++++$sessionName\n";
+//echo "======$fileName";
 ?>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -26,17 +26,22 @@ include 'include/common.php';
             <div id="page">
                 <div id="content">
                     <div id="welcome">
-                        <?php 
-                            print "<h1>Llistat de persones registrades a $sessionName</h1>";
-                            print "<h3>L'arxiu s'ha generat correctament</h3>";
-                            $link="http://localhost/SENCCONFsvn/file/".$fileName;
-                            //echo $link;echo "===================";//del
-                            print "<a href=$link target='_blank'>Baixar l'arxiu</a>";
-                            print "<br><br><p>Per copiar l'arxiu prem el botó dret del teu ratolí, guardar l'arxiu com.</p>";
-                            //echo "===$fileName";//del
-                            //print "<form><input type='button' value='Download Now' onClick='$fileName></form>";//del
+                        <?php
+                        print "<h1>Llistat de persones registrades a $sessionName</h1>";
+                        print "<h3>L'arxiu s'ha generat correctament</h3>";
+                        $link="http://localhost/SENCCONFsvn/file/".$fileName;
+                        print "<div align='center'><a href=$link target='_blank'>BAIXAR L'ARXIU</a></div>";
+                        print "<br><p>Per copiar l'arxiu prem el botó dret del teu ratolí, guardar l'arxiu com.</p><br><br>";
+
+                        $url = htmlspecialchars($_SERVER['HTTP_REFERER']);
+                        print "
+                                        <div id='boxleft'>
+                                                <input class='form_submitb' onclick='window.location.href=\"$url\"'type='button'
+                                                       value=".$langVoc['back1']." />
+                                                </div>";
+                        //print "<form><input type='button' value='Download Now' onClick='$fileName></form>";//del
                         ?>
-                         
+
                     </div>
                 </div>
                 <div style=" clear: both; height: 1px"></div>
