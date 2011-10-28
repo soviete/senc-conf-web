@@ -213,7 +213,7 @@ $langVoc['mailNoCertBody1'] = ',<p align="justify">This is an e-mail that has be
 $langVoc['mailOption3'] = 'Option 3 (NO CAA, free registration)';
 $langVoc['mailNoCertBody2'] = ') was successful.</p>';
 
-$langVoc['mailNoCertBody3'] = 'You have been successfully registered for the following sessions:</p>';
+$langVoc['mailNoCertBody3'] = '<p>You have been successfully registered for the following sessions:</p>';
 $langVoc['mailNoCertBody4'] = 'A week before the session, you will receive an e-mail at this address to ask you to confirm your 
                                attendance at these sessions. Please remember that places that have not been confirmed within 96 
                                hours from the sending of this message will be released for people on the waiting list.';
