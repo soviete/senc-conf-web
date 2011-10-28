@@ -58,7 +58,7 @@
                                 $paid = $row['paid'];
                                 //echo "Canvia $surname ----> $payment<br><br>";
                                 //echo "----------------$id";
-                                $query=mysql_query("UPDATE SENCCONF.USERS SET paid ='yes' WHERE idUser = '$id'");
+                                $query=mysql_query("UPDATE formulario.USERS SET paid ='yes' WHERE idUser = '$id'");
                                 if (!$query) {
                                                 trigger_error ('Wrong QUERY: ' . mysql_error() );
                                              }
