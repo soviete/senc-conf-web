@@ -52,8 +52,8 @@
                         <h1><?php echo $langVoc['regDetails']; ?></h1>
 <?php
 
-    $query=mysql_query("INSERT INTO USERS (userName, surname, dni, email, type, paid, confirmed)
-                                        VALUES ('$name', '$surname', '$dni', '$email', '$type', 'no', 'no')");
+    $query=mysql_query("INSERT INTO USERS (userName, surname, dni, email, type, paid, confirmed, lang)
+                                        VALUES ('$name', '$surname', '$dni', '$email', '$type', 'no', 'no', '$lang')");
 
     $user=mysql_fetch_array(mysql_query("SELECT idUser FROM USERS WHERE dni='$dni'"));
     

@@ -73,8 +73,8 @@ include 'include/common.php';
 
                                 //IF ALL THE CHOSEN SESSIONS ARE AVAILABLE WE JUST INSERT THE USER IN THE DB AS REGISTERED, SEND THE MAIL AND SHOW CONGRATS
                                 if ($switchFullSessions == "FALSE") {
-                                    $query=mysql_query("INSERT INTO USERS (userName, surname, dni, email, type, paid, confirmed)
-                                                            VALUES ('$name', '$surname', '$dni', '$email', '$optionReg', 'no', 'no')");
+                                    $query=mysql_query("INSERT INTO USERS (userName, surname, dni, email, type, paid, confirmed, lang)
+                                                            VALUES ('$name', '$surname', '$dni', '$email', '$optionReg', 'no', 'no', '$lang')");
                                     $user=mysql_fetch_array(mysql_query("SELECT idUser FROM USERS WHERE dni='$dni'"));
                                     $conferences="";
 
