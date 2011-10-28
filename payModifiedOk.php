@@ -21,7 +21,11 @@ include 'include/common.php';
                     <div id="welcome">
                         <h1>Llistat de persones registrades sense confirmació de pagament</h1>
                         <h3>Operació realitzada correctament</h3>  
-                        
+                        <br><br>
+                        <div align="center">
+                            <input class="form_submitb"type="button" onclick='window.location.href="admin.php"'
+                                   value="<?php echo $langVoc['back1']; ?>">
+                        </div>
                     </div>
                 </div>
                 <div style=" clear: both; height: 1px"></div>
@@ -30,4 +34,3 @@ include 'include/common.php';
         </div>
     </body>
 </html>
-       

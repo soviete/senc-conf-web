@@ -168,10 +168,9 @@ else {
                             echo '<br>';
 
                             print "<br><br><br>";
-                            $url = htmlspecialchars($_SERVER['HTTP_REFERER']);
                             print "
                                         <div id='boxleft'>
-                                                <input class='form_submitb' onclick='window.location.href=\"$url\"'type='button'
+                                                <input class='form_submitb' onclick='window.location.href=\"regList.php\"'type='button'
                                                        value=".$langVoc['back1']." />
                                                 </div>
                                                 <div id='boxright'>
