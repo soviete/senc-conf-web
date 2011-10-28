@@ -21,23 +21,27 @@ include 'include/common.php';
                     <div id="welcome">
                         <h1>Gestió de conferències</h1>
                         <h3>Llistat d'assistència</h3>
-                        
+
                         <p>Si vols veure quines persones hi ha registrades en una conferència entrar aquí.</p>
-                        
+
                         <form name="list" action="regList.php" method="post">
-                        <div align="center">
-                        <input class="form_submitb" type="submit" name="submit" value="Entrar" />
-                        </div><br><br>
+                            <div align="center">
+                                <input class="form_submitb" type="submit" name="submit" value="Entrar" />
+                            </div><br><br>
                         </form>
-                        
+
                         <h3>Confirmació pagaments</h3>
                         <p>Si vols confirmar pagaments entrar aquí.</p>
                         <form name="list" action="payConf.php" method="post">
-                        <div align="center">
-                        <input class="form_submitb" type="submit" name="submit" value="Entrar" />
+                            <div align="center">
+                                <input class="form_submitb" type="submit" name="submit" value="Entrar" />
+                            </div>
+                        </form><br><br>
+                        <div id='boxleft'>
+                            <input class="form_submitb"type="button" onclick='window.location.href="gestio.php"'
+                                   value="<?php echo $langVoc['back1']; ?>">
                         </div>
-                        </form>
-                        
+
                     </div>
                 </div>
                 <div style=" clear: both; height: 1px"></div>
@@ -46,4 +50,4 @@ include 'include/common.php';
         </div>
     </body>
 </html>
-       
+
