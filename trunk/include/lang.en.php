@@ -247,3 +247,10 @@ $langVoc['mailCertBody7'] = '<p align="justify">A week before the session, you w
                               within 96 hours from the sending of this message will be released for people on the waiting list.</p>';
 $langVoc['mailCertBody8'] = '<p align="justify">If you have any doubts or queries, you may contact us at cerebro.ciudad@gmail.com</p>';
 $langVoc['mailCertBody9'] = '<p>We look forward to seeing you</p>';
+
+//CONFIRM.PHP
+$langVoc['confirmAsistTittle'] = 'Attendance confirmation';
+$langVoc['confirmAsistSI'] = 'To confirm you are attending the conferences click on <b>YES</b>';
+$langVoc['confirmAsistTittleNO'] = 'Release of the reservation';  
+$langVoc['confirmAsistNO'] = 'In case you can not attend the conference click on <b>NO</b>';
+?>
