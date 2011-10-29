@@ -237,4 +237,9 @@ $langVoc['mailCertBody7'] = '<p align="justify">Una semana antes de la sesión, 
 $langVoc['mailCertBody8'] = '<p align="justify">Para cualquier duda o consulta, nos puedes contactar en cerebro.ciudad@gmail.com</p>';
 $langVoc['mailCertBody9'] = '<p>Te esperamos, un saludo.</p>';
 
+//CONFIRM.PHP
+$langVoc['confirmAsistTittle'] = 'Confirmación de asistencia';
+$langVoc['confirmAsistSI'] = 'Para confirmar que vas a asistir a la conferencia clickar en <b>SI</b>';
+$langVoc['confirmAsistTittleNO'] = 'Liberar la reserva';  
+$langVoc['confirmAsistNO'] = 'En caso de no poder asistir clickar en el <b>NO</b>';
 ?>
