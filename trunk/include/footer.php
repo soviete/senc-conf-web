@@ -3,4 +3,8 @@
     <p id="legal"><?php echo $langVoc['contact'];?>
         <a href="mailto:cerebro.ciudad@gmail.com?subject=Feedback" >cerebro.ciudad@gmail.com</a></p>
 </div>
+<div id="logos">
+    <p></p>
+</div>
+
 
