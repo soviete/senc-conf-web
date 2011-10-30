@@ -110,7 +110,7 @@ $_SESSION["DBpayUpdate"]=$DBpayUpdate;
                             echo '</div>';
                             echo '<br><br>';
                             echo'<div align="center">
-                                                 <input class="form_submitb" type="submit" name="submit" value="Guardar canvis" />
+                                                 <input class="form_submitb" type="submit" name="submit" value="GUARDAR CANVIS" />
                                                  <input type="hidden" name="submitted" value="TRUE" />
                                                  </div><br>';
                             echo '</form>';
