@@ -21,7 +21,7 @@ function freePlaces ($idSession, $typeReg)
                 if ($idSession == 2 | $idSession == 3 | $idSession == 4 | $idSession == 5 )
                     {
                         
-                        if ($count1 <= 5)
+                        if ($count1 <= 70)
                             {
                                 return TRUE;
                             }
@@ -52,7 +52,7 @@ function freePlaces ($idSession, $typeReg)
                 if ($idSession == 2 | $idSession == 3 | $idSession == 4 | $idSession == 5 )
                     {
                         
-                        if ($count1 <= 7)
+                        if ($count1 <= 75)
                             {
                                 return TRUE;
                             }
