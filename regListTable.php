@@ -1,5 +1,5 @@
-<?php 
-session_start(); 
+<?php
+session_start();
 //ini_set('display_errors', 'On');
 //error_reporting(-1);
 include 'include/common.php';
@@ -22,7 +22,7 @@ else {
 
 }
 ?>
-<?php 
+<?php
 //$DBpayUpdate="NO";
 //$_SESSION["DBpayUpdate"]=$DBpayUpdate;
 ?>
@@ -75,8 +75,7 @@ else {
 
 
 
-
-                        $query="SELECT dni, userName, surname, email, paid, type from formulario.USERS WHERE formulario.USERS.idUser IN (SELECT formulario.REGISTERED.regIdUser FROM formulario.REGISTERED WHERE formulario.REGISTERED.idRegSession = '$idConference')";
+                        $query="SELECT dni, userName, surname, email, paid, type from formulario.USERS WHERE formulario.USERS.idUser IN (SELECT formulario.CONFIRMED.confIdUser FROM formulario.CONFIRMED WHERE formulario.CONFIRMED.idConfSession = '$idConference')";
 
                         //$query = "SELECT idSESSIONS FROM SENCCONF.SESSIONS WHERE idSESSION = '$idSession' ORDER BY idSESSIONS ASC";
                         $result = mysql_query($query);
@@ -174,7 +173,7 @@ else {
                                                        value=".$langVoc['back1']." />
                                                 </div>
                                                 <div id='boxright'>
-                                                <input class='form_submitb' type='submit' name='submit' value='GENERAR EXCEL' />
+                                                <input class='form_submitb' disabled='disabled' type='submit' name='submit' value='GENERAR EXCEL' />
                                                 <input type='hidden' name='table' value='T' />
                                                 </div>";
 
