@@ -26,7 +26,7 @@ include 'include/common.php';
 
                         <form name="list" action="regList.php" method="post">
                             <div align="center">
-                                <input class="form_submitb" type="submit" name="submit" value="Entrar" />
+                                <input class="form_submitb" type="submit" name="submit" value="ENTRAR" />
                             </div><br><br>
                         </form>
 
@@ -34,7 +34,7 @@ include 'include/common.php';
                         <p>Si vols confirmar pagaments entrar aquí.</p>
                         <form name="list" action="payConf.php" method="post">
                             <div align="center">
-                                <input class="form_submitb" type="submit" name="submit" value="Entrar" />
+                                <input class="form_submitb" type="submit" name="submit" value="ENTRAR" />
                             </div>
                         </form><br><br>
                         <div id='boxleft'>
