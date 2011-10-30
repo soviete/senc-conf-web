@@ -86,7 +86,14 @@ else {
                         if ($num_rows==0) {
                             echo '<h3>Persones amb assistència confirmada.</h3>
                                           <div id="welcome">
-                                          No hi ha cap persona registrada en aquesta sessió <b>', $num_rows, '</b>.</div>';
+                                          No hi ha cap persona registrada en aquesta sessió <b>', 
+                            $num_rows, '</b>.</div>';
+                            print "<br><br><br>";
+                            print "<div align=center>
+                                     <input class='form_submitb' onclick='window.location.href=\"regList.php\"'type='button' 
+                                     value=".$langVoc['back1']." />
+                                   </div>";
+                            echo '<br>';
                         }
 
                         else {
@@ -189,11 +196,11 @@ else {
 
                 <div style=" clear: both; height: 1px"></div>
             </div>
-                        <?php
-$_SESSION["sessionName"]=$sessionName;
-?>
+            <?php
+            $_SESSION["sessionName"]=$sessionName;
+            ?>
 
-<?php include 'include/footer.php'; ?>
+            <?php include 'include/footer.php'; ?>
         </div>
     </body>
 </html>
