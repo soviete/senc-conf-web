@@ -67,9 +67,9 @@ else {
                                 <div id="UILabel"><?php echo $langVoc['formRegOption']; ?>*<br></div>
                                 <select class="form_tfield" name="type">
                                     <option value="C12"><?php echo $langVoc['formRegOption1']; ?></option>
-                                    <option value="C8" ><?php echo $langVoc['formRegOption2']; ?>
+                                    <option disabled="disabled" value="C8" ><?php echo $langVoc['formRegOption2']; ?>
                                     </option>
-                                    <option value="C1" ><?php echo $langVoc['formRegOption3']; ?>
+                                    <option disabled="disabled" value="C1" ><?php echo $langVoc['formRegOption3']; ?>
                                     </option>
                                 </select></div>
                             <br><br><br><br><br><br>
