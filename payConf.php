@@ -116,7 +116,7 @@ $_SESSION["DBpayUpdate"]=$DBpayUpdate;
                             echo '</form>';
                         }
                         print "<br><br>
-                                        <div id='boxleft'>
+                                        <div align=center>
                                                 <input class='form_submitb' onclick='window.location.href=\"admin.php\"'type='button'
                                                        value=".$langVoc['back1']." />
                                                 </div>";
