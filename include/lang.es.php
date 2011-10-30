@@ -239,7 +239,9 @@ $langVoc['mailCertBody9'] = '<p>Te esperamos, un saludo.</p>';
 
 //CONFIRM.PHP
 $langVoc['confirmAsistTittle'] = 'Confirmación de asistencia';
-$langVoc['confirmAsistSI'] = 'Para confirmar que vas a asistir a la conferencia clickar en <b>SI</b>';
+$langVoc['confirmAsistSI'] = 'Para confirmar que vas a asistir a la conferencia apreta en <b>SI</b>';
 $langVoc['confirmAsistTittleNO'] = 'Liberar la reserva';  
-$langVoc['confirmAsistNO'] = 'En caso de no poder asistir clickar en el <b>NO</b>';
+$langVoc['confirmAsistNO'] = 'En caso de no poder asistir apreta en el <b>NO</b>';
+$langVoc['confirmAsistMsgYes'] = 'Enhorabuena! Has confirmado tu asistencia correctamente!';
+$langVoc['confirmAsistMsgNo'] = 'Has liberado tu plaza correctamente.';
 ?>
