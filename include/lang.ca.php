@@ -9,7 +9,7 @@
 $langVoc = array();
 
 //INFO CONFERENCES
-$langVoc['regInfoTitle'] = 'Benvingut a la preinscripció a les sessions d\“El Cervell Envaeix la Ciutat”.';
+$langVoc['regInfoTitle'] = 'Benvingut a la preinscripció a les sessions d\'“El Cervell Envaeix la Ciutat”.';
 $langVoc['regInfo'] = 'Aquesta preinscripció té com a objectiu fer una reserva de plaça als diferents esdeveniments 
                        que conformen el programa. Aquesta reserva és necessària perquè les places són limitades i el 
                        nombre d\'assistents depèn de cadascuna de les seus: si estàs interessat a assistir-hi, et recomanem 
