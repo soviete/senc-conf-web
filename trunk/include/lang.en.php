@@ -253,4 +253,6 @@ $langVoc['confirmAsistTittle'] = 'Attendance confirmation';
 $langVoc['confirmAsistSI'] = 'To confirm you are attending the conferences click on <b>YES</b>';
 $langVoc['confirmAsistTittleNO'] = 'Release of the reservation';  
 $langVoc['confirmAsistNO'] = 'In case you can not attend the conference click on <b>NO</b>';
+$langVoc['confirmAsistMsgYes'] = 'Congratulations! You have correctly confirmed your attendance!';
+$langVoc['confirmAsistMsgNo'] = 'You have correctly released your reservation.';
 ?>

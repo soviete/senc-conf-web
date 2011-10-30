@@ -244,7 +244,10 @@ $langVoc['mailCertBody9'] = '<p>T\'esperem, salutacions.</p>';
 
 //CONFIRM.PHP
 $langVoc['confirmAsistTittle'] = 'Confirmació d\'assistència';
-$langVoc['confirmAsistSI'] = 'Si confirmes la teva assisténcia a la conferència clickar el <b>SI</b>';
+$langVoc['confirmAsistSI'] = 'Si confirmes la teva assisténcia a la conferència clica el <b>SI</b>';
 $langVoc['confirmAsistTittleNO'] = 'Renúncia a la plaça d\'assistència';  
-$langVoc['confirmAsistNO'] = 'En cas de no poder assistir clickar <b>NO</b>';
+$langVoc['confirmAsistNO'] = 'En cas de no poder assistir clica el <b>NO</b>';
+$langVoc['confirmAsistMsgYes'] = 'Enhorabona! Has confirmat la teva assistència correctament!';
+$langVoc['confirmAsistMsgNo'] = 'Has lliberat la teva plaça correctament.';
+
 ?>

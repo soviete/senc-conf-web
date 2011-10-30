@@ -4,10 +4,10 @@
 session_start();
 include 'include/common.php';
 
-$sessionId = 2;
-$idUser = 2;
-
-//HACER QUE SOLO SE HABRA CUANDO VENGA DEL MAIL
+$sessionId = $_SESSION['sessionId'];
+$idUser = $_SESSION['idUser'];
+//$conferences = $_SESSION['conference'];
+//echo "$conferences--------------";
 ?>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -17,6 +17,7 @@ $idUser = 2;
         <title>Gestió xerrades</title>
         <link rel="stylesheet" type="text/css" href="estilo.css" />
     </head>
+
 <?php 
 $currentPage=currentPage();
 print "
@@ -27,11 +28,7 @@ print "
 </div>";
 
 include 'mysql_connect.php';
-
-$query1 = mysql_query("select formulario.USERS.lang from formulario.USERS WHERE formulario.USERS.idUser = '$idUser'");
-$row = mysql_fetch_array($query1);
-$lang = $row[0];
-
+//echo "$lang--------------";
 $sessionName = "sessionName".$lang;
 $query=mysql_fetch_array(mysql_query("SELECT $sessionName, UNIX_TIMESTAMP(sessionDate),room FROM SESSIONS WHERE idSESSIONS='$sessionId'"));
                                              $weekdaymysql=date("l",$query[1]);
@@ -45,15 +42,20 @@ $query=mysql_fetch_array(mysql_query("SELECT $sessionName, UNIX_TIMESTAMP(sessio
                                              $fecha="$W, $Day $M $year";
                                              $conferences.="$fecha<br><i>$query[2]</i><br>\"<b>$query[0]</b>\"<br><br>";
 
-$_SESSION['sessionId'] = $sessionId;
-$_SESSION['idUser'] = $idUser;
-$_SESSION['conference'] = $conferences;
-//echo "$sessionName ====== $conferences------------";
+$query = mysql_query ("DELETE from formulario.REGISTERED where REGISTERED.regIdUser = '$idUser' AND REGISTERED.idRegSession = '$sessionId'");
 
-//$row = mysql_fetch_array($queryCount);
-//$sessionName = $row[0];
+if (!$query) 
+    {
+        trigger_error ('Wrong QUERY: ' . mysql_error() );
+    }
 
+$query1 = mysql_query("INSERT INTO formulario.CONFIRMED (confIdUser, IdConfSession)
+                       VALUES ('$idUser', '$sessionId')");
 
+if (!$query1) 
+    {
+        trigger_error ('Wrong QUERY: ' . mysql_error() );
+    }
 ?>
     <body>
         <div  id="wrapper">
@@ -77,27 +79,8 @@ $_SESSION['conference'] = $conferences;
                     <div id="welcome">
                         <h1><?php echo "$conferences";?></h1>
                         <h3><?php echo $langVoc['confirmAsistTittle'];?></h3>
-
-                        <p><?php echo $langVoc['confirmAsistSI'];?></p>
-
-                        <form name="list" action="saveConfirmYes.php" method="post">
-                            <div align="center">
-                                <input class="form_submitb" type="submit" name="submit" value="SI" />
-                            </div><br><br>
-                        </form>
-
-                        <h3><?php echo $langVoc['confirmAsistTittleNO'];?></h3>
-                        <p><?php echo $langVoc['confirmAsistNO'];?></p>
-                        <form name="list" action="saveConfirmNo.php" method="post">
-                            <div align="center">
-                                <input class="form_submitb" type="submit" name="submit" value="NO" />
-                            </div>
-                        </form><br><br>
-<!--                        <div id='boxleft'>
-                            <input class="form_submitb"type="button" onclick='window.location.href="gestio.php"'
-                                   value="<?php //echo $langVoc['back1']; ?>">
-                        </div>-->
-
+                        <p><?php echo $langVoc['confirmAsistMsgYes'];?></p>
+                                             
                     </div>
                 </div>
                 <div style=" clear: both; height: 1px"></div>
@@ -106,4 +89,3 @@ $_SESSION['conference'] = $conferences;
         </div>
     </body>
 </html>
-
