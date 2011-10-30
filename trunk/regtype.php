@@ -35,12 +35,12 @@ else {
                     <div id="welcome">
                         <h1><?php echo $langVoc['formTitle']; ?></h1><br>
                         <h3><?php echo $langVoc['regtype0']; ?></h3>
-                        <ul>
+<!--                        <ul>-->
                             
                                 <?php echo $langVoc['regtypeExtra']; ?>
                                 <?php echo $langVoc['regtypeExtra0']; ?>
                                 <?php echo $langVoc['regtypeExtra1']; ?>
-                            <li>    
+<!--                            <li>    -->
                                 <?php echo $langVoc['regtypeExtra2']; ?>
                                 
 <!--                                <?php //echo $langVoc['regtype1']; ?><br>-->
@@ -49,16 +49,16 @@ else {
                                                      target="_blank">UAB</a><br>
                                     <a href="http://www.upf.edu/universitat/normativa/upf/normativa/grau/rd1457/socioac.html"
                                        target="_blank">UPF</a></p>
-                            </li>
-                            <li>
+<!--                            </li>
+                            <li>-->
                                 <?php //echo $langVoc['regtype3']; ?>
                                 <?php echo $langVoc['regtypeExtra3']; ?>                            
-                            </li>
-                            <li>
+<!--                            </li>
+                            <li>-->
                                 <?php //echo $langVoc['regtype4']; ?>
                                 <?php echo $langVoc['regtypeExtra4']; ?>                            
-                            </li>
-                        </ul>
+<!--                            </li>-->
+<!--                        </ul>-->
                         <br>
                         <h3><?php echo $langVoc['regtype5']; ?></h3>
                         <br>
@@ -67,9 +67,9 @@ else {
                                 <div id="UILabel"><?php echo $langVoc['formRegOption']; ?>*<br></div>
                                 <select class="form_tfield" name="type">
                                     <option value="C12"><?php echo $langVoc['formRegOption1']; ?></option>
-                                    <option value="C8" disabled="disabled"><?php echo $langVoc['formRegOption2']; ?>
+                                    <option value="C8" ><?php echo $langVoc['formRegOption2']; ?>
                                     </option>
-                                    <option value="C1" disabled="disabled"><?php echo $langVoc['formRegOption3']; ?>
+                                    <option value="C1" ><?php echo $langVoc['formRegOption3']; ?>
                                     </option>
                                 </select></div>
                             <br><br><br><br><br><br>
