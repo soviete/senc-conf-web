@@ -16,15 +16,15 @@ $langVoc['regInfo'] = 'Esta pre-inscripción tiene como objetivo efectuar una re
     para asegurarte un sitio.';
 $langVoc['procedureReg'] = 'El procedimiento de pre-inscripción será el siguiente:';
 $langVoc['procedureReg1'] = 'Te pediremos que nos des unos datos básicos que necesitamos para gestionar las inscripciones.';
-$langVoc['procedureReg2'] = 'Una vez nos hayas dado tus datos, acepta las condiciones de privacidad y selecciona en el 
+$langVoc['procedureReg2'] = 'Una vez nos hayas dado tus datos, acepta las condiciones de privacidad y selecciona en el
                              menú aquellas sesiones a las que querrás asistir.';
-$langVoc['procedureReg3'] = 'La base de datos recogerá tu solicitud y te enviará un mensaje confirmando si tienes una plaza 
+$langVoc['procedureReg3'] = 'La base de datos recogerá tu solicitud y te enviará un mensaje confirmando si tienes una plaza
                              o si, debido a que el aforo está completo, has entrado en la lista de espera.';
-$langVoc['procedureReg4'] = 'Si has obtenido plaza, una semana antes del acto te pediremos que vuelvas a confirmar tu asistencia. 
-                             Recuerda: debido al gran número de solicitudes para acudir a estas conferencias, es necesario que nos 
+$langVoc['procedureReg4'] = 'Si has obtenido plaza, una semana antes del acto te pediremos que vuelvas a confirmar tu asistencia.
+                             Recuerda: debido al gran número de solicitudes para acudir a estas conferencias, es necesario que nos
                              confirmes tu asistencia para que hagamos efectiva tu plaza. Importante: las plazas no confirmadas en
                              un plazo de 96 horas serán liberadas para la lista de espera; por lo tanto, si no confirmas, pierdes la plaza.';
-$langVoc['procedureReg5'] =  'Si quedaste en la lista de espera, tres días antes del acto ofreceremos las plazas liberadas al conjunto de 
+$langVoc['procedureReg5'] =  'Si quedaste en la lista de espera, tres días antes del acto ofreceremos las plazas liberadas al conjunto de
                               personas incluidas en la misma; dichas plazas serán adjudicadas por orden de confirmación.' ;
 
 $langVoc['Terms0'] = 'TERMS & CONDITIONS';
@@ -48,28 +48,28 @@ $langVoc['TermsButton'] = 'ACEPTO';
 $langVoc['regtype0'] = 'Modalidades de inscripción y acreditaciones académicas';
 
 //EXTRA LAST DOCUMENT
-$langVoc['regtypeExtra'] = '<p align="justify">Existen tres modalidades diferentes de inscripción, dependiendo de si querrás o 
+$langVoc['regtypeExtra'] = '<p align="justify">Existen tres modalidades diferentes de inscripción, dependiendo de si querrás o
                             no tener una Certificación de Aprovechamiento Académico expedida por la SENC.</p>';
-$langVoc['regtypeExtra0'] = '<p align="justify">Por favor, no te inscribas en más sesiones que a las que realmente piensas asistir: 
+$langVoc['regtypeExtra0'] = '<p align="justify">Por favor, no te inscribas en más sesiones que a las que realmente piensas asistir:
                              las plazas son limitadas y podrías estar negándole a alguien la posibilidad de disfrutar de una sesión.</p>';
-$langVoc['regtypeExtra1'] ='<p align="justify">Importante: la Certificación de Aprovechamiento Académico es un requisito necesario para 
-                             acceder a la concesión de Créditos de Libre Elección, aunque pueda ser solicitada por personas con un interés 
-                             personal en la misma. Debido a restricciones en la organización, sólo podrá ser solicitada por un total de 75 
-                             personas. Por último, la Certificación tiene un coste de 30 euros, que deberán ser ingresados en la cuenta de 
+$langVoc['regtypeExtra1'] ='<p align="justify">Importante: la Certificación de Aprovechamiento Académico es un requisito necesario para
+                             acceder a la concesión de Créditos de Libre Elección, aunque pueda ser solicitada por personas con un interés
+                             personal en la misma. Debido a restricciones en la organización, sólo podrá ser solicitada por un total de 75
+                             personas. Por último, la Certificación tiene un coste de 30 euros, que deberán ser ingresados en la cuenta de
                              “la Caixa” 2100 2923 01 0200027281, haciendo constar en el asunto “CNS - Nombre Apellido Apellido”.</p>';
-$langVoc['regtypeExtra2'] = '<p align="justify"><b>Opción 1</b>: Para aquellos que SÍ deseen recibir una Certificación de Aprovechamiento 
-                             Académico a fin de convalidar Créditos de Libre Elección: 
-                             La Universidad Autónoma de Barcelona y la Universidad Pompeu Fabra ofrecen dos Créditos de Libre Elección por este programa. 
-                             Para acceder a ellos será necesario certificar la asistencia a un mínimo de 12 de las sesiones y, para los alumnos de la UAB, 
-                             además elaborar un trabajo (un ensayo de tres páginas sobre una de las sesiones) que será evaluado por expertos de la SENC. 
+$langVoc['regtypeExtra2'] = '<p align="justify"><b>Opción 1</b>: Para aquellos que SÍ deseen recibir una Certificación de Aprovechamiento
+                             Académico a fin de convalidar Créditos de Libre Elección:
+                             La Universidad Autónoma de Barcelona y la Universidad Pompeu Fabra ofrecen dos Créditos de Libre Elección por este programa.
+                             Para acceder a ellos será necesario certificar la asistencia a un mínimo de 12 de las sesiones y, para los alumnos de la UAB,
+                             además elaborar un trabajo (un ensayo de tres páginas sobre una de las sesiones) que será evaluado por expertos de la SENC.
                              El proceso final de obtención de los créditos depende de cada universidad. La información puede encontrarse aquí:</p>';
-$langVoc['regtypeExtra3'] = '<p align="justify"><b>Opción 2</b>: -	Para aquellos que SÍ deseen recibir una Certificación de 
-                             Aprovechamiento Académico, a título personal (la certificación de la SENC tiene valor oficial en sí misma), 
+$langVoc['regtypeExtra3'] = '<p align="justify"><b>Opción 2</b>: -	Para aquellos que SÍ deseen recibir una Certificación de
+                             Aprovechamiento Académico, a título personal (la certificación de la SENC tiene valor oficial en sí misma),
                              será necesario certificar la asistencia a ocho de las sesiones.</p>';
-$langVoc['regtypeExtra4'] = '<p align="justify"><b>Opción 3</b>: -	Aquellos que NO deseen recibir una Certificación de Aprovechamiento 
-                             Académico se pueden inscribir en tantas sesiones como quieran y el control de asistencia sobre esas plazas 
+$langVoc['regtypeExtra4'] = '<p align="justify"><b>Opción 3</b>: -	Aquellos que NO deseen recibir una Certificación de Aprovechamiento
+                             Académico se pueden inscribir en tantas sesiones como quieran y el control de asistencia sobre esas plazas
                              tendrá como único objetivo monitorizar el acceso a la sala.</p>';
- 
+
 //$langVoc['regtype1'] = '<b>Opción 1</b>: para aquellos que SI deseen recibir una Certificación de
 //    Aprovechamiento Académico(CAA), de cara a convalidar Créditos de Libre Elección.';
 //$langVoc['regtype2'] = 'La Universidad Autònoma de Barcelona y la Universitat Pompeu Fabra ofrecen 2 Créditos
@@ -240,8 +240,12 @@ $langVoc['mailCertBody9'] = '<p>Te esperamos, un saludo.</p>';
 //CONFIRM.PHP
 $langVoc['confirmAsistTittle'] = 'Confirmación de asistencia';
 $langVoc['confirmAsistSI'] = 'Para confirmar que vas a asistir a la conferencia apreta en <b>SI</b>';
-$langVoc['confirmAsistTittleNO'] = 'Liberar la reserva';  
+$langVoc['confirmAsistTittleNO'] = 'Liberar la reserva';
 $langVoc['confirmAsistNO'] = 'En caso de no poder asistir apreta en el <b>NO</b>';
 $langVoc['confirmAsistMsgYes'] = 'Enhorabuena! Has confirmado tu asistencia correctamente!';
 $langVoc['confirmAsistMsgNo'] = 'Has liberado tu plaza correctamente.';
+
+//FOOTER
+
+$langVoc['footermail'] = 'cerebro.ciudad@gmail.com';
 ?>

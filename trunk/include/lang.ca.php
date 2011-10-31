@@ -10,36 +10,36 @@ $langVoc = array();
 
 //INFO CONFERENCES
 $langVoc['regInfoTitle'] = 'Benvingut a la preinscripció a les sessions d\'“El Cervell Envaeix la Ciutat”.';
-$langVoc['regInfo'] = 'Aquesta preinscripció té com a objectiu fer una reserva de plaça als diferents esdeveniments 
-                       que conformen el programa. Aquesta reserva és necessària perquè les places són limitades i el 
-                       nombre d\'assistents depèn de cadascuna de les seus: si estàs interessat a assistir-hi, et recomanem 
+$langVoc['regInfo'] = 'Aquesta preinscripció té com a objectiu fer una reserva de plaça als diferents esdeveniments
+                       que conformen el programa. Aquesta reserva és necessària perquè les places són limitades i el
+                       nombre d\'assistents depèn de cadascuna de les seus: si estàs interessat a assistir-hi, et recomanem
                        que facis aquesta reserva per assegurar-te un lloc.';
 $langVoc['procedureReg'] = 'El procediment de preinscripció serà el següent:';
 $langVoc['procedureReg1'] = 'Et demanarem que ens donis unes dades bàsiques que necessitem per gestionar les inscripcions.';
-$langVoc['procedureReg2'] = 'Un cop ens hagis donat les teves dades, accepta les condicions de privacitat i selecciona 
+$langVoc['procedureReg2'] = 'Un cop ens hagis donat les teves dades, accepta les condicions de privacitat i selecciona
                              en el menú les sessions a les quals voldràs assistir.';
-$langVoc['procedureReg3'] = 'La base de dades recollirà la teva sol·licitud i t\'enviarà un missatge per confirmar-te si tens 
+$langVoc['procedureReg3'] = 'La base de dades recollirà la teva sol·licitud i t\'enviarà un missatge per confirmar-te si tens
                              una plaça o si aquestes estan completes i has entrat en la llista d\'espera.';
-$langVoc['procedureReg4'] = 'Si has obtingut plaça, una setmana abans de l\'acte et demanarem que tornis a confirmar l\'assistència. 
-                             Recorda: a causa del gran nombre de sol·licituds per acudir a aquestes conferències, cal que ens confirmis 
-                             l\'assistència perquè fem efectiva la teva plaça. Important: les places no confirmades en un termini de 96 hores 
+$langVoc['procedureReg4'] = 'Si has obtingut plaça, una setmana abans de l\'acte et demanarem que tornis a confirmar l\'assistència.
+                             Recorda: a causa del gran nombre de sol·licituds per acudir a aquestes conferències, cal que ens confirmis
+                             l\'assistència perquè fem efectiva la teva plaça. Important: les places no confirmades en un termini de 96 hores
                              seran alliberades per a la llista d\'espera; per tant, si no fas la confirmació, perds la plaça.';
-$langVoc['procedureReg5'] =  'Si vas quedar en llista d\'espera, tres dies abans de l\'acte oferirem les places alliberades al conjunt de 
+$langVoc['procedureReg5'] =  'Si vas quedar en llista d\'espera, tres dies abans de l\'acte oferirem les places alliberades al conjunt de
                               persones que hi estan incloses; aquestes places seran adjudicades per ordre de confirmació. ' ;
 
 $langVoc['Terms0'] = 'TERMS & CONDITIONS';
 $langVoc['Terms1'] = 'Per continuar el registre si us plau llegiu i accepteu ';
-$langVoc['Terms2'] = 'En compliment d\'allò que disposa la LO 15/99 de protecció de dades de caràcter personal, la SOCIETAT ESPANYOLA DE 
-                      NEUROCIÈNCIA us comunica que les dades de caràcter personal que ens faciliteu seran incloses en un fitxer automatitzat 
-                      propietat de la Societat per donar-los el tractament legal degut i amb ús exclusiu de la destinació per a la qual les 
-                      vau facilitar. Així mateix us informem de la possibilitat d\'exercitar el dret d\'accés, rectificació, cancel·lació i 
-                      oposició mitjançant una comunicació escrita adreçada a la SOCIETAT ESPANYOLA DE NEUROCIÈNCIA per correu electrònic 
+$langVoc['Terms2'] = 'En compliment d\'allò que disposa la LO 15/99 de protecció de dades de caràcter personal, la SOCIETAT ESPANYOLA DE
+                      NEUROCIÈNCIA us comunica que les dades de caràcter personal que ens faciliteu seran incloses en un fitxer automatitzat
+                      propietat de la Societat per donar-los el tractament legal degut i amb ús exclusiu de la destinació per a la qual les
+                      vau facilitar. Així mateix us informem de la possibilitat d\'exercitar el dret d\'accés, rectificació, cancel·lació i
+                      oposició mitjançant una comunicació escrita adreçada a la SOCIETAT ESPANYOLA DE NEUROCIÈNCIA per correu electrònic
                       dirigit a <a href="mailto:secretaria.tecnica@senc.es?subject=Feedback" >secretaria.tecnica@senc.es</a>
                       <br><br>
-                      La SOCIETAT ESPANYOLA DE NEUROCIÈNCIA ha adoptat els nivells de seguretat de protecció de dades de caràcter personal 
-                      legalment requerits, i ha instal·lat tots els mitjans i les mesures tècniques al seu abast per evitar la pèrdua, mal ús, 
+                      La SOCIETAT ESPANYOLA DE NEUROCIÈNCIA ha adoptat els nivells de seguretat de protecció de dades de caràcter personal
+                      legalment requerits, i ha instal·lat tots els mitjans i les mesures tècniques al seu abast per evitar la pèrdua, mal ús,
                       alteració, accés no autoritzat i robatori de les dades facilitades.<br><br>
-                      La SOCIETAT ESPANYOLA DE NEUROCIÈNCIA no comunicarà les dades que li faciliten els usuaris a cap altra societat 
+                      La SOCIETAT ESPANYOLA DE NEUROCIÈNCIA no comunicarà les dades que li faciliten els usuaris a cap altra societat
                       o entitat.';
 
 $langVoc['TermsButton'] = 'ACCEPTO';
@@ -48,28 +48,28 @@ $langVoc['TermsButton'] = 'ACCEPTO';
 $langVoc['regtype0'] = 'Modalitats d\'inscripció i acreditacions acadèmiques';
 
 //EXTRA LAST DOCUMENT
-$langVoc['regtypeExtra'] = '<p align="justify">Hi ha tres modalitats diferents d\'inscripció, 
+$langVoc['regtypeExtra'] = '<p align="justify">Hi ha tres modalitats diferents d\'inscripció,
                             depenent que vulguis o no tenir una Certificació d\'Aprofitament Acadèmic expedida per la SENC.</p>';
-$langVoc['regtypeExtra0'] = '<p align="justify">Si us plau, no t\'inscriguis en més sessions que aquelles a què realment penses assistir: 
+$langVoc['regtypeExtra0'] = '<p align="justify">Si us plau, no t\'inscriguis en més sessions que aquelles a què realment penses assistir:
                              les places són limitades i podries estar negant a algú la possibilitat de gaudir d\'una sessió.</p>';
-$langVoc['regtypeExtra1'] ='<p align="justify">Important: la Certificació d\'Aprofitament Acadèmic és un requisit necessari per 
-                            accedir a la concessió de Crèdits de Lliure Elecció, encara que pugui ser sol·licitada per persones 
-                            amb interès personal en aquesta. A causa de restriccions en l\'organització, només podrà ser sol·licitada 
-                            per un total de 75 persones. Finalment, la Certificació té un cost de 30 euros, que hauran de ser ingressats 
+$langVoc['regtypeExtra1'] ='<p align="justify">Important: la Certificació d\'Aprofitament Acadèmic és un requisit necessari per
+                            accedir a la concessió de Crèdits de Lliure Elecció, encara que pugui ser sol·licitada per persones
+                            amb interès personal en aquesta. A causa de restriccions en l\'organització, només podrà ser sol·licitada
+                            per un total de 75 persones. Finalment, la Certificació té un cost de 30 euros, que hauran de ser ingressats
                             en el compte de “la Caixa” 2100 2923 01 0200027281, fent constar a l\'assumpte “CNS - Nom Cognom Cognom”.</p>';
-$langVoc['regtypeExtra2'] = '<p align="justify"><b>Opció 1</b>: Per a aquells que SÍ que desitgin rebre una Certificació d\'Aprofitament Acadèmic a fi de 
-                             convalidar Crèdits de Lliure Elecció: 
-                             La Universitat Autònoma de Barcelona i la Universitat Pompeu Fabra ofereixen dos Crèdits de Lliure Elecció 
-                             per aquest programa. Per accedir-hi caldrà certificar l\'assistència a un mínim de 12 de les sessions i, per 
-                             als alumnes de la UAB, a més a més elaborar un treball (un assaig de tres pàgines sobre una de les sessions) 
-                             que serà avaluat per experts de la SENC. El procés final d\'obtenció dels crèdits depèn de cada universitat. 
+$langVoc['regtypeExtra2'] = '<p align="justify"><b>Opció 1</b>: Per a aquells que SÍ que desitgin rebre una Certificació d\'Aprofitament Acadèmic a fi de
+                             convalidar Crèdits de Lliure Elecció:
+                             La Universitat Autònoma de Barcelona i la Universitat Pompeu Fabra ofereixen dos Crèdits de Lliure Elecció
+                             per aquest programa. Per accedir-hi caldrà certificar l\'assistència a un mínim de 12 de les sessions i, per
+                             als alumnes de la UAB, a més a més elaborar un treball (un assaig de tres pàgines sobre una de les sessions)
+                             que serà avaluat per experts de la SENC. El procés final d\'obtenció dels crèdits depèn de cada universitat.
                              La informació es pot trobar aquí:</p>';
-$langVoc['regtypeExtra3'] = '<p align="justify"><b>Opció 2</b>: Per a aquells que SÍ que desitgin rebre una Certificació d\'Aprofitament Acadèmic, a 
-                             títol personal (la certificació de la SENC té valor oficial en si mateixa), caldrà que certifiquin l\'assistència a vuit 
+$langVoc['regtypeExtra3'] = '<p align="justify"><b>Opció 2</b>: Per a aquells que SÍ que desitgin rebre una Certificació d\'Aprofitament Acadèmic, a
+                             títol personal (la certificació de la SENC té valor oficial en si mateixa), caldrà que certifiquin l\'assistència a vuit
                              de les sessions.</p>';
-$langVoc['regtypeExtra4'] = '<p align="justify"><b>Opció 3</b>: Aquells que NO desitgin rebre una Certificació d\'Aprofitament Acadèmic es poden inscriure 
-                             en tantes sessions com vulguin i el control d\'assistència sobre aquestes places tindrà com a únic objectiu 
-                             monitorar l\'accés a la sala.</p>'; 
+$langVoc['regtypeExtra4'] = '<p align="justify"><b>Opció 3</b>: Aquells que NO desitgin rebre una Certificació d\'Aprofitament Acadèmic es poden inscriure
+                             en tantes sessions com vulguin i el control d\'assistència sobre aquestes places tindrà com a únic objectiu
+                             monitorar l\'accés a la sala.</p>';
 //$langVoc['regtype1'] = '<b>Opción 1</b>: para aquellos que SI deseen recibir una Certificación de
 //    Aprovechamiento Académico (CAA), de cara a convalidar Créditos de Libre Elección.';
 //$langVoc['regtype2'] = 'La Universidad Autònoma de Barcelona y la Universitat Pompeu Fabra ofrecen 2 Créditos
@@ -201,42 +201,42 @@ $langVoc['mailSubject'] = 'Inscripción neuroconferencias';
 
 //MAIL TO PEOPLE WITHOUT CERTIFICATE
 $langVoc['mailNoCertBody'] = '<p>Hola ';
-$langVoc['mailNoCertBody1'] = ',<p align="justify">Aquest és un email generat automàticament 
-                               des de la secretaria d\'“El Cervell Envaeix la Ciutat”. Enhorabona, el teu procés 
+$langVoc['mailNoCertBody1'] = ',<p align="justify">Aquest és un email generat automàticament
+                               des de la secretaria d\'“El Cervell Envaeix la Ciutat”. Enhorabona, el teu procés
                                d\'inscripció (';
 $langVoc['mailOption3'] = 'Opció 3 (Sense CAA, inscripció lliure)';
 $langVoc['mailNoCertBody2'] = ') s\'ha dut a terme correctament.</p>';
 
 $langVoc['mailNoCertBody3'] = '<p>T\'has inscrit amb èxit per a les sessions següents:</p>';
-$langVoc['mailNoCertBody4'] = 'Una setmana abans de la sessió, rebràs un email en aquesta mateixa adreça per demanar-te que confirmis 
-                               l\'assistència a aquestes sessions. Recorda que les places no confirmades en les 96 hores següents a 
+$langVoc['mailNoCertBody4'] = 'Una setmana abans de la sessió, rebràs un email en aquesta mateixa adreça per demanar-te que confirmis
+                               l\'assistència a aquestes sessions. Recorda que les places no confirmades en les 96 hores següents a
                                l\'emissió del missatge seran alliberades per a la llista d\'espera.';
 
 $langVoc['mailNoCertBody5'] = '<p align="justify">I has quedat en la llista d\'espera de les sessions següents:</p>';
-$langVoc['mailNoCertBody6'] = '<p align="justify">Recorda que tres dies abans de l\'acte oferirem, mitjançant un missatge a 
-                               aquesta adreça, les places alliberades al conjunt de persones que hi estan incloses; aquestes 
+$langVoc['mailNoCertBody6'] = '<p align="justify">Recorda que tres dies abans de l\'acte oferirem, mitjançant un missatge a
+                               aquesta adreça, les places alliberades al conjunt de persones que hi estan incloses; aquestes
                                places seran adjudicades per ordre de confirmació.</p>';
 $langVoc['mailNoCertBody7'] = '<p align="justify">•	Per a qualsevol dubte o consulta, ens pots contactar a cerebro.ciudad@gmail.com</p>';
 $langVoc['mailNoCertBody8'] = '<p>T\'esperem, salutacions.</p>';
 
 //MAIL TO PEOPLE WITH CERTIFICATE
 $langVoc['mailCertBody'] = '<p>Hola ';
-$langVoc['mailCertBody1'] = ',<p align="justify">Aquest és un email generat automàticament des de la secretaria d\'“El Cervell Envaeix la Ciutat”. 
+$langVoc['mailCertBody1'] = ',<p align="justify">Aquest és un email generat automàticament des de la secretaria d\'“El Cervell Envaeix la Ciutat”.
                              Enhorabona, el teu procés d\'inscripció (';
 $langVoc['mailOption1'] = 'Opció 1 (Amb CAA, 12 conferències)';
 $langVoc['mailOption2'] = 'Opció 2 (Amb CAA, 8 conferències)';
 $langVoc['mailCertBody2'] = ') s\'ha dut a terme correctament.</p>';
 
-$langVoc['mailCertBody3'] = '<p align="justify">•	Recorda que per poder sol·licitar l\'emissió de la Certificació d\'Aprofitament 
-                             Acadèmic emesa per la SENC has de fer un pagament de 30 euros. Per a això, fes una transferència per la 
+$langVoc['mailCertBody3'] = '<p align="justify">•	Recorda que per poder sol·licitar l\'emissió de la Certificació d\'Aprofitament
+                             Acadèmic emesa per la SENC has de fer un pagament de 30 euros. Per a això, fes una transferència per la
                              quantitat esmentada al compte següent:</p>La Caixa<br>2100 2923 01 0200027281<br>';
 $langVoc['mailCertBody4'] = '<p>A l\'assumpte has de fer constar: “CNS – Nom Cognom Cognom”.</p>';
-$langVoc['mailCertBody5'] = '<p align="justify">Després, hauràs d\'enviar, durant les properes quatre setmanes, el comprovant de la 
-                             transferència a l\'adreça següent: cerebro.ciudad@gmail.com</p><p>Important: aquelles inscripcions amb sol·licitud 
-                             de Certificació d\'Aprofitament Acadèmic que no remetin el comprovant de pagament en el termini establert seran 
+$langVoc['mailCertBody5'] = '<p align="justify">Després, hauràs d\'enviar, durant les properes quatre setmanes, el comprovant de la
+                             transferència a l\'adreça següent: cerebro.ciudad@gmail.com</p><p>Important: aquelles inscripcions amb sol·licitud
+                             de Certificació d\'Aprofitament Acadèmic que no remetin el comprovant de pagament en el termini establert seran
                              revocades i les places preinscrites seran alliberades.</p>';
 $langVoc['mailCertBody6'] = '<p>T\'has inscrit amb èxit per a les sessions següents:</p>';
-$langVoc['mailCertBody7'] = '<p align="justify">Una setmana abans de la sessió, rebràs un email en aquesta mateixa adreça per demanar-te que 
+$langVoc['mailCertBody7'] = '<p align="justify">Una setmana abans de la sessió, rebràs un email en aquesta mateixa adreça per demanar-te que
                              confirmis l\'assistència a aquestes sessions. Recorda que les places no confirmades en les 96 hores següents
                              a l\'emissió del missatge seran alliberades per a la llista d\'espera.</p>';
 $langVoc['mailCertBody8'] = '<p align="justify">•	Per a qualsevol dubte o consulta, ens pots contactar a cerebro.ciudad@gmail.com</p>';
@@ -245,9 +245,12 @@ $langVoc['mailCertBody9'] = '<p>T\'esperem, salutacions.</p>';
 //CONFIRM.PHP
 $langVoc['confirmAsistTittle'] = 'Confirmació d\'assistència';
 $langVoc['confirmAsistSI'] = 'Si confirmes la teva assisténcia a la conferència clica el <b>SI</b>';
-$langVoc['confirmAsistTittleNO'] = 'Renúncia a la plaça d\'assistència';  
+$langVoc['confirmAsistTittleNO'] = 'Renúncia a la plaça d\'assistència';
 $langVoc['confirmAsistNO'] = 'En cas de no poder assistir clica el <b>NO</b>';
 $langVoc['confirmAsistMsgYes'] = 'Enhorabona! Has confirmat la teva assistència correctament!';
 $langVoc['confirmAsistMsgNo'] = 'Has lliberat la teva plaça correctament.';
 
+//FOOTER
+
+$langVoc['footermail'] = 'cervell.ciutat@gmail.com';
 ?>
