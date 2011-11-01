@@ -42,7 +42,7 @@ include 'include/common.php';
                         <p>Si vols veure les persones registrades a una conferència entra aquí</p>
                         <form name="list" action="regList1.php" method="post">
                             <div align="center">
-                                <input class="form_submitb" type="submit" name="submit" value="Entrar" />
+                                <input class="form_submitb" type="submit" name="submit" value="ENTRAR" />
                             </div>
                         </form><br><br>
                         <div id='boxleft'>
