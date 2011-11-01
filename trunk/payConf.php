@@ -97,7 +97,10 @@ $_SESSION["DBpayUpdate"]=$DBpayUpdate;
                                 echo '</td>';
                                 echo '<td>';
                                 //I have only contemplate this field inside the form
-                                print "<div align='center'><input type='checkbox' name='pay[$i]' value='YES' '/><br></div>";
+                                print "<input type='checkbox' name='pay[$i]' value='YES'/>";
+                                //echo 'culo';
+                                echo '</td>';
+                                echo '</tr>';
                                 //print "<p>{$books['course']}: <input type='che' type='checkbox' name='bookinfo[$i]' value='{$books['bookinfo']}' /></p>\n";
 
                                 //echo '<div align="center"><input type="checkbox" name="pay';
@@ -105,15 +108,19 @@ $_SESSION["DBpayUpdate"]=$DBpayUpdate;
                                 //echo '"><br></div>';
                                 ++$i;
                             }
-
+                            
+                            //echo '</form>';
                             echo '</table>';
                             echo '</div>';
-                            echo '<br><br>';
+                            echo '<br>';
+//                            echo '</table>';
+//                            echo '</div>';
+//                            echo '<br><br>';
                             echo'<div align="center">
                                                  <input class="form_submitb" type="submit" name="submit" value="GUARDAR CANVIS" />
                                                  <input type="hidden" name="submitted" value="TRUE" />
                                                  </div><br>';
-                            echo '</form>';
+                            
                         }
                         print "<br><br>
                                         <div align=center>
