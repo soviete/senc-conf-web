@@ -169,7 +169,7 @@ else {
                             print "<br><br><br>";
                             print "
                                         <div id='boxleft'>
-                                                <input class='form_submitb' onclick='window.location.href=\"regList.php\"'type='button'
+                                                <input class='form_submitb' onclick='window.location.href=\"regList1.php\"'type='button'
                                                        value=".$langVoc['back1']." />
                                                 </div>
                                                 <div id='boxright'>
