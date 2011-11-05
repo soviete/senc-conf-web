@@ -197,6 +197,7 @@ $langVoc['asap'] = 'Nos pondremos en contacto contigo tan pronto como haya plaza
 //MAILS
 $langVoc['mailSubject'] = 'Inscripción neuroconferencias';
 $langVoc['mailSubject1'] = 'Asistencia a neuroconferencia';
+$langVoc['mailSubject2'] = 'Plazas libres en neuroconferencia!';
 
 //MAIL TO PEOPLE WITHOUT CERTIFICATE
 $langVoc['mailNoCertBody'] = '<p>Hola ';
@@ -252,7 +253,7 @@ $langVoc['confirmAsistMsgNo'] = 'Has liberado tu plaza correctamente.';
 
 $langVoc['mail7A'] = '<p>Hola ';
 $langVoc['mail7B'] = ',</p><p align="justify">Este es un mensaje automático generado desde la secretaría de “El Cerebro Invade la Ciudad”.</p>';
-$langVoc['mail7C'] = '<p align="justify">Según nuestra base de datos, estás inscrito para la conferencia: ';
+$langVoc['mail7C'] = '<p align="justify">Según nuestra base de datos, estás inscrito para la conferencia: <br><br>';
 $langVoc['mail7D'] = 'Debido al gran número de solicitudes para acudir a estas conferencias, te pedimos que nos
     confirmes si finalmente podrás asistir a este evento: aunque estés preinscrito a la conferencia, es necesario que nos confirmes
     tu asistencia para que hagamos efectiva tu plaza.</p>';
@@ -260,7 +261,7 @@ $langVoc['mail7E'] = '<p align="justify">Igualmente, si estabas preinscrito y sa
     que nos lo comuniques para poder ofrecer esa plaza a la lista de espera.</p>';
 $langVoc['mail7F'] = '<p align="justify">Si confirmas tu asistencia, por favor pincha aquí: </p>';
 $langVoc['mail7G'] = '<p align="justify">Si sabes que finalmente no podrás asistir, por favor pincha aquí: </p>';
-$langVoc['mail7H'] = '<p align="justify">Importante: todas aquellas plazas que no hayan sido confirmadas en el plazo de 96 horas desde
+$langVoc['mail7H'] = '<p align="justify"><b>Importante:</b> todas aquellas plazas que no hayan sido confirmadas en el plazo de 96 horas desde
     la emisión de este email serán liberadas automáticamente y ofrecidas a las personas que se encuentren en la lista de espera.</p>';
 $langVoc['mail7I'] = '<p align="justify">Para cualquier duda o consulta, nos puedes contactar en </p>';
 
@@ -269,8 +270,8 @@ $langVoc['mail7I'] = '<p align="justify">Para cualquier duda o consulta, nos pue
 
 $langVoc['mail3A'] = '<p>Hola ';
 $langVoc['mail3B'] = ',</p><p align="justify">Este es un mensaje automático generado desde la secretaría de “El Cerebro Invade la Ciudad”.</p>';
-$langVoc['mail3C'] = '<p align="justify">Según nuestra base de datos, estás en la lista de espera para la conferencia: </p>';
-$langVoc['mail3D'] = '<p align="justify">En estos momentos, algunas de las plazas ocupadas en la conferencia han sido liberadas y
+$langVoc['mail3C'] = '<p align="justify">Según nuestra base de datos, estás en la lista de espera para la conferencia: ';
+$langVoc['mail3D'] = 'En estos momentos, algunas de las plazas ocupadas en la conferencia han sido liberadas y
     estamos ofreciéndolas a las personas que quedaron en lista de espera. A partir de la emisión de este mensaje, y por orden de
     llegada de solicitudes, podrías acceder a una de las plazas liberadas.</p>';
 $langVoc['mail3E'] = '<p align="justify">Si deseas confirmar tu asistencia, por favor pincha aquí: </p>';
