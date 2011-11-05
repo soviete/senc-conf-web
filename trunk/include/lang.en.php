@@ -218,7 +218,7 @@ $langVoc['mailNoCertBody4'] = 'A week before the session, you will receive an e-
                                attendance at these sessions. Please remember that places that have not been confirmed within 96
                                hours from the sending of this message will be released for people on the waiting list.';
 
-$langVoc['mailNoCertBody5'] = '<p align="justify">•	You are on the waiting list for the following sessions:</p>';
+$langVoc['mailNoCertBody5'] = '<p align="justify">You are on the waiting list for the following sessions:</p>';
 $langVoc['mailNoCertBody6'] = '<p align="justify">Please remember that three days before the event, by means of a message sent to
                                this address, we will offer the places released to all the people on the list. These places will be
                                awarded on a first-come first-served basis.</p>';
@@ -233,7 +233,7 @@ $langVoc['mailOption1'] = 'Option 1 (CAA, 12 conferencess)';
 $langVoc['mailOption2'] = 'Option 2 (CAA, 8 conferences)';
 $langVoc['mailCertBody2'] = ') was successful</p>';
 
-$langVoc['mailCertBody3'] = '<p align="justify">•	Please remember that to be able to apply for the Certificate of Academic
+$langVoc['mailCertBody3'] = '<p align="justify">Please remember that to be able to apply for the Certificate of Academic
                               Achievement issued by SENC, you will be required to pay €30.00. For this, please transfer the amount
                               in question into the following account:</p>La Caixa<br>2100 2923 01 0200027281<br>';
 $langVoc['mailCertBody4'] = '<p>The subject should indicate: “CNS – Name Surname (Surname)”.</p>';
@@ -241,7 +241,7 @@ $langVoc['mailCertBody5'] = '<p align="justify">Within the following four weeks,
                              address:  cerebro.ciudad@gmail.com</p><p>Importante: Important: Registrations with the application for a
                              Certificate of Academic Achievement which do not send in proof of payment within the deadline established
                              will be rejected and the places will be released.</p>';
-$langVoc['mailCertBody6'] = '<p>•	You have been successfully registered for the following sessions:</p>';
+$langVoc['mailCertBody6'] = '<p>You have been successfully registered for the following sessions:</p>';
 $langVoc['mailCertBody7'] = '<p align="justify">A week before the session, you will receive an e-mail at this address to ask you to
                               confirm your attendance at these sessions. Please remember that places that have not been confirmed
                               within 96 hours from the sending of this message will be released for people on the waiting list.</p>';
