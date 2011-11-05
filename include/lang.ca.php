@@ -198,7 +198,7 @@ $langVoc['asap'] = 'Ens posarem en contacte amb tu tan aviat com hi hagi places 
 
 //MAILS
 $langVoc['mailSubject'] = 'Inscripció neuroconferèncias';
-$langVoc['mailSubject1'] = 'Assistència neuroconferència';
+$langVoc['mailSubject1'] = 'Assistència a neuroconferència';
 
 //MAIL TO PEOPLE WITHOUT CERTIFICATE
 $langVoc['mailNoCertBody'] = '<p>Hola ';
@@ -258,8 +258,8 @@ $langVoc['confirmAsistMsgNo'] = 'Has lliberat la teva plaça correctament.';
 
 $langVoc['mail7A'] = '<p>Hola ';
 $langVoc['mail7B'] = ',</p><p align="justify">Aquest és un email generat automàticament des de la secretaria d\'“El Cervell Envaeix la Ciutat”.</p>';                           
-$langVoc['mail7C'] = '<p align="justify">Segons la nostra base de dades, estàs inscrit per a la conferència: </p>';
-$langVoc['mail7D'] = '<p align="justify">Davant el gran nombre de sol·licituds per acudir a aquestes conferències, et demanem que ens 
+$langVoc['mail7C'] = '<p align="justify">Segons la nostra base de dades, estàs inscrit per a la conferència: ';
+$langVoc['mail7D'] = 'Davant el gran nombre de sol·licituds per acudir a aquestes conferències, et demanem que ens 
     confirmis si finalment podràs assistir a aquest esdeveniment: encara que estiguis preinscrit a la conferència, cal que ens confirmis 
     l\'assistència perquè fem efectiva la teva plaça.</p>';
 $langVoc['mail7E'] = '<p align="justify">Igualment, si estaves preinscrit i saps que finalment no hi podràs assistir, t\'agrairem que ens ho comuniquis per
