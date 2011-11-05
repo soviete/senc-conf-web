@@ -213,7 +213,8 @@ $langVoc['mailNoCertBody4'] = 'Una semana antes de la sesión, recibirás un ema
 $langVoc['mailNoCertBody5'] = '<p align="justify">Y has quedado en la lista de espera de las siguientes sesiones:</p>';
 $langVoc['mailNoCertBody6'] = '<p align="justify">Recuerda que tres días antes del acto os ofreceremos, mediante un mensaje a esta dirección,
                                las plazas liberadas al global de las personas incluídas en la misma; estas plazas serán adjudicadas por orden de confirmación.</p>';
-$langVoc['mailNoCertBody7'] = '<p align="justify">Para cualquier duda o consulta, nos puedes contactar en cerebro.ciudad@gmail.com</p>';
+$langVoc['mailNoCertBody7'] = '<p align="justify">Para cualquier duda o consulta, nos puedes contactar en 
+    <a href="mailto:cerebro.ciudad@gmail.com?subject=Feedback" >cerebro.ciudad@gmail.com</a></p>';
 $langVoc['mailNoCertBody8'] = '<p>Te esperamos, un saludo.</p>';
 
 //MAIL TO PEOPLE WITH CERTIFICATE
@@ -229,13 +230,14 @@ $langVoc['mailCertBody3'] = '<p align="justify">Recuerda que para poder solicita
                             siguiente cuenta:</p>La Caixa<br>2100 2923 01 0200027281<br>';
 $langVoc['mailCertBody4'] = '<p>En el asunto has de hacer constar: “CNS– Nombre Apellido Apellido”</p>';
 $langVoc['mailCertBody5'] = '<p align="justify">Después, habrás enviar, dentro de las próximas 4 semanas, el comprobante de la transferencia a la siguiente
-                             dirección: cerebro.ciudad@gmail.com</p><p>Importante: Aquellas inscripciones con solicitud de Certificación de Aprovechamiento Académico
+                             dirección: <a href="mailto:cerebro.ciudad@gmail.com?subject=Feedback" >cerebro.ciudad@gmail.com</a></p><p>Importante: Aquellas inscripciones con solicitud de Certificación de Aprovechamiento Académico
                              que no remitan el comprobante de pago en el plazo establecido serán revocadas y las plazas pre-inscritas serán liberadas.</p>';
 $langVoc['mailCertBody6'] = '<p>Te has inscrito con éxito para las siguientes sesiones:</p>';
 $langVoc['mailCertBody7'] = '<p align="justify">Una semana antes de la sesión, recibirás un email en esta misma dirección para pedirte que confirmes tu asistencia a estas
                              sesiones. Recuerda que aquellas plazas no confirmadas en las 96 horas siguientes a la emisión del mensaje serán liberadas para
                              la lista de espera.</p>';
-$langVoc['mailCertBody8'] = '<p align="justify">Para cualquier duda o consulta, nos puedes contactar en cerebro.ciudad@gmail.com</p>';
+$langVoc['mailCertBody8'] = '<p align="justify">Para cualquier duda o consulta, nos puedes contactar en 
+    <a href="mailto:cerebro.ciudad@gmail.com?subject=Feedback" >cerebro.ciudad@gmail.com</a></p>';
 $langVoc['mailCertBody9'] = '<p>Te esperamos, un saludo.</p>';
 
 //CONFIRM.PHP
@@ -274,7 +276,8 @@ $langVoc['mail3D'] = '<p align="justify">En estos momentos, algunas de las plaza
 $langVoc['mail3E'] = '<p align="justify">Si deseas confirmar tu asistencia, por favor pincha aquí: </p>';
 $langVoc['mail3F'] = '<p align="justify">Importante: puede ser que cuando leas este mensaje y pinches en el enlace, todas las
     plazas hayan sido ocupadas ya. En tal caso, te pedimos disculpas y te animamos a que no dejes de acudir al resto de sesiones. </p>';
-$langVoc['mail3G'] = '<p align="justify">Para cualquier duda o consulta, nos puedes contactar en </p>';
+$langVoc['mail3G'] = '<p align="justify">Para cualquier duda o consulta, nos puedes contactar en 
+    <a href="mailto:cerebro.ciudad@gmail.com?subject=Feedback" >cerebro.ciudad@gmail.com</a></p>';
 
 //FOOTER
 

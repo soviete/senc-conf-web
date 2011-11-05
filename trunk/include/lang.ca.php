@@ -217,7 +217,8 @@ $langVoc['mailNoCertBody5'] = '<p align="justify">I has quedat en la llista d\'e
 $langVoc['mailNoCertBody6'] = '<p align="justify">Recorda que tres dies abans de l\'acte oferirem, mitjançant un missatge a
                                aquesta adreça, les places alliberades al conjunt de persones que hi estan incloses; aquestes
                                places seran adjudicades per ordre de confirmació.</p>';
-$langVoc['mailNoCertBody7'] = '<p align="justify">Per a qualsevol dubte o consulta, ens pots contactar a cerebro.ciudad@gmail.com</p>';
+$langVoc['mailNoCertBody7'] = '<p align="justify">Per a qualsevol dubte o consulta, ens pots contactar a 
+    <a href="mailto:cervell.ciutat@gmail.com?subject=Feedback" >cervell.ciutat@gmail.com</a></p>';
 $langVoc['mailNoCertBody8'] = '<p>T\'esperem, salutacions.</p>';
 
 //MAIL TO PEOPLE WITH CERTIFICATE
@@ -233,14 +234,15 @@ $langVoc['mailCertBody3'] = '<p align="justify">Recorda que per poder sol·licit
                              quantitat esmentada al compte següent:</p>La Caixa<br>2100 2923 01 0200027281<br>';
 $langVoc['mailCertBody4'] = '<p>A l\'assumpte has de fer constar: “CNS – Nom Cognom Cognom”.</p>';
 $langVoc['mailCertBody5'] = '<p align="justify">Després, hauràs d\'enviar, durant les properes quatre setmanes, el comprovant de la
-                             transferència a l\'adreça següent: cerebro.ciudad@gmail.com</p><p>Important: aquelles inscripcions amb sol·licitud
+                             transferència a l\'adreça següent: <a href="mailto:cervell.ciutat@gmail.com?subject=Feedback" >cervell.ciutat@gmail.com</a></p><p>Important: aquelles inscripcions amb sol·licitud
                              de Certificació d\'Aprofitament Acadèmic que no remetin el comprovant de pagament en el termini establert seran
                              revocades i les places preinscrites seran alliberades.</p>';
 $langVoc['mailCertBody6'] = '<p>T\'has inscrit amb èxit per a les sessions següents:</p>';
 $langVoc['mailCertBody7'] = '<p align="justify">Una setmana abans de la sessió, rebràs un email en aquesta mateixa adreça per demanar-te que
                              confirmis l\'assistència a aquestes sessions. Recorda que les places no confirmades en les 96 hores següents
                              a l\'emissió del missatge seran alliberades per a la llista d\'espera.</p>';
-$langVoc['mailCertBody8'] = '<p align="justify">Per a qualsevol dubte o consulta, ens pots contactar a cerebro.ciudad@gmail.com</p>';
+$langVoc['mailCertBody8'] = '<p align="justify">Per a qualsevol dubte o consulta, ens pots contactar a 
+    <a href="mailto:cervell.ciutat@gmail.com?subject=Feedback" >cervell.ciutat@gmail.com</a></p>';
 $langVoc['mailCertBody9'] = '<p>T\'esperem, salutacions.</p>';
 
 //CONFIRM.PHP
@@ -266,7 +268,8 @@ $langVoc['mail7F'] = '<p align="justify">Si confirmes l\'assistència, si us pla
 $langVoc['mail7G'] = '<p align="justify">Si saps que finalment no hi podràs assistir, si us plau clica aquí: </p>';
 $langVoc['mail7H'] = '<p align="justify">Important: totes aquelles places que no hagin estat confirmades en el termini de 96 hores des
     de l\'emissió d\'aquest email seran alliberades automàticament i ofertes a les persones que es trobin a la llista d\'espera.</p>';
-$langVoc['mail7I'] = '<p align="justify">Per a qualsevol dubte o consulta, ens pots contactar a </p>';
+$langVoc['mail7I'] = '<p align="justify">Per a qualsevol dubte o consulta, ens pots contactar a
+    <a href="mailto:cervell.ciutat@gmail.com?subject=Feedback" >cervell.ciutat@gmail.com</a></p>';
 
 
 //MAIL -3
@@ -280,7 +283,8 @@ $langVoc['mail3D'] = '<p align="justify">En aquest moment, algunes de les places
 $langVoc['mail3E'] = '<p align="justify">Si desitges confirmar la teva assistència, si us plau clica aquí: </p>';
 $langVoc['mail3F'] = '<p align="justify">Important: pot ser que quan llegeixis aquest missatge i cliquis a l\'enllaç, totes les places ja hagin estat ocupades.
     En aquest cas, et demanem disculpes i t\'animem a no deixar d\'assistir a la resta de sessions. </p>';
-$langVoc['mail3G'] = '<p align="justify">Per a qualsevol dubte o consulta, ens pots contactar a </p>';
+$langVoc['mail3G'] = '<p align="justify">Per a qualsevol dubte o consulta, ens pots contactar a 
+    <a href="mailto:cervell.ciutat@gmail.com?subject=Feedback" >cervell.ciutat@gmail.com</a></p>';
 
 
 //FOOTER
