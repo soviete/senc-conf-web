@@ -205,6 +205,7 @@ $langVoc['asap'] = 'We will get in touch with you as soon as there are empty slo
 
 //MAILS
 $langVoc['mailSubject'] = 'Neuroconferences registration';
+$langVoc['mailSubject1'] = 'Attendance to neuroconference';
 
 //MAIL TO PEOPLE WITHOUT CERTIFICATE
 $langVoc['mailNoCertBody'] = '<p>Dear ';
