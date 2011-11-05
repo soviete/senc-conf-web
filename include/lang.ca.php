@@ -216,7 +216,7 @@ $langVoc['mailNoCertBody5'] = '<p align="justify">I has quedat en la llista d\'e
 $langVoc['mailNoCertBody6'] = '<p align="justify">Recorda que tres dies abans de l\'acte oferirem, mitjançant un missatge a
                                aquesta adreça, les places alliberades al conjunt de persones que hi estan incloses; aquestes
                                places seran adjudicades per ordre de confirmació.</p>';
-$langVoc['mailNoCertBody7'] = '<p align="justify">•	Per a qualsevol dubte o consulta, ens pots contactar a cerebro.ciudad@gmail.com</p>';
+$langVoc['mailNoCertBody7'] = '<p align="justify">Per a qualsevol dubte o consulta, ens pots contactar a cerebro.ciudad@gmail.com</p>';
 $langVoc['mailNoCertBody8'] = '<p>T\'esperem, salutacions.</p>';
 
 //MAIL TO PEOPLE WITH CERTIFICATE
@@ -227,7 +227,7 @@ $langVoc['mailOption1'] = 'Opció 1 (Amb CAA, 12 conferències)';
 $langVoc['mailOption2'] = 'Opció 2 (Amb CAA, 8 conferències)';
 $langVoc['mailCertBody2'] = ') s\'ha dut a terme correctament.</p>';
 
-$langVoc['mailCertBody3'] = '<p align="justify">•	Recorda que per poder sol·licitar l\'emissió de la Certificació d\'Aprofitament
+$langVoc['mailCertBody3'] = '<p align="justify">Recorda que per poder sol·licitar l\'emissió de la Certificació d\'Aprofitament
                              Acadèmic emesa per la SENC has de fer un pagament de 30 euros. Per a això, fes una transferència per la
                              quantitat esmentada al compte següent:</p>La Caixa<br>2100 2923 01 0200027281<br>';
 $langVoc['mailCertBody4'] = '<p>A l\'assumpte has de fer constar: “CNS – Nom Cognom Cognom”.</p>';
@@ -239,7 +239,7 @@ $langVoc['mailCertBody6'] = '<p>T\'has inscrit amb èxit per a les sessions seg�
 $langVoc['mailCertBody7'] = '<p align="justify">Una setmana abans de la sessió, rebràs un email en aquesta mateixa adreça per demanar-te que
                              confirmis l\'assistència a aquestes sessions. Recorda que les places no confirmades en les 96 hores següents
                              a l\'emissió del missatge seran alliberades per a la llista d\'espera.</p>';
-$langVoc['mailCertBody8'] = '<p align="justify">•	Per a qualsevol dubte o consulta, ens pots contactar a cerebro.ciudad@gmail.com</p>';
+$langVoc['mailCertBody8'] = '<p align="justify">Per a qualsevol dubte o consulta, ens pots contactar a cerebro.ciudad@gmail.com</p>';
 $langVoc['mailCertBody9'] = '<p>T\'esperem, salutacions.</p>';
 
 //CONFIRM.PHP
