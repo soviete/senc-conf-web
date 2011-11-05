@@ -181,6 +181,12 @@ else {
                             echo '</form>';
                         }
 
+                        print "<br><br>
+                               <div align=center>
+                                 <input class='form_submitb' onclick='window.location.href=\"regList1.php\"'type='button'
+                                 value=".$langVoc['back1']." />
+                                </div>";
+
 
                         ?>
 
@@ -189,11 +195,11 @@ else {
 
                 <div style=" clear: both; height: 1px"></div>
             </div>
-                        <?php
-$_SESSION["sessionName"]=$sessionName;
-?>
+            <?php
+            $_SESSION["sessionName"]=$sessionName;
+            ?>
 
-<?php include 'include/footer.php'; ?>
+            <?php include 'include/footer.php'; ?>
         </div>
     </body>
 </html>
