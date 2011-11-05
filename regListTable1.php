@@ -87,6 +87,11 @@ else {
 //                            echo '<h3>Persones registradesamb assistència confirmada.</h3>
                             echo '<div id="welcome">
                                   No hi ha cap persona registrada en aquesta sessió <b>', $num_rows, '</b>.</div>';
+                            print "<br><br>
+                               <div align=center>
+                                 <input class='form_submitb' onclick='window.location.href=\"regList1.php\"'type='button'
+                                 value=".$langVoc['back1']." />
+                                </div>";
                         }
 
                         else {
@@ -180,12 +185,6 @@ else {
                             echo '<br>';
                             echo '</form>';
                         }
-
-                        print "<br><br>
-                               <div align=center>
-                                 <input class='form_submitb' onclick='window.location.href=\"regList1.php\"'type='button'
-                                 value=".$langVoc['back1']." />
-                                </div>";
 
 
                         ?>
