@@ -223,7 +223,8 @@ $langVoc['mailNoCertBody5'] = '<p align="justify">You are on the waiting list fo
 $langVoc['mailNoCertBody6'] = '<p align="justify">Please remember that three days before the event, by means of a message sent to
                                this address, we will offer the places released to all the people on the list. These places will be
                                awarded on a first-come first-served basis.</p>';
-$langVoc['mailNoCertBody7'] = '<p align="justify">If you have any doubts or queries, you may contact us at cerebro.ciudad@gmail.com</p>';
+$langVoc['mailNoCertBody7'] = '<p align="justify">If you have any doubts or queries, you may contact us at 
+    <a href="mailto:cerebro.ciudad@gmail.com?subject=Feedback" >cerebro.ciudad@gmail.com</a></p>';
 $langVoc['mailNoCertBody8'] = '<p>We look forward to seeing you.</p>';
 
 //MAIL TO PEOPLE WITH CERTIFICATE
@@ -239,14 +240,15 @@ $langVoc['mailCertBody3'] = '<p align="justify">Please remember that to be able 
                               in question into the following account:</p>La Caixa<br>2100 2923 01 0200027281<br>';
 $langVoc['mailCertBody4'] = '<p>The subject should indicate: “CNS – Name Surname (Surname)”.</p>';
 $langVoc['mailCertBody5'] = '<p align="justify">Within the following four weeks, you should send a copy of the payslip to this
-                             address:  cerebro.ciudad@gmail.com</p><p>Importante: Important: Registrations with the application for a
+                             address: <a href="mailto:cerebro.ciudad@gmail.com?subject=Feedback" >cerebro.ciudad@gmail.com</a></p><p>Importante: Important: Registrations with the application for a
                              Certificate of Academic Achievement which do not send in proof of payment within the deadline established
                              will be rejected and the places will be released.</p>';
 $langVoc['mailCertBody6'] = '<p>You have been successfully registered for the following sessions:</p>';
 $langVoc['mailCertBody7'] = '<p align="justify">A week before the session, you will receive an e-mail at this address to ask you to
                               confirm your attendance at these sessions. Please remember that places that have not been confirmed
                               within 96 hours from the sending of this message will be released for people on the waiting list.</p>';
-$langVoc['mailCertBody8'] = '<p align="justify">If you have any doubts or queries, you may contact us at cerebro.ciudad@gmail.com</p>';
+$langVoc['mailCertBody8'] = '<p align="justify">If you have any doubts or queries, you may contact us at 
+    <a href="mailto:cerebro.ciudad@gmail.com?subject=Feedback" >cerebro.ciudad@gmail.com</a></p>';
 $langVoc['mailCertBody9'] = '<p>We look forward to seeing you</p>';
 
 //CONFIRM.PHP
@@ -284,7 +286,8 @@ $langVoc['mail3D'] = '<p align="justify">Some of the places reserved for the con
 $langVoc['mail3E'] = '<p align="justify">If you would like to confirm your attendance, please click here: </p>';
 $langVoc['mail3F'] = '<p align="justify">Important: it is possible that when you read this message and click on the link the places have already been taken.
     If this is the case, we apologise and hope that this will not stop you from attending the other sessions.  </p>';
-$langVoc['mail3G'] = '<p align="justify">If you have any doubts or queries, you may contact us at </p>';
+$langVoc['mail3G'] = '<p align="justify">If you have any doubts or queries, you may contact us at 
+    <a href="mailto:cerebro.ciudad@gmail.com?subject=Feedback" >cerebro.ciudad@gmail.com</a></p>';
 
 
 //FOOTER
