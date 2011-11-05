@@ -256,6 +256,36 @@ $langVoc['confirmAsistNO'] = 'In case you can not attend the conference click on
 $langVoc['confirmAsistMsgYes'] = 'Congratulations! You have correctly confirmed your attendance!';
 $langVoc['confirmAsistMsgNo'] = 'You have correctly released your reservation.';
 
+//MAIL -7
+
+$langVoc['mail7A'] = '<p>Dear ';
+$langVoc['mail7B'] = ',</p><p align="justify">This is a message that has been automatically generated from the Secretariat of "The Brain Invades the City".</p>';
+$langVoc['mail7C'] = '<p align="justify">According to our database, you are registered for the following conference: </p>';
+$langVoc['mail7D'] = '<p align="justify">Due to the large number of requests to attend these conferences, we would ask you to confirm
+    whether you will be able to attend this event. Although you have a preliminary registration for the conference, we need you to confirm your
+    attendance to guarantee your place. </p>';
+$langVoc['mail7E'] = '<p align="justify">In the same way, if you have made a preliminary registration and you know that you will not be able
+    to attend, we would be grateful if you would let us know so that we can release this place to the waiting list.</p>';
+$langVoc['mail7F'] = '<p align="justify">To confirm your attendance, please click here: </p>';
+$langVoc['mail7G'] = '<p align="justify">If you will be unable to attend, please click here: </p>';
+$langVoc['mail7H'] = '<p align="justify">Important: All places that have not been confirmed within 96 hours from the sending out of this e-mail will
+    be automatically released and offered to the people on the waiting list.</p>';
+$langVoc['mail7I'] = '<p align="justify">If you have any doubts or queries, you may contact us at </p>';
+
+
+//MAIL -3
+
+$langVoc['mail3A'] = '<p>Hola ';
+$langVoc['mail3B'] = ',</p><p align="justify">This is a message that has been automatically generated from the Secretariat of "The Brain Invades the City".</p>';
+$langVoc['mail3C'] = '<p align="justify">According to our database, you are on the waiting list for the following conference: </p>';
+$langVoc['mail3D'] = '<p align="justify">Some of the places reserved for the conference have been released and we are offering them to the
+    people on the waiting list. From now on, and on a strict first-come first-served basis, you may have access to one of the places released.</p>';
+$langVoc['mail3E'] = '<p align="justify">If you would like to confirm your attendance, please click here: </p>';
+$langVoc['mail3F'] = '<p align="justify">Important: it is possible that when you read this message and click on the link the places have already been taken.
+    If this is the case, we apologise and hope that this will not stop you from attending the other sessions.  </p>';
+$langVoc['mail3G'] = '<p align="justify">If you have any doubts or queries, you may contact us at </p>';
+
+
 //FOOTER
 
 $langVoc['footermail'] = 'cerebro.ciudad@gmail.com';

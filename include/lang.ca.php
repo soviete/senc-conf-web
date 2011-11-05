@@ -250,6 +250,38 @@ $langVoc['confirmAsistNO'] = 'En cas de no poder assistir clica el <b>NO</b>';
 $langVoc['confirmAsistMsgYes'] = 'Enhorabona! Has confirmat la teva assistència correctament!';
 $langVoc['confirmAsistMsgNo'] = 'Has lliberat la teva plaça correctament.';
 
+
+//MAIL -7
+
+$langVoc['mail7A'] = '<p>Hola ';
+$langVoc['mail7B'] = ',</p><p align="justify">Aquest és un email generat automàticament des de la secretaria d\'“El Cervell Envaeix la Ciutat”.</p>';                           
+$langVoc['mail7C'] = '<p align="justify">Segons la nostra base de dades, estàs inscrit per a la conferència: </p>';
+$langVoc['mail7D'] = '<p align="justify">Davant el gran nombre de sol·licituds per acudir a aquestes conferències, et demanem que ens 
+    confirmis si finalment podràs assistir a aquest esdeveniment: encara que estiguis preinscrit a la conferència, cal que ens confirmis 
+    l\'assistència perquè fem efectiva la teva plaça.</p>';
+$langVoc['mail7E'] = '<p align="justify">Igualment, si estaves preinscrit i saps que finalment no hi podràs assistir, t\'agrairem que ens ho comuniquis per
+    poder oferir aquesta plaça a la llista d\'espera.</p>';
+$langVoc['mail7F'] = '<p align="justify">Si confirmes l\'assistència, si us plau clica aquí: </p>';
+$langVoc['mail7G'] = '<p align="justify">Si saps que finalment no hi podràs assistir, si us plau clica aquí: </p>';
+$langVoc['mail7H'] = '<p align="justify">Important: totes aquelles places que no hagin estat confirmades en el termini de 96 hores des
+    de l\'emissió d\'aquest email seran alliberades automàticament i ofertes a les persones que es trobin a la llista d\'espera.</p>';
+$langVoc['mail7I'] = '<p align="justify">Per a qualsevol dubte o consulta, ens pots contactar a </p>';
+
+
+//MAIL -3
+
+$langVoc['mail3A'] = '<p>Hola ';
+$langVoc['mail3B'] = ',</p><p align="justify">Aquest és un email generat automàticament des de la secretaria d\'“El Cervell Envaeix la Ciutat”.</p>';
+$langVoc['mail3C'] = '<p align="justify">Segons la nostra base de dades, ets a la llista d\'espera per a la conferència: </p>';
+$langVoc['mail3D'] = '<p align="justify">En aquest moment, algunes de les places ocupades a la conferència han estat alliberades i les estem oferint a
+    les persones que van quedar en llista d\'espera. A partir de l\'emissió d\'aquest missatge, i per ordre d\'arribada de sol·licituds, podries accedir a
+    una de les places alliberades.</p>';
+$langVoc['mail3E'] = '<p align="justify">Si desitges confirmar la teva assistència, si us plau clica aquí: </p>';
+$langVoc['mail3F'] = '<p align="justify">Important: pot ser que quan llegeixis aquest missatge i cliquis a l\'enllaç, totes les places ja hagin estat ocupades.
+    En aquest cas, et demanem disculpes i t\'animem a no deixar d\'assistir a la resta de sessions. </p>';
+$langVoc['mail3G'] = '<p align="justify">Per a qualsevol dubte o consulta, ens pots contactar a </p>';
+
+
 //FOOTER
 
 $langVoc['footermail'] = 'cervell.ciutat@gmail.com';
