@@ -263,8 +263,8 @@ $langVoc['confirmAsistMsgNo'] = 'You have correctly released your reservation.';
 
 $langVoc['mail7A'] = '<p>Dear ';
 $langVoc['mail7B'] = ',</p><p align="justify">This is a message that has been automatically generated from the Secretariat of "The Brain Invades the City".</p>';
-$langVoc['mail7C'] = '<p align="justify">According to our database, you are registered for the following conference: </p>';
-$langVoc['mail7D'] = '<p align="justify">Due to the large number of requests to attend these conferences, we would ask you to confirm
+$langVoc['mail7C'] = '<p align="justify">According to our database, you are registered for the following conference: ';
+$langVoc['mail7D'] = 'Due to the large number of requests to attend these conferences, we would ask you to confirm
     whether you will be able to attend this event. Although you have a preliminary registration for the conference, we need you to confirm your
     attendance to guarantee your place. </p>';
 $langVoc['mail7E'] = '<p align="justify">In the same way, if you have made a preliminary registration and you know that you will not be able
