@@ -4,32 +4,56 @@
 session_start();
 include 'include/common.php';
 
-if(isSet($_GET['id'])) {
-    $id = $_GET['id'];
+session_start();
+include 'include/common.php';
+$key = "33";
 
-    // register the session and set the cookie
-    $_SESSION['id'] = $id;
-
-    setcookie('id', $id, time() + (3600 * 24 * 30));
+if(isSet($_GET['idUser'])) {
+    $idUserEncrypt = $_GET['idUser'];
+    $idUser = decrypt($idUserEncrypt, $key); 
 }
 
-if(isSet($_GET['conf'])) {
-    $conf = $_GET['conf'];
-
-    // register the session and set the cookie
-    $_SESSION['conf'] = $id;
-
-    setcookie('conf', $conf, time() + (3600 * 24 * 30));
+if(isSet($_GET['idSession'])) {
+    $idSessionEncrypt = $_GET['idSession'];
+    $idSession = decrypt($idSessionEncrypt, $key);
 }
 
-$id=2;
-$key = "100";
-$idEn = encrypt ($id, $key);
-echo "$idEn============";
-$iddec=decrypt($idEn, $key);
-echo "$iddec============";
-$sessionId = 2;
-$idUser = 2;
+if(isSet($_GET['lang'])) {
+    $langEncrypt = $_GET['lang'];
+    $lang = decrypt($langEncrypt, $key);
+}
+
+if(isSet($_GET['name'])) {
+    $nameEncrypt = $_GET['name'];
+    $name = decrypt($nameEncrypt, $key);
+}
+
+if(isSet($_GET['email'])) {
+    $emailEncrypt = $_GET['email'];
+    $email = decrypt($emailEncrypt, $key);
+}
+
+// MAIL HEADERS
+// To send HTML mail, the Content-type header must be set
+$headers  = 'MIME-Version: 1.0' . "\r\n";
+$headers .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
+
+// Additional headers
+$headers .= 'From: El Cerebro Invade la Ciudad <DONOTREPLY@elcervell.com>' . "\r\n";
+$headers .= "Reply-To: El Cerebro Invade la Ciudad <INFO@elcervell.com>\r\n";
+$headers .= 'Return-Path: El Cerebro Invade la Ciudad <INFO@elcervell.com>' . "\r\n";
+$headers .= "Organization: Sender Organization\r\n";
+$headers .= "X-Priority: 3\r\n";
+$headers .= "X-Mailer: PHP". phpversion() ."\r\n" ;
+
+//$id=2;
+//$key = "100";
+//$idEn = encrypt ($id, $key);
+//echo "$idEn============";
+//$iddec=decrypt($idEn, $key);
+//echo "$iddec============";
+//$sessionId = 2;
+//$idUser = 2;
 
 ?>
 
