@@ -253,7 +253,12 @@ $langVoc['confirmAsistTittleNO'] = 'Renúncia a la plaça d\'assistència';
 $langVoc['confirmAsistNO'] = 'En cas de no poder assistir clica el <b>NO</b>';
 $langVoc['confirmAsistMsgYes'] = 'Enhorabona! Has confirmat la teva assistència correctament!';
 $langVoc['confirmAsistMsgNo'] = 'Has lliberat la teva plaça correctament.';
+$langVoc['confirmAsistMsgMail'] = 'En breu rebràs un mail de confirmació.';
 
+//GET AVAILABLE PLACES
+$langVoc['placeAvailable'] = 'Disponibilitat de places';
+$langVoc['placeAvailableText'] = 'Hi ha places disponibles a la sessió';
+$langVoc['placeAvailableGetPlace'] = 'Si vols registrar-te i assistir a aquesta conferència prem el <b>SI</b>';
 
 //MAIL -7
 
