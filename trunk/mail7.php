@@ -45,7 +45,7 @@ while ($row = mysql_fetch_array($query0)) {
     $W=$day[$weekdaymysql];
     $M=$month[$monthmysql];
     $fecha="$W, $Day of $M $year";
-    $conference="$fecha<br><i>$query[2]</i><br>\"<b>$query[0]</b>\"<br><br>";
+    $conf="$fecha<br><i>$query[2]</i><br>\"<b>$query[0]</b>\"<br><br>";
 
 
     // MAIL
@@ -54,7 +54,7 @@ while ($row = mysql_fetch_array($query0)) {
     $linkNo="<p><a href='http://localhost/SENCONFsvn/index.php' >RENUNCIO A MI PLAZA</a></p>" ;
 
     $subject = $langVoc['mailSubject1'];
-    $message = $langVoc['mail7A'].$name.$langVoc['mail7B'].$langVoc['mail7C'].$conference.
+    $message = $langVoc['mail7A'].$name.$langVoc['mail7B'].$langVoc['mail7C'].$conf.
             $langVoc['mail7D'].$langVoc['mail7E'].$langVoc['mail7F'].$linkSi.$langVoc['mail7G'].$linkNo.
             $langVoc['mail7H'].$langVoc['mail7I'];
 

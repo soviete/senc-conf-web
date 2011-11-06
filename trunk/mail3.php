@@ -55,7 +55,7 @@ else {
         $W=$day[$weekdaymysql];
         $M=$month[$monthmysql];
         $fecha="$W, $Day of $M $year";
-        $conference="$fecha<br><i>$query[2]</i><br>\"<b>$query[0]</b>\"<br><br>";
+        $conf="$fecha<br><i>$query[2]</i><br>\"<b>$query[0]</b>\"<br><br>";
 
 
         // MAIL
@@ -63,7 +63,7 @@ else {
         $link="<p><a href='http://localhost/SENCONFsvn/index.php' >INSCRÍBEME!</a></p>" ;
 
         $subject = $langVoc['mailSubject2'];
-        $message = $langVoc['mail3A'].$name.$langVoc['mail3B'].$langVoc['mail3C'].$conference.$langVoc['mail3D'].
+        $message = $langVoc['mail3A'].$name.$langVoc['mail3B'].$langVoc['mail3C'].$conf.$langVoc['mail3D'].
                 $langVoc['mail3E'].$link.$langVoc['mail3F'].$langVoc['mail3G'];
 
 
