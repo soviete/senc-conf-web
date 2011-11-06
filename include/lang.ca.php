@@ -214,6 +214,7 @@ $langVoc['mailOption3'] = 'Opció 3 (Sense CAA, inscripció lliure)';
 $langVoc['mailNoCertBody2'] = ') s\'ha dut a terme correctament.</p>';
 
 $langVoc['mailNoCertBody3'] = '<p>T\'has inscrit amb èxit per a les sessions següents:</p>';
+$langVoc['mailNoCertBody3A'] = '<p>No t\'has inscrit a cap sessió.</p>';
 $langVoc['mailNoCertBody4'] = 'Una setmana abans de la sessió, rebràs un email en aquesta mateixa adreça per demanar-te que confirmis
                                l\'assistència a aquestes sessions. Recorda que les places no confirmades en les 96 hores següents a
                                l\'emissió del missatge seran alliberades per a la llista d\'espera.';
