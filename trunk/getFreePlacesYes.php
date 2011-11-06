@@ -89,7 +89,7 @@ $query=mysql_fetch_array(mysql_query("SELECT $sessionName, UNIX_TIMESTAMP(sessio
                                              $fecha="$W, $Day $M $year";
                                              $conferences.="$fecha<br><i>$query[2]</i><br>\"<b>$query[0]</b>\"<br><br>";
 
-$query = mysql_query ("DELETE from formulario. where RESERVED.reservIdUser = '$idUser' AND RESERVED.idReservSession = '$sessionId'");
+$query = mysql_query ("DELETE from formulario.RESERVED where RESERVED.reservIdUser = '$idUser' AND RESERVED.idReservSession = '$sessionId'");
 
 if (!$query) 
     {
