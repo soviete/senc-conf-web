@@ -219,6 +219,7 @@ $langVoc['mailOption3'] = 'Option 3 (NO CAA, free registration)';
 $langVoc['mailNoCertBody2'] = ') was successful.</p>';
 
 $langVoc['mailNoCertBody3'] = '<p>You have been successfully registered for the following sessions:</p>';
+$langVoc['mailNoCertBody3A'] = '<p>You have not registered to any session.</p>';
 $langVoc['mailNoCertBody4'] = 'A week before the session, you will receive an e-mail at this address to ask you to confirm your
                                attendance at these sessions. Please remember that places that have not been confirmed within 96
                                hours from the sending of this message will be released for people on the waiting list.';
