@@ -8,46 +8,26 @@ $key = "33";
 if(isSet($_GET['idUser'])) {
     $idUserEncrypt = $_GET['idUser'];
     $idUser = decrypt($idUserEncrypt, $key); 
-    
-    $_SESSION['idUser'] = $idUser;
-
-    setcookie('idUser', $idUser, time() + (3600 * 24 * 30));
 }
 
 if(isSet($_GET['idSession'])) {
     $idSessionEncrypt = $_GET['idSession'];
     $idSession = decrypt($idSessionEncrypt, $key);
-    
-    $_SESSION['idSession'] = $idSession;
-
-    setcookie('idSession', $conf, time() + (3600 * 24 * 30));
 }
 
 if(isSet($_GET['lang'])) {
     $langEncrypt = $_GET['lang'];
-    $lang = decrypt($langEncrypt, $key);;
-    
-    $_SESSION['lang'] = $lang;
-
-    setcookie('lang', $lang, time() + (3600 * 24 * 30));
+    $lang = decrypt($langEncrypt, $key);
 }
 
 if(isSet($_GET['name'])) {
     $nameEncrypt = $_GET['name'];
-    $name = decrypt($nameEncrypt, $key);;
-    
-    $_SESSION['name'] = $lang;
-
-    setcookie('name', $name, time() + (3600 * 24 * 30));
+    $name = decrypt($nameEncrypt, $key);
 }
 
 if(isSet($_GET['email'])) {
     $emailEncrypt = $_GET['email'];
-    $email = decrypt($emailEncrypt, $key);;
-    
-    $_SESSION['email'] = $email;
-
-    setcookie('email', $email, time() + (3600 * 24 * 30));
+    $email = decrypt($emailEncrypt, $key);
 }
 
 // MAIL HEADERS
