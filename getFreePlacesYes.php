@@ -1,11 +1,10 @@
 <?php
 //ini_set('display_errors', 'On');
 //error_reporting(-1);
-session_start();
-include 'include/common.php';
 
 session_start();
 include 'include/common.php';
+include 'include/sessionValidation.php';
 $key = "33";
 
 if(isSet($_GET['idUser'])) {
@@ -46,15 +45,6 @@ $headers .= "Organization: Sender Organization\r\n";
 $headers .= "X-Priority: 3\r\n";
 $headers .= "X-Mailer: PHP". phpversion() ."\r\n" ;
 
-//$id=2;
-//$key = "100";
-//$idEn = encrypt ($id, $key);
-//echo "$idEn============";
-//$iddec=decrypt($idEn, $key);
-//echo "$iddec============";
-//$sessionId = 2;
-//$idUser = 2;
-
 ?>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -77,7 +67,7 @@ print "
 include 'mysql_connect.php';
 //echo "$lang--------------";
 $sessionName = "sessionName".$lang;
-$query=mysql_fetch_array(mysql_query("SELECT $sessionName, UNIX_TIMESTAMP(sessionDate),room FROM SESSIONS WHERE idSESSIONS='$sessionId'"));
+$query=mysql_fetch_array(mysql_query("SELECT $sessionName, UNIX_TIMESTAMP(sessionDate),room FROM SESSIONS WHERE idSESSIONS='$idSession'"));
                                              $weekdaymysql=date("l",$query[1]);
                                              $monthmysql=date("F",$query[1]);
                                              $Day=date("d",$query[1]);
@@ -87,30 +77,58 @@ $query=mysql_fetch_array(mysql_query("SELECT $sessionName, UNIX_TIMESTAMP(sessio
                                              $M=$month[$monthmysql];
 
                                              $fecha="$W, $Day $M $year";
-                                             $conferences.="$fecha<br><i>$query[2]</i><br>\"<b>$query[0]</b>\"<br><br>";
+                                             $conference.="$fecha<br><i>$query[2]</i><br>\"<b>$query[0]</b>\"<br><br>";
 
-$query = mysql_query ("DELETE from formulario.RESERVED where RESERVED.reservIdUser = '$idUser' AND RESERVED.idReservSession = '$sessionId'");
+$query = mysql_query ("DELETE from formulario.RESERVED where RESERVED.reservIdUser = '$idUser' AND RESERVED.idReservSession = '$idSession'");
 
 if (!$query) 
     {
         trigger_error ('Wrong QUERY: ' . mysql_error() );
     }
 
-$query1 = mysql_query("INSERT INTO formulario.REGISTERED (regIdUser, IdRegSession)
-                       VALUES ('$idUser', '$sessionId')");
+//First we have to check if there is still room for this session
+$optionReg = "C1"; //We use C1 because is the one without any restriction
+$switchFreePlaces = freePlaces ($idSession, $optionReg); 
 
-if (!$query1) 
+if ($switchFreePlaces) 
+    { 
+        
+        $query1 = mysql_query("INSERT INTO formulario.REGISTERED (regIdUser, IdRegSession)
+                  VALUES ('$idUser', '$idSession')");
+
+        if (!$query1) 
+            {
+                trigger_error ('Wrong QUERY: ' . mysql_error() );
+            }
+
+        $query2 = mysql_query("INSERT INTO formulario.CONFIRMED (confIdUser, IdConfSession)
+                               VALUES ('$idUser', '$idSession')");
+        if (!$query2) 
+            {
+                trigger_error ('Wrong QUERY: ' . mysql_error() );
+            }
+        
+        else
+            {
+                // MAIL
+                $subject = $langVoc['mailSubject5'];
+                $message = $langVoc['mailFreeYesA'].$name.$langVoc['mailFreeYesB'].$conference.$langVoc['mailFreeYesC'];
+
+                mail($email, $subject, $message, $headers);
+            }
+        
+    }
+
+else 
     {
-        trigger_error ('Wrong QUERY: ' . mysql_error() );
+        // MAIL
+        $subject = $langVoc['mailSubject5'];
+        $message = $langVoc['mailFreeNoA'].$name.$langVoc['mailFreeNoB'].$conference.$langVoc['mailFreeNoC'].$langVoc['mailFreeNoD'];
+
+        mail($email, $subject, $message, $headers);
     }
     
-$query2 = mysql_query("INSERT INTO formulario.CONFIRMED (confIdUser, IdConfSession)
-                       VALUES ('$idUser', '$sessionId')");
 
-if (!$query2) 
-    {
-        trigger_error ('Wrong QUERY: ' . mysql_error() );
-    }
 
 ?>
     <body>
@@ -133,11 +151,35 @@ if (!$query2)
             <div id="page">
                 <div id="content">
                     <div id="welcome">
-                        <h1><?php echo "$conferences";?></h1>
-                        <h3><?php echo $langVoc['confirmAsistTittle'];?></h3>
-                        <p><?php echo $langVoc['confirmAsistMsgYes'];?></p>                       
-                        <p><?php echo $langVoc['confirmAsistMsgMail'];?></p>
-                                             
+                        <?php
+                            if ($switchFreePlaces)
+                                {
+                                    echo '<h1>';
+                                    echo "$conference";
+                                    echo '</h1>';
+                                    echo '<h3>'; 
+                                    echo $langVoc['FreePlacesTittle'];
+                                    echo '</h3>';
+                                    echo '<p>'; 
+                                    echo $langVoc['FreePlacesMsg'];
+                                    echo '</p>';                       
+                                    echo '<p>';
+                                    echo $langVoc['confirmAsistMsgMail'];
+                                    echo '</p>';
+                                }
+                            else   
+                                {
+                                    echo '<h1>';
+                                    echo "$conference";
+                                    echo '</h1>';
+                                    echo '<h3>'; 
+                                    echo $langVoc['FreePlacesTittle'];
+                                    echo '</h3>';
+                                    echo '<p>'; 
+                                    echo $langVoc['FreePlacesMsgFull'];
+                                    echo '</p>';                                                          
+                                }
+                         ?>   
                     </div>
                 </div>
                 <div style=" clear: both; height: 1px"></div>

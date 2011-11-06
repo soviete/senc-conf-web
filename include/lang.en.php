@@ -209,6 +209,7 @@ $langVoc['mailSubject1'] = 'Attendance to neuroconference';
 $langVoc['mailSubject2'] = 'Places available for neuroconference!';
 $langVoc['mailSubject3'] = 'Attendance confirmation!';
 $langVoc['mailSubject4'] = 'Release of place!';
+$langVoc['mailSubject5'] = 'Free places registration';
 
 //MAIL TO PEOPLE WITHOUT CERTIFICATE
 $langVoc['mailNoCertBody'] = '<p>Dear ';
@@ -325,6 +326,12 @@ $langVoc['mailFreeNoB'] = ',</p><p align="justify">We apologise, but all the pla
 $langVoc['mailFreeNoC'] = '<p align="justify">have been taken. We hope that you will attend the rest of the sessions.</p>'; 
 $langVoc['mailFreeNoD'] = '<p align="justify">If you have any doubts or queries, you may contact us at 
                             <a href="mailto:cerebro.ciudad@gmail.com?subject=Feedback" >cerebro.ciudad@gmail.com</a></p>';
+
+//GETFREEPLACES.PHP
+$langVoc['FreePlacesTittle'] = 'Registration in free places';
+$langVoc['FreePlacesMsg'] = 'Congratulations! you have been register correctly to the conference.';
+$langVoc['FreePlacesMsgFull'] = 'We apologise, but all the places offered on the waiting list for the conference have been taken.';
+
 //FOOTER
 
 $langVoc['footermail'] = 'cerebro.ciudad@gmail.com';
