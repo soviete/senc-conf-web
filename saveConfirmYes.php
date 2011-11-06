@@ -88,7 +88,7 @@ $query=mysql_fetch_array(mysql_query("SELECT $sessionName, UNIX_TIMESTAMP(sessio
                                              $M=$month[$monthmysql];
 
                                              $fecha="$W, $Day $M $year";
-                                             $conferences.="$fecha<br><i>$query[2]</i><br>\"<b>$query[0]</b>\"<br><br>";
+                                             $conference.="$fecha<br><i>$query[2]</i><br>\"<b>$query[0]</b>\"<br><br>";
 
 //$query = mysql_query ("DELETE from formulario.REGISTERED where REGISTERED.regIdUser = '$idUser' AND REGISTERED.idRegSession = '$sessionId'");
 //
@@ -136,7 +136,7 @@ else
             <div id="page">
                 <div id="content">
                     <div id="welcome">
-                        <h1><?php echo "$conferences";?></h1>
+                        <h1><?php echo "$conference";?></h1>
                         <h3><?php echo $langVoc['confirmAsistTittle'];?></h3>
                         <p><?php echo $langVoc['confirmAsistMsgYes'];?></p>
                                              
