@@ -57,10 +57,23 @@ else {
         $fecha="$W, $Day of $M $year";
         $conf="$fecha<br><i>$query[2]</i><br>\"<b>$query[0]</b>\"<br><br>";
 
+        // ENCRIPTADO
+
+        $idUser_encryp=encrypt($idUser, 33);
+        $idSession_encryp=encrypt($idSession, 33);
+        $lang_encryp=encrypt($lang, 33);
+        $name_encryp=encrypt($name, 33);
+        $email_encryp=encrypt($email, 33);
+
+        // LINKS
+
+        $link="<p><a href='http://localhost/SENCONFsvn/getFreePlacesYes.php?idUser=$idUser_encryp
+        &idSession=$idSession_encryp&lang=$lang_encryp&name=$name_encryp&email=$email_encryp' >
+        http://localhost/SENCONFsvn/getFreePlacesYes.php?idUser=$idUser_encryp&idSession=$idSession_encryp
+        &lang=$lang_encryp&name=$name_encryp&email=$email_encryp</a></p>" ;
 
         // MAIL
 
-        $link="<p><a href='http://localhost/SENCONFsvn/index.php' >INSCRÍBEME!</a></p>" ;
 
         $subject = $langVoc['mailSubject2'];
         $message = $langVoc['mail3A'].$name.$langVoc['mail3B'].$langVoc['mail3C'].$conf.$langVoc['mail3D'].

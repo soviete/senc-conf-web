@@ -47,11 +47,26 @@ while ($row = mysql_fetch_array($query0)) {
     $fecha="$W, $Day of $M $year";
     $conf="$fecha<br><i>$query[2]</i><br>\"<b>$query[0]</b>\"<br><br>";
 
+    // ENCRIPTADO
+
+    $idUser_encryp=encrypt($idUser, 33);
+    $idSession_encryp=encrypt($idSession, 33);
+    $lang_encryp=encrypt($lang, 33);
+    $name_encryp=encrypt($name, 33);
+    $email_encryp=encrypt($email, 33);
+
+    // LINKS
+
+    $linkSi="<p><a href='http://localhost/SENCONFsvn/saveConfirmYes.php?idUser=$idUser_encryp
+        &idSession=$idSession_encryp&lang=$lang_encryp&name=$name_encryp&email=$email_encryp' >
+        http://localhost/SENCONFsvn/saveConfirmYes.php?idUser=$idUser_encryp&idSession=$idSession_encryp
+        &lang=$lang_encryp&name=$name_encryp&email=$email_encryp</a></p>" ;
+    $linkNo="<p><a href='http://localhost/SENCONFsvn/saveConfirmNo.php?idUser=$idUser_encryp
+        &idSession=$idSession_encryp&lang=$lang_encryp&name=$name_encryp&email=$email_encryp' >
+        http://localhost/SENCONFsvn/saveConfirmNo.php?idUser=$idUser_encryp&idSession=$idSession_encryp
+        &lang=$lang_encryp&name=$name_encryp&email=$email_encryp</a></p>" ;
 
     // MAIL
-
-    $linkSi="<p><a href='http://localhost/SENCONFsvn/index.php' >CONFIRMO MI ASISTENCIA</a></p>" ;
-    $linkNo="<p><a href='http://localhost/SENCONFsvn/index.php' >RENUNCIO A MI PLAZA</a></p>" ;
 
     $subject = $langVoc['mailSubject1'];
     $message = $langVoc['mail7A'].$name.$langVoc['mail7B'].$langVoc['mail7C'].$conf.
