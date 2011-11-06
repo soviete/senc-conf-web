@@ -259,6 +259,13 @@ $langVoc['confirmAsistTittleNO'] = 'Release of the reservation';
 $langVoc['confirmAsistNO'] = 'In case you can not attend the conference click on <b>NO</b>';
 $langVoc['confirmAsistMsgYes'] = 'Congratulations! You have correctly confirmed your attendance!';
 $langVoc['confirmAsistMsgNo'] = 'You have correctly released your reservation.';
+$langVoc['confirmAsistMsgMail'] = 'Soon you will receive a confirmation email.';
+
+
+//GET AVAILABLE PLACES
+$langVoc['placeAvailable'] = 'Free places availability';
+$langVoc['placeAvailableText'] = 'There are free slots in session';
+$langVoc['placeAvailableGetPlace'] = 'If you want to register and assist to this conference click on <b>SI</b>';
 
 //MAIL -7
 
