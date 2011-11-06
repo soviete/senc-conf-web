@@ -16,7 +16,8 @@
     //Creating and opening file
     $nameFile="/Library/WebServer/Documents/SENCCONFsvn/file/listConf_$idConference.csv";
     //$nameFile="/Users/jespinosa/filesWeb/listConf_$idConference.csv";
-    
+    //$nameFile="/var/www/vhosts/senc.es/subdomains/conferencias/httpdocs/temp/listConf_$idConference.csv";
+    //$nameFile = $_SERVER['DOCUMENT_ROOT']."/temp/listConf_$idConference.csv";
     //echo "$nameFile";//del
     if (file_exists($nameFile))
         {

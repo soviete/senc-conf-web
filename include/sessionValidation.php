@@ -14,17 +14,21 @@ function freePlaces ($idSession, $typeReg)
                         
         $row1 = mysql_fetch_array($queryCount1);
         $count1 = $row1[0];
-                
+        
+        $queryCapacity = mysql_query("select  roomCapacity from formulario.SESSIONS WHERE formulario.SESSIONS.idSESSIONS = '$idSession'");
+        $row2 = mysql_fetch_array($queryCapacity);
+        $capacity = $row2[0];
+                        
         if ($typeReg == "C12")
             {   
                                         
                 if ($idSession == 2 | $idSession == 3 | $idSession == 4 | $idSession == 5 )
                     {
-                        
-                        if ($count1 <= 70)
+                        if ($count < $capacity && $count1 <= 70)
                             {
                                 return TRUE;
                             }
+                       
                         else
                             {
                                 return FALSE;
@@ -32,9 +36,9 @@ function freePlaces ($idSession, $typeReg)
                     }
                 else
                     {
-                        $queryCapacity = mysql_query("select  roomCapacity from formulario.SESSIONS WHERE formulario.SESSIONS.idSESSIONS = '$idSession'");
-                        $row = mysql_fetch_array($queryCapacity);
-                        $capacity = $row[0];
+//                        $queryCapacity = mysql_query("select  roomCapacity from formulario.SESSIONS WHERE formulario.SESSIONS.idSESSIONS = '$idSession'");
+//                        $row = mysql_fetch_array($queryCapacity);
+//                        $capacity = $row[0];
                         
                         if ($count < $capacity)
                             {   
@@ -52,10 +56,11 @@ function freePlaces ($idSession, $typeReg)
                 if ($idSession == 2 | $idSession == 3 | $idSession == 4 | $idSession == 5 )
                     {
                         
-                        if ($count1 <= 75)
+                        if ($count < $capacity && $count1 <= 70)
                             {
                                 return TRUE;
                             }
+                       
                         else
                             {
                                 return FALSE;
@@ -63,9 +68,9 @@ function freePlaces ($idSession, $typeReg)
                     }
                 else
                     {
-                        $queryCapacity = mysql_query("select  roomCapacity from formulario.SESSIONS WHERE formulario.SESSIONS.idSESSIONS = '$idSession'");
-                        $row = mysql_fetch_array($queryCapacity);
-                        $capacity = $row[0];
+//                        $queryCapacity = mysql_query("select  roomCapacity from formulario.SESSIONS WHERE formulario.SESSIONS.idSESSIONS = '$idSession'");
+//                        $row = mysql_fetch_array($queryCapacity);
+//                        $capacity = $row[0];
                         
                         if ($count < $capacity)
                             {   
@@ -80,9 +85,9 @@ function freePlaces ($idSession, $typeReg)
             
         else 
             {
-                $queryCapacity = mysql_query("select  roomCapacity from formulario.SESSIONS WHERE formulario.SESSIONS.idSESSIONS = '$idSession'");
-                $row = mysql_fetch_array($queryCapacity);
-                $capacity = $row[0];
+//                $queryCapacity = mysql_query("select  roomCapacity from formulario.SESSIONS WHERE formulario.SESSIONS.idSESSIONS = '$idSession'");
+//                $row = mysql_fetch_array($queryCapacity);
+//                $capacity = $row[0];
                            
                 if ($count < $capacity)
                     {

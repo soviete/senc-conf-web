@@ -31,10 +31,6 @@ echo "$iddec============";
 $sessionId = 2;
 $idUser = 2;
 
-$sessionId = $_SESSION['sessionId'];
-$idUser = $_SESSION['idUser'];
-//$conferences = $_SESSION['conference'];
-//echo "$conferences--------------";
 ?>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -69,20 +65,29 @@ $query=mysql_fetch_array(mysql_query("SELECT $sessionName, UNIX_TIMESTAMP(sessio
                                              $fecha="$W, $Day $M $year";
                                              $conferences.="$fecha<br><i>$query[2]</i><br>\"<b>$query[0]</b>\"<br><br>";
 
-//$query = mysql_query ("DELETE from formulario.REGISTERED where REGISTERED.regIdUser = '$idUser' AND REGISTERED.idRegSession = '$sessionId'");
-//
-//if (!$query) 
-//    {
-//        trigger_error ('Wrong QUERY: ' . mysql_error() );
-//    }
+$query = mysql_query ("DELETE from formulario. where RESERVED.reservIdUser = '$idUser' AND RESERVED.idReservSession = '$sessionId'");
 
-$query1 = mysql_query("INSERT INTO formulario.CONFIRMED (confIdUser, IdConfSession)
+if (!$query) 
+    {
+        trigger_error ('Wrong QUERY: ' . mysql_error() );
+    }
+
+$query1 = mysql_query("INSERT INTO formulario.REGISTERED (regIdUser, IdRegSession)
                        VALUES ('$idUser', '$sessionId')");
 
 if (!$query1) 
     {
         trigger_error ('Wrong QUERY: ' . mysql_error() );
     }
+    
+$query2 = mysql_query("INSERT INTO formulario.CONFIRMED (confIdUser, IdConfSession)
+                       VALUES ('$idUser', '$sessionId')");
+
+if (!$query2) 
+    {
+        trigger_error ('Wrong QUERY: ' . mysql_error() );
+    }
+
 ?>
     <body>
         <div  id="wrapper">
@@ -106,7 +111,8 @@ if (!$query1)
                     <div id="welcome">
                         <h1><?php echo "$conferences";?></h1>
                         <h3><?php echo $langVoc['confirmAsistTittle'];?></h3>
-                        <p><?php echo $langVoc['confirmAsistMsgYes'];?></p>
+                        <p><?php echo $langVoc['confirmAsistMsgYes'];?></p>                       
+                        <p><?php echo $langVoc['confirmAsistMsgMail'];?></p>
                                              
                     </div>
                 </div>
