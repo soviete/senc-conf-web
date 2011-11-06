@@ -314,18 +314,17 @@ $langVoc['mail3G'] = '<p align="justify">If you have any doubts or queries, you 
     <a href="mailto:cerebro.ciudad@gmail.com?subject=Feedback" >cerebro.ciudad@gmail.com</a></p>';
 
 //MAIL FREE PLACES YES
-$langVoc['mailFreeYesA'] = '<p>Hola ';
-$langVoc['mailFreeYesB'] = ',</p><p align="justify">S\'ha pogut inscriure.</p>';
-$langVoc['mailFreeYesC'] = '<p align="justify">Enhorabona, tens una plaça reservada per a la conferència:</p>'; 
-$langVoc['mailFreeYesD'] = '<p align="justify">Per a qualsevol dubte o consulta, ens pots contactar a  
-                            <a href="mailto:cervell.ciutat@gmail.com?subject=Feedback" >cervell.ciutat@gmail.com</a></p>';
+$langVoc['mailFreeYesA'] = '<p>Hello ';
+$langVoc['mailFreeYesB'] = '<p align="justify">Congratulations, you have a place reserved for the conference:</p>'; 
+$langVoc['mailFreeYesC'] = '<p align="justify">If you have any doubts or queries, you may contact us at  
+                            <a href="mailto:cerebro.ciudad@gmail.com?subject=Feedback" >cerebro.ciudad@gmail.com</a></p>';
 
 //MAIL FREE PLACES NO
-$langVoc['mailFreeNoA'] = '<p>Hola ';
-$langVoc['mailFreeNoB'] = ',</p><p align="justify">Ho sentim: totes les places ofertes a la llista d\'espera per a la conferència:</p>';
-$langVoc['mailFreeNoC'] = '<p align="justify">ja han estat ocupades. Esperem que puguis assistir a la resta de sessions.</p>'; 
-$langVoc['mailFreeNoD'] = '<p align="justify">Per a qualsevol dubte o consulta, ens pots contactar a  
-                            <a href="mailto:cervell.ciutat@gmail.com?subject=Feedback" >cervell.ciutat@gmail.com</a></p>';
+$langVoc['mailFreeNoA'] = '<p>Hello ';
+$langVoc['mailFreeNoB'] = ',</p><p align="justify">We apologise, but all the places offered on the waiting list for the conference:</p>';
+$langVoc['mailFreeNoC'] = '<p align="justify">have been taken. We hope that you will attend the rest of the sessions.</p>'; 
+$langVoc['mailFreeNoD'] = '<p align="justify">If you have any doubts or queries, you may contact us at 
+                            <a href="mailto:cerebro.ciudad@gmail.com?subject=Feedback" >cerebro.ciudad@gmail.com</a></p>';
 //FOOTER
 
 $langVoc['footermail'] = 'cerebro.ciudad@gmail.com';

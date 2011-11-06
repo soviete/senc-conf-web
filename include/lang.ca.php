@@ -310,9 +310,8 @@ $langVoc['mail3G'] = '<p align="justify">Per a qualsevol dubte o consulta, ens p
 
 //MAIL FREE PLACES YES
 $langVoc['mailFreeYesA'] = '<p>Hola ';
-$langVoc['mailFreeYesB'] = ',</p><p align="justify">S\'ha pogut inscriure.</p>';
-$langVoc['mailFreeYesC'] = '<p align="justify">Enhorabona, tens una plaça reservada per a la conferència:</p>'; 
-$langVoc['mailFreeYesD'] = '<p align="justify">Per a qualsevol dubte o consulta, ens pots contactar a  
+$langVoc['mailFreeYesB'] = '<p align="justify">Enhorabona, tens una plaça reservada per a la conferència:</p>'; 
+$langVoc['mailFreeYesC'] = '<p align="justify">Per a qualsevol dubte o consulta, ens pots contactar a  
                             <a href="mailto:cervell.ciutat@gmail.com?subject=Feedback" >cervell.ciutat@gmail.com</a></p>';
 
 //MAIL FREE PLACES NO

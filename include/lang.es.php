@@ -305,17 +305,16 @@ $langVoc['mail3G'] = '<p align="justify">Para cualquier duda o consulta, nos pue
 
 //MAIL FREE PLACES YES
 $langVoc['mailFreeYesA'] = '<p>Hola ';
-$langVoc['mailFreeYesB'] = ',</p><p align="justify">S\'ha pogut inscriure.</p>';
-$langVoc['mailFreeYesC'] = '<p align="justify">Enhorabona, tens una plaça reservada per a la conferència:</p>'; 
-$langVoc['mailFreeYesD'] = '<p align="justify">Per a qualsevol dubte o consulta, ens pots contactar a  
-                            <a href="mailto:cervell.ciutat@gmail.com?subject=Feedback" >cervell.ciutat@gmail.com</a></p>';
+$langVoc['mailFreeYesB'] = '<p align="justify">Enhorabuena, tienes una plaza reservada para la conferencia:</p>'; 
+$langVoc['mailFreeYesC'] = '<p align="justify">Para cualquier duda o consulta, nos puedes contactar en   
+                            <a href="mailto:cerebro.ciudad@gmail.com?subject=Feedback" >cerebro.ciudad@gmail.com</a></p>';
 
 //MAIL FREE PLACES NO
 $langVoc['mailFreeNoA'] = '<p>Hola ';
-$langVoc['mailFreeNoB'] = ',</p><p align="justify">Ho sentim: totes les places ofertes a la llista d\'espera per a la conferència:</p>';
-$langVoc['mailFreeNoC'] = '<p align="justify">ja han estat ocupades. Esperem que puguis assistir a la resta de sessions.</p>'; 
-$langVoc['mailFreeNoD'] = '<p align="justify">Per a qualsevol dubte o consulta, ens pots contactar a  
-                            <a href="mailto:cervell.ciutat@gmail.com?subject=Feedback" >cervell.ciutat@gmail.com</a></p>';
+$langVoc['mailFreeNoB'] = ',</p><p align="justify">Lo sentimos: todas las plazas ofrecidas a la lista de espera para la conferencia:</p>';
+$langVoc['mailFreeNoC'] = '<p align="justify">han sido ocupadas ya. Esperamos que puedas acudir al resto de sesiones.</p>'; 
+$langVoc['mailFreeNoD'] = '<p align="justify">Para cualquier duda o consulta, nos puedes contactar en 
+                            <a href="mailto:cerebro.ciudad@gmail.com?subject=Feedback" >cerebro.ciudad@gmail.com</a></p>';
 //FOOTER
 
 $langVoc['footermail'] = 'cerebro.ciudad@gmail.com';
