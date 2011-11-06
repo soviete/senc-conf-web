@@ -3,36 +3,77 @@
 //error_reporting(-1);
 session_start();
 include 'include/common.php';
+$key = "33";
 
-if(isSet($_GET['id'])) {
-    $id = $_GET['id'];
+if(isSet($_GET['idUser'])) {
+    $idUserEncrypt = $_GET['idUser'];
+    $idUser = decrypt($idUserEncrypt, $key); 
+    
+    $_SESSION['idUser'] = $idUser;
 
-    // register the session and set the cookie
-    $_SESSION['id'] = $id;
-
-    setcookie('id', $id, time() + (3600 * 24 * 30));
+    setcookie('idUser', $idUser, time() + (3600 * 24 * 30));
 }
 
-if(isSet($_GET['conf'])) {
-    $conf = $_GET['conf'];
+if(isSet($_GET['idSession'])) {
+    $idSessionEncrypt = $_GET['idSession'];
+    $idSession = decrypt($idSessionEncrypt, $key);
+    
+    $_SESSION['idSession'] = $idSession;
 
-    // register the session and set the cookie
-    $_SESSION['conf'] = $id;
-
-    setcookie('conf', $conf, time() + (3600 * 24 * 30));
+    setcookie('idSession', $conf, time() + (3600 * 24 * 30));
 }
 
-$id=2;
-$key = "100";
-$idEn = encrypt ($id, $key);
-echo "$idEn============";
-$iddec=decrypt($idEn, $key);
-echo "$iddec============";
-$sessionId = 2;
-$idUser = 2;
+if(isSet($_GET['lang'])) {
+    $langEncrypt = $_GET['lang'];
+    $lang = decrypt($langEncrypt, $key);;
+    
+    $_SESSION['lang'] = $lang;
 
-$sessionId = $_SESSION['sessionId'];
-$idUser = $_SESSION['idUser'];
+    setcookie('lang', $lang, time() + (3600 * 24 * 30));
+}
+
+if(isSet($_GET['name'])) {
+    $nameEncrypt = $_GET['name'];
+    $name = decrypt($nameEncrypt, $key);;
+    
+    $_SESSION['name'] = $lang;
+
+    setcookie('name', $name, time() + (3600 * 24 * 30));
+}
+
+if(isSet($_GET['email'])) {
+    $emailEncrypt = $_GET['email'];
+    $email = decrypt($emailEncrypt, $key);;
+    
+    $_SESSION['email'] = $email;
+
+    setcookie('email', $email, time() + (3600 * 24 * 30));
+}
+
+// MAIL HEADERS
+// To send HTML mail, the Content-type header must be set
+$headers  = 'MIME-Version: 1.0' . "\r\n";
+$headers .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
+
+// Additional headers
+$headers .= 'From: El Cerebro Invade la Ciudad <DONOTREPLY@elcervell.com>' . "\r\n";
+$headers .= "Reply-To: El Cerebro Invade la Ciudad <INFO@elcervell.com>\r\n";
+$headers .= 'Return-Path: El Cerebro Invade la Ciudad <INFO@elcervell.com>' . "\r\n";
+$headers .= "Organization: Sender Organization\r\n";
+$headers .= "X-Priority: 3\r\n";
+$headers .= "X-Mailer: PHP". phpversion() ."\r\n" ;
+
+//$id=2;
+//$key = "100";
+//$idEn = encrypt ($id, $key);
+//echo "$idEn============";
+//$iddec=decrypt($idEn, $key);
+//echo "$iddec============";
+//$sessionId = 2;
+//$idUser = 2;
+
+//$sessionId = $_SESSION['sessionId'];
+//$idUser = $_SESSION['idUser'];
 //$conferences = $_SESSION['conference'];
 //echo "$conferences--------------";
 ?>
@@ -57,7 +98,7 @@ print "
 include 'mysql_connect.php';
 //echo "$lang--------------";
 $sessionName = "sessionName".$lang;
-$query=mysql_fetch_array(mysql_query("SELECT $sessionName, UNIX_TIMESTAMP(sessionDate),room FROM SESSIONS WHERE idSESSIONS='$sessionId'"));
+$query=mysql_fetch_array(mysql_query("SELECT $sessionName, UNIX_TIMESTAMP(sessionDate),room FROM SESSIONS WHERE idSESSIONS='$idSession'"));
                                              $weekdaymysql=date("l",$query[1]);
                                              $monthmysql=date("F",$query[1]);
                                              $Day=date("d",$query[1]);
@@ -83,6 +124,17 @@ if (!$query1)
     {
         trigger_error ('Wrong QUERY: ' . mysql_error() );
     }
+
+else 
+    {
+        // MAIL
+        $subject = $langVoc['mailSubject3'];
+        $message = $langVoc['mailConfYesA'].$name.$langVoc['mailConfYesB'].$langVoc['mailConfYesC'].$conference.$langVoc['mailConfYesD'].
+                $langVoc['mailConfYesE'];
+
+
+        mail($email, $subject, $message, $headers);
+    }    
 ?>
     <body>
         <div  id="wrapper">
