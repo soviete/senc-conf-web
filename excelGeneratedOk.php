@@ -1,6 +1,6 @@
 <?php 
-//ini_set('display_errors', 'On');
-//error_reporting(-1);
+ini_set('display_errors', 'On');
+error_reporting(-1);
 session_start();
 include 'include/common.php';
 ?>
@@ -29,7 +29,8 @@ $fileName=$_SESSION["nameFile"];
                         <?php
                         print "<h1>Llistat de persones registrades a $sessionName</h1>";
                         print "<h3>L'arxiu s'ha generat correctament</h3>";
-                        $link="http://localhost/SENCCONFsvn/file/".$fileName;
+                        //$link="http://localhost/SENCCONFsvn/file/".$fileName;
+                        $link="http://conferencias.senc.es/temp/".$fileName;
                         print "<div align='center'><a href=$link target='_blank'>BAIXAR L'ARXIU</a></div>";
                         print "<br><p>Per copiar l'arxiu prem el botó dret del teu ratolí, guardar l'arxiu com.</p><br><br>";
 

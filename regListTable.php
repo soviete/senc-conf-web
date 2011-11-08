@@ -21,6 +21,9 @@ else {
     }
 
 }
+
+$origin = "regListTable.php";
+$_SESSION['origin'] = $origin;
 ?>
 <?php
 //$DBpayUpdate="NO";
@@ -180,7 +183,7 @@ else {
                                                        value=".$langVoc['back1']." />
                                                 </div>
                                                 <div id='boxright'>
-                                                <input class='form_submitb' disabled='disabled' type='submit' name='submit' value='GENERAR EXCEL' />
+                                                <input class='form_submitb' type='submit' name='submit' value='GENERAR EXCEL' />
                                                 <input type='hidden' name='table' value='T' />
                                                 </div>";
 
