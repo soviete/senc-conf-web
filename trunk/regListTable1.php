@@ -1,7 +1,7 @@
 <?php
 session_start();
-//ini_set('display_errors', 'On');
-//error_reporting(-1);
+ini_set('display_errors', 'On');
+error_reporting(-1);
 include 'include/common.php';
 
 if (empty ($_POST['conference'])) {
@@ -21,6 +21,8 @@ else {
     }
 
 }
+$origin = "regListTable1.php";
+$_SESSION['origin'] = $origin;
 ?>
 <?php
 //$DBpayUpdate="NO";
@@ -178,7 +180,7 @@ else {
                                                        value=".$langVoc['back1']." />
                                                 </div>
                                                 <div id='boxright'>
-                                                <input class='form_submitb' disabled='disabled' type='submit' name='submit' value='GENERAR EXCEL' />
+                                                <input class='form_submitb' type='submit' name='submit' value='GENERAR EXCEL' />
                                                 <input type='hidden' name='table' value='T' />
                                                 </div>";
 
