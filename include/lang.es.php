@@ -13,7 +13,8 @@ $langVoc['regInfoTitle'] = 'Bienvenido a la pre-inscripción a las sesiones de �
 $langVoc['regInfo'] = 'Esta pre-inscripción tiene como objetivo efectuar una reserva de plaza en los diferentes
     eventos que conforman el programa. Esta reserva es necesaria porque las plazas son limitadas y su número
     depende de cada una de las sedes: si estás interesado en asistir, te recomendamos que efectúes esta reserva
-    para asegurarte un sitio.';
+    para asegurarte un sitio.<br><i>Importante: la preinscripción y la reserva de plaza son gratuitas.
+    Solamente se pedirá un pago de 30€ si quieres obtener un Certificado de Aprovechamiento Académico (CAA)</i>';
 $langVoc['procedureReg'] = 'El procedimiento de pre-inscripción será el siguiente:';
 $langVoc['procedureReg1'] = 'Te pediremos que nos des unos datos básicos que necesitamos para gestionar las inscripciones.';
 $langVoc['procedureReg2'] = 'Una vez nos hayas dado tus datos, acepta las condiciones de privacidad y selecciona en el
@@ -188,7 +189,8 @@ $langVoc['pleaseRetry'] = 'Por favor inténtelo de nuevo. ';
 //AddUser USER CORRECTLY REGISTERED
 $langVoc['congra'] = 'Enhorabuena ';
 $langVoc['congra1'] = '!! Te has registrado correctamente';
-$langVoc['congra2'] ='Pronto recibirás un email con la confirmación.';
+$langVoc['congra2'] ='Pronto recibirás un email con la confirmación.<br><i>Nota: el mensaje es
+    normalmente instantáneo, pero puede ir directamente a tu bandeja de Spam: compruébalo!</i>';
 $langVoc['noSessionAva'] = 'No hay suficientes plazas disponibles';
 $langVoc['waitList'] = 'Si quieres pasar a nuestra lista de espera apreta ';
 $langVoc['Here'] = 'aquí';
@@ -218,7 +220,7 @@ $langVoc['mailNoCertBody4'] = 'Una semana antes de la sesión, recibirás un ema
 $langVoc['mailNoCertBody5'] = '<p align="justify">Y has quedado en la lista de espera de las siguientes sesiones:</p>';
 $langVoc['mailNoCertBody6'] = '<p align="justify">Recuerda que tres días antes del acto os ofreceremos, mediante un mensaje a esta dirección,
                                las plazas liberadas al global de las personas incluídas en la misma; estas plazas serán adjudicadas por orden de confirmación.</p>';
-$langVoc['mailNoCertBody7'] = '<p align="justify">Para cualquier duda o consulta, nos puedes contactar en 
+$langVoc['mailNoCertBody7'] = '<p align="justify">Para cualquier duda o consulta, nos puedes contactar en
     <a href="mailto:cerebro.ciudad@gmail.com?subject=Feedback" >cerebro.ciudad@gmail.com</a></p>';
 $langVoc['mailNoCertBody8'] = '<p>Te esperamos, un saludo.</p>';
 
@@ -241,7 +243,7 @@ $langVoc['mailCertBody6'] = '<p>Te has inscrito con éxito para las siguientes s
 $langVoc['mailCertBody7'] = '<p align="justify">Una semana antes de la sesión, recibirás un email en esta misma dirección para pedirte que confirmes tu asistencia a estas
                              sesiones. Recuerda que aquellas plazas no confirmadas en las 96 horas siguientes a la emisión del mensaje serán liberadas para
                              la lista de espera.</p>';
-$langVoc['mailCertBody8'] = '<p align="justify">Para cualquier duda o consulta, nos puedes contactar en 
+$langVoc['mailCertBody8'] = '<p align="justify">Para cualquier duda o consulta, nos puedes contactar en
     <a href="mailto:cerebro.ciudad@gmail.com?subject=Feedback" >cerebro.ciudad@gmail.com</a></p>';
 $langVoc['mailCertBody9'] = '<p>Te esperamos, un saludo.</p>';
 
@@ -252,7 +254,8 @@ $langVoc['confirmAsistTittleNO'] = 'Liberar la reserva';
 $langVoc['confirmAsistNO'] = 'En caso de no poder asistir apreta en el <b>NO</b>';
 $langVoc['confirmAsistMsgYes'] = 'Enhorabuena! Has confirmado tu asistencia correctamente!';
 $langVoc['confirmAsistMsgNo'] = 'Has liberado tu plaza correctamente.';
-$langVoc['confirmAsistMsgMail'] = 'En breve recibirás un mail de confirmación.';
+$langVoc['confirmAsistMsgMail'] = 'En breve recibirás un email de confirmación.<br><i>Nota: el mensaje es
+    normalmente instantáneo, pero puede ir directamente a tu bandeja de Spam: compruébalo!</i>';
 
 //GET AVAILABLE PLACES
 $langVoc['placeAvailable'] = 'Disponibilidad de plazas';
@@ -273,22 +276,22 @@ $langVoc['mail7F'] = '<p align="justify">Si confirmas tu asistencia, por favor p
 $langVoc['mail7G'] = '<p align="justify">Si sabes que finalmente no podrás asistir, por favor pincha aquí: </p>';
 $langVoc['mail7H'] = '<p align="justify"><b>Importante:</b> todas aquellas plazas que no hayan sido confirmadas en el plazo de 96 horas desde
     la emisión de este email serán liberadas automáticamente y ofrecidas a las personas que se encuentren en la lista de espera.</p>';
-$langVoc['mail7I'] = '<p align="justify">Para cualquier duda o consulta, nos puedes contactar en 
+$langVoc['mail7I'] = '<p align="justify">Para cualquier duda o consulta, nos puedes contactar en
                       <a href="mailto:cerebro.ciudad@gmail.com?subject=Feedback" >cerebro.ciudad@gmail.com</a></p>';
 
 //MAIL CONFIRM YES
 $langVoc['mailConfYesA'] = '<p>Hola ';
 $langVoc['mailConfYesB'] = ',</p><p align="justify">Ha confirmado que SÍ</p>';
-$langVoc['mailConfYesC'] = '<p align="justify">Gracias por confirmar tu asistencia a la conferencia:</p>'; 
+$langVoc['mailConfYesC'] = '<p align="justify">Gracias por confirmar tu asistencia a la conferencia:</p>';
 $langVoc['mailConfYesD'] = '<p align="justify">Tu plaza está confirmada, recuerda acudir a la sede del evento como mínimo 15 minutos antes del comienzo.</p>';
-$langVoc['mailConfYesE'] = '<p align="justify">Para cualquier duda o consulta, nos puedes contactar en 
+$langVoc['mailConfYesE'] = '<p align="justify">Para cualquier duda o consulta, nos puedes contactar en
                             <a href="mailto:cerebro.ciudad@gmail.com?subject=Feedback" >cerebro.ciudad@gmail.com</a></p>';
 //MAIL CONFIRM NO
 $langVoc['mailConfNoA'] = '<p>Hola ';
 $langVoc['mailConfNoB'] = ',</p><p align="justify">Ha confirmado que NO</p>';
-$langVoc['mailConfNoC'] = '<p align="justify">Gracias por liberar la plaza que habías prerreservado en la conferencia:</p>'; 
+$langVoc['mailConfNoC'] = '<p align="justify">Gracias por liberar la plaza que habías prerreservado en la conferencia:</p>';
 $langVoc['mailConfNoD'] = '<p align="justify">Tu plaza será ofrecida a aquellas personas que habían quedado en lista de espera.</p>';
-$langVoc['mailConfNoE'] = '<p align="justify">Para cualquier duda o consulta, nos puedes contactar en 
+$langVoc['mailConfNoE'] = '<p align="justify">Para cualquier duda o consulta, nos puedes contactar en
                             <a href="mailto:cerebro.ciudad@gmail.com?subject=Feedback" >cerebro.ciudad@gmail.com</a></p>';
 
 //MAIL -3
@@ -302,20 +305,20 @@ $langVoc['mail3D'] = 'En estos momentos, algunas de las plazas ocupadas en la co
 $langVoc['mail3E'] = '<p align="justify">Si deseas confirmar tu asistencia, por favor pincha aquí: </p>';
 $langVoc['mail3F'] = '<p align="justify">Importante: puede ser que cuando leas este mensaje y pinches en el enlace, todas las
     plazas hayan sido ocupadas ya. En tal caso, te pedimos disculpas y te animamos a que no dejes de acudir al resto de sesiones. </p>';
-$langVoc['mail3G'] = '<p align="justify">Para cualquier duda o consulta, nos puedes contactar en 
+$langVoc['mail3G'] = '<p align="justify">Para cualquier duda o consulta, nos puedes contactar en
     <a href="mailto:cerebro.ciudad@gmail.com?subject=Feedback" >cerebro.ciudad@gmail.com</a></p>';
 
 //MAIL FREE PLACES YES
 $langVoc['mailFreeYesA'] = '<p>Hola ';
-$langVoc['mailFreeYesB'] = '<p align="justify">Enhorabuena, tienes una plaza reservada para la conferencia:</p>'; 
-$langVoc['mailFreeYesC'] = '<p align="justify">Para cualquier duda o consulta, nos puedes contactar en   
+$langVoc['mailFreeYesB'] = '<p align="justify">Enhorabuena, tienes una plaza reservada para la conferencia:</p>';
+$langVoc['mailFreeYesC'] = '<p align="justify">Para cualquier duda o consulta, nos puedes contactar en
                             <a href="mailto:cerebro.ciudad@gmail.com?subject=Feedback" >cerebro.ciudad@gmail.com</a></p>';
 
 //MAIL FREE PLACES NO
 $langVoc['mailFreeNoA'] = '<p>Hola ';
 $langVoc['mailFreeNoB'] = ',</p><p align="justify">Lo sentimos: todas las plazas ofrecidas a la lista de espera para la conferencia:</p>';
-$langVoc['mailFreeNoC'] = '<p align="justify">han sido ocupadas ya. Esperamos que puedas acudir al resto de sesiones.</p>'; 
-$langVoc['mailFreeNoD'] = '<p align="justify">Para cualquier duda o consulta, nos puedes contactar en 
+$langVoc['mailFreeNoC'] = '<p align="justify">han sido ocupadas ya. Esperamos que puedas acudir al resto de sesiones.</p>';
+$langVoc['mailFreeNoD'] = '<p align="justify">Para cualquier duda o consulta, nos puedes contactar en
                             <a href="mailto:cerebro.ciudad@gmail.com?subject=Feedback" >cerebro.ciudad@gmail.com</a></p>';
 //GETFREEPLACES.PHP
 $langVoc['FreePlacesTittle'] = 'Registro en plazas liberadas';
