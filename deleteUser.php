@@ -25,7 +25,7 @@ include 'include/common.php';
                 <div id="content">
                     <div id="welcome">
                         <h1>Esborrar usuaris de la base de dades</h1><br>
-                        <h3>Inserta el dni de la persona a la que vols esborrar.</h3>
+                        <h3>Introdueix el dni de la persona a la que vols esborrar.</h3>
                         <form action="deleteUserConfirm.php" name="indexform" onSubmit="return validateFormUserDel()"
                           method="post">
                         <div id="UILabel"><?php echo $langVoc['formId']; ?>*</div>

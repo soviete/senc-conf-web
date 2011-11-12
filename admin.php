@@ -22,7 +22,7 @@ include 'include/common.php';
                         <h1>Gestió de conferències</h1>
                         <h3>Llistat d'assistència</h3>
 
-                        <p>Si vols veure quines persones han confirmat la seva assistència a una conferència entrar aquí.</p>
+                        <p>Si vols veure quines persones han confirmat la seva assistència a una conferència entra aquí.</p>
 
                         <form name="list" action="regList.php" method="post">
                             <div align="center">
@@ -31,7 +31,7 @@ include 'include/common.php';
                         </form>
 
                         <h3>Confirmació pagaments</h3>
-                        <p>Si vols confirmar pagaments entrar aquí.</p>
+                        <p>Si vols confirmar pagaments entra aquí.</p>
                         <form name="list" action="payConf.php" method="post">
                             <div align="center">
                                 <input class="form_submitb" type="submit" name="submit" value="ENTRAR" />
@@ -47,7 +47,7 @@ include 'include/common.php';
                         </form><br><br>
                         
                         <h3>Esborrar usuaris de la base de dades</h3>
-                        <p>Si vols borrar alguna persona de la base de dades y de totes les conferències a les que està inscrit</p>
+                        <p>Si vols borrar alguna persona de la base de dades y de totes les conferències a les que està inscrit entra aquí.</p>
                         <form name="list" action="deleteUser.php" method="post">
                             <div align="center">
                                 <input class="form_submitb" type="submit" name="submit" value="ENTRAR" />
