@@ -33,6 +33,13 @@ include 'include/common.php';
                         <br>
                         <br>
                         <br>
+                        <?php
+                            print "<div id='boxleft'>
+                                   <input class='form_submitb' onclick='window.location.href=\"admin.php\"'type='button'
+                                          value=".$langVoc['back1']." />
+                                   </div>";
+                        ?>
+                        
                         <div align="right">
                             <input class="form_submitb" type="submit" name="submit"
                                    value=<?php echo $langVoc['formNextButton']; ?> />
