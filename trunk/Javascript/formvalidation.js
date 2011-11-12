@@ -66,3 +66,21 @@ function validateForm() {
         return false
     }
 }
+
+function validateFormUserDel() 
+    {
+        num=/^[0-9]+$/ //REGEX for only numbers
+        //Field DNI/Passport
+        
+        x=document.forms["indexform"]["dni"].value
+        if (x==null || x=="") {
+            alert("DNI/Passport must be filled out")
+            return false
+        }
+        
+        if (x.search(num)==-1) {
+        alert("DNI/Passport must ONLY contain numeric values")
+        return false
+        }
+        
+    }
