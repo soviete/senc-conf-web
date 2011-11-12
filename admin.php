@@ -45,6 +45,15 @@ include 'include/common.php';
                                 <input class="form_submitb" type="submit" name="submit" value="ENTRAR" />
                             </div>
                         </form><br><br>
+                        
+                        <h3>Esborrar usuaris de la base de dades</h3>
+                        <p>Si vols borrar alguna persona de la base de dades y de totes les conferències a les que està inscrit</p>
+                        <form name="list" action="deleteUser.php" method="post">
+                            <div align="center">
+                                <input class="form_submitb" type="submit" name="submit" value="ENTRAR" />
+                            </div>
+                        </form><br><br>
+                        
                         <div id='boxleft'>
                             <input class="form_submitb"type="button" onclick='window.location.href="gestio.php"'
                                    value="<?php echo $langVoc['back1']; ?>">
