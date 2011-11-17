@@ -5,16 +5,16 @@
     session_start();
     include 'mysql_connect.php';
     include 'include/common.php';
-    
+
     $optionReg = $_SESSION['type'];
-    
+
     if (empty ($_SESSION['sessionFree']) | empty ($_SESSION['sessionFree']) | empty ($_SESSION['name']) | empty ($_SESSION['surname'])
         | empty ($_SESSION['dni']) | empty ($_SESSION['email']) | empty ($_SESSION['type']))
-        {           
+        {
             header ('Location:index.php');
         }
 
-    else    
+    else
         {
             $sessionFree = $_SESSION['sessionFree'];
             $name = $_SESSION['name'];
@@ -23,12 +23,12 @@
             $email = $_SESSION['email'];
             $type = $_SESSION['type'];
         }
-    
-    //CHECKS WHETHER THE USER IS ALREADY IN THE DB USING THE DNI AS KEY FIELD
-    $result = mysql_num_rows(mysql_query("SELECT * FROM USERS WHERE dni='$dni'"));  
 
-    
-    if($result != 0) 
+    //CHECKS WHETHER THE USER IS ALREADY IN THE DB USING THE DNI AS KEY FIELD
+    $result = mysql_num_rows(mysql_query("SELECT * FROM USERS WHERE dni='$dni'"));
+
+
+    if($result != 0)
         {
             //echo "he passat per aqui";
             header ('Location:index.php');
@@ -41,7 +41,7 @@
         <title>Confirmacio de registre</title>
         <link rel="stylesheet" type="text/css" href="estilo.css" />
     </head>
-    
+
     <body>
         <div  id="wrapper">
             <?php include 'include/header.php'; ?>
@@ -56,23 +56,23 @@
                                         VALUES ('$name', '$surname', '$dni', '$email', '$type', 'no', 'no', '$lang')");
 
     $user=mysql_fetch_array(mysql_query("SELECT idUser FROM USERS WHERE dni='$dni'"));
-    
+
     $confReg="";
     $confReserv="";
-    
-    foreach ( $sessionFree as $k=> $c) 
-        {   
-            
+
+    foreach ( $sessionFree as $k=> $c)
+        {
+
             $sessionName = "sessionName".$lang;
-            
+
             if ($c == 1)
-                {   
+                {
                     mysql_query("INSERT INTO REGISTERED (regIDUser, idRegSession) VALUES ('$user[0]','$k')");
-                    
+
                     $query=mysql_fetch_array(mysql_query("SELECT $sessionName,
                                                           UNIX_TIMESTAMP(sessionDate),room FROM SESSIONS
                                                           WHERE idSESSIONS='$k'"));
-                                        
+
                     $weekdaymysql=date("l",$query[1]);
                     $monthmysql=date("F",$query[1]);
                     $Day=date("d",$query[1]);
@@ -83,16 +83,16 @@
 
                     $fecha="$W, $Day of $M $year";
                     $confReg.="$fecha<br><i>$query[2]</i><br>\"<b>$query[0]</b>\"<br><br>";
-                }   
+                }
 
             else
                 {
                     mysql_query("INSERT INTO RESERVED (reservIdUser, idReservSession) VALUES ('$user[0]','$k')");
-                    
+
                     $query=mysql_fetch_array(mysql_query("SELECT $sessionName,
                                                           UNIX_TIMESTAMP(sessionDate),room FROM SESSIONS
                                                           WHERE idSESSIONS='$k'"));
-                    
+
                     $weekdaymysql=date("l",$query[1]);
                     $monthmysql=date("F",$query[1]);
                     $Day=date("d",$query[1]);
@@ -107,15 +107,15 @@
         }
 
         $subject = $langVoc['mailSubject'];
-                
-        switch ($optionReg) 
+
+        switch ($optionReg)
                 {
                     //CASE 12 sessions
                     case 'C12':
                         if (!$confReg) {
                         $message = $langVoc['mailNoCertBody'].$name.$langVoc['mailNoCertBody1'].
                         $langVoc['mailOption1'].$langVoc['mailNoCertBody2'].$langVoc['mailNoCertBody3A'].
-                        $langVoc['mailNoCertBody4'].$langVoc['mailNoCertBody5'].$confReserv.
+                        $langVoc['mailNoCertBody5'].$confReserv.
                         $langVoc['mailNoCertBody6'].$langVoc['mailNoCertBody7'].$langVoc['mailNoCertBody8'];
                         }
                         else {
@@ -129,7 +129,7 @@
                         if (!$confReg) {
                         $message = $langVoc['mailNoCertBody'].$name.$langVoc['mailNoCertBody1'].
                         $langVoc['mailOption2'].$langVoc['mailNoCertBody2'].$langVoc['mailNoCertBody3A'].
-                        $langVoc['mailNoCertBody4'].$langVoc['mailNoCertBody5'].$confReserv.
+                        $langVoc['mailNoCertBody5'].$confReserv.
                         $langVoc['mailNoCertBody6'].$langVoc['mailNoCertBody7'].$langVoc['mailNoCertBody8'];
                         }
                         else {
@@ -143,7 +143,7 @@
                         if (!$confReg) {
                         $message = $langVoc['mailNoCertBody'].$name.$langVoc['mailNoCertBody1'].
                         $langVoc['mailOption3'].$langVoc['mailNoCertBody2'].$langVoc['mailNoCertBody3A'].
-                        $langVoc['mailNoCertBody4'].$langVoc['mailNoCertBody5'].$confReserv.
+                        $langVoc['mailNoCertBody5'].$confReserv.
                         $langVoc['mailNoCertBody6'].$langVoc['mailNoCertBody7'].$langVoc['mailNoCertBody8'];
                         }
                         else {
@@ -154,7 +154,7 @@
                         }
                         break;
                 };
-                                     
+
         // To send HTML mail, the Content-type header must be set
         $headers  = 'MIME-Version: 1.0' . "\r\n";
         $headers .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
@@ -174,10 +174,10 @@
                             echo '<b>';
                             echo $name;
                             echo '</b>';
-                            echo $langVoc['congra1']; 
+                            echo $langVoc['congra1'];
                             echo '</p><p>';
                             echo $langVoc['congra2'];
-                            echo '</p>'; 
+                            echo '</p>';
 ?>
 
                     </div>
