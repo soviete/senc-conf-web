@@ -87,7 +87,7 @@
 
             else
                 {
-                    mysql_query("INSERT INTO RESERVED (regIDUser, idRegSession) VALUES ('$user[0]','$k')");
+                    mysql_query("INSERT INTO RESERVED (reservIdUser, idReservSession) VALUES ('$user[0]','$k')");
                     
                     $query=mysql_fetch_array(mysql_query("SELECT $sessionName,
                                                           UNIX_TIMESTAMP(sessionDate),room FROM SESSIONS
