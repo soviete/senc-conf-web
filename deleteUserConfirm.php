@@ -120,7 +120,7 @@ include 'include/formvalidation.php';
                                                 </div>";
                                         print "<div align='right'>
                                                 <input class='form_submitb' type='submit' name='submit'
-                                                       value="."Següent"." />
+                                                       value="."SEGÜENT"." />
                                                 <input type='hidden' name='submitted' value='TRUE' />
                                                 </div>";
                                     }
