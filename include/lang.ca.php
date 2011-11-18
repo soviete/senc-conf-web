@@ -116,6 +116,7 @@ $langVoc['formRegOption1'] = 'Opció 1 (Amb CAA, 12 conferències)';
 $langVoc['formRegOption2'] = 'Opció 2 (Amb CAA, 8 conferències)';
 $langVoc['formRegOption3'] = 'Opció 3 (Sense CAA, inscripció lliure)';
 $langVoc['formNextButton'] = 'Següent';
+$langVoc['formNextButtonA'] = 'SEGÜENT';
 
 $langVoc['mandatoryField'] = 'Camps obligatoris';
 $langVoc['register'] = "Inscriu-te!";
@@ -165,12 +166,15 @@ $langVoc['NoSessions'] = 'Has de triar alguna conferència!';
 //ERROR REGISTRATION FORM
 $langVoc['back'] = '<b>Si us plau, torni a intentar-ho.<br><a href=dataForm.php>ENRERE</a></b>';
 $langVoc['emptyfield'] = '<h4>ERROR!</h4>Revisi el formulari, potser hi ha camps buits<br>'.$langVoc['back'];
+$langVoc['emptyfieldAdmin'] = '<h4>ERROR!</h4>Revisi el formulari, potser hi ha camps buits<br>';
 $langVoc['nameError'] = '<h4>ERROR!</h4><br><h4>El camp <i>Nom</i> només pot contenir text</h4>
     <br>'.$langVoc['back'];
 $langVoc['surnameError'] = '<h4>ERROR!</h4><br><h4>El camp <i>Cognom</i> només pot contenir text</h4>
     <br>'.$langVoc['back'];
 $langVoc['dniError'] = '<h4>ERROR!</h4><br><h4>El camp <i>DNI/Passport només</i> pot contenir caràcters numèrics</h4>
     <br>'.$langVoc['back'];
+$langVoc['dniErrorAdmin'] = '<h4>ERROR!</h4><br><h4>El camp <i>DNI/Passport només</i> pot contenir caràcters numèrics</h4>
+    <br>';
 $langVoc['emailError'] = '<h4>ERROR!</h4><br><h4>L\'adreça d\'email és no vàlida</h4>
     <br>'.$langVoc['back'];
 $langVoc['emailErrorConf'] = '<h4>ERROR!</h4><br><h4>L\'adreça d\'email confirmada és no vàlida</h4>

@@ -42,10 +42,10 @@ include 'include/common.php';
                         
                         <div align="right">
                             <input class="form_submitb" type="submit" name="submit"
-                                   value=<?php echo $langVoc['formNextButton']; ?> />
+                                   value=<?php echo $langVoc['formNextButtonA']; ?> />
                             <input type="hidden" name="submitted" value="TRUE" />
                         </div>
-                        
+                        </form>
                     </div>
                 </div>
                 

@@ -114,6 +114,7 @@ $langVoc['formRegOption1'] = 'Opción 1 (Con CAA, 12 conferencias)';
 $langVoc['formRegOption2'] = 'Opción 2 (Con CAA, 8 conferencias)';
 $langVoc['formRegOption3'] = 'Opción 3 (Sin CAA, inscripcion libre)';
 $langVoc['formNextButton'] = 'Siguiente';
+$langVoc['formNextButtonA'] = 'SIGUIENTE';
 
 $langVoc['mandatoryField'] = 'Campos obligatorios';
 $langVoc['register'] = 'Inscríbete!';
