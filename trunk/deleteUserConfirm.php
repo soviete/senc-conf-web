@@ -6,8 +6,8 @@ include 'include/common.php';
 
 // Getting variable from post form if any.
 
-if (!$_POST)  {
-    if ($_SESSION['dni']) {        
+if (!$_POST) {
+    if ($_SESSION['dni']) {
         $dni=$_SESSION['dni'];
         $empty="NO";
     }
@@ -20,10 +20,10 @@ if (!$_POST)  {
 elseif (!empty($_POST)) {
 
     if ($_POST['dni']) {
-        
-        $_SESSION['dni'] = $_POST['dni'];        
+
+        $_SESSION['dni'] = $_POST['dni'];
         $dni=$_SESSION['dni'];
-        
+
         $empty="NO";
     }
     else {
@@ -60,21 +60,29 @@ include 'include/formvalidation.php';
                             echo "Confirmació de l'element a esborrar";
                             //echo "$dni";echo "================";
                             echo '</h3><br>';
-                            // Handling errors and printing text                                                       
+                            // Handling errors and printing text
                             $queryUser = "SELECT dni, userName, surname, email, type from formulario.USERS WHERE dni='$dni'";
                             $result = mysql_query($queryUser);
                             $num_rows = mysql_num_rows($result);
-                            
+
                             switch ($empty) {
                                 case "YES":
-                                    echo $langVoc['emptyfield'];
+                                    echo $langVoc['emptyfieldAdmin'];
+                                    print "<br><br><div id='boxleft'>
+                                   <input class='form_submitb' onclick='window.location.href=\"deleteUser.php\"'type='button'
+                                          value=".$langVoc['back1']." />
+                                   </div>";
                                     break;
                                 case "NO";
-                                    
+
                                     if (!validNum($dni)) {
-                                        echo $langVoc['dniError'];
+                                        echo $langVoc['dniErrorAdmin'];
+                                        print "<div id='boxleft'>
+                                   <input class='form_submitb' onclick='window.location.href=\"deleteUser.php\"'type='button'
+                                          value=".$langVoc['back1']." />
+                                   </div>";
                                     }
-                                    
+
                                     elseif ($num_rows==0) {
                                         echo "No hi ha cap persona amb aquest DNI a la base de dades!!!";
                                         print "<br><br><div id='boxleft'>
@@ -83,10 +91,10 @@ include 'include/formvalidation.php';
                                                        value=".$langVoc['back1']." />
                                                 </div>";
                                     }
-                                        
+
                                     else {
-                                        
-                                        
+
+
                                         $resultUser = mysql_fetch_array ($result);
                                         $dni = $resultUser['dni'];
                                         $userName = $resultUser['surname'];
@@ -95,7 +103,7 @@ include 'include/formvalidation.php';
 //                                          print "<h3 align='justify' >"."L'usuari ha estat borra't correctament"."</h3>";
                                         print "<p align='justify'>"."Estàs segur de que vols esborrar de la base de dades l'usuari amb aquestes dades:"."</p>";
                                         echo '<ul>';
-                                        
+
                                         print "<div class='adduserRegis'>
                                                             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp DNI: <b>$dni</b>
                                                                    <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Name: $userName
@@ -104,7 +112,7 @@ include 'include/formvalidation.php';
                                                                    <br></div>";
                                         echo '<ul>';
                                         echo '<br>';
-                                        
+
                                         print "<br><br><br>";
                                         print "<br><br><div id='boxleft'>
                                                 <input class='form_submitb' onclick='window.location.href=\"deleteUser.php\"'type='button'
