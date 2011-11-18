@@ -84,7 +84,7 @@ include 'include/common.php';
                                         $sessionName = "sessionName".$lang;
 
                                         if ($c == 'on') {
-                                            mysql_query("INSERT INTO REGISTERED (regIDUser, idRegSession)
+                                            mysql_query("INSERT INTO REGISTERED (regIdUser, idRegSession)
                                                                      VALUES ('$user[0]','$k')");
 
                                             $query=mysql_fetch_array(mysql_query("SELECT $sessionName,
