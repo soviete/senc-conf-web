@@ -4,7 +4,7 @@
 session_start();
 include 'include/common.php';
 
-if (empty ($_POST['type']))  {
+if (empty ($_POST['type'])) {
 
     if ($_SESSION['type']) {
         $type=$_SESSION['type'];
@@ -12,7 +12,7 @@ if (empty ($_POST['type']))  {
 
 }
 
-else{
+else {
 
     if ($_POST['type']) {
 
@@ -61,11 +61,27 @@ include 'include/formvalidation.php';
                                 $M=date("n",$row[2]);
                                 $Y=date("Y",$row[2]);
                                 $fecha="$D $M $Y";
-                                print "<input class='form_tfield' type='checkbox'
+                                $actualD=date("d");
+                                $actualM=date("n");
+                                $actualY=date("Y");
+//                                $actualD='15';
+//                                $actualM='12';
+//                                $actualY='2012';
+
+                                if ($row[0] == 1) {
+                                    print "<div id='pgrey'><input class='form_tfield' disabled='disabled' type='checkbox'
+                                            name='confs[$row[0]]]' /> &nbsp;<i>$row[1]</i>
+                                            <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i>$fecha</i>
+                                            <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i>$row[3]</i><br>
+                                            <br></div>";
+                                }
+                                else {
+                                    print "<input class='form_tfield' type='checkbox'
                                             name='confs[$row[0]]]' /> &nbsp;<b>$row[1]</b>
                                             <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i>$fecha</i>
                                             <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i>$row[3]</i><br>
                                             <br>";
+                                }
                             }
                             print "<br><br><br><br><br><br>";
                             print "<div align='right'>
