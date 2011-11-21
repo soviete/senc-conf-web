@@ -58,13 +58,13 @@ while ($row = mysql_fetch_array($query0)) {
 
     // LINKS
 
-    $linkSi="<p><a href='http://localhost/SENCONFsvn/saveConfirmYes.php?idUser=$idUser_encryp
+    $linkSi="<p><a href='http://conferencias.senc.es/saveConfirmYes.php?idUser=$idUser_encryp
         &idSession=$idSession_encryp&lang=$lang_encryp&name=$name_encryp&email=$email_encryp' >
-        http://localhost/SENCONFsvn/saveConfirmYes.php?idUser=$idUser_encryp&idSession=$idSession_encryp
+        http://conferencias.senc.es/saveConfirmYes.php?idUser=$idUser_encryp&idSession=$idSession_encryp
         &lang=$lang_encryp&name=$name_encryp&email=$email_encryp</a></p>" ;
-    $linkNo="<p><a href='http://localhost/SENCONFsvn/saveConfirmNo.php?idUser=$idUser_encryp
+    $linkNo="<p><a href='http://conferencias.senc.es/saveConfirmNo.php?idUser=$idUser_encryp
         &idSession=$idSession_encryp&lang=$lang_encryp&name=$name_encryp&email=$email_encryp' >
-        http://localhost/SENCONFsvn/saveConfirmNo.php?idUser=$idUser_encryp&idSession=$idSession_encryp
+        http://conferencias.senc.es/saveConfirmNo.php?idUser=$idUser_encryp&idSession=$idSession_encryp
         &lang=$lang_encryp&name=$name_encryp&email=$email_encryp</a></p>" ;
 
     // MAIL

@@ -59,9 +59,9 @@ while ($row = mysql_fetch_array($query0)) {
 
     // LINKS
 
-    $link="<p><a href='http://localhost/SENCONFsvn/getFreePlacesYes.php?idUser=$idUser_encryp
+    $link="<p><a href='http://conferencias.senc.es/getFreePlacesYes.php?idUser=$idUser_encryp
         &idSession=$idSession_encryp&lang=$lang_encryp&name=$name_encryp&email=$email_encryp' >
-        http://localhost/SENCONFsvn/getFreePlacesYes.php?idUser=$idUser_encryp&idSession=$idSession_encryp
+        http://conferencias.senc.es/getFreePlacesYes.php?idUser=$idUser_encryp&idSession=$idSession_encryp
         &lang=$lang_encryp&name=$name_encryp&email=$email_encryp</a></p>" ;
 
     // MAIL
