@@ -204,6 +204,7 @@ $langVoc['mailSubject2'] = 'Plazas libres en neuroconferencia!';
 $langVoc['mailSubject3'] = 'Confirmación de asistencia!';
 $langVoc['mailSubject4'] = 'Liberación de plazas!';
 $langVoc['mailSubject5'] = 'Registro en plazas libres';
+$langVoc['mailSubject6'] = 'Confirmación de liberación de places';
 
 //MAIL TO PEOPLE WITHOUT CERTIFICATE
 $langVoc['mailNoCertBody'] = '<p>Hola ';

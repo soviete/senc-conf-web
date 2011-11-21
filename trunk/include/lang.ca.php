@@ -210,6 +210,7 @@ $langVoc['mailSubject2'] = 'Places lliures a neuroconferència!';
 $langVoc['mailSubject3'] = 'Confirmació d\'assistència!';
 $langVoc['mailSubject4'] = 'Alliberació de places!';
 $langVoc['mailSubject5'] = 'Registre a places lliures';
+$langVoc['mailSubject6'] = 'Confirmació d\'alliberament de places';
 
 
 //MAIL TO PEOPLE WITHOUT CERTIFICATE
