@@ -206,6 +206,7 @@ $langVoc['asap'] = 'Ens posarem en contacte amb tu tan aviat com hi hagi places 
 //MAILS
 $langVoc['mailSubject'] = 'Inscripció neuroconferèncias';
 $langVoc['mailSubject1'] = 'Assistència a neuroconferència';
+#$langVoc['mailSubject1'] = 'Assistència a neuroconferència (LINK CORRECTE)';
 $langVoc['mailSubject2'] = 'Places lliures a neuroconferència!';
 $langVoc['mailSubject3'] = 'Confirmació d\'assistència!';
 $langVoc['mailSubject4'] = 'Alliberació de places!';
@@ -277,7 +278,8 @@ $langVoc['placeAvailableGetPlace'] = 'Si vols registrar-te i assistir a aquesta 
 //MAIL -7
 
 $langVoc['mail7A'] = '<p>Hola ';
-$langVoc['mail7B'] = ',</p><p align="justify">Aquest és un email generat automàticament des de la secretaria d\'“El Cervell Envaeix la Ciutat”.</p>';
+#$langVoc['mail7B'] = ',</p><p align="justify">Aquest és un email generat automàticament des de la secretaria d\'“El Cervell Envaeix la Ciutat”.</p>';
+$langVoc['mail7B'] = ',</p><p align="justify"><b>DISCULPEU EL ERROR, PERÒ EL LINK QUE APAREIXIA EN EL MAIL ANTERIOR ERA INCORRECTE, AQUEST ÉS EL EMAIL CORRECTE PER A CONFIRMAR LA TEVA ASSISTÈNCIA”.</b></p>';
 $langVoc['mail7C'] = '<p align="justify">Segons la nostra base de dades, estàs inscrit per a la conferència: <br><br>';
 $langVoc['mail7D'] = 'Davant el gran nombre de sol·licituds per acudir a aquestes conferències, et demanem que ens
     confirmis si finalment podràs assistir a aquest esdeveniment: encara que estiguis preinscrit a la conferència, cal que ens confirmis

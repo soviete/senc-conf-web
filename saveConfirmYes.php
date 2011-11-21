@@ -7,7 +7,7 @@ $key = "33";
 
 if(isSet($_GET['idUser'])) {
     $idUserEncrypt = $_GET['idUser'];
-    $idUser = decrypt($idUserEncrypt, $key); 
+    $idUser = decrypt($idUserEncrypt, $key);
 }
 
 if(isSet($_GET['idSession'])) {
@@ -52,7 +52,7 @@ $headers .= "X-Mailer: PHP". phpversion() ."\r\n" ;
         <link rel="stylesheet" type="text/css" href="estilo.css" />
     </head>
 
-<?php 
+<?php
 $currentPage=currentPage();
 print "
 <div id='lang'>
@@ -61,28 +61,12 @@ print "
 <a href='$currentPage?lang=en'>ENG</a></li>
 </div>";
 
-// Set the database access information as constants:
-//DEFINE ('DB_USER', 'gestor_formul');
-//DEFINE ('DB_PASSWORD', '1q2w3e4r');
-//DEFINE ('DB_HOST', 'conferencias.senc.es');
-//DEFINE ('DB_NAME', 'formulario');
+//if (!$connection) {
+//	trigger_error ('Could not connect to MySQL: ' . mysql_connect_error() );
+//}
 
-DEFINE ('DB_USER', 'root');
-DEFINE ('DB_PASSWORD', 'permeability789');
-DEFINE ('DB_HOST', 'localhost');
-DEFINE ('DB_NAME', 'formulario');
+include 'mysql_connect.php';
 
-// Make the connection:
-$connection = mysql_connect(DB_HOST,DB_USER,DB_PASSWORD);
-$db = mysql_select_db(DB_NAME,$connection);
-mysql_query("SET NAMES 'utf8'");
-
-if (!$connection) {
-	trigger_error ('Could not connect to MySQL: ' . mysql_connect_error() );
-}
-
-#include 'mysql_connect.php';
-//echo "$lang--------------";
 $sessionName = "sessionName".$lang;
 $query=mysql_fetch_array(mysql_query("SELECT $sessionName, UNIX_TIMESTAMP(sessionDate),room FROM SESSIONS WHERE idSESSIONS='$idSession'"));
                                              $weekdaymysql=date("l",$query[1]);
@@ -98,7 +82,7 @@ $query=mysql_fetch_array(mysql_query("SELECT $sessionName, UNIX_TIMESTAMP(sessio
 
 //$query = mysql_query ("DELETE from formulario.REGISTERED where REGISTERED.regIdUser = '$idUser' AND REGISTERED.idRegSession = '$sessionId'");
 //
-//if (!$query) 
+//if (!$query)
 //    {
 //        trigger_error ('Wrong QUERY: ' . mysql_error() );
 //    }
@@ -106,12 +90,12 @@ $query=mysql_fetch_array(mysql_query("SELECT $sessionName, UNIX_TIMESTAMP(sessio
 $query1 = mysql_query("INSERT INTO formulario.CONFIRMED (confIdUser, IdConfSession)
                        VALUES ('$idUser', '$idSession')");
 
-if (!$query1) 
+if (!$query1)
     {
         trigger_error ('Wrong QUERY: ' . mysql_error() );
     }
 
-else 
+else
     {
         // MAIL
         $subject = $langVoc['mailSubject3'];
@@ -120,14 +104,14 @@ else
 
 
         mail($email, $subject, $message, $headers);
-    }    
+    }
 ?>
     <body>
         <div  id="wrapper">
             <div id="contact">
                 <p id="legal"><?php echo $langVoc['contact1'];?>
                 <a href="mailto:bioinfodesigning@gmail.com?subject=Feedback" >bioinfodesigning@gmail.com</a></p>
-            
+
             </div>
         <div id="header">
         <div id="logo">
@@ -136,8 +120,8 @@ else
         </div>
         </div>
         <link rel="shortcut icon" href="images/favicon.ico">
-            <?php 
-//            include 'include/header.php'; 
+            <?php
+//            include 'include/header.php';
             ?>
             <div id="page">
                 <div id="content">
@@ -145,7 +129,7 @@ else
                         <h1><?php echo "$conference";?></h1>
                         <h3><?php echo $langVoc['confirmAsistTittle'];?></h3>
                         <p><?php echo $langVoc['confirmAsistMsgYes'];?></p>
-                                             
+
                     </div>
                 </div>
                 <div style=" clear: both; height: 1px"></div>

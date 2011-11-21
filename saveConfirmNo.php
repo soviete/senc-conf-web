@@ -7,7 +7,7 @@ $key = "33";
 
 if(isSet($_GET['idUser'])) {
     $idUserEncrypt = $_GET['idUser'];
-    $idUser = decrypt($idUserEncrypt, $key); 
+    $idUser = decrypt($idUserEncrypt, $key);
 }
 
 if(isSet($_GET['idSession'])) {
@@ -53,7 +53,7 @@ $headers .= "X-Mailer: PHP". phpversion() ."\r\n" ;
         <link rel="stylesheet" type="text/css" href="estilo.css" />
     </head>
 
-<?php 
+<?php
 $currentPage=currentPage();
 print "
 <div id='lang'>
@@ -79,12 +79,12 @@ $query=mysql_fetch_array(mysql_query("SELECT $sessionName, UNIX_TIMESTAMP(sessio
 
 $query = mysql_query ("DELETE from formulario.REGISTERED where REGISTERED.regIdUser = '$idUser' AND REGISTERED.idRegSession = '$idSession'");
 
-if (!$query) 
-    {
-        trigger_error ('Wrong QUERY: ' . mysql_error() );
-    }
-else
-    {
+//if (!$query)
+//    {
+//        trigger_error ('Wrong QUERY: ' . mysql_error() );
+//    }
+//else
+//    {
         // MAIL
         $subject = $langVoc['mailSubject6'];
         $message = $langVoc['mailConfNoA'].$name.$langVoc['mailConfNoB'].$langVoc['mailConfNoC'].
@@ -93,15 +93,15 @@ else
 
 
         mail($email, $subject, $message, $headers);
-    }
-    
+//    }
+
 ?>
     <body>
         <div  id="wrapper">
             <div id="contact">
                 <p id="legal"><?php echo $langVoc['contact1'];?>
                 <a href="mailto:bioinfodesigning@gmail.com?subject=Feedback" >bioinfodesigning@gmail.com</a></p>
-            
+
             </div>
         <div id="header">
         <div id="logo">
@@ -110,8 +110,8 @@ else
         </div>
         </div>
         <link rel="shortcut icon" href="images/favicon.ico">
-            <?php 
-//            include 'include/header.php'; 
+            <?php
+//            include 'include/header.php';
             ?>
             <div id="page">
                 <div id="content">
@@ -119,7 +119,7 @@ else
                         <h1><?php echo "$conference";?></h1>
                         <h3><?php echo $langVoc['confirmAsistTittle'];?></h3>
                         <p><?php echo $langVoc['confirmAsistMsgNo'];?></p>
-                                             
+
                     </div>
                 </div>
                 <div style=" clear: both; height: 1px"></div>
