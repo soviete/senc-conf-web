@@ -1,6 +1,6 @@
 <?php
-//ini_set('display_errors', 'On');
-//error_reporting(-1);
+ini_set('display_errors', 'On');
+error_reporting(-1);
 session_start();
 include 'include/common.php';
 $key = "33";
@@ -42,20 +42,6 @@ $headers .= 'Return-Path: El Cerebro Invade la Ciudad <INFO@elcervell.com>' . "\
 $headers .= "Organization: Sender Organization\r\n";
 $headers .= "X-Priority: 3\r\n";
 $headers .= "X-Mailer: PHP". phpversion() ."\r\n" ;
-
-//$id=2;
-//$key = "100";
-//$idEn = encrypt ($id, $key);
-//echo "$idEn============";
-//$iddec=decrypt($idEn, $key);
-//echo "$iddec============";
-//$sessionId = 2;
-//$idUser = 2;
-
-//$sessionId = $_SESSION['sessionId'];
-//$idUser = $_SESSION['idUser'];
-//$conferences = $_SESSION['conference'];
-//echo "$conferences--------------";
 ?>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -75,7 +61,27 @@ print "
 <a href='$currentPage?lang=en'>ENG</a></li>
 </div>";
 
-include 'mysql_connect.php';
+// Set the database access information as constants:
+//DEFINE ('DB_USER', 'gestor_formul');
+//DEFINE ('DB_PASSWORD', '1q2w3e4r');
+//DEFINE ('DB_HOST', 'conferencias.senc.es');
+//DEFINE ('DB_NAME', 'formulario');
+
+DEFINE ('DB_USER', 'root');
+DEFINE ('DB_PASSWORD', 'permeability789');
+DEFINE ('DB_HOST', 'localhost');
+DEFINE ('DB_NAME', 'formulario');
+
+// Make the connection:
+$connection = mysql_connect(DB_HOST,DB_USER,DB_PASSWORD);
+$db = mysql_select_db(DB_NAME,$connection);
+mysql_query("SET NAMES 'utf8'");
+
+if (!$connection) {
+	trigger_error ('Could not connect to MySQL: ' . mysql_connect_error() );
+}
+
+#include 'mysql_connect.php';
 //echo "$lang--------------";
 $sessionName = "sessionName".$lang;
 $query=mysql_fetch_array(mysql_query("SELECT $sessionName, UNIX_TIMESTAMP(sessionDate),room FROM SESSIONS WHERE idSESSIONS='$idSession'"));
@@ -86,7 +92,7 @@ $query=mysql_fetch_array(mysql_query("SELECT $sessionName, UNIX_TIMESTAMP(sessio
                                              $time=date("G",$query[1]);
                                              $W=$day[$weekdaymysql];
                                              $M=$month[$monthmysql];
-
+                                             $conference="";
                                              $fecha="$W, $Day $M $year";
                                              $conference.="$fecha<br><i>$query[2]</i><br>\"<b>$query[0]</b>\"<br><br>";
 
@@ -98,7 +104,7 @@ $query=mysql_fetch_array(mysql_query("SELECT $sessionName, UNIX_TIMESTAMP(sessio
 //    }
 
 $query1 = mysql_query("INSERT INTO formulario.CONFIRMED (confIdUser, IdConfSession)
-                       VALUES ('$idUser', '$sessionId')");
+                       VALUES ('$idUser', '$idSession')");
 
 if (!$query1) 
     {
