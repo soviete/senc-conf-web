@@ -1,12 +1,12 @@
 <?php
-//ini_set('display_errors', 'On');
-//error_reporting(-1);
+ini_set('display_errors', 'On');
+error_reporting(-1);
 session_start();
 include 'include/common.php';
 include 'mysql_connect.php';
 
 // CONFERENCE ID
-$idSession='1';
+$idSession='2';
 
 // MAIL HEADERS
 // To send HTML mail, the Content-type header must be set
@@ -25,6 +25,7 @@ $headers .= "X-Mailer: PHP". phpversion() ."\r\n" ;
 $query0=mysql_query("SELECT idUser, userName, email, lang from USERS WHERE idUser IN
                                 (SELECT regIdUser FROM REGISTERED WHERE idRegSession='$idSession')");
 
+$i=0;
 while ($row = mysql_fetch_array($query0)) {
 
     // GET PERSON'S DETAILS
@@ -75,7 +76,9 @@ while ($row = mysql_fetch_array($query0)) {
 
 
     mail($email, $subject, $message, $headers);
-    echo "ENVIADO!";
-
+    $i += 1;
+    print $email.'<br>';
 }
+
+echo "$i MAILS ENVIADOS!";
 ?>

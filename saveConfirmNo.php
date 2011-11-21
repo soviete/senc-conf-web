@@ -86,7 +86,7 @@ if (!$query)
 else
     {
         // MAIL
-        $subject = $langVoc['mailSubject3'];
+        $subject = $langVoc['mailSubject6'];
         $message = $langVoc['mailConfNoA'].$name.$langVoc['mailConfNoB'].$langVoc['mailConfNoC'].
         $conference.$langVoc['mailConfNoD'].
                 $langVoc['mailConfNoE'];
