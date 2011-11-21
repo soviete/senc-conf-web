@@ -1,4 +1,14 @@
+//
 <?php
+// RECUERDA: ANTES DE HACER EL MAILING:
+//
+// 1. CAMBIA EL NÚMERO DE LA SESIÓN
+//
+// 2. ASEGÚRATE QUE EL LINK QUE EL EMAIL PRINTARÁ APUNTA AL SERVIDOR Y NO AL LOCALHOST
+//
+// 3. CAMBIA LOS PARÁMETROS DEL MYSQLCONNECT
+//
+//
 ini_set('display_errors', 'On');
 error_reporting(-1);
 session_start();
