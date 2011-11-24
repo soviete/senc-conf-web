@@ -8,14 +8,41 @@
 // 3. CAMBIA LOS PARÁMETROS DEL MYSQLCONNECT
 //
 //
-ini_set('display_errors', 'On');
-error_reporting(-1);
-session_start();
-include 'include/common.php';
-include 'mysql_connect.php';
-
+//ini_set('display_errors', 'On');
+//error_reporting(-1);
+//session_start();
+//include 'include/common.php';
+//
+//
 // CONFERENCE ID
 $idSession='2';
+
+function encrypt($string, $key) {
+   $result = '';
+   for($i=0; $i<strlen($string); $i++) {
+      $char = substr($string, $i, 1);
+      $keychar = substr($key, ($i % strlen($key))-1, 1);
+      $char = chr(ord($char)+ord($keychar));
+      $result.=$char;
+   }
+   return base64_encode($result);
+}
+
+function decrypt($string, $key) {
+   $result = '';
+   $string = base64_decode($string);
+   for($i=0; $i<strlen($string); $i++) {
+      $char = substr($string, $i, 1);
+      $keychar = substr($key, ($i % strlen($key))-1, 1);
+      $char = chr(ord($char)-ord($keychar));
+      $result.=$char;
+   }
+   return $result;
+}
+include 'mysql_connect.php';
+include_once 'include/lang.ca.php';
+include_once 'include/lang.es.php';
+include_once 'include/lang.en.php';
 
 
 // MAIL HEADERS
@@ -32,8 +59,9 @@ $headers .= "X-Priority: 3\r\n";
 $headers .= "X-Mailer: PHP". phpversion() ."\r\n" ;
 
 // QUERY
-$query0=mysql_query("SELECT idUser, userName, email, lang from formulario.USERS WHERE idUser IN
-                                (SELECT reservIdUser FROM formulario.RESERVED WHERE idReservSession='$idSession')");
+ $query0=mysql_query("SELECT idUser, userName, email, lang from USERS WHERE email='ramonguixxa@gmail.com'");
+//$query0=mysql_query("SELECT idUser, userName, email, lang from formulario.USERS WHERE idUser IN
+//                                (SELECT reservIdUser FROM formulario.RESERVED WHERE idReservSession='$idSession')");
 
 $i=0;
 while ($row = mysql_fetch_array($query0)) {
