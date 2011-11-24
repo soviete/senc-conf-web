@@ -282,7 +282,8 @@ $langVoc['placeAvailableGetPlace'] = 'If you want to register and assist to this
 
 $langVoc['mail7A'] = '<p>Dear ';
 $langVoc['mail7B'] = ',</p><p align="justify">This is a message that has been automatically generated from the Secretariat of "The Brain Invades the City".</p>';
-#$langVoc['mail7B'] = ',</p><p align="justify"><b>WE SENT YOU THE LAST E-MAIL BY MISTAKE, PLEASE ACCEPT OUR APOLOGIES. THE CORRECT LINK TO CONFIRM YOUR ATTENDANCE IS BELOW”</b>.</p>';
+#$langVoc['mail7B'] = '</p><p align="justify"><b>WE SENT YOU THE LAST E-MAIL BY MISTAKE, PLEASE ACCEPT OUR APOLOGIES. THE CORRECT LINK TO CONFIRM YOUR ATTENDANCE IS BELOW”</b>.</p>';
+$langVoc['mail7BB'] = '</p><p align="justify"><b>If you have already recieved this email, please just ignore this one.</b></p>';
 $langVoc['mail7C'] = '<p align="justify">According to our database, you are registered for the following conference: <br><br>';
 $langVoc['mail7D'] = 'Due to the large number of requests to attend these conferences, we would ask you to confirm
     whether you will be able to attend this event. Although you have a preliminary registration for the conference, we need you to confirm your

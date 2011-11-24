@@ -279,7 +279,8 @@ $langVoc['placeAvailableGetPlace'] = 'Si vols registrar-te i assistir a aquesta 
 
 $langVoc['mail7A'] = '<p>Hola ';
 $langVoc['mail7B'] = ',</p><p align="justify">Aquest és un email generat automàticament des de la secretaria d\'“El Cervell Envaeix la Ciutat”.</p>';
-#$langVoc['mail7B'] = ',</p><p align="justify"><b>DISCULPEU EL ERROR, PERÒ EL LINK QUE APAREIXIA EN EL MAIL ANTERIOR ERA INCORRECTE, AQUEST ÉS EL EMAIL CORRECTE PER A CONFIRMAR LA TEVA ASSISTÈNCIA”.</b></p>';
+#$langVoc['mail7B'] = '</p><p align="justify"><b>DISCULPEU EL ERROR, PERÒ EL LINK QUE APAREIXIA EN EL MAIL ANTERIOR ERA INCORRECTE, AQUEST ÉS EL EMAIL CORRECTE PER A CONFIRMAR LA TEVA ASSISTÈNCIA.</b></p>';
+$langVoc['mail7BB'] = '</p><p align="justify"><b>Si ja heu rebut aquest mail, si us plau ignoreu aquest missatge.</b></p>';
 $langVoc['mail7C'] = '<p align="justify">Segons la nostra base de dades, estàs inscrit per a la conferència: <br><br>';
 $langVoc['mail7D'] = 'Davant el gran nombre de sol·licituds per acudir a aquestes conferències, et demanem que ens
     confirmis si finalment podràs assistir a aquest esdeveniment: encara que estiguis preinscrit a la conferència, cal que ens confirmis
