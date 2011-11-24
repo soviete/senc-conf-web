@@ -269,7 +269,8 @@ $langVoc['placeAvailableGetPlace'] = 'Si quieres registrarte i asistir a esta co
 
 $langVoc['mail7A'] = '<p>Hola ';
 $langVoc['mail7B'] = ',</p><p align="justify">Este es un mensaje automático generado desde la secretaría de “El Cerebro Invade la Ciudad”.</p>';
-#$langVoc['mail7B'] = ',</p><p align="justify"><b>DISCULPAD EL ERROR, PERO EL LINK DEL E-MAIL ANTERIOR ERA INCORRECTO, ESTE ES EL EMAIL CORRECTO PARA CONFIRMAR TU ASISTENCIA”.</b></p>';
+#$langVoc['mail7B'] = '</p><p align="justify"><b>DISCULPAD EL ERROR, PERO EL LINK DEL E-MAIL ANTERIOR ERA INCORRECTO, ESTE ES EL EMAIL CORRECTO PARA CONFIRMAR TU ASISTENCIA”.</b></p>';
+$langVoc['mail7BB'] = '</p><p align="justify"><b>Si ya has recibido este e-mail, por favor ignora este mensaje.</b></p>';
 $langVoc['mail7C'] = '<p align="justify">Según nuestra base de datos, estás inscrito para la conferencia: <br><br>';
 $langVoc['mail7D'] = 'Debido al gran número de solicitudes para acudir a estas conferencias, te pedimos que nos
     confirmes si finalmente podrás asistir a este evento: aunque estés preinscrito a la conferencia, es necesario que nos confirmes
