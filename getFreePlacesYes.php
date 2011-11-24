@@ -9,7 +9,7 @@ $key = "33";
 
 if(isSet($_GET['idUser'])) {
     $idUserEncrypt = $_GET['idUser'];
-    $idUser = decrypt($idUserEncrypt, $key); 
+    $idUser = decrypt($idUserEncrypt, $key);
 }
 
 if(isSet($_GET['idSession'])) {
@@ -55,7 +55,7 @@ $headers .= "X-Mailer: PHP". phpversion() ."\r\n" ;
         <link rel="stylesheet" type="text/css" href="estilo.css" />
     </head>
 
-<?php 
+<?php
 $currentPage=currentPage();
 print "
 <div id='lang'>
@@ -81,33 +81,33 @@ $query=mysql_fetch_array(mysql_query("SELECT $sessionName, UNIX_TIMESTAMP(sessio
 
 $query = mysql_query ("DELETE from formulario.RESERVED where RESERVED.reservIdUser = '$idUser' AND RESERVED.idReservSession = '$idSession'");
 
-if (!$query) 
+if (!$query)
     {
         trigger_error ('Wrong QUERY: ' . mysql_error() );
     }
 
 //First we have to check if there is still room for this session
 $optionReg = "C1"; //We use C1 because is the one without any restriction
-$switchFreePlaces = freePlaces ($idSession, $optionReg); 
+$switchFreePlaces = freePlacesmail3 ($idSession);
 
-if ($switchFreePlaces) 
-    { 
-        
+if ($switchFreePlaces)
+    {
+
         $query1 = mysql_query("INSERT INTO formulario.REGISTERED (regIdUser, IdRegSession)
                   VALUES ('$idUser', '$idSession')");
 
-        if (!$query1) 
+        if (!$query1)
             {
                 trigger_error ('Wrong QUERY: ' . mysql_error() );
             }
 
         $query2 = mysql_query("INSERT INTO formulario.CONFIRMED (confIdUser, IdConfSession)
                                VALUES ('$idUser', '$idSession')");
-        if (!$query2) 
+        if (!$query2)
             {
                 trigger_error ('Wrong QUERY: ' . mysql_error() );
             }
-        
+
         else
             {
                 // MAIL
@@ -116,10 +116,10 @@ if ($switchFreePlaces)
 
                 mail($email, $subject, $message, $headers);
             }
-        
+
     }
 
-else 
+else
     {
         // MAIL
         $subject = $langVoc['mailSubject5'];
@@ -127,7 +127,7 @@ else
 
         mail($email, $subject, $message, $headers);
     }
-    
+
 
 
 ?>
@@ -136,7 +136,7 @@ else
             <div id="contact">
                 <p id="legal"><?php echo $langVoc['contact1'];?>
                 <a href="mailto:bioinfodesigning@gmail.com?subject=Feedback" >bioinfodesigning@gmail.com</a></p>
-            
+
             </div>
         <div id="header">
         <div id="logo">
@@ -145,8 +145,8 @@ else
         </div>
         </div>
         <link rel="shortcut icon" href="images/favicon.ico">
-            <?php 
-//            include 'include/header.php'; 
+            <?php
+//            include 'include/header.php';
             ?>
             <div id="page">
                 <div id="content">
@@ -157,29 +157,29 @@ else
                                     echo '<h1>';
                                     echo "$conference";
                                     echo '</h1>';
-                                    echo '<h3>'; 
+                                    echo '<h3>';
                                     echo $langVoc['FreePlacesTittle'];
                                     echo '</h3>';
-                                    echo '<p>'; 
+                                    echo '<p>';
                                     echo $langVoc['FreePlacesMsg'];
-                                    echo '</p>';                       
+                                    echo '</p>';
                                     echo '<p>';
                                     echo $langVoc['confirmAsistMsgMail'];
                                     echo '</p>';
                                 }
-                            else   
+                            else
                                 {
                                     echo '<h1>';
                                     echo "$conference";
                                     echo '</h1>';
-                                    echo '<h3>'; 
+                                    echo '<h3>';
                                     echo $langVoc['FreePlacesTittle'];
                                     echo '</h3>';
-                                    echo '<p>'; 
+                                    echo '<p>';
                                     echo $langVoc['FreePlacesMsgFull'];
-                                    echo '</p>';                                                          
+                                    echo '</p>';
                                 }
-                         ?>   
+                         ?>
                     </div>
                 </div>
                 <div style=" clear: both; height: 1px"></div>
