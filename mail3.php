@@ -112,6 +112,7 @@ while ($row = mysql_fetch_array($query0)) {
     mail($email, $subject, $message, $headers);
     $i += 1;
     print $email.'<br>';
+    sleep(5);
 }
 
 echo "$i MAILS ENVIADOS!";
