@@ -76,55 +76,121 @@ $query=mysql_fetch_array(mysql_query("SELECT $sessionName, UNIX_TIMESTAMP(sessio
 
                                              $fecha="$W, $Day $M $year";
                                              $conference.="$fecha<br><i>$query[2]</i><br>\"<b>$query[0]</b>\"<br><br>";
+                                             
+$result = mysql_num_rows( mysql_query("SELECT  confIdUser FROM formulario.CONFIRMED WHERE CONFIRMED.confIdUser = '$idUser' AND CONFIRMED.idConfSession = '$idSession'"));
 
-$query = mysql_query ("DELETE from formulario.REGISTERED where REGISTERED.regIdUser = '$idUser' AND REGISTERED.idRegSession = '$idSession'");
+if ($result == 0) 
+    {   
+        
+        $result1 = mysql_num_rows( mysql_query("SELECT  regIdUser FROM formulario.REGISTERED WHERE REGISTERED.regIdUser = '$idUser' AND REGISTERED.idRegSession = '$idSession'"));
+        
+        $query = mysql_query ("DELETE from formulario.REGISTERED where REGISTERED.regIdUser = '$idUser' AND REGISTERED.idRegSession = '$idSession'");
 
-//if (!$query)
-//    {
-//        trigger_error ('Wrong QUERY: ' . mysql_error() );
-//    }
-//else
-//    {
-        // MAIL
-        $subject = $langVoc['mailSubject6'];
-        $message = $langVoc['mailConfNoA'].$name.$langVoc['mailConfNoB'].$langVoc['mailConfNoC'].
-        $conference.$langVoc['mailConfNoD'].
-                $langVoc['mailConfNoE'];
+        //if (!$query)
+        //    {
+        //        trigger_error ('Wrong QUERY: ' . mysql_error() );
+        //    }
+        //else
+        //    {
+        
+        if ($result1 == 0)
+            {
+                //echo "usuario previamente borrado";
+            }
+        else
+            {
+                // MAIL
+                $subject = $langVoc['mailSubject6'];
+                $message = $langVoc['mailConfNoA'].$name.$langVoc['mailConfNoB'].$langVoc['mailConfNoC'].
+                $conference.$langVoc['mailConfNoD'].
+                        $langVoc['mailConfNoE'];
 
 
-        mail($email, $subject, $message, $headers);
-//    }
+                mail($email, $subject, $message, $headers);
+            }
+                
+        print "<body>
+               <div  id='wrapper'>
+                <div id='contact'>
+                    <p id='legal'>";
+        echo $langVoc['contact1'];
+        print "<a href='mailto:bioinfodesigning@gmail.com?subject=Feedback' >bioinfodesigning@gmail.com</a></p>
 
-?>
-    <body>
-        <div  id="wrapper">
-            <div id="contact">
-                <p id="legal"><?php echo $langVoc['contact1'];?>
-                <a href="mailto:bioinfodesigning@gmail.com?subject=Feedback" >bioinfodesigning@gmail.com</a></p>
-
-            </div>
-        <div id="header">
-        <div id="logo">
-            <h1><a href="index.php"><?php echo $langVoc['conferenceReg'];?></a></h1>
-            <h2><a href="index.php">"El Cervell Envaeix la Ciutat"</a></h2>
-        </div>
-        </div>
-        <link rel="shortcut icon" href="images/favicon.ico">
-            <?php
-//            include 'include/header.php';
-            ?>
-            <div id="page">
-                <div id="content">
-                    <div id="welcome">
-                        <h1><?php echo "$conference";?></h1>
-                        <h3><?php echo $langVoc['confirmAsistTittle'];?></h3>
-                        <p><?php echo $langVoc['confirmAsistMsgNo'];?></p>
-
-                    </div>
                 </div>
-                <div style=" clear: both; height: 1px"></div>
+            <div id='header'>
+            <div id='logo'>
+                <h1><a href='index.php'>";
+       echo $langVoc['conferenceReg'];
+       print "</a></h1>
+                <h2><a href='index.php'>\"El Cervell Envaeix la Ciutat\"</a></h2>
             </div>
-            <?php include 'include/footer.php'; ?>
-        </div>
-    </body>
-</html>
+            </div>
+            <link rel='shortcut icon' href='images/favicon.ico'>";
+
+    //            include 'include/header.php';
+       print "<div id='page'>
+                    <div id='content'>
+                        <div id='welcome'>
+                            <h1>";
+       echo "$conference";
+       print"</h1>
+             <h3>";
+       echo $langVoc['confirmAsistTittle'];
+       print"</h3>
+             <p>";
+       echo $langVoc['confirmAsistMsgNo'];
+       print "</p>
+              </div>
+                    </div>
+                    <div style=' clear: both; height: 1px'></div>
+                </div>";
+       include 'include/footer.php';
+       print "</div>
+              </body>
+              </html>";
+    }
+    
+ //Ya habia confirmado previamente   
+ else 
+    {
+        print "<body>
+               <div  id='wrapper'>
+                <div id='contact'>
+                    <p id='legal'>";
+        echo $langVoc['contact1'];
+        print "<a href='mailto:bioinfodesigning@gmail.com?subject=Feedback' >bioinfodesigning@gmail.com</a></p>
+
+                </div>
+            <div id='header'>
+            <div id='logo'>
+                <h1><a href='index.php'>";
+       echo $langVoc['conferenceReg'];
+       print "</a></h1>
+                <h2><a href='index.php'>\"El Cervell Envaeix la Ciutat\"</a></h2>
+            </div>
+            </div>
+            <link rel='shortcut icon' href='images/favicon.ico'>";
+
+    //            include 'include/header.php';
+       print "<div id='page'>
+                    <div id='content'>
+                        <div id='welcome'>
+                            <h1>";
+       echo "$conference";
+       print"</h1>
+             <h3>";
+       echo $langVoc['confirmAsistTittle'];
+       print"</h3>
+             <p>";
+       echo $langVoc['confirmAsistAlreadyConf'];
+       print "</p>
+              </div>
+                    </div>
+                    <div style=' clear: both; height: 1px'></div>
+                </div>";
+       include 'include/footer.php';
+       print "</div>
+              </body>
+              </html>";
+    }
+?>

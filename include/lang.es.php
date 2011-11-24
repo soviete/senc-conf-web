@@ -329,6 +329,10 @@ $langVoc['FreePlacesTittle'] = 'Registro en plazas liberadas';
 $langVoc['FreePlacesMsg'] = 'Enhorabuena! te has registrado correctamente en la conferencia.';
 $langVoc['FreePlacesMsgFull'] = 'Lo sentimos, pero todas las plazas liberadas ya ha sido ocupadas.';
 
+//Confirm already del
+$langVoc['userAlreadyDel'] = 'Este usuario ya había confirmado su NO asistencia!!!';
+$langVoc['confirmAsistAlreadyConf'] = 'Este usuario ya había confirmado su asistencia!!!';
+
 //FOOTER
 
 $langVoc['footermail'] = 'cerebro.ciudad@gmail.com';
