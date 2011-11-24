@@ -341,6 +341,10 @@ $langVoc['FreePlacesTittle'] = 'Registration in free places';
 $langVoc['FreePlacesMsg'] = 'Congratulations! you have been register correctly to the conference.';
 $langVoc['FreePlacesMsgFull'] = 'We apologise, but all the places offered on the waiting list for the conference have been taken.';
 
+//Confirm already del
+$langVoc['userAlreadyDel'] = 'This user has already confirmed his NOT assitance!!!';
+$langVoc['confirmAsistAlreadyConf'] = 'This user has already confirmed his assitance!!!';
+
 //FOOTER
 
 $langVoc['footermail'] = 'cerebro.ciudad@gmail.com';

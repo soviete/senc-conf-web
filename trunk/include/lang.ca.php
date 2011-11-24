@@ -340,6 +340,10 @@ $langVoc['FreePlacesTittle'] = 'Registre en places alliberades';
 $langVoc['FreePlacesMsg'] = 'Enhorabona! t\'has registrat correctament a la conferència.';
 $langVoc['FreePlacesMsgFull'] = 'Ho sentim, però totes les places alliberades ja han estat ocupades.';
 
+//Confirm already del
+$langVoc['userAlreadyDel'] = 'Aquest usuari ja havia confirmat previament la seva NO assistència!!!';
+$langVoc['confirmAsistAlreadyConf'] = 'Aquest usuari ja havia confirmat previament la seva assitència!!!';
+
 //FOOTER
 
 $langVoc['footermail'] = 'cervell.ciutat@gmail.com';
