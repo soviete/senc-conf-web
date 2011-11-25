@@ -87,7 +87,6 @@ if (!$query)
     }
 
 //First we have to check if there is still room for this session
-$optionReg = "C1"; //We use C1 because is the one without any restriction
 $switchFreePlaces = freePlacesmail3 ($idSession);
 
 if ($switchFreePlaces)
