@@ -15,7 +15,7 @@
 //
 //
 // CONFERENCE ID
-$idSession='2';
+$idSession='3';
 
 function encrypt($string, $key) {
    $result = '';
@@ -40,9 +40,6 @@ function decrypt($string, $key) {
    return $result;
 }
 include 'mysql_connect.php';
-include_once 'include/lang.ca.php';
-include_once 'include/lang.es.php';
-include_once 'include/lang.en.php';
 
 
 // MAIL HEADERS
@@ -59,7 +56,17 @@ $headers .= "X-Priority: 3\r\n";
 $headers .= "X-Mailer: PHP". phpversion() ."\r\n" ;
 
 // QUERY
- $query0=mysql_query("SELECT idUser, userName, email, lang from USERS WHERE email='ramonguixxa@gmail.com'");
+$query0=mysql_query("SELECT idUser, userName, email, lang from USERS WHERE email='ramonguixxa@gmail.com'
+    or email='kadomu@gmail.com'");
+
+//$query0=mysql_query("SELECT idUser, userName, email, lang from USERS WHERE iduser='246'
+//    or idUser='247'");
+
+// $query0=mysql_query("SELECT idUser, userName, email, lang from USERS WHERE idUser IN
+//     (SELECT regIdUser from REGISTERED WHERE idRegSession='$idSession' AND regidUser NOT IN
+//     (SELECT confIdUser FROM CONFIRMED WHERE idConfSession='$idSession')) OR idUser IN
+//     (SELECT reservIdUser FROM RESERVED WHERE idReservSession='$idSession')");
+
 //$query0=mysql_query("SELECT idUser, userName, email, lang from formulario.USERS WHERE idUser IN
 //                                (SELECT reservIdUser FROM formulario.RESERVED WHERE idReservSession='$idSession')");
 
@@ -71,6 +78,26 @@ while ($row = mysql_fetch_array($query0)) {
     $name=$row[1];
     $email=$row[2];
     $lang=$row[3];
+
+        switch ($lang) {
+    case 'en':
+        $lang_file = 'lang.en.php';
+        break;
+
+    case 'ca':
+        $lang_file = 'lang.ca.php';
+        break;
+
+    case 'es':
+        $lang_file = 'lang.es.php';
+        break;
+
+    default:
+        $lang_file = 'lang.ca.php';
+
+    }
+
+    include 'include/'.$lang_file;
 
 
     // GET CONFERENCE'S DETAILS
