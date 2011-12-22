@@ -68,7 +68,7 @@ include 'include/formvalidation.php';
 //                                $actualM='12';
 //                                $actualY='2012';
 
-                                if ($row[0] == 1) {
+                                if ($row[0] == 1 || $row[0] == 2 || $row[0] == 3 || $row[0] == 4 || $row[0] == 5  || $row[0] == 6) {
                                     print "<div id='pgrey'><input class='form_tfield' disabled='disabled' type='checkbox'
                                             name='confs[$row[0]]]' /> &nbsp;<b>$row[1]</b>
                                             <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i>$fecha</i>
