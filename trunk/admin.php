@@ -54,6 +54,15 @@ include 'include/common.php';
                             </div>
                         </form><br><br>
                         
+                        <h3>Llistat de pagaments</h3>
+                        <p>Si vols veure les persones que han pagat entra aquí</p>
+                        <form name="list" action="payList.php" method="post">
+                            <div align="center">
+                                <input class="form_submitb" type="submit" name="submit" value="ENTRAR" />
+                            </div>
+                        </form><br><br>
+
+                        
                         <h3>Esborrar usuaris de la base de dades</h3>
                         <p>Si vols borrar alguna persona de la base de dades y de totes les conferències a les que està inscrit entra aquí.</p>
                         <form name="list" action="deleteUser.php" method="post">

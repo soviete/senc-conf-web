@@ -1,0 +1,153 @@
+<?php 
+//ini_set('display_errors', 'On');
+//error_reporting(-1);
+session_start();
+include 'include/common.php';
+
+$origin = "payList.php";
+$_SESSION['origin'] = $origin;
+?>
+
+<?php 
+$DBpayUpdate="NO";
+$_SESSION["DBpayUpdate"]=$DBpayUpdate;
+?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Persones registrades</title>
+        <link rel="stylesheet" type="text/css" href="estilo.css" />
+    </head>
+    <body>
+        <div  id="wrapper">
+            <?php include 'include/header.php'; ?>
+
+            <div id="page">
+                <div id="content">
+                    <div id="welcome">
+                        <h1>Llistat de persones registrades sense confirmació de pagament</h1><br>
+
+
+                        <?php
+
+                        include 'mysql_connect.php';
+
+                        //Extracting registered persons in options c12 and C8"
+                        $query = "SELECT dni, userName, surname, email, type, paid FROM formulario.USERS WHERE  type = 'C8' OR type = 'C12' ORDER BY surname ASC";
+                        $result = mysql_query($query);
+                        $num_rows = mysql_num_rows($result);
+
+                        //echo "que es $num_rows\n";//del
+
+                        if ($num_rows==0) {
+                            echo '<h3>Persones registrades sense confirmació de pagament</h3>
+                                          <div id="welcome">
+                                          No hi ha cap persona registrada a l\'opció C8 o C12: <b>', $num_rows, '</b>.</div>';
+                        }
+
+                        else {
+                            echo '<h3>Persones registrades a les opcions de pagament</h3>
+                                          <div id="welcome">
+                                          Hi ha <b>' , $num_rows, '</b> persones registrades a les opcions de pagament.</div>';
+                            //echo '<input class="form_tfield" type="text" name="first_name" value="" />';
+                            echo '<br><div id="note">';
+                            echo '<table class="aatable">';
+                            echo '<tr>';
+                            echo '<th>DNI</th>';
+                            echo '<th>Cognoms</th>';
+                            echo '<th>Nom</th>';
+                            echo '<th>email</th>';
+                            echo '<th>Tipus d\'acreditació</th>';
+                            echo '<th>Estat de pagament</th>';                            
+                            echo '</tr>';
+
+//                                    $query = "SELECT DISTINCT Ensembl_Protein_ID,Uniprot_SwissProt_Accession,PDB_ID FROM Proteins WHERE
+//                                    Ensembl_Protein_ID IN (select DISTINCT Proteins_Ensembl_Protein_ID
+//                                    from Relations re join Diseases di on re.Diseases_MIM_Accession
+//                                    = di.MIM_Accession where MIM_Description= '".$IID."') ORDER BY PDB_ID DESC";
+//                                    $query = "SELECT * from REGISTERED";
+
+                            $result = mysql_query($query);
+
+                            $i = 0;
+
+                            while($row = mysql_fetch_array($result)) {
+
+                                //opening the form
+                                echo '<form name="payment" action="generateExcel.php" method="post">';
+                                $dni = $row['dni'];
+                                $userName = $row['surname'];
+                                $surname = $row['userName'];
+                                $email = $row['email'];
+                                $type = $row['type'];
+                                $paid = $row['paid'];
+                                echo '<tr>';
+                                print "<td>$dni</td>";
+                                //echo "$dni";
+                                echo '';
+                                echo '<td>';
+                                echo "$userName";
+                                echo '</td>';
+                                echo '<td>';
+                                echo "$surname";
+                                echo '</td>';
+                                echo '<td>';
+                                echo "$email";
+                                echo '</td>';
+                                echo '<td>';
+                                echo "$type";
+                                echo '</td>';
+                                echo '<td>';
+                                echo "$paid";
+                                echo '</td>';
+                                //echo '<td>';
+                                //I have only contemplate this field inside the form
+                                //print "<input type='checkbox' name='pay[$i]' value='YES'/>";
+                                //echo 'culo';
+                                //echo '</td>';
+                                echo '</tr>';
+                               
+                                ++$i;
+                            }
+                            
+                            //echo '</form>';
+                            echo '</table>';
+                            echo '</div>';
+                            echo '<br>';
+//                            echo '</table>';
+//                            echo '</div>';
+//                            echo '<br><br>';
+//                            echo'<div align="center">
+//                                                 <input class="form_submitb" type="submit" name="submit" value="GUARDAR CANVIS" />
+//                                                 <input type="hidden" name="submitted" value="TRUE" />
+//                                                 </div><br>';
+                            
+                        }
+                        print "<br><br><br>";
+                            print "
+                                        <div id='boxleft'>
+                                                <input class='form_submitb' onclick='window.location.href=\"admin.php\"'type='button'
+                                                       value=".$langVoc['back1']." />
+                                                </div>
+                                                <div id='boxright'>
+                                                <input class='form_submitb' type='submit' name='submit' value='GENERAR EXCEL' />
+                                                <input type='hidden' name='table' value='T' />
+                                                </div>";
+
+                            echo '<br>';                          
+                            echo '</form>';
+
+
+
+                        ?>
+
+                    </div>
+                </div>
+
+                <div style=" clear: both; height: 1px"></div>
+            </div>
+<?php include 'include/footer.php'; ?>
+        </div>
+    </body>
+</html>
