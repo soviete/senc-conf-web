@@ -12,6 +12,7 @@ $_SESSION['tracker'] = 1;
         <title>Formulari d'inscripció a conferències</title>
         <link rel="stylesheet" type="text/css" href="estilo.css" />
         <!script type="text/javascript" src="Javascript/formvalidation.js"><!/script>
+        <script type="text/javascript" src="Javascript/goAnalytics.js"></script>
 </head>
 
 <body>
